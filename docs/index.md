@@ -4,17 +4,12 @@ title: SmartClean Matrix
 nav_order: 1
 ---
 
-# Workorders
+## Workorders
 Latest Stable Version:
 v52
 {: .label .label-green }
 
----
-layout: default
-title: Workorders
-nav_order: 2
----
-## What is SmartClean Workorders
+### What is SmartClean Workorders
 
 Workorders allows you to perform the following actions:
 - **Create shifts for workforce (_scheduling_)**: Shifts are used to plan the working hours for a person for a day of month. A shift may also span the next day (_night shifts_). Various options can be used to indicate availability of the person to all the zones or a subset of zones. Additionally, pre-defined tasks can be added to the shifts for schedule driven tasks. The shifts can be repeated using multiple options as described further in this documentation.
@@ -23,7 +18,7 @@ Workorders allows you to perform the following actions:
 
 ![Matrix Workorders](https://www.smartclean.io/matrix/images/workforce-home.png)
 
-## Creating shifts
+### Creating shifts
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -47,10 +42,10 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-## Creating Incidents
+### Creating Incidents
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/smartclean/smartclean.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-## Support or Contact
+### Support or Contact
 
 Having trouble with a widget? Check out our [documentation](https://smartclean.github.io/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
