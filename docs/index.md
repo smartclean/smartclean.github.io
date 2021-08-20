@@ -9,6 +9,11 @@ Latest Stable Version:
 v52
 {: .label .label-green }
 
+---
+layout: default
+title: Workorders
+nav_order: 2
+---
 ## What is SmartClean Workorders
 
 Workorders allows you to perform the following actions:
