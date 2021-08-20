@@ -2,13 +2,10 @@
 layout: default
 title: SmartClean Matrix
 nav_order: 1
-
-layout: default
-title: Workorders
-nav_order: 2
 ---
 
 # Workorders
+Latest Stable Version:
 v52
 {: .label .label-green }
 
