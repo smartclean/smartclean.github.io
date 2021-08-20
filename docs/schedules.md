@@ -2,6 +2,7 @@
 layout: default
 title: Creating Schedules
 parent: Workorders
+grand_parent: SmartClean Matrix
 nav_order: 2
 ---
 ### Creating shifts
