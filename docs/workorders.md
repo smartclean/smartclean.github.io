@@ -1,7 +1,7 @@
 ---
 layout: default
-title: SmartClean Matrix
-nav_order: 1
+title: Workorders
+nav_order: 2
 ---
 
 ## Workorders
