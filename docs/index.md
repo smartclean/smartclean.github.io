@@ -8,7 +8,9 @@ title: Workorders
 nav_order: 2
 ---
 
-# Workorders v52{: .label .label-green }
+# Workorders
+v52
+{: .label .label-green }
 
 ## What is SmartClean Workorders
 
