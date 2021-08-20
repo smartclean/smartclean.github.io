@@ -5,7 +5,9 @@ Workorders allows you to perform the following actions:
 - View or report incidents.
 - Create or use tasks and task groups for one or more zones.
 
-[Jekyll](https://www.smartclean.io/matrix/images/workforce-home.png)
+```markdown
+https://www.smartclean.io/matrix/images/workforce-home.png
+```
 
 ### Creating shifts
 
