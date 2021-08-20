@@ -1,3 +1,9 @@
+---
+layout: default
+title: Customization
+nav_order: 1
+---
+
 # Workorders
 
 ## What is SmartClean Workorders
