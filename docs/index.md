@@ -1,10 +1,13 @@
-## Welcome to GitHub Pages
+## What is SmartClean Workorders
 
-You can use the [editor on GitHub](https://github.com/smartclean/smartclean.github.io/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Workorders allows you to perform the following actions:
+- Create shifts for workforce (scheduling).
+- View or report incidents.
+- Create or use tasks and task groups for one or more zones.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Jekyll](https://www.smartclean.io/matrix/images/workforce-home.png)
 
-### Markdown
+### Creating shifts
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
