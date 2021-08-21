@@ -18,7 +18,7 @@ Login to your account here: [Matrix Login](https://www.smartclean.io/matrix/sso 
 Matrix comprises the following web based modules and mobile applications for iOS and Android:
 
 - **Workforce**: Workforce management tools to manage your manpower, view their attendance and performance KPIs.
-- **Workorders**: Schedule and plan shifts (_roster_), create tasks and report/view incidents happening in your facaility.
+- **Workorders**: Schedule and plan shifts (_roster_), create tasks and report/view incidents happening in your facility.
 - **Audits**: Create inspection templates and generate audit scores by creating various type of questionairres provided.
 - **Reports**: Generate and view primary KPIs from the modules and optionally share it with external clients.
 - **Optimus**: Utilise the power of IoT to enhance your cleaning operations using SmartClean provided sensors or even third party sensors.
