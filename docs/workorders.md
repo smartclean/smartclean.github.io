@@ -23,4 +23,4 @@ Workorders allows you to perform the following actions:
 
 ## Creating shifts
 
-Shifts can be created by going to the [_Schedules_](//schedules.html) section of your dashboard.
+Shifts can be created by going to the [_Schedules_](/schedules.html) section of your dashboard.
