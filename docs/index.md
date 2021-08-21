@@ -27,8 +27,8 @@ Matrix comprises the following web based modules and mobile applications for iOS
 The mobile applications available are:
 - **FM**: This application allows stakeholders to create and view schedules, monitor/resolve/create incidents and tasks, monitor attendance of workforce for shifts published.
 
+>
 iOS: [FM iOS](https://apps.apple.com/sg/app/smartclean-fm/id1557617403 "FM for iOS")
-
 Android: [FM Android](https://play.google.com/store/apps/details?id=com.app.sc_manager "FM for Android")
 
 - **Housekeeping**: This application allows stakeholders to check in to their scheduled/planned shifts and perform the necessary actions to resolve a scheduled task or incident assigned.
