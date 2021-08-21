@@ -3,3 +3,5 @@ logo: "https://www.smartclean.io/matrix/images/matrix-logo.png"
 aux_links:
   "Homepage":
     - "https://www.smartclean.io"
+gh_edit_link: false
+color_scheme: "dark"
