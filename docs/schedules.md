@@ -67,3 +67,7 @@ Select if the shift is to be repeated for certain date times based on the modes 
   - **Repeat for the next month**: The shift will be replicated across the next month.
   - **Repeat for specific days**: This options allows the shift to be repeated on specific days of week for the current month. For example, to repeat the shift definition for Mondays and Tuesdays, select as shown below.
   ![Repeat for specific days](https://www.smartclean.io/matrix/images/repeatShiftSpecificDays.png)
+  
+## Publish planned shifts
+Once the planning of schedule is completed, press the publish button to notify the respective people about the availability of their schedule.
+![Publish Schedule](https://www.smartclean.io/matrix/images/publishSchedule.png)
