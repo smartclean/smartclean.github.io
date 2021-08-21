@@ -70,4 +70,7 @@ Select if the shift is to be repeated for certain date times based on the modes 
   
 ## Publish planned shifts
 Once the planning of schedule is completed, press the publish button to notify the respective people about the availability of their schedule.
+
+If you forget to publish the schedule, items will be automatically removed from the server after a certain time and users will not be able to act on these shifts.
+{: .alert .alert-danger}
 ![Publish Schedule](https://www.smartclean.io/matrix/images/publishSchedule.png)
