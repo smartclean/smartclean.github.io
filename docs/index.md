@@ -12,6 +12,9 @@ Matrix serves as a one-stop platform, digitizing all the facets of cleaning mana
 
 ![Matrix](https://www.smartclean.io/matrix/images/matrix-home.png)
 
+```markdown
+Matrix comprises the following web based modules and mobile applications for iOS and Android.
+```
 - **Workforce**: Workforce management tools to manage your manpower, view their attendance and performance KPIs.
 - **Workorders**: Schedule and plan shifts (_roster_), create tasks and report/view incidents happening in your facaility.
 - **Audits**: Create inspection templates and generate audit scores by creating various type of questionairres provided.
