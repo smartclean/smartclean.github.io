@@ -6,9 +6,9 @@ has_toc: true
 nav_order: 1
 ---
 
-## Matrix
+# Matrix
 
-### What is SmartClean Matrix
+## What is SmartClean Matrix
 
 Matrix serves as a one-stop platform, digitizing all the facets of cleaning management, and brings seamless integration with silo solutions. Its goal is bring all the stakeholders on a single platform and democratize information among the cleaning industry stakeholders including properties, FM, cleaning and hygiene companies.
 
@@ -41,10 +41,10 @@ The mobile applications available are:
 
 >Android: [Housekeeping Android](https://play.google.com/store/apps/details?id=com.app.sc_cleaners_app "Housekeeping for Android")
 
-### How to get help
+## How to get help
 
 You can raise an issue with your designated account manager to resolve mission critical issues. The system runs highly available services and ensures 99.9% SLAs for critical components.
 
-### Support or Contact
+## Support or Contact
 
 Having trouble with a widget? Check out our [documentation](https://docs.smartclean.io/) or [contact support](https://www.smartclean.io/contact.html) and we’ll help you sort it out.
