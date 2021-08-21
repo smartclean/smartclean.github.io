@@ -12,9 +12,7 @@ Matrix serves as a one-stop platform, digitizing all the facets of cleaning mana
 
 ![Matrix](https://www.smartclean.io/matrix/images/matrix-home.png)
 
-```markdown
 Login to your account here: [Matrix Login](https://www.smartclean.io/matrix/sso "Matrix Homepage")
-```
 
 Matrix comprises the following web based modules and mobile applications for iOS and Android:
 
@@ -28,7 +26,7 @@ Matrix comprises the following web based modules and mobile applications for iOS
 The mobile applications available are:
 - **FM**: This application allows stakeholders to create and view schedules, monitor/resolve/create incidents and tasks, monitor attendance of workforce for shifts published.
 ```markdown
-iOS: [FM iOS](https://apps.apple.com/sg/app/smartclean-fm/id1557617403 "Matrix FM for iOS")
+iOS: [FM iOS](https://apps.apple.com/sg/app/smartclean-fm/id1557617403)
 ```
 - **Housekeeping**: This application allows stakeholders to check in to their scheduled/planned shifts and perform the necessary actions to resolve a scheduled task or incident assigned.
 ```markdown
