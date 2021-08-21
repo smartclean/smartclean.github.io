@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SmartClean Matrix
+logo: "https://www.smartclean.io/matrix/assets/scusermanagement/matrix.svg"
 nav_order: 1
 ---
 
