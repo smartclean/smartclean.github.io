@@ -3,7 +3,7 @@ layout: default
 title: Workorders
 has_children: true
 has_toc: true
-grand_parent: SmartClean Matrix
+parent: SmartClean Matrix
 nav_order: 2
 ---
 
