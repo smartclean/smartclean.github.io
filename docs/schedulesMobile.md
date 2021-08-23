@@ -47,37 +47,38 @@ Select breaks (_optional_). Breaks are of 2 types:
 Add an optional description to the shift.
 
 ## Task scheduling in a planned shift
-If the selected zone/s have been associated with scheduled tasks, they will appear in the right side of the application.
+If the selected zone/s have been associated with scheduled tasks, they will appear in the application as highlighted below.
 
-![Scheduling Tasks](https://www.smartclean.io/matrix/images/scheduledTasks.png)
+<img alt="Scheduling Tasks" src="https://www.smartclean.io/matrix/images/mobile/taskGroupsPlanM.jpeg" style="width:40%;" />
 
 1. Click on the checkbox to view the tasks inside the task group/s and select their times of occurrence.
 
 2. Select the start and end time of the task based on how much time should one occurrence be allocated to. The system displays the minimum estimated time that should be allocated to the selected task group.
 
-![Tasks Occurrence Times](https://www.smartclean.io/matrix/images/scheduledTasksOccurence.png)
+<img alt="Scheduling Tasks" src="https://www.smartclean.io/matrix/images/mobile/taskGroupsPlanM.jpeg" style="width:40%;" />
 
 ### Task repetitions in a planned shift
 If the task group for that zone is to be repeated on certain intervals, use the repeat widget to generate the task repetition times.
+<img alt="Taskgroups Repetitions" src="https://www.smartclean.io/matrix/images/mobile/taskGroupRepeatM.jpeg" style="width:40%;" />
 
 **Note:** The task start time is used to generate the occurrences based on the repetion duration selected.
-![Tasks Occurrence Example 1](https://www.smartclean.io/matrix/images/scheduledTasksOccurenceEg1.png)
 
 ## Repeat the shift for future dates
 Select if the shift is to be repeated for certain date times based on the modes as described below:
 
-![Shift Repeat Options](https://www.smartclean.io/matrix/images/repeatShiftOptions.png)
+<img alt="Shift Repeat Options" src="https://www.smartclean.io/matrix/images/mobile/shiftRepeatM.jpeg" style="width:40%;" />
 
   - **Repeat for tomorrow**: The shift will be replicated for tomorrow's date.
   - **Repeat for week**: The shift will be replicated across the current ISO week.
   - **Repeat for rest of the month**: The shift will be replicated across the current month.
   - **Repeat for the next month**: The shift will be replicated across the next month.
   - **Repeat for specific days**: This options allows the shift to be repeated on specific days of week for the current month. For example, to repeat the shift definition for Mondays and Tuesdays, select as shown below.
-  ![Repeat for specific days](https://www.smartclean.io/matrix/images/repeatShiftSpecificDays.png)
+  <img alt="Repeat for specific days" src="https://www.smartclean.io/matrix/images/mobile/repeatShiftEg1.jpeg" style="width:40%;" />
   
 ## Publish planned shifts
 Once the planning of schedule is completed, press the publish button to notify the respective people about the availability of their schedule.
 
 If you forget to publish the schedule, items will be automatically removed from the server after a certain time and users will not be able to act on these shifts.
 {: .alert .alert-danger}
-![Publish Schedule](https://www.smartclean.io/matrix/images/publishSchedule.png)
+<img alt="Publish Shift" src="https://www.smartclean.io/matrix/images/mobile/publishShiftM.jpeg	.jpeg" style="width:40%;" />
+<img alt="Publish Shift Success" src="https://www.smartclean.io/matrix/images/mobile/publishSuccessM.jpeg	.jpeg" style="width:40%;" />
