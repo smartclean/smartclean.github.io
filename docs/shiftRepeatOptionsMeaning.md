@@ -10,7 +10,7 @@ nav_order: 2
 This section describes the meaning of various shift repetition options available in the mobile and web views and examples of various scenarios.
 
 <img alt="Shift Repeat Options Mobile" src="https://www.smartclean.io/matrix/images/mobile/shiftRepeatM.jpeg" style="width:40%;" />
-<img alt="Shift Repeat Options Web" src="https://www.smartclean.io/matrix/images/mobile/repeatShiftOptions.jpeg" style="width:55%;" />
+<img alt="Shift Repeat Options Web" src="https://www.smartclean.io/matrix/images/repeatShiftOptions.png" style="width:55%;" />
 
 ---
 
