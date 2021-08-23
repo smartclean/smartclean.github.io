@@ -11,7 +11,7 @@ This page outlines the steps involved in creation of schedules using the **FM** 
 
 Shifts can be created by going to the _Schedules_ section of your dashboard.
 
-![Schedules](https://www.smartclean.io/matrix/images/mobile/schedulesPageM.jpeg)
+![Schedules](https://www.smartclean.io/matrix/images/mobile/schedulesPageM.jpeg){ width=50% }
 
 ---
 
