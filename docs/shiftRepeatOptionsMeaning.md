@@ -24,5 +24,5 @@ This section describes the meaning of various shift repetition options available
 It is recommended the start the shift planning around the 20th of each month for your workforce.
 
 > I do not want to plan shifts actively but want them to be defined automatically based on the availability defined for my workforce
-> Coming soon in version 53
+Coming soon in version 53
 {: .label .label-yellow }
