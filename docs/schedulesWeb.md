@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Creating Schedules
+title: Creating Schedules (_Web_)
 parent: Workorders
 grand_parent: SmartClean Matrix
 nav_order: 2
