@@ -11,7 +11,7 @@ This page outlines the steps involved in creation of schedules using the **FM** 
 
 Shifts can be created by going to the _Schedules_ section of your dashboard.
 
-<img src="https://www.smartclean.io/matrix/images/mobile/schedulesPageM.jpeg" style="width:50%;" />
+<img alt="Schedules Homepage" src="https://www.smartclean.io/matrix/images/mobile/schedulesPageM.jpeg" style="width:40%;" />
 
 ---
 
@@ -19,20 +19,19 @@ The steps involved in creating a shift are enumerated below:
 
 ## Creating new shift for a person
 Click on the **&#x2B;** icon in the person's profile in day view or week view mode as shown below. Note that the icon is only visible for future dates as nothing can be planned for past dates.
-![Create Shift Day View](https://www.smartclean.io/matrix/images/mobile/shiftCreateDayView.jpeg =250x)
-![Create Shift Week View](https://www.smartclean.io/matrix/images/mobile/shiftCreateDayView.jpeg =250x)
-![Create Shift Home Page](https://www.smartclean.io/matrix/images/mobile/shiftCreateDayView.jpeg =250x)
+<img alt="Create Shift Day View" src="https://www.smartclean.io/matrix/images/mobile/shiftCreateDayView.jpeg" style="width:40%;" />
+<img alt="Create Shift Week View" src="https://www.smartclean.io/matrix/images/mobile/shiftCreateHomeM.jpeg" style="width:40%;" />
 
 ## Time range selection for a shift
 Start by selecting the start date time and subsequently the end date time. Note that a shift may span night hours, therefore the end time can be carried over to the next day as shown below.
-![Date Selection](https://www.smartclean.io/matrix/images/mobile/shiftCreateHomeM.jpeg =250x)
+<img alt="Date Selection" src="https://www.smartclean.io/matrix/images/mobile/shiftCreateHomeM.jpeg" style="width:40%;" />
 
 ## Zone selection for a shift
 The shift can be allocated to one or more zones in the facility by selecting the level followed by the zone.
 
 **Note:** The zone selection can be left empty to indicate availability of this shift as a recepient of incidents for all zones.
 {: .note}
-![Zone Selection](https://www.smartclean.io/matrix/images/mobile/zoneSelectionShiftM.jpeg =250x)
+<img alt="Zone Selection" src="https://www.smartclean.io/matrix/images/mobile/zoneSelectionShiftM.jpeg" style="width:40%;" />
 
 ## Break selection for a shift
 Select breaks (_optional_). Breaks are of 2 types:
@@ -41,9 +40,8 @@ Select breaks (_optional_). Breaks are of 2 types:
 
   **Note:** The system will not send any auto assigned incidents (IoT driven) during this duration.
   
-  ![Planned Breaks](https://www.smartclean.io/matrix/images/mobile/breakPlannedM.jpeg =150x)
-  ![Unplanned Breaks](https://www.smartclean.io/matrix/images/mobile/breakUnplannedM.jpeg =150x)
-
+  <img alt="Planned Breaks" src="https://www.smartclean.io/matrix/images/mobile/breakPlannedM.jpeg" style="width:40%;" />
+  <img alt="Unplanned Breaks" src="https://www.smartclean.io/matrix/images/mobile/breakUnplannedM.jpeg" style="width:40%;" />
 
 ## Describe the shift for future reference if required
 Add an optional description to the shift.
