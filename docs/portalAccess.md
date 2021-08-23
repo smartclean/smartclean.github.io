@@ -3,8 +3,7 @@ layout: default
 title: Portal and Application Access
 has_children: false
 has_toc: true
-parent: SmartClean Matrix
-nav_order: 2
+nav_order: 1
 ---
 
 # Web Portal
