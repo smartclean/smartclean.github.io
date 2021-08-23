@@ -16,7 +16,9 @@ To continue, please accept the invitation. Note that rejection of invitation wil
 <img alt="Web Login" src="https://www.smartclean.io/matrix/images/webLogin.png" style="width: 95%" />
 
 If you are logging in to your account for the first time, you will be required to change your password.
-[The password must be minimum 8 characters long with at least 1 special character, 1 number and 1 uppercase alphabet.](#passwordPolicy)
+
+### Password Policy
+The password must be minimum 8 characters long with at least 1 special character, 1 number and 1 uppercase alphabet.
 
 > Ensure your password is changed frequently to avoid any misuse and do not store passwords in non personal devices.
 
