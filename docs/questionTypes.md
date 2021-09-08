@@ -3,7 +3,7 @@ layout: default
 title: Question Types
 parent: Audits
 grand_parent: SmartClean Matrix
-nav_order: 1
+nav_order: 2
 ---
 
 # Question Type Options
