@@ -1,9 +1,9 @@
 ---
 layout: default
 title: VCS Air Quality Monitoring Solution
-parent: vcs_solutions
-grand_parent: vcs
-nav_order: 1
+parent: VCS Solutions
+grand_parent: VCS
+nav_order: 2
 ---
 # Indoor Air Quality Monitoring Solution
 *This solution generates a Work Order when any source of bad air quality is detected within range of the sensor*

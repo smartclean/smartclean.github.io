@@ -1,9 +1,9 @@
 ---
 layout: default
 title: VCS Usage Monitoring Solution
-parent: vcs_solutions
-grand_parent: vcs
-nav_order: 2
+parent: VCS Solutions
+grand_parent: VCS
+nav_order: 3
 ---
 # Usage Monitoring Solution
 *This solution generates a Work Order when the number of people entered the enclosed location reaches a threshold*
