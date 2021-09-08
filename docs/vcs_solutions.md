@@ -1,7 +1,7 @@
 ---
 layout: default
 title: VCS Solutions
-parent: vcs
+parent: VCS
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
