@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Usage Monitoring Solution
+title:  Usage Monitoring Solution (Settings)
 parent: SuperSense Settings
 grand_parent: SuperSense
 nav_order: 3
