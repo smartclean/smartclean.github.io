@@ -21,7 +21,7 @@ To activate our Indoor Air Quality Monitoring Solution, the following steps are 
 
 Some of our other solutions which generate Work Orders are:
 - [Usage Monitoring](/vcs_pc.html)
-- [Spill Detection]()
-- [Bad Feedback Reporting]()
+- [Spill Detection](/vcs_wd.html)
+- [Bad Feedback Reporting](/vcs_fd.html)
 - [Consumable Monitoring]()
 - [Bin Fill Level Sensing]()
