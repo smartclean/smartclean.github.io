@@ -25,17 +25,8 @@ important high level settings to very granular less important settings.
 ### Settings affecting Work Order generation for specific Solutions
 *Solution specific settings will allow you to configure the criteria for generation of Work Orders for that Solution.*
 
-- [AQ ...]()
-  - AQ1
-  - AQ2
-- [PC ...]()
-  - PC1
-- [WD ...]()
-  - WD1
-- [FD ...]()
-  - FD1
-- [CMD ...]()
-  - CMD1
-- [BIN ...]()
-  - BIN1
-
+- [Settings for Air Quality Monitoring Solution](/vcs_aq_settings.html)
+- [Settings for Usage Monitoring Solution](/vcs_pc_settings.html)
+- [Settings for Bad Feedback Reporting Solution](/vcs_fd_settings.html)
+- [Settings for Consumable Monitoring Solution](/vcs_cmd_settings.html)
+- [Settings for Bin Monitoring Solution](/vcs_bin_settings.html)
