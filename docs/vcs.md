@@ -32,3 +32,6 @@ Some of our Solutions which generate Work Orders are:
 4. [Bad Feedback Reporting](/vcs_fd.html)
 5. [Consumable Monitoring](/vcs_cmd.html)
 6. [Bin Fill Level Sensing](/vcs_bin.html)
+
+## VCS Settings
+*Generation of Work Orders for all Solutions are subject to [Settings](/vcs_settings.html) available via the VCS Control Plane*
