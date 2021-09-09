@@ -1,8 +1,8 @@
 ---
 layout: default
-title: VCS Spill Detection Solution
-parent: VCS Solutions
-grand_parent: VCS
+title: Spill Detection Solution
+parent: SuperSense Solutions
+grand_parent: SuperSense
 nav_order: 4
 ---
 # Spill Detection Solution

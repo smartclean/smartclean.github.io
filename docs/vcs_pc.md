@@ -1,8 +1,8 @@
 ---
 layout: default
-title: VCS Usage Monitoring Solution
-parent: VCS Solutions
-grand_parent: VCS
+title:  Usage Monitoring Solution
+parent: SuperSense Solutions
+grand_parent: SuperSense
 nav_order: 3
 ---
 # Usage Monitoring Solution

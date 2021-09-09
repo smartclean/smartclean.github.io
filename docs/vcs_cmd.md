@@ -1,8 +1,8 @@
 ---
 layout: default
-title: VCS Consumable Monitoring Solution
-parent: VCS Solutions
-grand_parent: VCS
+title: Consumable Monitoring Solution
+parent: SuperSense Solutions
+grand_parent: SuperSense
 nav_order: 6
 ---
 # Consumable Monitoring Solution
