@@ -6,8 +6,8 @@ has_toc: true
 nav_order: 4
 ---
 
-# SuperSense
-Draft
+# SmartClean SuperSense
+Latest Stable Version: v1
 {: .label .label-green }
 
 ## What is SmartClean SuperSense
