@@ -28,7 +28,7 @@ Link to the Web Dashboard or Mobile Applications are available on the [SmartClea
 Some of our Solutions which generate Work Orders are:
 1. [Air Quality Monitoring](/vcs_aq.html)
 2. [Usage Monitoring](/vcs_pc.html)
-3. [Wetness Detection](/vcs_wd.html)
+3. [Spill Detection](/vcs_wd.html)
 4. [Bad Feedback Reporting]()
 5. [Consumable Monitoring]()
 6. [Bin Fill Level Sensing]()

@@ -21,7 +21,7 @@ To activate our Usage Monitoring Solution, the following steps are required.
 
 Some of our other solutions which generate Work Orders are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
-- [Wetness Detection]()
+- [Spill Detection]()
 - [Bad Feedback Reporting]()
 - [Consumable Monitoring]()
 - [Bin Fill Level Sensing]()
