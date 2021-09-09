@@ -32,7 +32,7 @@ As VCS detects desired events for this Solution in this Location, Work Orders wi
 Some of our solutions which generate Work Orders are:
 1. [Air Quality Monitoring](/vcs_aq.html)
 2. [Usage Monitoring](/vcs_pc.html)
-3. [Wetness Detection]()
+3. [Wetness Detection](/vcs_wd.html)
 4. [Bad Feedback Reporting]()
 5. [Consumable Monitoring]()
 6. [Bin Fill Level Sensing]()
