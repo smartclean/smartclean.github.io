@@ -13,8 +13,8 @@ nav_order: 6
 To configure this Solution, the following settings are available:
 
 Configure per Device (Internal Setting) 
-1. Maximum Level
-    - **Type:** Maximum Threshold
-    - **Description:** This threshold represents the maximum level for the bin being monitored. 
-    - **Criteria to create Work Order:** When the level of contents of bin being monitored reaches this threshold. 
-    - **Outcome of Work Order:** Work Order will be created about the Bin getting full will be created for the Bin / Area that the Device is assigned to.
+1. Area remaining 
+    - **Type:** Minimum Threshold
+    - **Description:** This threshold represents minimum area that is remaining in the Bin (i.e. how much empty it is.) 
+    - **Criteria to create Work Order:** When the area remaining value reported by the Bin Sensor reaches this minimum value.
+    - **Outcome of Work Order:** Work Order will be created about the Bin getting full.
