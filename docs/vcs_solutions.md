@@ -2,6 +2,7 @@
 layout: default
 title: VCS Solutions
 parent: VCS
+has_children: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
