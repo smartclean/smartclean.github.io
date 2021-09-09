@@ -29,4 +29,4 @@ important high level settings to very granular less important settings.
 - [Settings for Usage Monitoring Solution](/vcs_pc_settings.html)
 - [Settings for Bad Feedback Reporting Solution](/vcs_fd_settings.html)
 - [Settings for Consumable Monitoring Solution](/vcs_cmd_settings.html)
-- [Settings for Bin Monitoring Solution]()
+- [Settings for Bin Monitoring Solution](/vcs_bin_settings.html)
