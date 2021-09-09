@@ -25,7 +25,7 @@ Link to the Web Dashboard or Mobile Applications are available on the [SmartClea
 ## SmartClean Solutions
 *We provide various solutions for Facility Management, many of which use the VCS for generating Work Orders*
 
-Some of our solutions which generate Work Orders are:
+Some of our Solutions which generate Work Orders are:
 1. [Air Quality Monitoring]()
 2. [Usage Monitoring]()
 3. [Wetness Detection]()
