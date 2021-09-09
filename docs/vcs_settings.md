@@ -19,8 +19,11 @@ important high level settings to very granular less important settings.
 ### Settings affecting Work Order generation for all Solutions
 *Work Order generation settings will allow you to configure the criteria for generation of Work Orders for all Solutions.*
 
-- [Work Order cool down duration for a Location]()
-    *This setting controls the rate at which Work Orders are created for a Location.*
+- Work Order cool down duration for a Location:
+    
+  - *This setting controls the rate at which Work Orders are created for a Location.*
+    - When a Work Order is created for a Location, all work orders are blocked from being created for this duration after the last work order was created.
+    - The purpose of the setting is to prevent too many work orders from being repeatedly created for a location.
 
 ### Settings affecting Work Order generation for specific Solutions
 *Solution specific settings will allow you to configure the criteria for generation of Work Orders for that Solution.*
