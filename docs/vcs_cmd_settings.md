@@ -13,7 +13,7 @@ nav_order: 5
 To configure this Solution, the following settings are available:
 
 Configure per Device (Internal Setting) 
-1. Minimum Fill Level
+- Minimum Fill Level
     - **Type:** Minimum Threshold
     - **Description:** This threshold represents the minimum fill level for the consumable being monitored. 
     - **Criteria to create Work Order:** When the level of consumable being monitored reaches this minimum level. 
