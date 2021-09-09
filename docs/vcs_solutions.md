@@ -2,6 +2,7 @@
 layout: default
 title: SuperSense Solutions
 parent: SuperSense
+has_children: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
