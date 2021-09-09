@@ -28,5 +28,5 @@ important high level settings to very granular less important settings.
 - [Settings for Air Quality Monitoring Solution](/vcs_aq_settings.html)
 - [Settings for Usage Monitoring Solution](/vcs_pc_settings.html)
 - [Settings for Bad Feedback Reporting Solution](/vcs_fd_settings.html)
-- [Settings for Consumable Monitoring Solution]()
+- [Settings for Consumable Monitoring Solution](/vcs_cmd_settings.html)
 - [Settings for Bin Monitoring Solution]()
