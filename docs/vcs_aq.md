@@ -23,5 +23,5 @@ Some of our other solutions which generate Work Orders are:
 - [Usage Monitoring](/vcs_pc.html)
 - [Spill Detection](/vcs_wd.html)
 - [Bad Feedback Reporting](/vcs_fd.html)
-- [Consumable Monitoring]()
-- [Bin Fill Level Sensing]()
+- [Consumable Monitoring](/vcs_cmd.html)
+- [Bin Fill Level Sensing](/vcs_bin.html)
