@@ -1,8 +1,8 @@
 ---
 layout: default
-title: VCS Air Quality Monitoring Solution
-parent: VCS Solutions
-grand_parent: VCS
+title:  Air Quality Monitoring Solution
+parent: SuperSense Solutions
+grand_parent: SuperSense
 nav_order: 2
 ---
 # Indoor Air Quality Monitoring Solution

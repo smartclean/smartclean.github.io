@@ -1,8 +1,8 @@
 ---
 layout: default
-title: VCS Bad Feedback Reporting Solution
-parent: VCS Solutions
-grand_parent: VCS
+title: Bad Feedback Reporting Solution
+parent: SuperSense Solutions
+grand_parent: SuperSense
 nav_order: 5
 ---
 # Bad Feedback Reporting Solution

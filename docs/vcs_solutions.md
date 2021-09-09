@@ -1,7 +1,7 @@
 ---
 layout: default
-title: VCS Solutions
-parent: VCS
+title: SuperSense Solutions
+parent: SuperSense
 has_children: true
 grand_parent: SmartClean Matrix
 nav_order: 2
@@ -11,7 +11,7 @@ nav_order: 2
 ## What are Matrix Solutions
 *Matrix Solutions are Facility Management use cases that are supported by our Matrix platform*
 
-Most of our Solutions use SmartClean VCS to create Work Orders to capture and alert intended recipients about 
+Most of our Solutions use SmartClean SuperSense to create Work Orders to capture and alert intended recipients about 
 desired events.
 
 ## How do Matrix Solutions work
@@ -28,7 +28,7 @@ For a specific use case to be handled by our Matrix platform, the following step
 
 4. Done! Your Facility Management need has just been made smarter with our Solution.
 
-As VCS detects desired events for this Solution in this Location, Work Orders will be generated based on default settings.
+As SuperSense detects desired events for this Solution in this Location, Work Orders will be generated based on default settings.
 
 Some of our solutions which generate Work Orders are:
 1. [Air Quality Monitoring](/vcs_aq.html)

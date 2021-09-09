@@ -1,8 +1,8 @@
 ---
 layout: default
-title: VCS Bin Monitoring Solution
-parent: VCS Solutions
-grand_parent: VCS
+title: Bin Monitoring Solution
+parent: SuperSense Solutions
+grand_parent: SuperSense
 nav_order: 7
 ---
 # Bin Monitoring Solution
