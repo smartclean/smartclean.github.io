@@ -6,19 +6,19 @@ has_children: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
-# Solutions
+# SuperSense Solutions
 
-## What are Matrix Solutions
-*Matrix Solutions are Facility Management use cases that are supported by our Matrix platform*
+## What are SuperSense Solutions
+*These are solutions to problems in a facility, such as sensing and monitoring desired aspects in a location.*
 
-Most of our Solutions use SmartClean SuperSense to create Work Orders to capture and alert intended recipients about 
+Most of our Matrix Solutions use SmartClean SuperSense to create Alerts to intended recipients about 
 desired events.
 
-## How do Matrix Solutions work
-For a specific use case to be handled by our Matrix platform, the following steps are necessary
+## How do these work
+In order to make your facility management requirement smart with our platform, the following steps are necessary:
 
-1. Introduce data sources for various needs in your Facility.
-   - For Example: Introduce SmartClean Device for Monitoring Air Quality.
+1. Introduce data sources for the various needs in your Facility.
+   - For Example: Introduce a SmartClean Device for Monitoring Air Quality.
 
 2. Assign data source to a specific Location in the Facility.
    - For Example: A Washroom or Meeting Room at a certain level in your building.
@@ -28,9 +28,10 @@ For a specific use case to be handled by our Matrix platform, the following step
 
 4. Done! Your Facility Management need has just been made smarter with our Solution.
 
-As SuperSense detects desired events for this Solution in this Location, Work Orders will be generated based on default settings.
+As SuperSense detects desired events for this Solution in this Location, Alerts will be generated based on default settings.
+You may view these in your [SmartClean Matrix Application](/index.html)
 
-Some of our solutions which generate Work Orders are:
+Some of our solutions which generate Alerts are:
 1. [Air Quality Monitoring](/vcs_aq.html)
 2. [Usage Monitoring](/vcs_pc.html)
 3. [Spill Detection](/vcs_wd.html)
