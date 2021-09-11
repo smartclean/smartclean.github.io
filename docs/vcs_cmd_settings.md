@@ -16,5 +16,5 @@ Configure per Device (Internal Setting)
 - Minimum Fill Level
     - **Type:** Minimum Threshold
     - **Description:** This threshold represents the minimum fill level for the consumable being monitored. 
-    - **Criteria to create Work Order:** When the level of consumable being monitored reaches this minimum level. 
-    - **Outcome of Work Order:** Work Order will be created about the Consumable getting low will be created for the area that the Device is assigned to.
+    - **Criteria to create Alert:** When the level of consumable being monitored reaches this minimum level. 
+    - **Outcome of Alert:** Notify intended users about the Consumable (at a designated area) getting low.

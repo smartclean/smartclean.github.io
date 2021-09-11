@@ -16,7 +16,7 @@ Configure per Device
 - People Count Threshold
     - **Type:** Maximum Threshold
     - **Description:** This threshold represents the people count value that indicates high usage.  
-    - **Criteria to create Work Order:** When the People Counted by the Device reaches this threshold
-    - **Outcome of Work Order:** Work Order alerting about High Usage will be created for the location that the People Count Device is assigned to.
+    - **Criteria to create Alert:** When total count of people that have entered the location reaches this threshold
+    - **Outcome of Alert:** Notify intended users about high usage at the location being monitored.
 
 Go back to [Settings for SuperSense](/vcs_settings.html)
