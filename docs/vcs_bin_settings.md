@@ -12,9 +12,9 @@ nav_order: 6
 ## What settings are available?
 To configure this Solution, the following settings are available:
 
-Configure per Device (Internal Setting) 
-1. Area remaining 
+Configure per Device (Internal Setting)
+- Area remaining 
     - **Type:** Minimum Threshold
     - **Description:** This threshold represents minimum area that is remaining in the Bin (i.e. how much empty it is.) 
-    - **Criteria to create Work Order:** When the area remaining value reported by the Bin Sensor reaches this minimum value.
-    - **Outcome of Work Order:** Work Order will be created about the Bin getting full.
+    - **Criteria to create Alert:** When the area remaining value reported by the Bin Sensor reaches this minimum value.
+    - **Outcome of Alert:** Notify intended users about the Bin (in a designated area) getting full.

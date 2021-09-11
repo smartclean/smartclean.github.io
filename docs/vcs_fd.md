@@ -6,7 +6,7 @@ grand_parent: SuperSense
 nav_order: 5
 ---
 # Bad Feedback Reporting Solution
-*This solution generates a Work Order when anyone gives bad feedback using our Feedback Tablet installed in your Location.*
+*This solution generates an Alert when anyone gives bad feedback using our Feedback Tablet installed in your Location.*
 
 ## How does this Solution work
 To activate our Bad Feedback Reporting Solution, the following steps are required.
@@ -19,7 +19,7 @@ To activate our Bad Feedback Reporting Solution, the following steps are require
 
 3. Done! Your Locations can now raise an Alert when a user gives any bad feedback using the Feedback Tablet.
 
-Some of our other solutions which generate Work Orders are:
+Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
 - [Usage Monitoring](/vcs_pc.html)
 - [Spill Detection](/vcs_wd.html)

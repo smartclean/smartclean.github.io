@@ -6,7 +6,7 @@ grand_parent: SuperSense
 nav_order: 7
 ---
 # Bin Monitoring Solution
-*This solution generates a Work Order when the estimate level of contents inside the bin being monitored has reached a set level*
+*This solution generates an Alert when the estimate level of contents inside the bin being monitored has reached a set level*
 
 ## How does this Solution work
 To activate our Bin Monitoring Solution, the following steps are required.
@@ -19,7 +19,7 @@ To activate our Bin Monitoring Solution, the following steps are required.
 
 3. Done! Your Locations can now raise an Alert when the Bin being monitored has reached the configured level for that sensor.
 
-Some of our other solutions which generate Work Orders are:
+Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
 - [Usage Monitoring](/vcs_pc.html)
 - [Spill Detection](/vcs_wd.html)

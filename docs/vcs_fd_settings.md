@@ -13,8 +13,8 @@ nav_order: 4
 To configure this Solution, the following settings are available:
 
 Configure per Device (Internal Setting) 
-1. Bad feedback reason maximum limit
+- Bad feedback reason maximum limit
     - **Type:** Maximum Threshold
-    - **Description:** This threshold represents the maximum limit for number of times bad feedback reason is reported to consider it for bad feedback work order. 
-    - **Criteria to create Work Order:** When the number of times a bad feedback reason reported reaches this limit (one or more reasons), they get included in the bad feedback work order. 
-    - **Outcome of Work Order:** Work Order alerting about Bad Feedback will be created for the location that the Device is assigned to.
+    - **Description:** This threshold represents the maximum limit for number of times bad feedback reason is reported to consider it for bad feedback Alert. 
+    - **Criteria to create Alert:** When the number of times a bad feedback reason reported reaches this limit (one or more reasons), they get included in the bad feedback alert. 
+    - **Outcome of Alert:** Notify intended users about the bad feedback reported in a location.
