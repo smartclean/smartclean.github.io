@@ -6,7 +6,7 @@ grand_parent: SuperSense
 nav_order: 6
 ---
 # Consumable Monitoring Solution
-*This solution generates a Work Order when the fill level of the consumable being monitored has dropped below a set level*
+*This solution generates an Alert when the fill level of the consumable being monitored has dropped below a set level*
 
 Examples of consumables that can be monitored with this Solution:
 1. Toilet Roll (standard toilet roll enclosure that fits our criteria for sensor installation)
@@ -24,7 +24,7 @@ To activate our Consumable Monitoring Solution, the following steps are required
 
 3. Done! Your Locations can now raise an Alert when fill level of desired consumable has reached the configured minimum level for that sensor.
 
-Some of our other solutions which generate Work Orders are:
+Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
 - [Usage Monitoring](/vcs_pc.html)
 - [Spill Detection](/vcs_wd.html)

@@ -6,7 +6,7 @@ grand_parent: SuperSense
 nav_order: 3
 ---
 # Usage Monitoring Solution
-*This solution generates a Work Order when the number of people entered the enclosed location reaches a threshold*
+*This solution generates an Alert when the number of people entered the enclosed location reaches a threshold*
 
 ## How does this Solution work
 To activate our Usage Monitoring Solution, the following steps are required.
@@ -19,7 +19,7 @@ To activate our Usage Monitoring Solution, the following steps are required.
 
 3. Done! Your Locations can now count number of people entering it, and alert when it reaches the set threshold.
 
-Some of our other solutions which generate Work Orders are:
+Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
 - [Spill Detection](/vcs_wd.html)
 - [Bad Feedback Reporting](/vcs_fd.html)
