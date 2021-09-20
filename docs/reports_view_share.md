@@ -7,7 +7,7 @@ nav_order: 2
 ---
 # How to View or Share a Report
 
-![Matrix-View / Share Report](https://www.smartclean.io/matrix/images/reportsHome.png)
+![Matrix-View / Share Report](https://www.smartclean.io/matrix/images/viewAndShareWebReportFinal.png)
 
 Click on the View (looks like an eye image) button under Actions for a Report
 

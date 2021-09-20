@@ -7,7 +7,7 @@ nav_order: 2
 ---
 # What are Report Actions  
 
-![Matrix-Report(Actions)](https://www.smartclean.io/matrix/images/reportsHome.png)
+![Matrix-WebReport(Actions)](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
 
 Actions available on each report are shown as icon buttons in the same row as the report, under the Actions column.
 
