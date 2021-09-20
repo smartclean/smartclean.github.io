@@ -7,7 +7,7 @@ nav_order: 3
 ---
 # How to Edit a Report
 
-![Matrix-Edit Report](https://www.smartclean.io/matrix/images/reportsHome.png)
+[comment]: <> (![Matrix-Edit Report]&#40;https://www.smartclean.io/matrix/images/reportsHome.png&#41;)
 
 Click on the Edit (looks like box with a pencil) button under Actions for a Report
 

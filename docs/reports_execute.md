@@ -7,7 +7,7 @@ nav_order: 1
 ---
 # How to Execute a Report
 
-![Matrix-Execute Report](https://www.smartclean.io/matrix/images/reportsHome.png)
+[comment]: <> (![Matrix-Execute Report]&#40;https://www.smartclean.io/matrix/images/reportsHome.png&#41;)
 
 Click on the Execute (looks like a triangle pointing right inside a circle) button under Actions for a Report
 
