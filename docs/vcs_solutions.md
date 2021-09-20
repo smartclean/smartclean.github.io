@@ -28,8 +28,10 @@ In order to make your facility management requirement smart with our platform, t
 
 4. Done! Your Facility Management need has just been made smarter with our Solution.
 
-As SuperSense detects desired events for this Solution in this Location, Alerts will be generated based on default settings.
-You may view these in your [SmartClean Matrix Application](/index.html)
+As SuperSense detects desired events for this Solution in this Location, 
+Alerts will be generated based on default values of [SuperSense Settings](/vcs_settings.html)
+
+You may view these Alerts in your [SmartClean Matrix Application](/index.html)
 
 Some of our solutions which generate Alerts are:
 1. [Air Quality Monitoring](/vcs_aq.html)
