@@ -13,8 +13,22 @@ nav_order: 3
 Settings are organized based on the Component of the System they are applicable for, ranging from 
 important high level settings to very granular less important settings.
 
-## Important Settings SuperSense Alerts
+## Important Settings for SuperSense Alerts
 *Out of all available settings that affect Alerts created by SuperSense, there are few that are of interest*
+
+### Settings affecting Alert generation in a specific Location
+*These settings will allow you to control the criteria for generation of any Alerts in a Location*
+
+- Alert block duration for a Location:
+    
+  - *This setting controls the rate at which Alerts are created for a Location.*
+    - When an Alert is created for a Location, all other Alerts are blocked for this duration from the time the last Alert was created.
+    - The purpose of the setting is to control the rate at which all Alerts are created for a Location.
+    - By default, this is set to 15 minutes, and can be configured for every Location in your facility.
+    - A common use case of this setting is to increase this duration to reduce the frequency of Alerts created for a Location (thus reduces total number of alerts), or reduce this duration to increase the frequency of all alerts (thus increases total number of alerts)
+    - The impact of this setting is shown with the example scenario below:
+
+      ![Alert block duration for a Location](https://www.smartclean.io/matrix/images/AlertBlockDurationForLocation.png)
 
 ### Settings affecting Alert generation in all Locations in a Facility
 *These settings will allow you to control the criteria for generation of any Alerts across all SmartClean supported Locations in your Facility*
@@ -29,22 +43,7 @@ important high level settings to very granular less important settings.
       - A common use case of this setting is to increase the frequency (i.e. reduce the alert block duration) between two alerts of a same specific type (compared to the block duration that is for all alerts in each Location)
       - The impact of this setting is shown below (for a sample Location, with this setting being set for a specific Alert type in the Facility)
 
-[comment]: <> (    ![Alert block duration for type in Location]&#40;assets/AlertBlockDurationForType.png&#41;)
-
-### Settings affecting Alert generation in a Location
-*These settings will allow you to control the criteria for generation of any Alerts in a Location*
-
-- Alert block duration for a Location:
-    
-  - *This setting controls the rate at which Alerts are created for a Location.*
-    - When an Alert is created for a Location, all other Alerts are blocked for this duration from the time the last Alert was created.
-    - The purpose of the setting is to control the rate at which all Alerts are created for a Location.
-    - By default, this is set to 15 minutes, and can be configured for every Location in your facility.
-    - A common use case of this setting is to increase this duration to reduce the frequency of Alerts created for a Location (thus reduces total number of alerts), or reduce this duration to increase the frequency of all alerts (thus increases total number of alerts)
-    - The impact of this setting is shown with the example scenario below:
-
-[comment]: <> (      ![Alert block duration for Location]&#40;assets/AlertBlockDurationForLocation.png&#41;)
-
+    ![Alert block duration for type in Locations](https://www.smartclean.io/matrix/images/AlertBlockDurationForType.png)
 
 ### Settings affecting Alert generation for Solutions in a Location
 *These settings will allow you to control the criteria for generation of Alerts of a specific type in a specific Location*
