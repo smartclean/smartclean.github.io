@@ -19,4 +19,4 @@ Configure per Device
     - **Criteria to create Alert:** When total count of people that have entered the location reaches this threshold
     - **Outcome of Alert:** Notify intended users about high usage at the location being monitored.
 
-Go back to [Settings for SuperSense](/vcs_settings.html)
+Go back to [Settings for SuperSense Alerts](/vcs_settings.html)

@@ -18,3 +18,5 @@ Configure per Device (Internal Setting)
     - **Description:** This threshold represents the minimum fill level for the consumable being monitored. 
     - **Criteria to create Alert:** When the level of consumable being monitored reaches this minimum level. 
     - **Outcome of Alert:** Notify intended users about the Consumable (at a designated area) getting low.
+
+Go back to [Settings for SuperSense Alerts](/vcs_settings.html)

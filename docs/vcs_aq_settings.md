@@ -24,4 +24,4 @@ Configure per Device
     - **Criteria to create Alert:** When the number of air quality anomalies indicated by the Device in this duration has reached the limit (above Setting: Air quality anomalies limit).
     - **Outcome of Alert:** Notify intended users about Bad Air Quality in the location that the Device is assigned to.
 
-Go back to [Settings for SuperSense](/vcs_settings.html)
+Go back to [Settings for SuperSense Alerts](/vcs_settings.html)

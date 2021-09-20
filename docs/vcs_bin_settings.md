@@ -18,3 +18,5 @@ Configure per Device (Internal Setting)
     - **Description:** This threshold represents minimum area that is remaining in the Bin (i.e. how much empty it is.) 
     - **Criteria to create Alert:** When the area remaining value reported by the Bin Sensor reaches this minimum value.
     - **Outcome of Alert:** Notify intended users about the Bin (in a designated area) getting full.
+
+Go back to [Settings for SuperSense Alerts](/vcs_settings.html)
