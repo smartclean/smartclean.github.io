@@ -32,5 +32,5 @@ Some of our Solutions which generate Alerts are:
 5. [Consumable Monitoring](/vcs_cmd.html)
 6. [Bin Fill Level Sensing](/vcs_bin.html)
 
-## SuperSense Settings
-*Generation of Alerts for Solutions in a Location are subject to [Solution Settings](/vcs_settings.html) available in the SuperSense Control Centre*
+## Settings for SuperSense Alerts
+*Generation of Alerts for Solutions in a Location are subject to [Settings for SuperSense Alerts](/vcs_settings.html)*
