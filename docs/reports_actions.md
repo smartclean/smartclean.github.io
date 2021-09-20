@@ -2,6 +2,8 @@
 layout: default
 title: Report Actions
 parent: Reports
+has_children: true
+has_toc: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
