@@ -28,7 +28,8 @@ important high level settings to very granular less important settings.
       - The purpose of the setting is to independently control the duration between two consecutive Alerts of the same type in each Location.
       - A common use case of this setting is to increase the frequency (i.e. reduce the alert block duration) between two alerts of a same specific type (compared to the block duration that is for all alerts in each Location)
       - The impact of this setting is shown below (for a sample Location, with this setting being set for a specific Alert type in the Facility)
-    ![Alert block duration for type in Location](assets/AlertBlockDurationForType.png)
+
+[comment]: <> (    ![Alert block duration for type in Location]&#40;assets/AlertBlockDurationForType.png&#41;)
 
 ### Settings affecting Alert generation in a Location
 *These settings will allow you to control the criteria for generation of any Alerts in a Location*
@@ -41,7 +42,8 @@ important high level settings to very granular less important settings.
     - By default, this is set to 15 minutes, and can be configured for every Location in your facility.
     - A common use case of this setting is to increase this duration to reduce the frequency of Alerts created for a Location (thus reduces total number of alerts), or reduce this duration to increase the frequency of all alerts (thus increases total number of alerts)
     - The impact of this setting is shown with the example scenario below:
-      ![Alert block duration for Location](assets/AlertBlockDurationForLocation.png)
+
+[comment]: <> (      ![Alert block duration for Location]&#40;assets/AlertBlockDurationForLocation.png&#41;)
 
 
 ### Settings affecting Alert generation for Solutions in a Location
