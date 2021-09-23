@@ -3,7 +3,8 @@ layout: default
 title: View or Share Report
 parent: Report Actions
 grand_parent: Reports
-nav_order: 2
+has_toc: true
+nav_order: 1
 ---
 # How to View or Share a Report
 Click on the View button (looks like an eye image) under Actions for a Report

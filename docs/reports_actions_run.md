@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Execute Report
+title: Run Report
 parent: Report Actions
 grand_parent: Reports
-nav_order: 1
+nav_order: 3
 ---
-# How to Execute a Report
-Click on the Execute button (looks like a triangle pointing right inside a circle) under Actions for a Report
+# How to Run a Report
+Click on the Run button (looks like a triangle pointing right inside a circle) under Actions for a Report
 
 [comment]: <> (![Matrix-Execute Report]&#40;https://www.smartclean.io/matrix/images/reportsHome.png&#41;)
 
