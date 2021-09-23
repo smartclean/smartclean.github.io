@@ -18,4 +18,9 @@ Click on the View button (looks like an eye image) under Actions for a Report
   - Click on "View Report" button to view the generated report.
   - Click on "Share Report" button to share this report with others.
   
-- Based on the details entered in dialog, the report is generated for viewing or sharing.
+For example, click on View Report for a Web Report, and the below page opens
+![View Report](https://www.smartclean.io/matrix/images/viewWebReportExample.png)
+The password that was set for the Report must be entered to view the report.
+Click on Go, and the report will open.
+
+Please note, only share the report password with trusted people.
