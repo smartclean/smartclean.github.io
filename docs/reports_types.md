@@ -20,6 +20,6 @@ Our reporting service shows three types of reports:
 *The icon shown under the column: Report Type, corresponding to each report controller represents the
 type of report this controller represents*
 
-- For BI Reports the icon is a small box with ">_" inside it
-- For Web Reports, the icon is a small globe (representing the web)
-- For Document Reports, the icon is a small image of a document or file
+- For BI Reports the icon is a small box with ">_" inside it.
+- For Web Reports, the icon is a small globe (representing the web).
+- For Document Reports, the icon is a small image of a document or file.
