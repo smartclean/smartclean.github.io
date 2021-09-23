@@ -2,6 +2,8 @@
 layout: default
 title: SuperSense Settings
 parent: SuperSense
+has_children: true
+has_toc: false
 grand_parent: SmartClean Matrix
 nav_order: 3
 ---

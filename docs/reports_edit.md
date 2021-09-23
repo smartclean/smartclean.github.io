@@ -6,10 +6,9 @@ grand_parent: Reports
 nav_order: 3
 ---
 # How to Edit a Report
+Click on the Edit button (looks like an image of a box with a pencil) under Actions for a Report
 
 [comment]: <> (![Matrix-Edit Report]&#40;https://www.smartclean.io/matrix/images/reportsHome.png&#41;)
-
-Click on the Edit (looks like box with a pencil) button under Actions for a Report
 
 - A dialog box opens, with the current report details.
   - Press cancel or close after you are done viewing the details.

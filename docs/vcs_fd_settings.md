@@ -18,3 +18,5 @@ Configure per Device (Internal Setting)
     - **Description:** This threshold represents the maximum limit for number of times bad feedback reason is reported to consider it for bad feedback Alert. 
     - **Criteria to create Alert:** When the number of times a bad feedback reason reported reaches this limit (one or more reasons), they get included in the bad feedback alert. 
     - **Outcome of Alert:** Notify intended users about the bad feedback reported in a location.
+
+Go back to [Settings for SuperSense Alerts](/vcs_settings.html)

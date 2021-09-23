@@ -3,6 +3,7 @@ layout: default
 title: SuperSense Solutions
 parent: SuperSense
 has_children: true
+has_toc: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
@@ -28,13 +29,7 @@ In order to make your facility management requirement smart with our platform, t
 
 4. Done! Your Facility Management need has just been made smarter with our Solution.
 
-As SuperSense detects desired events for this Solution in this Location, Alerts will be generated based on default settings.
-You may view these in your [SmartClean Matrix Application](/index.html)
+As SuperSense detects desired events for this Solution in this Location, 
+Alerts will be generated based on default values of [SuperSense Settings](/vcs_settings.html)
 
-Some of our solutions which generate Alerts are:
-1. [Air Quality Monitoring](/vcs_aq.html)
-2. [Usage Monitoring](/vcs_pc.html)
-3. [Spill Detection](/vcs_wd.html)
-4. [Bad Feedback Reporting](/vcs_fd.html)
-5. [Consumable Monitoring](/vcs_cmd.html)
-6. [Bin Fill Level Sensing](/vcs_bin.html)
+You may view these Alerts in your [SmartClean Matrix Application](/index.html)

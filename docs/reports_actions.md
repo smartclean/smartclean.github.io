@@ -7,13 +7,13 @@ has_toc: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
-# What are Report Actions  
-
-![Matrix-WebReport(Actions)](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
+# What are Report Actions
 
 Actions available on each report are shown as icon buttons in the same row as the report, under the Actions column.
 
-Common Report actions are as follows:
+![Matrix-WebReport(Actions)](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
+
+Standard Report actions are as follows:
 1. **Execute Report:** 
    - Run the report to populate it with latest or custom data.
    - The button looks a triangle pointing right inside a circle (or a Play button)
