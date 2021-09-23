@@ -3,7 +3,8 @@ layout: default
 title: Edit Report
 parent: Report Actions
 grand_parent: Reports
-nav_order: 3
+has_toc: true
+nav_order: 2
 ---
 # How to Edit a Report
 Click on the Edit button (looks like an image of a box with a pencil) under Actions for a Report
