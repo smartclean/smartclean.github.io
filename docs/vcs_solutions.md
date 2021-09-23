@@ -3,6 +3,7 @@ layout: default
 title: SuperSense Solutions
 parent: SuperSense
 has_children: true
+has_toc: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
@@ -32,11 +33,3 @@ As SuperSense detects desired events for this Solution in this Location,
 Alerts will be generated based on default values of [SuperSense Settings](/vcs_settings.html)
 
 You may view these Alerts in your [SmartClean Matrix Application](/index.html)
-
-Some of our solutions which generate Alerts are:
-1. [Air Quality Monitoring](/vcs_aq.html)
-2. [Usage Monitoring](/vcs_pc.html)
-3. [Spill Detection](/vcs_wd.html)
-4. [Bad Feedback Reporting](/vcs_fd.html)
-5. [Consumable Monitoring](/vcs_cmd.html)
-6. [Bin Fill Level Sensing](/vcs_bin.html)
