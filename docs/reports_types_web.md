@@ -9,18 +9,13 @@ nav_order: 1
 ---
 
 # What are SmartClean Web Reports
+*These reports are snapshots of data and analytics at a certain time.*
 
-Actions available on each report are shown as icon buttons in the same row as the report, under the Actions column.
+Such reports can be shared with users not having Matrix logins (i.e anybody), but require a password to open it.
+To open a shared Web Report, you need the password that was set for the report.
 
-![Matrix-WebReport(Actions)](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
-
-Standard Report actions are as follows:
-1. **Execute Report:** 
-   - Run the report to populate it with latest or custom data.
-   - The button looks a triangle pointing right inside a circle (or a Play button)
-2. **View or Share Report:**
-   - View the generated report or share it with other people (in specific formats available)
-   - The button looks like the image of an eye
-3. **View or Edit Report Details:**
-   - View and Edit details for the Report.
-   - The button looks like a share icon (box with arrow pointing outwards)
+Web Reports support all the standard actions:
+An example is available on each Report Action page below
+- [Report Action - Run](/reports_actions_run.html)
+- [Report Action - View or Share](/reports_actions_view_share.html)
+- [Report Action - Edit](/reports_actions_edit.html)

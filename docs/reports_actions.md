@@ -9,22 +9,26 @@ nav_order: 2
 ---
 
 # What are Report Actions
+*Operations that are available on each report controller to view, edit, share or run report.*
 
-Actions available on each report are shown as icon buttons in the same row as the report, under the Actions column.
-
----
-
-![Matrix-WebReport(Actions)](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
+These are shown as icon buttons under the Actions column, corresponding to each report controller.
 
 ---
 
-The following actions are available on all three types of reports:
+![Report Actions](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
+
+---
+
+The following are actions, some or all of which may be available for reports.
 1. **Run Report:** 
    - Run the report to populate it with latest or custom data.
-   - The button looks a triangle pointing right inside a circle (or a Play button)
+   - The button looks a triangle pointing right inside a circle (or a Play button).
 2. **View or Share Report:**
-   - View the generated report or share it with other people (in specific formats available)
-   - The button looks like the image of an eye
+   - View the generated report or share it with other people (in specific formats available).
+   - The button looks like the image of an eye.
 3. **View or Edit Report Details:**
    - View and Edit details for the Report.
-   - The button looks like a share icon (box with arrow pointing outwards)
+   - The button looks like a share icon (box with arrow pointing outwards).
+4. **Open in BI Context:**
+   - This action is only available for BI Reports.
+   - Opens the report in BI Context (Matrix BI visualization page).
