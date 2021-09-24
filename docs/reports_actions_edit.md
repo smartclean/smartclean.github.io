@@ -7,9 +7,10 @@ has_toc: true
 nav_order: 2
 ---
 # How to Edit a Report Controller
-Click on the Edit button (looks like an image of a box with a pencil) under Actions for a report controller
+Click on the Edit button  under Actions for a report controller
+
+An example is shown below, the Edit button looks like an image of a box with a pencil.
 ![Report Actions](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
-It is the middle button at the rightmost column of the above image.
 
 - A dialog box opens (shown below), with the current report details.
 ![Matrix-Edit Report](https://www.smartclean.io/matrix/images/editReportingServiceView.png)
