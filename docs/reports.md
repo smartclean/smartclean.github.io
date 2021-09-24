@@ -8,10 +8,10 @@ nav_order: 4
 
 # Reports
 Latest Stable Version:
-v8
+v12
 {: .label .label-green }
 
-# SmartClean Reporting Service
+## SmartClean Reporting Service
 *Our Reporting Service allows users to configure, display and share SmartClean Reports using standard controls*
 
 Our **Reports** are a collection of various standard Key Performance Indicators (KPIs) of a desired aspect,
@@ -20,32 +20,36 @@ rendered as appropriate charts or tables for efficient visualization of the aspe
 To access this service in your [SmartClean Matrix Web Portal](https://www.smartclean.io/matrix/sso),
 click on the Reports icon that looks like a gear on blue navigation panel towards the left.
 
-If there are any report controllers available for your Building or Property, they will show up on this page.
-
----
-
 ![Reports in SmartClean Matrix Web Portal](https://www.smartclean.io/matrix/images/reportsHome.png)
 
----
+The above example shows the main page for this service.
+
+If there are any report controllers available for your Building or Property, they will show up on this page.
 
 Various services in SmartClean Matrix can be configured so that report controllers become available for locations where
-the service is active. The above screenshot shows a report controller for [SmartClean Audits Service](/audits.html) active in a Location of a Facility.
+the service is active. The above screenshot shows a report controller for [SmartClean Audits Service](/audits.html) 
+active in a Location of a Facility.
 
+---
+### Types of Reports
 Depending on the service which provides the data, and the intended recipients, this service can create controllers
 for reports of various types.
 See more at: [Report Types](/reportTypes.html).
----
 
-### Properties of Report controller
+---
+### Properties of Reports
+*Each report controller has the following properties*
 ![See the column headers for the report controllers](https://www.smartclean.io/matrix/images/reportColumnMeanings.png)
-- *Title:* A text used to identify the report
+
+The above example from the Reports page shows these in the first (header) row.
+- **Title:** A text used to identify the report
   - Usually includes name and version of the service for which this will create reports.
-- *Report Type:* Icon representing the type of Report that will be created.
-- *Schedule:* Represents the time range of data used for creating the report   
-- *Created On:* Date when the report controller was first created.
-- *Last Executed:* Date when the report controller was last run.
-- *Status:* Status of the report controller. Normal means everything is fine.
-- *Actions:* Icons representing actions available for the report type.
+- **Report Type:** Icon representing the type of Report that will be created.
+- **Schedule:** Represents the time range of data used for creating the report   
+- **Created On:** Date when the report controller was first created.
+- **Last Executed:** Date when the report controller was last run.
+- **Status:** Status of the report controller. Normal means everything is fine.
+- **Actions:** Icons representing actions available for the report type.
 
 ---
 
@@ -57,3 +61,8 @@ In general, each report controller allows you to perform the following actions:
 See more at: [Report Actions](/reports_actions.html)
 
 ---
+
+## Frequently Asked Questions (FAQs)
+If you have any questions about this service after reading this page, please visit the FAQs for this service at:
+[FAQs for Reporting Service](/reports_faqs.html)
+

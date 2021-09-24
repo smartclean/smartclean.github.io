@@ -8,7 +8,7 @@ nav_order: 4
 
 # Audits
 Latest Stable Version:
-v23
+v24
 {: .label .label-green }
 
 ## What is SmartClean Audits
