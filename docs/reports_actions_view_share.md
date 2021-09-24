@@ -7,7 +7,10 @@ has_toc: true
 nav_order: 1
 ---
 # How to View or Share a Report
-Click on the View button (looks like an eye image) under Actions for a Report
+Click on the View button under Actions for a Report.
+
+An example is shown below, the View button looks like an eye icon.
+![Report Actions](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
 
 ![Matrix-View / Share Report](https://www.smartclean.io/matrix/images/viewAndShareWebReportFinal.png)
 
