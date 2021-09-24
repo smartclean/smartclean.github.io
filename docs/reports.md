@@ -8,7 +8,7 @@ nav_order: 4
 
 # Reports
 Latest Stable Version:
-v8
+v12
 {: .label .label-green }
 
 ## SmartClean Reporting Service
