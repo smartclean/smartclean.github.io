@@ -11,7 +11,7 @@ Latest Stable Version:
 v8
 {: .label .label-green }
 
-# SmartClean Reporting Service
+## SmartClean Reporting Service
 *Our Reporting Service allows users to configure, display and share SmartClean Reports using standard controls*
 
 Our **Reports** are a collection of various standard Key Performance Indicators (KPIs) of a desired aspect,
@@ -20,23 +20,26 @@ rendered as appropriate charts or tables for efficient visualization of the aspe
 To access this service in your [SmartClean Matrix Web Portal](https://www.smartclean.io/matrix/sso),
 click on the Reports icon that looks like a gear on blue navigation panel towards the left.
 
-If there are any report controllers available for your Building or Property, they will show up on this page.
-
 ---
 
 ![Reports in SmartClean Matrix Web Portal](https://www.smartclean.io/matrix/images/reportsHome.png)
 
 ---
 
-Various services in SmartClean Matrix can be configured so that report controllers become available for locations where
-the service is active. The above screenshot shows a report controller for [SmartClean Audits Service](/audits.html) active in a Location of a Facility.
+If there are any report controllers available for your Building or Property, they will show up on this page.
 
+Various services in SmartClean Matrix can be configured so that report controllers become available for locations where
+the service is active. The above screenshot shows a report controller for [SmartClean Audits Service](/audits.html) 
+active in a Location of a Facility.
+
+### Report Types:
 Depending on the service which provides the data, and the intended recipients, this service can create controllers
 for reports of various types.
 See more at: [Report Types](/reportTypes.html).
+
 ---
 
-### Properties of Report controller
+### Properties of a Report controller
 ![See the column headers for the report controllers](https://www.smartclean.io/matrix/images/reportColumnMeanings.png)
 - *Title:* A text used to identify the report
   - Usually includes name and version of the service for which this will create reports.
@@ -57,3 +60,6 @@ In general, each report controller allows you to perform the following actions:
 See more at: [Report Actions](/reports_actions.html)
 
 ---
+
+## Frequently Asked Questions (FAQs)
+Please visit the FAQs for this service [FAQs for Reporting Service](/reports_faqs.html)
