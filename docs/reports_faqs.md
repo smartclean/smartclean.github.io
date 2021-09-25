@@ -10,11 +10,10 @@ nav_order: 3
 
 [comment]: <> (TODO: Please take care of the TODOs on this page)
 
-
 ## Frequently Asked Questions
-*Operations that are available on each report controller to view, edit, share or run report.*
 
-### How can I access the previously generated reports?
+---
+### Q1. How can I access the previously generated reports?
 Please click on the **View Report** button (eye icon) under Actions for your desired report controller
 ![Report Actions](https://www.smartclean.io/matrix/images/reportingServiceActions.png)
 Check or update the details on the dialog box that opens and click Submit.
@@ -29,6 +28,7 @@ Note: Please select the Time Range to access the reports within the desired time
 [comment]: <> (![Past Reports]&#40;https://www.smartclean.io/matrix/images/<PUT THE IMAGE NAME HERE>&#41;)
 
 ---
+
 ## Report a Question to us
 *If you have any question about this service that is not covered here,
 Please report it to us, and we will address it at the earliest.*
