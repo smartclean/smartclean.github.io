@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sensors Raw Data Format (Data Push or Data Lake Access)
-has_children: false
+has_children: true
 has_toc: true
 nav_order: 7
 ---
@@ -28,3 +28,9 @@ The generic data format is:
 	"minute": "<Minute>"
 }
 ```
+# Type or Slot Type
+The type of a slot determines multiple things and is therefore standardized. The generic format is **<Approved Device Provider>#<Predefined slot type>**. For example, usage monitoring sensors from provider *SMARTCLEAN* have **Type** as **SMARTCLEAN#UM**.
+	
+The type of slot can be helpful in:
+* Define and register standard query templates in the system for ease of access.
+* Define and compute standard metrics from raw data in downstream processing engines. For example, usage monitors and people counters emit a standard metric in system pertaning to *sg.smartclean.pplctr.raw.count* depicting the usage trend of a zone over time.
