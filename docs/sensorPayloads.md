@@ -76,3 +76,14 @@ select insid as Zone, avg(cast(v->>'rating' as integer)) AverageRating from <db.
 where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#FD'
 and time >= <Start Time> and time <= <End Time> group by insid;
 ```
+### SMARTCLEAN#TR, SMARTCLEAN#PT, SMARTCLEAN#BIN, SMARTCLEAN#SS
+The above types refer to: Tissue Roll, Paper Towel, Bin, Soap Solution types respectively.
+Format of *v* payload:
+```json
+{
+	"d": <Integer>,
+	"p": <Percentage from 0 to 100> // in case of BIN - empty space remaining, others - consumable used
+}
+```
+Where *p* represents the percentage empty space for type **BIN** and percentage dispenser/consumable used in case of others.
+Application developers may use the value of *p* going below a certain minimum threshold to use that as an indication for generating a workorder requirement.
