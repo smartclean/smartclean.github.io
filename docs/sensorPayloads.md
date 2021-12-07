@@ -29,7 +29,7 @@ The generic data format is:
 }
 ```
 # Type or Slot Type
-The type of a slot determines multiple things and is therefore standardized. The generic format is **<Approved Device Provider>#<Predefined slot type>**. For example, usage monitoring sensors from provider *SMARTCLEAN* have **Type** as **SMARTCLEAN#UM**.
+The type of a slot determines multiple things and is therefore standardized. The generic format is **Approved Device Provider#Predefined slot type**. For example, usage monitoring sensors from provider *SMARTCLEAN* have **Type** as **SMARTCLEAN#UM**.
 	
 The type of slot can be helpful in:
 * Define and register standard query templates in the system for ease of access.
@@ -50,5 +50,5 @@ Format of *v* payload:
 Where key *count* depicts the in counted events in case of **SMARTCLEAN#PPLCTR** and sensor activations in case of **SMARTCLEAN#UM**.
 An example query that returns the total people count for a time range across all the zones in a building is as follows:
 ```
-select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table> where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR'  and time >= <Start Time> and time <= <End Time> group by insid;
+select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table> \\where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR'\\ and time >= <Start Time> and time <= <End Time> group by insid;
 ```
