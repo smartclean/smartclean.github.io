@@ -49,6 +49,6 @@ Format of *v* payload:
 ```
 Where key *count* depicts the in counted events in case of **SMARTCLEAN#PPLCTR** and sensor activations in case of **SMARTCLEAN#UM**.
 An example query that returns the total people count for a time range across all the zones in a building is as follows:
-```
-select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table> \\where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR'\\ and time >= <Start Time> and time <= <End Time> group by insid;
+>```
+select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table> where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR' and time >= <Start Time> and time <= <End Time> group by insid;
 ```
