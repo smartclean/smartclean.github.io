@@ -49,6 +49,30 @@ Format of *v* payload:
 ```
 Where key *count* depicts the in counted events in case of **SMARTCLEAN#PPLCTR** and sensor activations in case of **SMARTCLEAN#UM**.
 An example query that returns the total people count for a time range across all the zones in a building is as follows:
->```
-select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table> where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR' and time >= <Start Time> and time <= <End Time> group by insid;
+```
+select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table>
+where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR'
+and time >= <Start Time> and time <= <End Time> group by insid;
+```
+
+### SMARTCLEAN#FD
+Format of *v* payload:
+```json
+{
+	"rating": <Integer: Min:1, Max:5>,
+	"reasons": { // optionally present
+		<reason id>: {
+			"Name": "<Reason Name/Description>",
+			"selector": 1 // constant for aggregation purposes
+		}, ...
+	}
+}
+```
+Where key *rating* depicts the user provided rating. This results in a standard metric emission of *sg.smartclean.fd.raw.rating*.
+Usually, the ratings are ordered in lesser the better ordering.
+An example query that returns the average user rating for a time range across all the zones in a building is as follows:
+```
+select insid as Zone, avg(cast(v->>'rating' as integer)) AverageRating from <db.table>
+where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#FD'
+and time >= <Start Time> and time <= <End Time> group by insid;
 ```
