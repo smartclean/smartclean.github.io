@@ -87,3 +87,29 @@ Format of *v* payload:
 ```
 Where *p* represents the percentage empty space for type **BIN** and percentage dispenser/consumable used in case of others.
 Application developers may use the value of *p* going below a certain minimum threshold to use that as an indication for generating a workorder requirement.
+
+### SMARTCLEAN#WD
+This refers to Device used for the Spill or Wetness Detection Solution.
+Format of *v* payload:
+```json
+{
+	"value": <Integer>  // value of 1 represents spill detected.
+    "AreaP": <number>  // value represents Percentage of Area that is wet  
+}
+```
+If "value" is 1, Spill Detected is True. If "AreaP" is also provided, then this value must exceed
+the minimum area threshold set for the Project or Location for the Spill Detected event to be considered.
+
+### SMARTCLEAN#AQ
+This refers to the Devices used for the Air Quality Monitoring Solution.
+For this Solution, two kind of Devices are supported.
+Format of *v* payload:
+```json
+{
+	"amm": <number>  // value of the ammonia gas component (in ppb)
+    "aqi": <number>  // value of overall AQI value (in ppb)  
+}
+```
+
+"amm" and "aqi" values describe the air quality, and if threshold for either or both attributes
+(set for the Project or Location) is reached, the bad air quality alert is triggered.
