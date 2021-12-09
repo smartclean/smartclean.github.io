@@ -11,21 +11,21 @@ The generic data format is:
 
 ```json
 {
-	"t": <string>,  // Timestamp in string format: yyyymmddhhmmss, yyyy=year, mm=month, dd=day
-	"v": <custom type>  // Realtime Data from Sensor depending on the type of the Sensor
-	"unixT": <number>  // Unix time in milliseconds
-	"DEVID": <string>,  // The Device Slot ID
-	"Region": <string>,  // Timezone string in JODA format (See reference at bottom of page)
-	"time": <string>,  // Timestamp in string format: YYYY-MM-DDTHH:mm:ss+offset
-	"DevType": <string>,  // Type of the Device Slot (Example: PC for People Counter, FD for Feedback etc).
-	"PID": <string>,  // ID of the Project.
-	"InsID": <string>,  // ID of the Location / Zone where the Device Slot is located.
-	"Display": <string>,  // Name of the Device Slot (for identification)
-	"dow": <string>,  // Day of Week - 0: Sun to 5: Sat
-	"month": <string>,  // Month of the year (1 - 12)
-	"hour": <string>,  // Hour of day (0 - 23)
-	"dom": <string>  // Day of month (0 - 31)
-	"minute": <string>  // Minute of the Hour (0 - 59)
+  "t": <string>,  // Timestamp in string format: yyyymmddhhmmss, yyyy=year, mm=month, dd=day
+  "v": <custom type>  // Realtime Data from Sensor depending on the type of the Sensor
+  "unixT": <number>  // Unix time in milliseconds
+  "DEVID": <string>,  // The Device Slot ID
+  "Region": <string>,  // Timezone string in JODA format (See reference at bottom of page)
+  "time": <string>,  // Timestamp in string format: YYYY-MM-DDTHH:mm:ss+offset
+  "DevType": <string>,  // Type of the Device Slot (Example: PC for People Counter, FD for Feedback etc).
+  "PID": <string>,  // ID of the Project.
+  "InsID": <string>,  // ID of the Location / Zone where the Device Slot is located.
+  "Display": <string>,  // Name of the Device Slot (for identification)
+  "dow": <string>,  // Day of Week - 0: Sun to 5: Sat
+  "month": <string>,  // Month of the year (1 - 12)
+  "hour": <string>,  // Hour of day (0 - 23)
+  "dom": <string>  // Day of month (0 - 31)
+  "minute": <string>  // Minute of the Hour (0 - 59)
 }
 ```
 
@@ -55,8 +55,8 @@ Device Slot Types applicable: SMARTCLEAN#PPLCTR and SMARTCLEAN#UM
 Format of *v* in the general data format:
 ```json
 {
-	"count": <number>,  //  Number of people counted in the field of view at a time.
-	"out_count": <number>  // See below, present for **SMARTCLEAN#PPLCTR** type only
+  "count": <number>,  //  Number of people counted in the field of view at a time.
+  "out_count": <number>  // See below, present for **SMARTCLEAN#PPLCTR** type only
 }
 ```
 Note: 
@@ -67,7 +67,7 @@ and number of people leaving the field of view in "out_count"
 **SMARTCLEAN#UM** is triggered by motion, therefore it provides the number of times
 people entering the sensor's field of view in "count".
 
-An example query that returns the total people count for a time range across all tshe zones in a building is as follows:
+An example query that returns the total people count for a time range across all the zones in a building is as follows:
 ```
 select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table>
 where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR'
@@ -82,13 +82,13 @@ Device Slot Types applicable: SMARTCLEAN#FD
 Format of *v* in the general data format:
 ```json
 {
-	"rating": <number>,  // From 1 - 5
-	"reasons": { // optionally present
-		<reason id>: {
-			"Name": <string>,  // Reason Name/Description
-			"selector": <number>  // A constant for aggregation purposes
-		}, ...
-	}
+  "rating": <number>,  // From 1 - 5
+  "reasons": { // optionally present
+    <reason id>: {
+      "Name": <string>,  // Reason Name/Description
+      "selector": <number>  // A constant for aggregation purposes
+    }, ...
+  }
 }
 ```
 Where key *rating* depicts the rating provided by the user. This results in a 
@@ -113,13 +113,16 @@ The above types refer to: Tissue Roll, Paper Towel, Bin, Soap Solution types res
 Format of *v* in the general data format:
 ```json
 {
-	"d": <number>,
-	"p": <number> // Percentage from 0 to 100
+  "p": <number> // Percentage from 0 to 100
 }
 ```
+Based on whether the Device Slot type is BIN or other Consumable,
+the value of *p* represents a slightly different aspect.
 
-Where *p* represents the percentage empty space (remaining) inside a Bin for Slot Type **BIN** 
-and percentage consumable remaining for the other slot types that measure fill level.
+- For Slot Type **BIN**, 
+  - *p* represents the empty space (remaining) inside the enclosing Bin container
+- For the other Slot Types (TR, PT and SS),
+  - *p* represents the level of consumable remaining in the container.
 
 If the "p" value reaches or goes below a minimum threshold, a corresponding alert event is raised.
 Note: The minimum "p" (level) threshold is set for each Slot type belonging to this category.
@@ -132,10 +135,11 @@ Device slot type applicable: SMARTCLEAN#WD
 Format of *v* in the general data format:
 ```json
 {
-	"value": <number>  // value of 1 represents spill detected.
-    "AreaP": <number>  // value represents Percentage of Area that is wet  
+  "value": <number>  // value of 1 represents spill detected.
+  "AreaP": <number>  // value represents Percentage of Area that is wet  
 }
 ```
+
 If "value" is 1, then the Spill Detected event is raised.
 Additionally, If "AreaP" is provided then this value must exceed
 the minimum area threshold for the Spill Detected event to be considered,
@@ -151,8 +155,8 @@ Device Slot types applicable: SMARTCLEAN#ODRDTR_BATT_V1
 Format of *v* in the general data format:
 ```json
 {
-	"amm": <number>  // value of the ammonia gas component (in parts per billion)
-    "aqi": <number>  // value of the standard Air Quality Index (number between 1 - 500)
+  "amm": <number>  // value of the ammonia gas component (in parts per billion)
+  "aqi": <number>  // value of the standard Air Quality Index (number between 1 - 500)
 }
 ```
 
