@@ -67,7 +67,7 @@ and number of people leaving the field of view in "out_count"
 **SMARTCLEAN#UM** is triggered by motion, therefore it provides the number of times
 people entering the sensor's field of view in "count".
 
-An example query that returns the total people count for a time range across all tshe zones in a building is as follows:
+An example query that returns the total people count for a time range across all the zones in a building is as follows:
 ```
 select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table>
 where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR'
