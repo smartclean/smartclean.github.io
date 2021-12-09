@@ -113,13 +113,16 @@ The above types refer to: Tissue Roll, Paper Towel, Bin, Soap Solution types res
 Format of *v* in the general data format:
 ```json
 {
-  "d": <number>,
   "p": <number> // Percentage from 0 to 100
 }
 ```
+Based on whether the Device Slot type is BIN or other Consumable,
+the value of *p* represents a slightly different aspect.
 
-Where *p* represents the percentage empty space (remaining) inside a Bin for Slot Type **BIN** 
-and percentage consumable remaining for the other slot types that measure fill level.
+- For Slot Type **BIN**, 
+  - *p* represents the empty space (remaining) inside the enclosing Bin container
+- For the other Slot Types (TR, PT and SS),
+  - *p* represents the level of consumable remaining in the container.
 
 If the "p" value reaches or goes below a minimum threshold, a corresponding alert event is raised.
 Note: The minimum "p" (level) threshold is set for each Slot type belonging to this category.
