@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sensors Raw Data Format (Examples)
+title: Sensor data examples
 parent: Sensors Raw Data Format (Data Push or Data Lake Access)
 has_children: false
 has_toc: false
