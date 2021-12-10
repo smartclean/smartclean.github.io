@@ -7,11 +7,11 @@ nav_order: 7
 ---
 # General Data Format
 The raw data from sensors is accessible when third party push is enabled in RealSense for a property or through a dedicated provisioned data lake.
-The generic data format is:
 
+The generic data format is:
 ```json
 {
-  "t": <string>,  // Timestamp in string format: yyyymmddhhmmss, yyyy=year, mm=month, dd=day
+  "t": <string>,  // Timestamp in the local timezone region of the device (string format: yyyymmddhhmmss)
   "v": <custom type>  // Realtime Data from Sensor depending on the type of the Sensor
   "unixT": <number>  // Unix time in milliseconds
   "DEVID": <string>,  // Slot ID for the Device
@@ -21,13 +21,17 @@ The generic data format is:
   "PID": <string>,  // ID of the Project.
   "InsID": <string>,  // ID of the Location / Zone where the Device Slot is located.
   "Display": <string>,  // Name of the Device Slot (for identification)
-  "dow": <string>,  // Day of Week - 0: Sun to 5: Sat
+  "dow": <string>,  // Day of Week - 0: Sun to 6: Sat
   "month": <string>,  // Month of the year (1 - 12)
   "hour": <string>,  // Hour of day (0 - 23)
   "dom": <string>  // Day of month (0 - 31)
   "minute": <string>  // Minute of the Hour (0 - 59)
 }
 ```
+Note:
+for value of *t*, the timestamp string format represents the following:
+yyyy is year, mm is month, dd is day, hh is hour, mm is minutes
+to get the region timezone for the device see the attribute *Region*
 
 ## Type of Device Slot (DevType)
 The type of a device slot follows a certain format. 
