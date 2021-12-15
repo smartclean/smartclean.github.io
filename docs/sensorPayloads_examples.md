@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sensors Raw Data Format (Examples)
+title: Sensor data examples
 parent: Sensors Raw Data Format (Data Push or Data Lake Access)
 has_children: false
 has_toc: false
@@ -9,7 +9,7 @@ nav_order: 2
 ---
 ## Raw data format examples for each device type.
 
-### Usage Monitoring Device
+### Usage monitoring device
 - SMARTCLEAN#PPLCTR
 
 ```json
@@ -35,7 +35,7 @@ nav_order: 2
 }
 ```
 
-### Feedback Device
+### Feedback reporting device
 - SMARTCLEAN#FD
 
 ```json
@@ -146,7 +146,7 @@ nav_order: 2
 }
 ```
 
-### Air Quality Monitoring Device
+### Air quality monitoring device
 - SMARTCLEAN#ODRDTR_BATT_V1
 
 ```json
