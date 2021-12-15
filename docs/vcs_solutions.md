@@ -1,19 +1,19 @@
 ---
 layout: default
-title: SuperSense Solutions
-parent: SuperSense
+title: Solutions
+parent: Optimus
 has_children: true
 has_toc: true
 grand_parent: SmartClean Matrix
 nav_order: 2
 ---
-# SuperSense Solutions
+# Solutions
 
-## What are SuperSense Solutions
+## What are Solutions
 *These are solutions to problems in a facility, such as sensing and monitoring desired aspects in a location.*
 
-Most of our Matrix Solutions use SmartClean SuperSense to create Alerts to intended recipients about 
-desired events.
+Most of our Solutions use SmartClean Optimus to create incidents and notify intended recipients about 
+such desired events.
 
 ## How do these work
 In order to make your facility management requirement smart with our platform, the following steps are necessary:
@@ -29,7 +29,7 @@ In order to make your facility management requirement smart with our platform, t
 
 4. Done! Your Facility Management need has just been made smarter with our Solution.
 
-As SuperSense detects desired events for this Solution in this Location, 
-Alerts will be generated based on default values of [SuperSense Settings](/vcs_settings.html)
+As Optimus detects desired events for this Solution in this Location, 
+Alerts will be generated based on default values of [Alert Settings](/vcs_settings.html)
 
 You may view these Alerts in your [SmartClean Matrix Application](/index.html)

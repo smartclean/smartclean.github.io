@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  Air Quality Monitoring Solution (Settings)
-parent: SuperSense Settings
-grand_parent: SuperSense
+parent: Alert Settings
+grand_parent: Optimus
 nav_order: 2
 ---
 
@@ -24,4 +24,4 @@ Configure per Device
     - **Criteria to create Alert:** When the number of air quality anomalies indicated by the Device in this duration has reached the limit (above Setting: Air quality anomalies limit).
     - **Outcome of Alert:** Notify intended users about Bad Air Quality in the location that the Device is assigned to.
 
-Go back to [Settings for SuperSense Alerts](/vcs_settings.html)
+Go back to [Settings for Alerts](/vcs_settings.html)
