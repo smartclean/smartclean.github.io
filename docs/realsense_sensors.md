@@ -18,7 +18,7 @@ navigate to the page [Sensors Data Format](/sensorPayloads.html)
 ---
 
 ## Firmware versions for SmartClean Sensors
-*Following are the applicable firmware versions for SmartClean some of our Sensors*
+*Following are the firmware versions applicable for some of our Sensors*
 ```
 SMARTCLEAN#PPLCTR - v3.0.3
 SMARTCLEAN#ODRDTR - v3.0.3
