@@ -1,12 +1,12 @@
 ---
 layout: default
 title:  Air Quality Monitoring Solution
-parent: SuperSense Solutions
-grand_parent: SuperSense
+parent: Solutions
+grand_parent: Optimus
 nav_order: 2
 ---
 # Indoor Air Quality Monitoring Solution
-*This solution generates an Alert when any source of bad air quality is detected within range of the sensor*
+*This solution generates an alert when any source of bad air quality is detected within range of the sensor*
 
 ## How does this Solution work
 To activate our Indoor Air Quality Monitoring Solution, the following steps are required.

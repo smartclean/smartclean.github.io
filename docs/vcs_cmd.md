@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Consumable Monitoring Solution
-parent: SuperSense Solutions
-grand_parent: SuperSense
+parent: Solutions
+grand_parent: Optimus
 nav_order: 6
 ---
 # Consumable Monitoring Solution
-*This solution generates an Alert when the fill level of the consumable being monitored has dropped below a set level*
+*This solution generates an alert when the fill level of the consumable being monitored has dropped below a set level*
 
 Examples of consumables that can be monitored with this Solution:
 1. Toilet Roll (standard toilet roll enclosure that fits our criteria for sensor installation)

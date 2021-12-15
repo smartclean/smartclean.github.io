@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  Usage Monitoring Solution
-parent: SuperSense Solutions
-grand_parent: SuperSense
+parent: Solutions
+grand_parent: Optimus
 nav_order: 3
 ---
 # Usage Monitoring Solution

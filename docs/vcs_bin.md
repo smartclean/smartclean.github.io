@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Bin Monitoring Solution
-parent: SuperSense Solutions
-grand_parent: SuperSense
+parent: Solutions
+grand_parent: Optimus
 nav_order: 7
 ---
 # Bin Monitoring Solution
-*This solution generates an Alert when the estimate level of contents inside the bin being monitored has reached a set level*
+*This solution generates an alert when the estimate level of contents inside the bin being monitored has reached a set level*
 
 ## How does this Solution work
 To activate our Bin Monitoring Solution, the following steps are required.

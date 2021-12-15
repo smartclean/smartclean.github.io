@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  Consumable Monitoring Solution (Settings)
-parent: SuperSense Settings
-grand_parent: SuperSense
+parent: Alert Settings
+grand_parent: Optimus
 nav_order: 5
 ---
 
@@ -19,4 +19,4 @@ Configure per Device (Internal Setting)
     - **Criteria to create Alert:** When the level of consumable being monitored reaches this minimum level. 
     - **Outcome of Alert:** Notify intended users about the Consumable (at a designated area) getting low.
 
-Go back to [Settings for SuperSense Alerts](/vcs_settings.html)
+Go back to [Settings for Alerts](/vcs_settings.html)

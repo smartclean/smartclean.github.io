@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Spill Detection Solution
-parent: SuperSense Solutions
-grand_parent: SuperSense
+parent: Solutions
+grand_parent: Optimus
 nav_order: 4
 ---
 # Spill Detection Solution
@@ -19,7 +19,7 @@ To activate our Spill Detection Solution, the following steps are required.
 
 3. Done! Your Locations can detect water spills of reasonable size in the detection zone and raise alert for the same.
 
-Some of our other solutions which generate Alerts are:
+Some of our other solutions which generate alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
 - [Usage Monitoring](/vcs_pc.html)
 - [Bad Feedback Reporting](/vcs_fd.html)

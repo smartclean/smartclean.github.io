@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Bad Feedback Reporting Solution
-parent: SuperSense Solutions
-grand_parent: SuperSense
+parent: Solutions
+grand_parent: Optimus
 nav_order: 5
 ---
 # Bad Feedback Reporting Solution

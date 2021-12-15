@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  Bin Monitoring Solution (Settings)
-parent: SuperSense Settings
-grand_parent: SuperSense
+parent: Alert Settings
+grand_parent: Optimus
 nav_order: 6
 ---
 
@@ -19,4 +19,4 @@ Configure per Device (Internal Setting)
     - **Criteria to create Alert:** When the area remaining value reported by the Bin Sensor reaches this minimum value.
     - **Outcome of Alert:** Notify intended users about the Bin (in a designated area) getting full.
 
-Go back to [Settings for SuperSense Alerts](/vcs_settings.html)
+Go back to [Settings for Alerts](/vcs_settings.html)
