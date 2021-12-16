@@ -1,15 +1,19 @@
 ---
 layout: default
-title: Bad Feedback Reporting Solution
+title: Feedback Reporting Solution
 parent: Solutions
 grand_parent: Optimus
 nav_order: 5
 ---
-# Bad Feedback Reporting Solution
-*This solution generates an Alert when anyone gives bad feedback using our Feedback Tablet installed in your Location.*
+# Feedback Reporting Solution
+*This solution is used to keep a record of all feedback given on the feedback reporting device*
+Feedback can be good or bad depending on the rating.
+For feedback with bad rating, a set of standard reasons is also obtained.
+
+This solution generates an alert when anyone gives bad feedback using the feedback reporting device installed in your Location.*
 
 ## How does this Solution work
-To activate our Bad Feedback Reporting Solution, the following steps are required.
+To activate our Feedback Reporting Solution, the following steps are required.
 
 1. Install and activate SmartClean Feedback Tablet at a desired Location in your Facility.
    - For Example: Install and activate one Feedback Tablet around entrance of desired Washroom to allow users to give feedback.

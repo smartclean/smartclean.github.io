@@ -22,6 +22,6 @@ To activate our Usage Monitoring Solution, the following steps are required.
 Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
 - [Spill Detection](/vcs_wd.html)
-- [Bad Feedback Reporting](/vcs_fd.html)
+- [Feedback Reporting](/vcs_fd.html)
 - [Consumable Monitoring](/vcs_cmd.html)
 - [Bin Fill Level Sensing](/vcs_bin.html)

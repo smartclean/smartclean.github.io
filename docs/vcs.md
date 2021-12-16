@@ -26,7 +26,7 @@ Some of our Solutions which generate incidents are:
 1. [Air Quality Monitoring](/vcs_aq.html)
 2. [Usage Monitoring](/vcs_pc.html)
 3. [Spill Detection](/vcs_wd.html)
-4. [Bad Feedback Reporting](/vcs_fd.html)
+4. [Feedback Reporting](/vcs_fd.html)
 5. [Consumable Monitoring](/vcs_cmd.html)
 6. [Bin Fill Level Sensing](/vcs_bin.html)
 

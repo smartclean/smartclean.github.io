@@ -23,5 +23,5 @@ Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
 - [Usage Monitoring](/vcs_pc.html)
 - [Spill Detection](/vcs_wd.html)
-- [Bad Feedback Reporting](/vcs_fd.html)
+- [Feedback Reporting](/vcs_fd.html)
 - [Consumable Monitoring](/vcs_cmd.html)
