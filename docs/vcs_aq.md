@@ -17,7 +17,9 @@ To activate our Indoor Air Quality Monitoring Solution, the following steps are 
 2. Define details of recipients who should receive notifications about bad air quality
    - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
 
-3. Done! Your Locations can now sense bad indoor air quality with our solution
+3. Your location will raise an alert when our solution determines the air quality is unexpected for a certain period.
+
+4. The alert indicates that the indoor air quality is bad or not suitable for the area. 
 
 Some of our other solutions which generate Alerts are:
 - [Usage Monitoring](/vcs_pc.html)

@@ -13,7 +13,7 @@ nav_order: 6
 To configure this Solution, the following settings are available:
 
 Configure per Device (Internal Setting)
-- Area remaining 
+- Area remaining (empty space left) 
     - **Type:** Minimum Threshold
     - **Description:** This threshold represents minimum area that is remaining in the Bin (i.e. how much empty it is.) 
     - **Criteria to create Alert:** When the area remaining value reported by the Bin Sensor reaches this minimum value.

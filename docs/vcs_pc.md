@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Usage Monitoring Solution
+title: Usage Monitoring Solution
 parent: Solutions
 grand_parent: Optimus
 nav_order: 3
@@ -17,7 +17,9 @@ To activate our Usage Monitoring Solution, the following steps are required.
 2. Define details of recipients who should receive notifications about high usage
    - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
 
-3. Done! Your Locations can now count number of people entering it, and alert when it reaches the set threshold.
+3. Your location will raise an alert when people counted by the device in its detection zone reaches the maximum threshold
+
+4. The alert indicates that the number of people who entered the location is high.
 
 Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)

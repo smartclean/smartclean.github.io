@@ -22,7 +22,9 @@ To activate our Consumable Monitoring Solution, the following steps are required
 2. Define details of recipients who should receive notifications about consumable level getting low events.
    - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
 
-3. Done! Your Locations can now raise an Alert when fill level of desired consumable has reached the configured minimum level for that sensor.
+3. Your consumable container will raise an alert when the level of consumable inside it reaches the minimum threshold.
+
+4. The alert indicates that the consumable in the dispenser container is getting low.
 
 Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)

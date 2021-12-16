@@ -17,7 +17,9 @@ To activate our Spill Detection Solution, the following steps are required.
 2. Define details of recipients who should receive notifications about spill detection events
    - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
 
-3. Done! Your Locations can detect water spills of reasonable size in the detection zone and raise alert for the same.
+3. Your location will raise an alert when a water spill of reasonable size has been detected within detection area.
+
+4. The alert indicates a water spill to be cleared.
 
 Some of our other solutions which generate alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)

@@ -21,7 +21,10 @@ To activate our Feedback Reporting Solution, the following steps are required.
 2. Define details of recipients who should receive notifications about bad feedback events
    - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
 
-3. Done! Your Locations can now raise an Alert when a user gives any bad feedback using the Feedback Tablet.
+3. Your location will raise an alert when someone submits a bad feedback on the feedback reporting device.
+
+4. The alert indicates that someone reported a set of reasons with a bad feedback.
+
 
 Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)

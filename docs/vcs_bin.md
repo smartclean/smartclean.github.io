@@ -17,7 +17,9 @@ To activate our Bin Monitoring Solution, the following steps are required.
 2. Define details of recipients who should receive notifications about Bin getting filled up events.
    - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
 
-3. Done! Your Locations can now raise an Alert when the Bin being monitored has reached the configured level for that sensor.
+3. Your trash bin will raise an alert when the empty space remaining inside it reaches the minimum level.
+
+4. The alert indicates that the trash bin is becoming full. 
 
 Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
