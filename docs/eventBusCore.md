@@ -7,7 +7,7 @@ nav_order: 8
 ---
 
 # Matrix Event Bus (MEB)
-![MEB Architecture](https://www.smartclean.io/matrix/images/Event-Bus-Architecture.png)
+![MEB Architecture](https://www.smartclean.io/matrix/images/Event-Bus-Architecture-v2.png)
 
 ## What is the Matrix Event Bus ?
 The purpose of Matrix Event Bus (MEB) is to stream events from various applications running in a property or organisation and deliver it to certain endpoints on a near-real time basis.
