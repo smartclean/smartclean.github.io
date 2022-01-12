@@ -29,6 +29,11 @@ Additionally, an event will also contain a generally complete subset of affected
 For example, a new incident creation event will also proxy the details about the zone, name of task, who it is allocated to.
 Any other information not present within the event payload can be obtained by appropriate SDK calls to Matrix.
 
+The routing key of an event has the following generic schema:
+```json
+matrix.<principal>.<module>.<eventid>.<priority>
+```
+
 ### Can I generate events from my application and send it to MEB ?
 Yes, third party applications can generate their own events within the event bus, subject to certain restrictions and quotas.
 
@@ -50,3 +55,19 @@ The following events are available on the bus currently:
 13. Task Started - *matrix.mybuildingid.scworkforcemanagement.TASK_STARTED.NORMAL*
 14. Task Completed - *matrix.mybuildingid.scworkforcemanagement.TASK_COMPLETED.NORMAL*
 15. Task Not Resolved - *matrix.mybuildingid.scworkforcemanagement.TASK_INCOMPLETE.HIGH*
+
+## Generic Data Format for Matrix Events
+Each event in the MEB follows the following schema:
+```json
+"Principal": "<string> The principal - property, building or organisation",
+"Description": "<string> A human readable description of the event.",
+"Event": "<string> The eventid part of routing key of this matrix event.",
+"RoutingKey": "<string> The routing key.",
+"Module": "<string> The module part of routing key of this matrix event.",
+"Status": "<string> The priority part of routing key of this matrix event.",
+"UnixTime": "<string> The unix time of this event in seconds.",
+"UnixTimeInt": "<number> The unit time of this event in seconds as number datatype."
+"Meta": "<map> A variadic data structure holding a subset of relevant data pertaining to this event."
+```
+
+The schema of key Meta is constant per source namespace that generated the event.
