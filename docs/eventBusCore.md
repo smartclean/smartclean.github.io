@@ -55,6 +55,9 @@ The following events are available on the bus currently:
 13. Task Started - *matrix.mybuildingid.scworkforcemanagement.TASK_STARTED.NORMAL*
 14. Task Completed - *matrix.mybuildingid.scworkforcemanagement.TASK_COMPLETED.NORMAL*
 15. Task Not Resolved - *matrix.mybuildingid.scworkforcemanagement.TASK_INCOMPLETE.HIGH*
+16. Zone Created - *matrix.mybuildingid.scgrids.ZONE_CREATED.NORMAL*
+17. Zone Name Modified - *matrix.mybuildingid.scgrids.ZONE_NAME_MODIFIED.MEDIUM*
+18. Zone Status Modified - *matrix.mybuildingid.scgrids.ZONE_STATUS_MODIFIED.MEDIUM*
 
 ## Generic Data Format for Matrix Events
 Each event in the MEB follows the following schema:
