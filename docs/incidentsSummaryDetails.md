@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Incidents Summary Report
-parent: Reports
-grand_parent: SmartClean Matrix
+parent: Standard Reports
+grand_parent: Reports
 has_children: true
-has_toc: true
+has_toc: false
 nav_order: 1
 ---
 
