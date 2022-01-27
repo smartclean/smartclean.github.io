@@ -8,6 +8,7 @@ has_toc: false
 nav_order: 1
 ---
 
+# Workorders Summary Report
 This report helps in visualizing key performance indicators pertaining to actions on Incidents and Tasks.
 
 It helps to track:
