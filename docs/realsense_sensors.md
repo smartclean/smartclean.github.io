@@ -20,8 +20,8 @@ navigate to the page [Sensors Data Format](/sensorPayloads.html)
 ## Firmware versions for SmartClean Sensors
 *Following are the latest firmware versions for some sensor models.*
 ```
-SMARTCLEAN#PPLCTR - v3.0.3
-SMARTCLEAN#ODRDTR - v3.0.3
-SMARTCLEAN#AQGW - v1.0.4aqgw
-SMARTCLEAN#WD - v4.0.1wd
+1. SMARTCLEAN#PPLCTR - v3.0.3
+2. SMARTCLEAN#ODRDTR - v3.0.3
+3. SMARTCLEAN#AQGW - v1.0.4aqgw
+4. SMARTCLEAN#WD - v4.0.3wd for RealSense enabled projects, 3_1_4wd for non-RealSense projects
 ```
