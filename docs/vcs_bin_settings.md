@@ -3,7 +3,7 @@ layout: default
 title:  Bin monitoring solution (Settings)
 parent: Solution settings
 grand_parent: Optimus
-nav_order: 6
+nav_order: 7
 ---
 
 # Settings for bin monitoring solution

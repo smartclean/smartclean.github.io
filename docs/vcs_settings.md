@@ -49,6 +49,7 @@ nav_order: 3
 
 - [Settings for air quality monitoring solution](/vcs_aq_settings.html)
 - [Settings for usage monitoring solution](/vcs_pc_settings.html)
+- [Settings for spill detection solution](/vcs_wd_settings.html)
 - [Settings for feedback reporting solution](/vcs_fd_settings.html)
 - [Settings for consumable monitoring solution](/vcs_cmd_settings.html)
 - [Settings for bin level monitoring solution](/vcs_bin_settings.html)

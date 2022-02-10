@@ -3,7 +3,7 @@ layout: default
 title:  Feedback reporting solution (settings)
 parent: Solution settings
 grand_parent: Optimus
-nav_order: 4
+nav_order: 5
 ---
 
 # Settings for feedback reporting solution

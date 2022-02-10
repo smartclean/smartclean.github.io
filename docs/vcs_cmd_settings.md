@@ -3,7 +3,7 @@ layout: default
 title:  Consumable monitoring solution (settings)
 parent: Solution settings
 grand_parent: Optimus
-nav_order: 5
+nav_order: 6
 ---
 
 # Settings for consumable monitoring solution

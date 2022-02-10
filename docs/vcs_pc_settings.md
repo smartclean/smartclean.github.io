@@ -6,7 +6,7 @@ grand_parent: Optimus
 nav_order: 3
 ---
 
-# Settings for usage monitoring solution Settings
+# Settings for usage monitoring solution
 *Settings to configure this solution after it is active in your facility*
 
 ## What settings are available?
