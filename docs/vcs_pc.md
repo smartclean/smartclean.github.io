@@ -1,29 +1,25 @@
 ---
 layout: default
-title: Usage Monitoring Solution
+title: Usage monitoring solution
 parent: Solutions
 grand_parent: Optimus
 nav_order: 3
 ---
-# Usage Monitoring Solution
-*This solution generates an Alert when the number of people entered the enclosed location reaches a threshold*
+# Usage monitoring solution
+*This solution creates an incident when the number of people entered the enclosed zone reaches a set threshold*
 
-## How does this Solution work
-To activate our Usage Monitoring Solution, the following steps are required.
+## How does this solution work
+To activate our usage monitoring solution, the following steps are required.
 
-1. Install and activate SmartClean People Counting Sensor at desired enclosed Locations in your Facility.
-   - For Example: Install and activate one PC Sensor near entry point of desired Washroom to monitor the usage.
-   
-2. Define details of recipients who should receive notifications about high usage
-   - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
+1. Install and activate SmartClean people counting sensor at desired enclosed zones in your facility.
 
-3. Your location will raise an alert when people counted by the device in its detection zone reaches the maximum threshold
+2. The zone will generate an incident when people counted by the device in its detection zone reaches the maximum threshold.
 
-4. The alert indicates that the number of people who entered the location is high.
+3. The incident indicates that the number of people who entered the zone is more than expected.
 
-Some of our other solutions which generate Alerts are:
-- [Indoor Air Quality Monitoring](/vcs_aq.html)
-- [Spill Detection](/vcs_wd.html)
-- [Feedback Reporting](/vcs_fd.html)
-- [Consumable Monitoring](/vcs_cmd.html)
-- [Bin Fill Level Sensing](/vcs_bin.html)
+Some of our other solutions which generate incidents are:
+- [Indoor air quality monitoring](/vcs_aq.html)
+- [Spill detection](/vcs_wd.html)
+- [Feedback reporting](/vcs_fd.html)
+- [Consumable monitoring](/vcs_cmd.html)
+- [Bin fill level sensing](/vcs_bin.html)

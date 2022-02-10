@@ -1,25 +1,22 @@
 ---
 layout: default
-title: Bin Monitoring Solution
+title: Bin monitoring solution
 parent: Solutions
 grand_parent: Optimus
 nav_order: 7
 ---
-# Bin Monitoring Solution
-*This solution generates an alert when the estimate level of contents inside the bin being monitored has reached a set level*
+# Bin monitoring solution
+*This solution generates an alert when the estimate fill level of (contents inside) the bin being monitored has reached a set level*
 
-## How does this Solution work
-To activate our Bin Monitoring Solution, the following steps are required.
+## How does this solution work
+To activate our bin monitoring solution, the following steps are required.
 
-1. Install and activate SmartClean Bin Monitoring Sensor inside desired Garbage Bin at desired Location in your Facility.
-   - For Example: Install and activate a Bin Sensor inside each garbage bin in washrooms of your facility.
-   
-2. Define details of recipients who should receive notifications about Bin getting filled up events.
-   - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
+1. Install and activate SmartClean bin monitoring sensor inside desired bin at a zone in your facility.
+   - For Example: Install and activate a bin sensor inside each garbage bin in washrooms of your facility.
 
-3. Your trash bin will raise an alert when the empty space remaining inside it reaches the minimum level.
+2. The bin being monitored will raise an incident when the empty space remaining inside it reaches the minimum level.
 
-4. The alert indicates that the trash bin is becoming full. 
+3. The alert indicates that the trash bin is becoming full. 
 
 Some of our other solutions which generate Alerts are:
 - [Indoor Air Quality Monitoring](/vcs_aq.html)
