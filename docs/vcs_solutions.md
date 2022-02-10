@@ -10,26 +10,14 @@ nav_order: 2
 # Solutions
 
 ## What are Solutions
-*These are solutions to problems in a facility, such as sensing and monitoring desired aspects in a location.*
+*Solutions are applications running in a property which listen to events and sensor data of the property to result in some actionable outcomes or insights.*
 
-Most of our Solutions use SmartClean Optimus to create incidents and notify intended recipients about 
-such desired events.
+For example most of our Solutions create incidents and notify intended recipients about desired events.
 
 ## How do these work
-In order to make your facility management requirement smart with our platform, the following steps are necessary:
-
-1. Introduce data sources for the various needs in your Facility.
-   - For Example: Introduce a SmartClean Device for Monitoring Air Quality.
-
-2. Assign data source to a specific Location in the Facility.
-   - For Example: A Washroom or Meeting Room at a certain level in your building.
-   
-3. Define details of recipients who should receive notifications about desired event
-   - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
-
-4. Done! Your Facility Management need has just been made smarter with our Solution.
-
-As Optimus detects desired events for this Solution in this Location, 
-Alerts will be generated based on default values of [Alert Settings](/vcs_settings.html)
-
-You may view these Alerts in your [SmartClean Matrix Application](/index.html)
+1. Data sources from the site collect and send data to the cloud in real time
+2. Systems integrated to the platform listen for these data and events
+   - For example, the smart toilet system analyses these events for creating incidents
+3. Just install, describe and activate the data sources, our platform handles the rest.
+4. As Optimus detects desired events for this solution in this zone, incidents will be created based on default values of [solution settings](/vcs_settings.html)
+5. You may view these incidents in your [SmartClean matrix application](/index.html)

@@ -1,34 +1,27 @@
 ---
 layout: default
-title: Feedback Reporting Solution
+title: Feedback reporting solution
 parent: Solutions
 grand_parent: Optimus
 nav_order: 5
 ---
-# Feedback Reporting Solution
+# Feedback reporting solution
 *This solution is used to keep a record of all feedback given on the feedback reporting device*
 Feedback can be good or bad depending on the rating.
-For feedback with bad rating, a set of standard reasons is also obtained.
+For feedback with a bad rating, a set of standard reasons are also obtained with the 
 
-This solution generates an alert when anyone gives bad feedback using the feedback reporting device installed in your Location.*
+This solution generates an incident when anyone gives bad feedback using the feedback reporting device installed in your zone.*
 
 ## How does this Solution work
-To activate our Feedback Reporting Solution, the following steps are required.
+To activate this solution, the following steps are required.
 
-1. Install and activate SmartClean Feedback Tablet at a desired Location in your Facility.
-   - For Example: Install and activate one Feedback Tablet around entrance of desired Washroom to allow users to give feedback.
-   
-2. Define details of recipients who should receive notifications about bad feedback events
-   - For Example: A cleaning attendant to receive SMS and supervisor to receive Mobile App Notification
+1. Install and activate SmartClean feedback tablet at a desired zone.
+2. An incident is created when bad feedback is received on the feedback reporting device.
+3. This incident indicates that someone reported bad feedback (with certain reasons)
 
-3. Your location will raise an alert when someone submits a bad feedback on the feedback reporting device.
-
-4. The alert indicates that someone reported a set of reasons with a bad feedback.
-
-
-Some of our other solutions which generate Alerts are:
-- [Indoor Air Quality Monitoring](/vcs_aq.html)
-- [Usage Monitoring](/vcs_pc.html)
-- [Spill Detection](/vcs_wd.html)
-- [Consumable Monitoring](/vcs_cmd.html)
-- [Bin Fill Level Sensing](/vcs_bin.html)
+Some of our other solutions which create incidents are:
+- [Indoor air quality monitoring](/vcs_aq.html)
+- [Usage monitoring](/vcs_pc.html)
+- [Water spill detection](/vcs_wd.html)
+- [Consumable level monitoring](/vcs_cmd.html)
+- [Bin fill level monitoring](/vcs_bin.html)
