@@ -1,22 +1,20 @@
 ---
 layout: default
-title:  Consumable Monitoring Solution (Settings)
-parent: Alert Settings
+title:  Consumable monitoring solution (settings)
+parent: Solution settings
 grand_parent: Optimus
-nav_order: 5
+nav_order: 6
 ---
 
-# Consumable Monitoring Solution Settings
-*Settings to configure the Consumable Monitoring Solutions active in your facility*
+# Settings for consumable monitoring solution
+*Settings to configure these solutions active in your facility*
 
 ## What settings are available?
-To configure this Solution, the following settings are available:
+To configure this solution, the following settings are available:
+ 
+- Minimum fill level (per device)
+    - **Type:** minimum threshold
+    - **Description:** minimum fill level for the consumable being monitored.
+    - **Outcome:** Notify intended users about the level consumable in certain container getting low.
 
-Configure per Device (Internal Setting) 
-- Minimum Fill Level
-    - **Type:** Minimum Threshold
-    - **Description:** This threshold represents the minimum fill level for the consumable being monitored. 
-    - **Criteria to create Alert:** When the level of consumable being monitored reaches this minimum level. 
-    - **Outcome of Alert:** Notify intended users about the Consumable (at a designated area) getting low.
-
-Go back to [Settings for Alerts](/vcs_settings.html)
+Go back to [solution settings](/vcs_settings.html)
