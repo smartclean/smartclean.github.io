@@ -15,6 +15,8 @@ To activate this solution, the following steps are required.
 2. An incident will be created when people counted by the device in its detection zone reaches the maximum threshold.
 3. This incident indicates that the number of people who entered the zone reached the limit set.
 
+For more details please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works-2)
+
 Some of our other solutions which generate incidents are:
 - [Indoor air quality monitoring](/vcs_aq.html)
 - [Spill detection](/vcs_wd.html)

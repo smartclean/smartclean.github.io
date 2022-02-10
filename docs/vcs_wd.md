@@ -13,7 +13,9 @@ To activate this solution, the following steps are required.
 
 1. Install and activate SmartClean spill detection sensor at a desired zone in your facility.
 2. An incident will be created when water spill of reasonable size has been detected within detection area.
-3. This incident indicates about the presence of water spillage in the area  
+3. This incident indicates about the presence of water spillage in the area
+
+For more details please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/wf-2101-01-how-it-works)
 
 Some of our other solutions which create incidents are:
 - [Indoor air quality monitoring](/vcs_aq.html)

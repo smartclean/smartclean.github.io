@@ -13,7 +13,9 @@ To activate this solution, the following steps are required.
 
 1. Install and activate SmartClean bin monitoring sensor inside the desired bin in your facility.
 2. An incident gets created when the empty space remaining inside it reaches the minimum level.
-3. This incident indicates that the bin is becoming full. 
+3. This incident indicates that the bin is becoming full.
+
+For more details please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works)
 
 Some of our other solutions which generate Alerts are:
 - [Indoor air quality monitoring](/vcs_aq.html)
