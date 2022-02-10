@@ -15,6 +15,6 @@ To configure this solution, the following settings are available:
 - People count threshold (per device)
     - **Type:** maximum limit
     - **Description:** This threshold represents the people count value that indicates high usage.
-    - **Outcome of Alert:** Notify intended users about high usage at the location being monitored.
+    - **Outcome:** Notify intended users about high usage at the location being monitored.
 
 Go back to [solution settings](/vcs_settings.html)

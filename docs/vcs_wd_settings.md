@@ -15,6 +15,6 @@ To configure this solution, the following settings are available:
 - Minimum area percentage (Optional setting, per device)
     - **Type:** minimum limit
     - **Description:** This represents minimum area of water spillage (percent) in the detection zone of the device  
-    - **Outcome of Alert:** Notify intended users about a water spill in the detection zone of the device.
+    - **Outcome:** Notify intended users about a water spill in the detection zone of the device.
 
 Go back to [solution settings](/vcs_settings.html)
