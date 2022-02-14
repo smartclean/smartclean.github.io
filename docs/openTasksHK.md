@@ -15,5 +15,8 @@ Using the Housekeeping application, users can allocate incidents and scheduled a
 ## View and start open scheduled tasks
 Click on the *Tasks* icon in the bottom navigation bar of the Housekeeping mobile application.
 Given the date selected, *Open Incidents* and *Open Tasks* can be explored.
+
+---
+
 <img alt="Tasks Navigate" src="https://www.smartclean.io/matrix/images/workordersMobile/myTasksNavHK.jpeg" style="width:40%;" />
 <img alt="View Open Tasks" src="https://www.smartclean.io/matrix/images/workordersMobile/viewOpenTasksHK.jpeg" style="width:40%;" />
