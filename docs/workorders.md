@@ -8,7 +8,7 @@ nav_order: 3
 
 # Workorders
 Latest Stable Version:
-v58
+v104
 {: .label .label-green }
 
 ## What is SmartClean Workorders
