@@ -15,7 +15,7 @@ To activate this solution, the following steps are required.
 2. Your location will raise an alert when our solution determines the air quality is unexpected for a certain period. 
 3. The incident indicates that the indoor air quality is temporarily not suitable.
 
-For more details please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/od-wf-1901-how-it-works)
+For **more details about our air quality monitoring device** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/od-wf-1901-how-it-works)
 
 
 Some of our other solutions which create incidents are:
