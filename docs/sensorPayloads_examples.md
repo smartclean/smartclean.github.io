@@ -35,6 +35,10 @@ nav_order: 2
 }
 ```
 
+For **more details about our people counting device** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works-2)
+
+---
+
 ### Feedback reporting device
 - SMARTCLEAN#FD
 
@@ -95,6 +99,10 @@ nav_order: 2
 }
 ```
 
+For **more details about our consumable level sensing devices** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works)
+
+---
+
 ### Bin monitoring device
 - SMARTCLEAN#BIN
 
@@ -119,6 +127,10 @@ nav_order: 2
   "minute": "21"
 }
 ```
+
+For **more details about our bin level sensing device** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works)
+
+---
 
 ### Spill detection device
 - SMARTCLEAN#WD
@@ -146,6 +158,10 @@ nav_order: 2
 }
 ```
 
+For **more details about our spill detection device** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/wf-2101-01-how-it-works)
+
+---
+
 ### Air quality monitoring device
 - SMARTCLEAN#ODRDTR_BATT_V1
 
@@ -171,3 +187,7 @@ nav_order: 2
   "minute": "21"
 }
 ```
+
+For **more details about our air quality monitoring device** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/od-wf-1901-how-it-works)
+
+---
