@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  Air quality lite
-parent: Air quality monitoring solution
-grand_parent: Solutions
+parent: SmartClean Sensors
+grand_parent: RealSense
 nav_order: 1
 ---
 # Indoor air quality monitoring
