@@ -3,6 +3,7 @@ layout: default
 title:  Air quality monitoring solution
 parent: Solutions
 grand_parent: Optimus
+has_children: true
 nav_order: 2
 ---
 # Indoor air quality monitoring solution
