@@ -5,6 +5,7 @@ parent: Solutions
 grand_parent: Optimus
 has_children: true
 nav_order: 2
+has_toc: true
 ---
 # Indoor air quality monitoring solution
 *This solution generates an alert when any source of bad air quality is detected within range of the sensor*
