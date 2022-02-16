@@ -3,8 +3,8 @@ layout: default
 title: SmartClean Sensors
 parent: RealSense
 grand_parent: SmartClean Matrix
-has_children: false
-has_toc: false
+has_children: true
+has_toc: true
 nav_order: 1
 ---
 
