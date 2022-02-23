@@ -47,8 +47,8 @@ In this case nothing. We ignore the zones with an Average Score equal to or grea
 
 ## Helpful pointers for understanding some graphs:
 
-1. “Low performing inspections and failed questions/issues” table helps in understanding which audits performed the worst and what were the questions within the audit that weakened the position of the audit for a particular zone.<br />
-    *Example(Graph below)*: For audit “Lift Lobbies.” and zone "East Lift Lobby L41", the average score is 75% whereas the target was supposed to be 80. "No.of Failed item(s)" denotes the number of questions that failed for an audit and "Failed Item(s)" lists the questions that failed.
+1. “Low performing inspections and failed questions/issues” table helps in understanding which audits performed the worst and what questions were the reason behind audits not performing well for a particular zone.<br />
+    *Example(Graph below)*: For audit “Lift Lobbies.” and zone "East Lift Lobby L41", the average score is 75% whereas the target was supposed to be 80%. "No.of Failed item(s)" denotes the number of questions that failed for an audit and "Failed Item(s)" lists the questions that failed.
 
     ![VR-3](https://www.smartclean.io/matrix/images/reports/auditsReport/VR-3.png)
 
