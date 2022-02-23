@@ -35,7 +35,7 @@ It helps to track:<br />
 Yes.
 
 2. **Why do time interval-based graphs like “No. Of Workorders” have different time intervals depending on the interval chosen while generating the report?**<br />
-It is done to facilitate easy viewing and better data ranges depending on the time interval chosen. So basically:
+It is done to facilitate easy viewing and better data ranges depending on the time interval chosen.  
 - If the chosen date range is for a single day, then the data points shown are on an Hourly Basis.
 - If the chosen date range is less than a month, then the data points shown are on Daily Basis.
 - If the chosen date range is more than a month but less than 3 months, then the data points shown are on Weekly Basis.
@@ -43,7 +43,7 @@ It is done to facilitate easy viewing and better data ranges depending on the ti
 The maximum date range is that of 190 Days for a report that can be provided.
 
 3. **In the type of graphs mentioned in the previous question, if the date range chosen while generating the report is from 3 Jan to 15 April which means the interval of the graphs will be on monthly basis(Because the number of days is more than 3 months). In that, the data presented in “No. Of Workorders” for the month of April is for the whole of April or only till the 15th of April?**<br />
-Data shown is always according to the interval provided while generating the report. So even if the column is showing April month in the time range. The data statistics shown is only till 15th of April.
+Data shown is always according to the interval provided while generating the report. Even if the column is showing April month in the time range, the data statistics shown is only till 15th of April.
 
 ## Helpful pointers for understanding some graphs:
 
