@@ -40,7 +40,7 @@ It is done to facilitate easy viewing and better data ranges depending on the ti
 
     *Example*: The Date Range below is 1 month. In this case, the time interval for the x-axis of the graph is on daily basis.
 
-    ![VR-1](https://www.smartclean.io/matrix/images/reports/customerFeedback/VR-1.png)
+    ![VR-6](https://www.smartclean.io/matrix/images/reports/customerFeedback/VR-6.png)
     ![VR-2](https://www.smartclean.io/matrix/images/reports/customerFeedback/VR-2.png)
 
 4. **In the type of graphs mentioned in the previous question, if the date range chosen while generating the report is from 3 Jan to 15 April which means the interval of the graphs will be on monthly basis(Because the number of days is more than 3 months). In that the data presented in Avg. Customer Feedback for the month of April is for the whole of April or only till the 15th of April?**<br />
