@@ -1,0 +1,1112 @@
+{"0": {
+    "doc": "Air quality lite",
+    "title": "Indoor air quality monitoring",
+    "content": "SmartClean’s air quality measurement sensor is a battery operated sensor that measures the following environmental parameters: . | Indoor Air Quality (IAQ), Temperature, Humidity: The IAQ index, temperature and relative humidity is derived from the measurements by Bosch BME680 module. A detailed note on its functionality and measurement parameters can be found here and here. | Ammonia (ppb): This metric is measured using an electrochemical sensing module from Semiatech. Values are measured in units of parts per billion. The datasheet can be found here. | . ",
+    "url": "http://localhost:4000/docs/aqLite.html#indoor-air-quality-monitoring",
+    "relUrl": "/docs/aqLite.html#indoor-air-quality-monitoring"
+  },"1": {
+    "doc": "Air quality lite",
+    "title": "Datasheet",
+    "content": "The datasheet for the sensor can be found here. ",
+    "url": "http://localhost:4000/docs/aqLite.html#datasheet",
+    "relUrl": "/docs/aqLite.html#datasheet"
+  },"2": {
+    "doc": "Air quality lite",
+    "title": "Useful Links",
+    "content": "The following section highlights some important links for a better understanding of the concepts involved in IAQ measurements and the meanings of various metrics above. | WHO guidelines on indoor temperature and humidity: 1, 2 | What are Volatile Organic Compounds (VOCs)?: 1 | . ",
+    "url": "http://localhost:4000/docs/aqLite.html#useful-links",
+    "relUrl": "/docs/aqLite.html#useful-links"
+  },"3": {
+    "doc": "Air quality lite",
+    "title": "Air quality lite",
+    "content": " ",
+    "url": "http://localhost:4000/docs/aqLite.html",
+    "relUrl": "/docs/aqLite.html"
+  },"4": {
+    "doc": "Attendance Arrival",
+    "title": "Attendance Arrival",
+    "content": "This report is a timesheet where the timeliness and status of people can be observed corresponding to the Scheduled Shift. ",
+    "url": "http://localhost:4000/docs/attendanceArrival.html",
+    "relUrl": "/docs/attendanceArrival.html"
+  },"5": {
+    "doc": "Attendance Arrival",
+    "title": "Helpful terminologies",
+    "content": "Scheduled Shift: The pre-defined shift to which people are assigned, that is, when the person is expected to be in the shift. Clock In: When the person actually Clocked-In and started their shift. Clock Out: When the person actually Clocked-Out and ended their shift. Early(Clock In): This shows by how much time is the person early in clocking into their scheduled shift in hh:mm format. Late(Clock In): This shows by how much time is the person late in clocking into their scheduled shift in hh:mm format. Early(Clock Out): This shows by how much time is the person early in clocking out of their scheduled shift in hh:mm format. Late(Clock Out): This shows by how much time is the person late in clocking out of their scheduled shift in hh:mm format. ",
+    "url": "http://localhost:4000/docs/attendanceArrival.html#helpful-terminologies",
+    "relUrl": "/docs/attendanceArrival.html#helpful-terminologies"
+  },"6": {
+    "doc": "Attendance Status",
+    "title": "Attendance Status",
+    "content": "This report is a calender like representation of whether a person was Present/Absent/Not in Shift for different days. Also, the green box above day in each column represents the total number of people present for that day. ",
+    "url": "http://localhost:4000/docs/attendanceStatus.html",
+    "relUrl": "/docs/attendanceStatus.html"
+  },"7": {
+    "doc": "Attendance Status By Planned Shifts",
+    "title": "Attendance Status By Planned Shifts.",
+    "content": "This report helps in the calculation of how many people were present across the planned shifts defined. If designation data is provided, it helps to visualise how many people were present in a particular shift belonging to a particular designation. ",
+    "url": "http://localhost:4000/docs/attendanceStatusByPlannedShifts.html#attendance-status-by-planned-shifts",
+    "relUrl": "/docs/attendanceStatusByPlannedShifts.html#attendance-status-by-planned-shifts"
+  },"8": {
+    "doc": "Attendance Status By Planned Shifts",
+    "title": "Helpful terminologies:",
+    "content": "ActualCheckInTime: When a person actually Clocked-In and started their shift. ActualCheckOutTime: When a person actually Clocked-Out and ended their shift. ExpectedCheckInTime: The pre-defined shift allotted Check-In time, that is, when the person is expected to start the shift. ExpectedCheckOutTime: The pre-defined shift allotted Check-Out time, that is, when the person is expected to end the shift. Actual Shift: The time interval between ActualCheckInTime and ActualCheckOutTime. Shift: The time interval between ExpectedCheckInTime and ExpectedCheckOutTime. ",
+    "url": "http://localhost:4000/docs/attendanceStatusByPlannedShifts.html#helpful-terminologies",
+    "relUrl": "/docs/attendanceStatusByPlannedShifts.html#helpful-terminologies"
+  },"9": {
+    "doc": "Attendance Status By Planned Shifts",
+    "title": "Notes:",
+    "content": ". | For calculating we always consider ActualCheckInTime and ActualCheckOutTime. But If a person has not Clocked-Out then for appropriate calculation of durations, it is considered as equal to the ExpectedCheckOutTime. | If the ACTUAL_CLOCK_OUT event is not being sent at all, in that case, a “Default Clock Out interval” can be set which is 8 hours by default but can be edited depending on the requirement. It means - ActualCheckOutTime = ActualCheckInTime + “Default Clock Out interval”. | . ",
+    "url": "http://localhost:4000/docs/attendanceStatusByPlannedShifts.html#notes",
+    "relUrl": "/docs/attendanceStatusByPlannedShifts.html#notes"
+  },"10": {
+    "doc": "Attendance Status By Planned Shifts",
+    "title": "Visual Representation for determining Attendance Status:",
+    "content": ". | If a person has Clocked-In before the shift starts but Clocked-Out within the shift. The person is considered as present in that shift. Example: The person’s Actual Shift is from 19th Jan 7:00 AM to 19th Jan 10:00 AM and Shift is from 19th Jan 8:00 AM to 19th Jan 11:00 AM. In this case, the person is considered as present within the Shift. | If a person falls in neither of the shifts defined, they will not be considered as present in any shift. Example: The person’s Actual Shift is from 19th Jan 6:00 AM to 19th Jan 7:00 AM and Shift is from 19th Jan 8:00 AM to 19th Jan 11:00 AM. In this case, the person is considered Absent. | If a person Clocked-In before shift 1 started and Clocked-Out in shift 2 which is after shift 1. Then the person will be considered present in both shifts. Example: The person’s Actual Shift is from 19th Jan 7:00 AM to 19th Jan 12:00 Noon and the two pre-defined Shifts are from 19th Jan 8:00 AM to 19th Jan 11:00 AM and 19th Jan 11:00 AM to 19th Jan 2:00 PM. In this case, the person is considered present in both shifts. | If a person Clocked-In after shift 1 started and Clocked Out in shift 2 which is after shift1. Then the person will be considered present in both shifts. Example: The person’s Actual Shift is from 19th Jan 10:00 AM to 19th Jan 12:00 Noon and the two pre-defined Shifts are from 19th Jan 8:00 AM to 19th Jan 11:00 AM and 19th Jan 11:00 AM to 19th Jan 2:00 PM. In this case, the person is considered present in both shifts. | If a person’s ActualCheckOutTime is at the precise time the shift starts then the person is included as present in the shift. Example: The person’s Actual Shift is from 19th Jan 7:00 AM to 19th Jan 8:00 AM and Shift is from 19th Jan 8:00 AM to 19th Jan 11:00 AM. In this case, the person is considered Present in that shift. | If a person’s ActualCheckInTime is at the precise time the shift ends then the person won’t be included in the shift. Example: The person’s Actual Shift is from 19th Jan 11:00 AM to 19th Jan 1:00 PM and Shift is from 19th Jan 8:00 AM to 19th Jan 11:00 AM. In this case, the person is considered Absent in that shift. | If a person’s ActualCheckInTime is the same as ActualCheckOutTime and it is at the precise point the Shift ends then the person won’t be included in the shift. Example: The person’s Actual Shift is from 19th Jan 11:00 AM to 19th Jan 11:00 AM and Shift is from 19th Jan 8:00 AM to 19th Jan 11:00 AM. In this case, the person is considered Absent in that shift. | If a person’s ActualCheckInTime is the same as ActualCheckOutTime and it is at the precise point the Shift starts then the person will be included in the shift. Example: The person’s Actual Shift is from 19th Jan 8:00 AM to 19th Jan 8:00 AM and Shift is from 19th Jan 8:00 AM to 19th Jan 11:00 AM. In this case, the person is considered present in that shift. | If a person has Checked In the previous day and his/her/their shift extends to the next day and they fall within the two shifts range following the points above. In this case, the person will be considered in both shifts. Example: The person Clocks-In on 19th Jan 7:00 PM and his shift starts from 19th Jan 9:00 PM to 11:59 PM. The person has to extend the shift to the other day and Clocks-Out on 20th Jan 2:00 AM. The other day shift is defined from 20th Jan 1:00 AM to 20th Jan 3:00 AM. In this case, the person is considered present in 19th Shift 9:00-11:59 as well as 20th Shift 1:00-3:00. | . ",
+    "url": "http://localhost:4000/docs/attendanceStatusByPlannedShifts.html#visual-representation-for-determining-attendance-status",
+    "relUrl": "/docs/attendanceStatusByPlannedShifts.html#visual-representation-for-determining-attendance-status"
+  },"11": {
+    "doc": "Attendance Status By Planned Shifts",
+    "title": "Attendance Status By Planned Shifts",
+    "content": " ",
+    "url": "http://localhost:4000/docs/attendanceStatusByPlannedShifts.html",
+    "relUrl": "/docs/attendanceStatusByPlannedShifts.html"
+  },"12": {
+    "doc": "Attendance Summary",
+    "title": "Attendance Summary",
+    "content": "This report helps in keeping track of the number of days people were present in their scheduled shifts. ",
+    "url": "http://localhost:4000/docs/attendanceSummary.html",
+    "relUrl": "/docs/attendanceSummary.html"
+  },"13": {
+    "doc": "Attendance Summary",
+    "title": "Helpful terminologies",
+    "content": "Expected Working Days: Total number of days when the person is expected to be in the shift. Actual Working Days: Total number of days when the person actually came to the shift. ",
+    "url": "http://localhost:4000/docs/attendanceSummary.html#helpful-terminologies",
+    "relUrl": "/docs/attendanceSummary.html#helpful-terminologies"
+  },"14": {
+    "doc": "Audits",
+    "title": "Audits",
+    "content": "Latest Stable Version: v24 . ",
+    "url": "http://localhost:4000/docs/audits.html",
+    "relUrl": "/docs/audits.html"
+  },"15": {
+    "doc": "Audits",
+    "title": "What is SmartClean Audits",
+    "content": "Audits allows you to perform the following actions: . | Create audits (inspections): Define inspection templates by utilising various question-answer formats available and allocate scores alongwith failure threshold definitions. | Get inspection analytics: Get insights into which zones are performing best or worst by visualizing daily, weekly or monthly reports that churn out average scores and failed item details. | . ",
+    "url": "http://localhost:4000/docs/audits.html#what-is-smartclean-audits",
+    "relUrl": "/docs/audits.html#what-is-smartclean-audits"
+  },"16": {
+    "doc": "Audits",
+    "title": "Creating Inspection Templates",
+    "content": "Inspection templates can be defined by going to the Templates section of your dashboard. ",
+    "url": "http://localhost:4000/docs/audits.html#creating-inspection-templates",
+    "relUrl": "/docs/audits.html#creating-inspection-templates"
+  },"17": {
+    "doc": "Audits Report",
+    "title": "Audits Report",
+    "content": "This report helps in visualizing Key performance indicators of Audits that are completed. It helps to track: 1. Total number of Audits done and the average audit score. 2. Number of Auditors who performed the audits. 3. Failed and Successful Audits. 4. Helps to analyze the performance of different zones. 5. Helps to know exactly which questions failed for the Audit. Also, what are the most frequently failing questions for different zones? 6. As it is a property level report, it helps to keep a count of the number of audits performed per building and the number of zones that were inspected per building. ",
+    "url": "http://localhost:4000/docs/auditsReport.html",
+    "relUrl": "/docs/auditsReport.html"
+  },"18": {
+    "doc": "Audits Report",
+    "title": "FAQs",
+    "content": ". | What is considered a Successful Audit? When the Average Score of the Audit is greater or equal to the target score. The audit is considered as successful. And similarly, when the Average Score of the Audit is less than the target score, it is considered as a Failed Audit. | Why do graphs like “Audit performance” and “Successful Audits” change their time intervals depending on the time interval chosen while generating the report? It is done to facilitate easy viewing and better data ranges depending on the time interval chosen. So basically: . | If the chosen date range is for a single day, then the data points shown are on an Hourly Basis. | If the chosen date range is less than a month, then the data points shown are on Daily Basis. | If the chosen date range is more than a month but less than 3 months, then the data points shown are on Weekly Basis. | If the chosen date range is more than 3 months, then the data points shown are on a Monthly Basis. The maximum date range is that of 190 Days for a report that can be provided. | . | In the type of graphs mentioned in the previous question, if the date range chosen while generating the report is from 3 Jan to 15 April which means the interval of the graphs will be on monthly basis(Because the number of days is more than 3 months). In that, the data presented in “Audit performance” for the month of April is for the whole of April or only till the 15th of April? Data shown is always according to the interval provided while generating the report. So even if the column is showing April month in the time range. The data statistics shown is only till 15th of April. | Suppose for all the zones the Average Score is 100 or above 90. So what is then shown in the “Lowest Performing Zones”? In this case nothing. We ignore the zones with an Average Score equal to or greater than 90. As it doesn’t make sense to include them in the worst list. Also in the case of “Top Performing Zones”, we ignore the zones with an Average Score equal to or less than 50. | . ",
+    "url": "http://localhost:4000/docs/auditsReport.html#faqs",
+    "relUrl": "/docs/auditsReport.html#faqs"
+  },"19": {
+    "doc": "Audits Report",
+    "title": "Word used interchangeably:",
+    "content": "Audit ↔︎ Inspection Item ↔︎ Question . ",
+    "url": "http://localhost:4000/docs/auditsReport.html#word-used-interchangeably",
+    "relUrl": "/docs/auditsReport.html#word-used-interchangeably"
+  },"20": {
+    "doc": "Customer Feedback",
+    "title": "Customer Feedback",
+    "content": "This report helps in the calculation of Key Performance Indicators related to Customer Feedback. It helps to determine things surrounding how happy/disappointed people are with the services and how a property is performing as a whole. Also helps to know which areas or services need improvement and which ones are the solid performers. ",
+    "url": "http://localhost:4000/docs/customerFeedback.html",
+    "relUrl": "/docs/customerFeedback.html"
+  },"21": {
+    "doc": "Customer Feedback",
+    "title": "Helpful terminologies",
+    "content": "Good Threshold: It is a value that helps in determining whether the feedback is positive or negative. Example: Consider a 3 point rating system: 1,2 and 3 where 3 is the best and 1 is the worst. So if Good Threshold is 2 then positive feedback includes 2 and 3 whereas negative feedback includes only 1. Max Rating: Consider a 3 point rating system: 1,2 and 3 where 3 is the best and 1 is the worst. 3 is the Max Rating. Min Rating: Consider a 3 point rating system: 1,2 and 3 where 3 is the best and 1 is the worst. 1 is the Min Rating. | The above things are configurable depending on the requirements. | . ",
+    "url": "http://localhost:4000/docs/customerFeedback.html#helpful-terminologies",
+    "relUrl": "/docs/customerFeedback.html#helpful-terminologies"
+  },"22": {
+    "doc": "Customer Feedback",
+    "title": "FAQs",
+    "content": ". | What is considered as positive Feedback? Consider a 3 point rating system: 1,2 and 3 where 3 is the best and 1 is the worst. So if Good Threshold is 2 then positive feedback includes 2 and 3. | What is considered as negative feedback? Consider a 3 point rating system: 1,2 and 3 where 3 is the best and 1 is the worst. So if Good Threshold is 2 then negative feedback includes 1. | Why do graphs like “Avg. Customer Feedback” and “Ratings Breakdown” change their time intervals depending on the time interval chosen while generating the report? It is done to facilitate easy viewing and better data ranges depending on the time interval chosen. So basically: . | If the chosen date range is for a single day, then the data points shown are on an Hourly Basis. | If the chosen date range is less than a month, then the data points shown are on Daily Basis. | If the chosen date range is more than a month but less than 3 months, then the data points shown are on Weekly Basis. | If the chosen date range is more than 3 months, then the data points shown are on a Monthly Basis.The maximum date range is that of 190 Days for a report that can be provided. | . Example: The Date Range below is 1 month. So the time interval for the x-axis of the graph is on daily basis. | In the type of graphs mentioned in the previous question, if the date range chosen while generating the report is from 3 Jan to 15 April which means the interval of the graphs will be on monthly basis(Because the number of days is more than 3 months). In that the data presented in Avg. Customer Feedback for the month of April is for the whole of April or only till the 15th of April? Data shown is always according to the interval provided while generating the report. So even if the column is showing April month in the time range. The data statistics shown is only till 15th of April. | Suppose in a 3 points-based rating system, 3 being the best and 1 being the worst, the average rating across all the Zones is 3. So what is then shown in the “Lowest Rated Zones”? In this case nothing. We ignore the zones with average ratings equal to the maximum rating. Also in the case of “Top Performing Zones”, we ignore the zones with the average rating equal to the minimum rating. | On what basis are Top performing Zones and Worst performing Zones decided? The average of the ratings across the zone gives the average rating for that zone. The higher its value, the better it is. Depending on this value the top and worst-performing zones are chosen. | . ",
+    "url": "http://localhost:4000/docs/customerFeedback.html#faqs",
+    "relUrl": "/docs/customerFeedback.html#faqs"
+  },"23": {
+    "doc": "Customer Feedback",
+    "title": "Helpful pointers for understanding some graphs:",
+    "content": ". | “Issues Reported” graph helps in understanding for a particular zone how many times has one issue been reported. On the x-axis, we have the zones and on the y-axis, we have different kinds of issues reported. Example(Graph below): For the “Female Washroom, L2” zone and “Bin Full” issue, the count of issues reported is 4. | “Ratings Breakdown” graph helps in knowing the number of times a particular rating was chosen on a particular day. Example(Graph below): On 2021-12-02, “Excellent” Rating has been given 249 times. | . ",
+    "url": "http://localhost:4000/docs/customerFeedback.html#helpful-pointers-for-understanding-some-graphs",
+    "relUrl": "/docs/customerFeedback.html#helpful-pointers-for-understanding-some-graphs"
+  },"24": {
+    "doc": "Escalation policies",
+    "title": "What are escalation policies ?",
+    "content": "An escalation policy allows configuration of notifications to various endpoints when certain key performance indicators for an incident are violated, such as its start time or due time. ",
+    "url": "http://localhost:4000/docs/escalationPolicyMaster.html#what-are-escalation-policies-",
+    "relUrl": "/docs/escalationPolicyMaster.html#what-are-escalation-policies-"
+  },"25": {
+    "doc": "Escalation policies",
+    "title": "Escalation policies",
+    "content": " ",
+    "url": "http://localhost:4000/docs/escalationPolicyMaster.html",
+    "relUrl": "/docs/escalationPolicyMaster.html"
+  },"26": {
+    "doc": "Matrix Event Bus (MEB)",
+    "title": "Matrix Event Bus (MEB)",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/eventBusCore.html",
+    "relUrl": "/docs/eventBusCore.html"
+  },"27": {
+    "doc": "Matrix Event Bus (MEB)",
+    "title": "What is the Matrix Event Bus ?",
+    "content": "The purpose of Matrix Event Bus (MEB) is to stream events from various applications running in a property or organisation and deliver it to certain endpoints on a near-real time basis. Subscribers can subscribe to a pattern (subset) or entirety of events. Billing is calculated based on the amount of data egress and certain other key parameters of deliveries. Using MEB, third party application developers can plugin their solutions within Matrix and add value within the eco-system. For example, an application listening to all incident creations can notify another application within their organisation about the same by subscribing to a pattern: . matrix.&lt;mybuildingid&gt;.scworkforcemanagement.INCIDENT_CREATED.* . What are events ? . Each application within Matrix, when it acts on certain key entities, results in a create, modify, delete or read event with respect to the namespace within that application. For example, when a new incident is created within Matrix, its RoutingKey is as follows: matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED.HIGH . Additionally, an event will also contain a generally complete subset of affected object’s data for providing minimal information about the event. For example, a new incident creation event will also proxy the details about the zone, name of task, who it is allocated to. Any other information not present within the event payload can be obtained by appropriate SDK calls to Matrix. The routing key of an event has the following generic schema: . matrix.&lt;principal&gt;.&lt;module&gt;.&lt;eventid&gt;.&lt;priority&gt; . Can I generate events from my application and send it to MEB ? . Yes, third party applications can generate their own events within the event bus, subject to certain restrictions and quotas. ",
+    "url": "http://localhost:4000/docs/eventBusCore.html#what-is-the-matrix-event-bus-",
+    "relUrl": "/docs/eventBusCore.html#what-is-the-matrix-event-bus-"
+  },"28": {
+    "doc": "Matrix Event Bus (MEB)",
+    "title": "What events are available in the event bus ?",
+    "content": "The following events are available on the bus currently: . | Incident Created - matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED.HIGH | Incident Escalated - matrix.mybuildingid.scworkforcemanagement.INCIDENT_ESCALATED.HIGH | Incident Started - matrix.mybuildingid.scworkforcemanagement.INCIDENT_STARTED.NORMAL | Incident Completed - matrix.mybuildingid.scworkforcemanagement.INCIDENT_COMPLETED.NORMAL | Incident Not Resolved - matrix.mybuildingid.scworkforcemanagement.INCIDENT_INCOMPLETE.HIGH | Shift Started - matrix.mybuildingid.scworkforcemanagement.SHIFT_STARTED.NORMAL | Shifts Published - matrix.mybuildingid.scworkforcemanagement.SHIFTS_PUBLISHED.MEDIUM | Shift Delayed - matrix.mybuildingid.scworkforcemanagement.SHIFT_DELAYED.MEDIUM | Shift Absent - matrix.mybuildingid.scworkforcemanagement.SHIFT_ABSENT.HIGH | Shift Completed - matrix.mybuildingid.scworkforcemanagement.SHIFT_COMPLETED.NORMAL | Audit Started - matrix.mybuildingid.scaudits.AUDIT_STARTED.NORMAL | Audit Completed - matrix.mybuildingid.scaudits.AUDIT_COMPLETED.HIGH | Task Started - matrix.mybuildingid.scworkforcemanagement.TASK_STARTED.NORMAL | Task Completed - matrix.mybuildingid.scworkforcemanagement.TASK_COMPLETED.NORMAL | Task Not Resolved - matrix.mybuildingid.scworkforcemanagement.TASK_INCOMPLETE.HIGH | Zone Created - matrix.mybuildingid.scgrids.ZONE_CREATED.NORMAL | Zone Name Modified - matrix.mybuildingid.scgrids.ZONE_NAME_MODIFIED.MEDIUM | Zone Status Modified - matrix.mybuildingid.scgrids.ZONE_STATUS_MODIFIED.MEDIUM | Zone Deleted - matrix.mybuildingid.scgrids.ZONE_REMOVED.HIGH | Level Created - matrix.mybuildingid.scgrids.LEVEL_CREATED.NORMAL | Level Name Modified - matrix.mybuildingid.scgrids.LEVEL_NAME_MODIFIED.MEDIUM | . ",
+    "url": "http://localhost:4000/docs/eventBusCore.html#what-events-are-available-in-the-event-bus-",
+    "relUrl": "/docs/eventBusCore.html#what-events-are-available-in-the-event-bus-"
+  },"29": {
+    "doc": "Matrix Event Bus (MEB)",
+    "title": "Generic Data Format for Matrix Events",
+    "content": "Each event in the MEB follows the following schema: . \"Principal\": \"&lt;string&gt; The principal - property, building or organisation\", \"Description\": \"&lt;string&gt; A human readable description of the event.\", \"Event\": \"&lt;string&gt; The eventid part of routing key of this matrix event.\", \"RoutingKey\": \"&lt;string&gt; The routing key.\", \"Module\": \"&lt;string&gt; The module part of routing key of this matrix event.\", \"Status\": \"&lt;string&gt; The priority part of routing key of this matrix event.\", \"UnixTime\": \"&lt;string&gt; The unix time of this event in seconds.\", \"UnixTimeInt\": \"&lt;number&gt; The unit time of this event in seconds as number datatype.\" \"Meta\": \"&lt;map&gt; A variadic data structure holding a subset of relevant data pertaining to this event.\" . The schema of key Meta is constant per source namespace that generated the event. ",
+    "url": "http://localhost:4000/docs/eventBusCore.html#generic-data-format-for-matrix-events",
+    "relUrl": "/docs/eventBusCore.html#generic-data-format-for-matrix-events"
+  },"30": {
+    "doc": "Incidents Summary Report",
+    "title": "Incidents Summary Report",
+    "content": "This report helps in visualizing Key performance indicators of Incidents and Tasks. It helps to track: 1. How many incidents or tasks have been generated? 2. Distribution of the incidents and tasks generated across zones, types, priorities, and statuses. 3. By whom they are generated and by whom they are resolved? 4. How many of them have been allocated to a person but not completed? 5. How many have been closed within SLA? 6. Helps in determining some of the key performance indexes of responsiveness like Average Response Time, Average Resolution Rate, and Average Resolution Time. ",
+    "url": "http://localhost:4000/docs/incidentsSummaryDetails.html",
+    "relUrl": "/docs/incidentsSummaryDetails.html"
+  },"31": {
+    "doc": "Incidents Summary Report",
+    "title": "Helpful terminologies",
+    "content": "Workorder: A workorder refers to sensor or application created incidents or scheduled tasks. Average Response Time: The average time taken by a person allotted to respond to the requests. Average Resolution Time: The average time taken by a person allotted to finish the requests. Average Resolution Rate: Helps in reporting how many incidents and tasks have been completed in comparison to the total generated. Total Time Spent: Total time taken to complete incidents as well as tasks. SLA Violation: SLA is violated when workorder is not completed within the stipulated time. ",
+    "url": "http://localhost:4000/docs/incidentsSummaryDetails.html#helpful-terminologies",
+    "relUrl": "/docs/incidentsSummaryDetails.html#helpful-terminologies"
+  },"32": {
+    "doc": "Incidents Summary Report",
+    "title": "FAQs",
+    "content": ". | Do Workorders include both incidents and scheduled tasks? Yes. | Why do time interval-based graphs like “No. Of Workorders” have different time intervals depending on the interval chosen while generating the report? It is done to facilitate easy viewing and better data ranges depending on the time interval chosen. So basically: . | If the chosen date range is for a single day, then the data points shown are on an Hourly Basis. | If the chosen date range is less than a month, then the data points shown are on Daily Basis. | If the chosen date range is more than a month but less than 3 months, then the data points shown are on Weekly Basis. | If the chosen date range is more than 3 months, then the data points shown are on a Monthly Basis. The maximum date range is that of 190 Days for a report that can be provided. | . | In the type of graphs mentioned in the previous question, if the date range chosen while generating the report is from 3 Jan to 15 April which means the interval of the graphs will be on monthly basis(Because the number of days is more than 3 months). In that, the data presented in “No. Of Workorders” for the month of April is for the whole of April or only till the 15th of April? Data shown is always according to the interval provided while generating the report. So even if the column is showing April month in the time range. The data statistics shown is only till 15th of April. | . ",
+    "url": "http://localhost:4000/docs/incidentsSummaryDetails.html#faqs",
+    "relUrl": "/docs/incidentsSummaryDetails.html#faqs"
+  },"33": {
+    "doc": "Incidents Summary Report",
+    "title": "Helpful pointers for understanding some graphs:",
+    "content": ". | “Scheduled tasks - Allocated vs Completed” graph helps in understanding how many tasks were actually allocated to be completed vs how many have been actually completed. Example(Graph below): For “2021-12-02”, Allocated tasks are 35 and Completed tasks are 25. | “Scheduled tasks - Allocated vs Completed” graph helps in understanding how many tasks were actually allocated to be completed vs how many have been actually completed. Example(Graph below): For “2021-12-02”, Allocated tasks are 35 and Completed tasks are 25. | . ",
+    "url": "http://localhost:4000/docs/incidentsSummaryDetails.html#helpful-pointers-for-understanding-some-graphs",
+    "relUrl": "/docs/incidentsSummaryDetails.html#helpful-pointers-for-understanding-some-graphs"
+  },"34": {
+    "doc": "SmartClean Matrix",
+    "title": "Matrix",
+    "content": " ",
+    "url": "http://localhost:4000/api/#matrix",
+    "relUrl": "/api/#matrix"
+  },"35": {
+    "doc": "SmartClean Matrix",
+    "title": "What is SmartClean Matrix",
+    "content": "Matrix serves as a one-stop platform, digitizing all the facets of cleaning management, and brings seamless integration with silo solutions. Its goal is bring all the stakeholders on a single platform and democratize information among the cleaning industry stakeholders including properties, FM, cleaning and hygiene companies. Login to your account here: Matrix Login . Matrix comprises the following web based modules and mobile applications for iOS and Android: . | Workforce: Workforce management tools to manage your manpower, view their attendance and performance KPIs. | Workorders: Schedule and plan shifts (roster), create tasks and report/view incidents happening in your facility. | Audits: Create inspection templates and generate audit scores by creating various type of questionairres provided. | Reports: Generate and view primary KPIs from the modules and optionally share it with external clients. | Optimus: Utilise the power of IoT to enhance your cleaning operations using SmartClean provided sensors or even third party sensors. | Grids: Grids allows you to map your facility by defining zones and annotating them on a floor plan to provide a visual navigation mechanism for the data generated by other modules, such as incidents ongoing in zones, etc. | . The mobile applications available are: . | FM: This application allows stakeholders to create and view schedules, monitor/resolve/create incidents and tasks, monitor attendance of workforce for shifts published. | . iOS: FM iOS . Android: FM Android . | Housekeeping: This application allows stakeholders to check in to their scheduled/planned shifts and perform the necessary actions to resolve a scheduled task or incident assigned. | . iOS: Housekeeping iOS . Android: Housekeeping Android . ",
+    "url": "http://localhost:4000/api/#what-is-smartclean-matrix",
+    "relUrl": "/api/#what-is-smartclean-matrix"
+  },"36": {
+    "doc": "SmartClean Matrix",
+    "title": "How to get help",
+    "content": "You can raise an issue with your designated account manager to resolve mission critical issues. The system runs highly available services and ensures 99.9% SLAs for critical components. ",
+    "url": "http://localhost:4000/api/#how-to-get-help",
+    "relUrl": "/api/#how-to-get-help"
+  },"37": {
+    "doc": "SmartClean Matrix",
+    "title": "Support or Contact",
+    "content": "Having trouble with a widget? Check out our documentation or contact support and we’ll help you sort it out. ",
+    "url": "http://localhost:4000/api/#support-or-contact",
+    "relUrl": "/api/#support-or-contact"
+  },"38": {
+    "doc": "SmartClean Matrix",
+    "title": "SmartClean Matrix",
+    "content": " ",
+    "url": "http://localhost:4000/api/",
+    "relUrl": "/api/"
+  },"39": {
+    "doc": "SmartClean Matrix",
+    "title": "Matrix",
+    "content": " ",
+    "url": "http://localhost:4000/docs/#matrix",
+    "relUrl": "/docs/#matrix"
+  },"40": {
+    "doc": "SmartClean Matrix",
+    "title": "What is SmartClean Matrix",
+    "content": "Matrix serves as a one-stop platform, digitizing all the facets of cleaning management, and brings seamless integration with silo solutions. Its goal is bring all the stakeholders on a single platform and democratize information among the cleaning industry stakeholders including properties, FM, cleaning and hygiene companies. Login to your account here: Matrix Login . Matrix comprises the following web based modules and mobile applications for iOS and Android: . | Workforce: Workforce management tools to manage your manpower, view their attendance and performance KPIs. | Workorders: Schedule and plan shifts (roster), create tasks and report/view incidents happening in your facility. | Audits: Create inspection templates and generate audit scores by creating various type of questionairres provided. | Reports: Generate and view primary KPIs from the modules and optionally share it with external clients. | Optimus: Utilise the power of IoT to enhance your cleaning operations using SmartClean provided sensors or even third party sensors. | Grids: Grids allows you to map your facility by defining zones and annotating them on a floor plan to provide a visual navigation mechanism for the data generated by other modules, such as incidents ongoing in zones, etc. | . ",
+    "url": "http://localhost:4000/docs/#what-is-smartclean-matrix",
+    "relUrl": "/docs/#what-is-smartclean-matrix"
+  },"41": {
+    "doc": "SmartClean Matrix",
+    "title": "Mobile Applications",
+    "content": "The mobile applications available are: . | FM: This application allows stakeholders to create and view schedules, monitor/resolve/create incidents and tasks, monitor attendance of workforce for shifts published. | . iOS: FM iOS . Android: FM Android . | Housekeeping: This application allows stakeholders to check in to their scheduled/planned shifts and perform the necessary actions to resolve a scheduled task or incident assigned. | . iOS: Housekeeping iOS . Android: Housekeeping Android . ",
+    "url": "http://localhost:4000/docs/#mobile-applications",
+    "relUrl": "/docs/#mobile-applications"
+  },"42": {
+    "doc": "SmartClean Matrix",
+    "title": "How to get help",
+    "content": "You can raise an issue with your designated account manager to resolve mission critical issues. The system runs highly available services and ensures 99.9% SLAs for critical components. ",
+    "url": "http://localhost:4000/docs/#how-to-get-help",
+    "relUrl": "/docs/#how-to-get-help"
+  },"43": {
+    "doc": "SmartClean Matrix",
+    "title": "Support or Contact",
+    "content": "Having trouble with a widget? Check out our documentation or contact support and we’ll help you sort it out. ",
+    "url": "http://localhost:4000/docs/#support-or-contact",
+    "relUrl": "/docs/#support-or-contact"
+  },"44": {
+    "doc": "SmartClean Matrix",
+    "title": "SmartClean Matrix",
+    "content": " ",
+    "url": "http://localhost:4000/docs/",
+    "relUrl": "/docs/"
+  },"45": {
+    "doc": "Open Tasks (Mobile)",
+    "title": "View and complete scheduled open tasks",
+    "content": "Open tasks are scheduled activities created through the web application or unallocated incidents. Using the Housekeeping application, users can allocate incidents and scheduled activities to themselves. ",
+    "url": "http://localhost:4000/docs/openTasksHK.html#view-and-complete-scheduled-open-tasks",
+    "relUrl": "/docs/openTasksHK.html#view-and-complete-scheduled-open-tasks"
+  },"46": {
+    "doc": "Open Tasks (Mobile)",
+    "title": "View and start open scheduled tasks",
+    "content": "Click on the Tasks icon in the bottom navigation bar of the Housekeeping mobile application. Given the date selected, Open Incidents and Open Tasks can be explored. ",
+    "url": "http://localhost:4000/docs/openTasksHK.html#view-and-start-open-scheduled-tasks",
+    "relUrl": "/docs/openTasksHK.html#view-and-start-open-scheduled-tasks"
+  },"47": {
+    "doc": "Open Tasks (Mobile)",
+    "title": "Open Tasks (Mobile)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/openTasksHK.html",
+    "relUrl": "/docs/openTasksHK.html"
+  },"48": {
+    "doc": "People Usage Metrics",
+    "title": "People Usage Metrics",
+    "content": "This report helps in visualizing the footfall, distribution of the number of people across zones and weeks. Hence helping to know the popular zones, popular days of the week, and busiest hours of the building. ",
+    "url": "http://localhost:4000/docs/peopleUsageMetrics.html",
+    "relUrl": "/docs/peopleUsageMetrics.html"
+  },"49": {
+    "doc": "People Usage Metrics",
+    "title": "Helpful terminologies",
+    "content": "Peak Day of Week: For the time range for which the report was generated, which day of the week had the most number of people present. Peak Hours: For the time range for which the report was generated, which hour had the most people present consistently. ",
+    "url": "http://localhost:4000/docs/peopleUsageMetrics.html#helpful-terminologies",
+    "relUrl": "/docs/peopleUsageMetrics.html#helpful-terminologies"
+  },"50": {
+    "doc": "People Usage Metrics",
+    "title": "Helpful pointers for understanding some graphs:",
+    "content": ". | “Popular/busiest hour of the building” helps in understanding for a particular hour in the day on average how many people are present. Also, this helps us to gauge the most popular hours. Example(Graph below): For the 11th hour, the number of people present on average is 487. The busiest hours are the 15th and 19th hours when the “average number of people” present are 1082 and 1080 respectively. | “Weekly people distribution” graph helps in understanding for a particular hour and day of the week, what is the average footfall? On the x-axis, we have the hours and on the y-axis, we have different days of the week. Example(Graph below): For the 8th hour and Tuesday, the average Footfall is 496. | . ",
+    "url": "http://localhost:4000/docs/peopleUsageMetrics.html#helpful-pointers-for-understanding-some-graphs",
+    "relUrl": "/docs/peopleUsageMetrics.html#helpful-pointers-for-understanding-some-graphs"
+  },"51": {
+    "doc": "Portal and Application Access",
+    "title": "Web Portal",
+    "content": "The web portal can be accessed here. Your project administrator must have created and account for you and invited you to be a part of their project. On successful login, the application will ask for consent to share your thumbnail picture within the property members if uploaded. To continue, please accept the invitation. Note that rejection of invitation will result in immediate removal of the pending membership. If you are logging in to your account for the first time, you will be required to change your password. Password Policy . The password must be minimum 8 characters long with at least 1 special character, 1 number and 1 uppercase alphabet. Ensure your password is changed frequently to avoid any misuse and do not store passwords in non personal devices. ",
+    "url": "http://localhost:4000/docs/portalAccess.html#web-portal",
+    "relUrl": "/docs/portalAccess.html#web-portal"
+  },"52": {
+    "doc": "Portal and Application Access",
+    "title": "Mobile Applications",
+    "content": "The mobile application links can be found here. On successful login, the application will ask for consent to share your thumbnail picture within the property members if uploaded. To continue, please accept the invitation. Note that rejection of invitation will result in immediate removal of the pending membership. ",
+    "url": "http://localhost:4000/docs/portalAccess.html#mobile-applications",
+    "relUrl": "/docs/portalAccess.html#mobile-applications"
+  },"53": {
+    "doc": "Portal and Application Access",
+    "title": "I forgot my password",
+    "content": "For web, please click the following link. In the input field, you can enter your userid or a verified attribute (email or phone number). Once the OTP is successfully received, you can enter the OTP and a new password based on the policy above. For mobile, please press the forgot password button in the homepage, followed by the same process as mentioned above. ",
+    "url": "http://localhost:4000/docs/portalAccess.html#i-forgot-my-password",
+    "relUrl": "/docs/portalAccess.html#i-forgot-my-password"
+  },"54": {
+    "doc": "Portal and Application Access",
+    "title": "Portal and Application Access",
+    "content": " ",
+    "url": "http://localhost:4000/docs/portalAccess.html",
+    "relUrl": "/docs/portalAccess.html"
+  },"55": {
+    "doc": "Question Types",
+    "title": "Question Type Options",
+    "content": "Various question types are available to be used in an inspection definition. Their details are described below. ",
+    "url": "http://localhost:4000/docs/questionTypes.html#question-type-options",
+    "relUrl": "/docs/questionTypes.html#question-type-options"
+  },"56": {
+    "doc": "Question Types",
+    "title": "Multiple Choice",
+    "content": " ",
+    "url": "http://localhost:4000/docs/questionTypes.html#multiple-choice",
+    "relUrl": "/docs/questionTypes.html#multiple-choice"
+  },"57": {
+    "doc": "Question Types",
+    "title": "Checkbox",
+    "content": " ",
+    "url": "http://localhost:4000/docs/questionTypes.html#checkbox",
+    "relUrl": "/docs/questionTypes.html#checkbox"
+  },"58": {
+    "doc": "Question Types",
+    "title": "Datetime",
+    "content": " ",
+    "url": "http://localhost:4000/docs/questionTypes.html#datetime",
+    "relUrl": "/docs/questionTypes.html#datetime"
+  },"59": {
+    "doc": "Question Types",
+    "title": "Date",
+    "content": " ",
+    "url": "http://localhost:4000/docs/questionTypes.html#date",
+    "relUrl": "/docs/questionTypes.html#date"
+  },"60": {
+    "doc": "Question Types",
+    "title": "Instruction",
+    "content": " ",
+    "url": "http://localhost:4000/docs/questionTypes.html#instruction",
+    "relUrl": "/docs/questionTypes.html#instruction"
+  },"61": {
+    "doc": "Question Types",
+    "title": "Question Types",
+    "content": " ",
+    "url": "http://localhost:4000/docs/questionTypes.html",
+    "relUrl": "/docs/questionTypes.html"
+  },"62": {
+    "doc": "RealSense",
+    "title": "SmartClean RealSense",
+    "content": "Latest Stable Dashboard Version: v1.7 . ",
+    "url": "http://localhost:4000/docs/realsense_main.html#smartclean-realsense",
+    "relUrl": "/docs/realsense_main.html#smartclean-realsense"
+  },"63": {
+    "doc": "RealSense",
+    "title": "What is SmartClean RealSense",
+    "content": "This system allows you to manage sensor deployments, monitor their health and manage solutions and data integrations. Help Centre . The help centre for RealSense related articles is maintained at - RealSense Help Centre. ",
+    "url": "http://localhost:4000/docs/realsense_main.html#what-is-smartclean-realsense",
+    "relUrl": "/docs/realsense_main.html#what-is-smartclean-realsense"
+  },"64": {
+    "doc": "RealSense",
+    "title": "RealSense",
+    "content": " ",
+    "url": "http://localhost:4000/docs/realsense_main.html",
+    "relUrl": "/docs/realsense_main.html"
+  },"65": {
+    "doc": "SmartClean Sensors",
+    "title": "SmartClean Sensors and Devices",
+    "content": "Our devices and sensors are part of our standard solutions. To view the data payload format for these sensors navigate to the page Sensors Data Format . ",
+    "url": "http://localhost:4000/docs/realsense_sensors.html#smartclean-sensors-and-devices",
+    "relUrl": "/docs/realsense_sensors.html#smartclean-sensors-and-devices"
+  },"66": {
+    "doc": "SmartClean Sensors",
+    "title": "Firmware versions for SmartClean Sensors",
+    "content": "Following are the latest firmware versions for some sensor models. 1. SMARTCLEAN#PPLCTR - v3.0.3 2. SMARTCLEAN#ODRDTR - v3.0.3 3. SMARTCLEAN#AQGW - v1.0.4aqgw 4. SMARTCLEAN#WD - v4.0.3wd for RealSense enabled projects, 3_1_4wd for non-RealSense projects a. Batch command b. Fix for random number being appended to parameter settings, c. Fix for black image when get_image command is issues, d. Correction for random line generated when saving mask e. WiFi_config API through Access point f. Fix for difficulty in connecting to Access point when device is offline. ",
+    "url": "http://localhost:4000/docs/realsense_sensors.html#firmware-versions-for-smartclean-sensors",
+    "relUrl": "/docs/realsense_sensors.html#firmware-versions-for-smartclean-sensors"
+  },"67": {
+    "doc": "SmartClean Sensors",
+    "title": "SmartClean Sensors",
+    "content": " ",
+    "url": "http://localhost:4000/docs/realsense_sensors.html",
+    "relUrl": "/docs/realsense_sensors.html"
+  },"68": {
+    "doc": "Reports",
+    "title": "Reports",
+    "content": "Latest Stable Version: v12 . ",
+    "url": "http://localhost:4000/docs/reports.html",
+    "relUrl": "/docs/reports.html"
+  },"69": {
+    "doc": "Reports",
+    "title": "SmartClean Reporting Service",
+    "content": "Our Reporting Service allows users to configure, display and share SmartClean Reports using standard controls . Our Reports are a collection of various standard Key Performance Indicators (KPIs) of a desired aspect, rendered as appropriate charts or tables for efficient visualization of the aspect. To access this service in your SmartClean Matrix Web Portal, click on the Reports icon that looks like a gear on blue navigation panel towards the left. The above example shows the main page for this service. If there are any report controllers available for your Building or Property, they will show up on this page. Various services in SmartClean Matrix can be configured so that report controllers become available for locations where the service is active. The above screenshot shows a report controller for SmartClean Audits Service active in a Location of a Facility. Types of Reports . Depending on the service which provides the data, and the intended recipients, this service can create controllers for reports of various types. See more at: Report Types. Properties of Reports . Each report controller has the following properties . The above example from the Reports page shows these in the first (header) row. | Title: A text used to identify the report . | Usually includes name and version of the service for which this will create reports. | . | Report Type: Icon representing the type of Report that will be created. | Schedule: Represents the time range of data used for creating the report | Created On: Date when the report controller was first created. | Last Executed: Date when the report controller was last run. | Status: Status of the report controller. Normal means everything is fine. | Actions: Icons representing actions available for the report type. | . Report Actions . In general, each report controller allows you to perform the following actions: . | View Report: You can use the module to view the timeseries data of reports generated by the reporting services enabled in your project. | Execute Report: Some Reports can be executed on demand based on a custom date time selection hence giving you the flexibility to choose the data and analytics time range as required. | Share Report: SmartClean Web Reports can be shared via a permalink with people that is password protected and can be accessed by anyone who has been provided the password. See more at: Report Actions | . ",
+    "url": "http://localhost:4000/docs/reports.html#smartclean-reporting-service",
+    "relUrl": "/docs/reports.html#smartclean-reporting-service"
+  },"70": {
+    "doc": "Reports",
+    "title": "Frequently Asked Questions (FAQs)",
+    "content": "If you have any questions about this service after reading this page, please visit the FAQs for this service at: FAQs for Reporting Service . ",
+    "url": "http://localhost:4000/docs/reports.html#frequently-asked-questions-faqs",
+    "relUrl": "/docs/reports.html#frequently-asked-questions-faqs"
+  },"71": {
+    "doc": "Report Actions",
+    "title": "What are Report Actions",
+    "content": "Operations that are available on each report controller to view, edit, share or run report. These are shown as icon buttons under the Actions column, corresponding to each report controller. . The following are actions, some or all of which may be available for reports. | Run Report: . | Run the report to populate it with latest or custom data. | The button looks a triangle pointing right inside a circle (or a Play button). | . | View or Share Report: . | View the generated report or share it with other people (in specific formats available). | The button looks like the image of an eye. | . | View or Edit Report Details: . | View and Edit details for the Report. | The button looks like a share icon (box with arrow pointing outwards). | . | Open in BI Context: . | This action is only available for BI Reports. | Opens the report in BI Context (Matrix BI visualization page). | . | . ",
+    "url": "http://localhost:4000/docs/reports_actions.html#what-are-report-actions",
+    "relUrl": "/docs/reports_actions.html#what-are-report-actions"
+  },"72": {
+    "doc": "Report Actions",
+    "title": "Report Actions",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_actions.html",
+    "relUrl": "/docs/reports_actions.html"
+  },"73": {
+    "doc": "Edit Report",
+    "title": "How to Edit a Report Controller",
+    "content": "Click on the Edit button under Actions for a report controller . An example is shown below, the Edit button looks like an image of a box with a pencil. | A dialog box opens (shown below), with the current report details. | . The following properties of the report controllers can be modified if desired. | Report Name: Text used to identify the report | Recipients: Email address of intended users to where this report should be sent. | Time Zone: Choose the desired timezone (by default it is the current region) . | If a different timezone is selected, it will affect the time range that is provided for data selection. | . | Message: A text to be added as the body of the Email that is sent. | Description: A text describing what the report represents. | Enable/Disable: Enable or Disable the report controller (if allowed) | Schedule: Represents the time range of data used for creating the report (if allowed) Press save after making desired changes, or cancel to discard the changes. Note: The properties: Recipients and Message are specific to Web Reports, as these are sent via Email. | . ",
+    "url": "http://localhost:4000/docs/reports_actions_edit.html#how-to-edit-a-report-controller",
+    "relUrl": "/docs/reports_actions_edit.html#how-to-edit-a-report-controller"
+  },"74": {
+    "doc": "Edit Report",
+    "title": "Edit Report",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_actions_edit.html",
+    "relUrl": "/docs/reports_actions_edit.html"
+  },"75": {
+    "doc": "Run Report",
+    "title": "How to Run a Report",
+    "content": "Click on the Run button under Actions for a Report . An example is shown below, the Run button looks like an arrowhead pointing right inside a circle. The following dialog box opens, to verify or modify details for this run. Above is an example of a dialog box after clicking run for a Web Report. You may modify the following details in this dialog: . | Select Time Range: Select the time range for data that the report should use. | Report Name: Text identifying the report. | Description: A short text describing the report. | Full Name: Your full name . | This is just to keep a record identifying who last ran the report. | . | Set Report Password: Set a password for the report that will be generated. | This password must be entered when viewing the report in future. | . | . After adding or verifying the above details, click on Submit. You will see an animated icon that shows “Executing…” below on the bottom of this dialog box. After this process is completed, you will see the following two buttons in the same dialog box: View Report and Share Report . The report also gets saved, and can be viewed later by clicking the “View Report” action button for the respective report controller. Click on the “View Report” button to open the resultant report. - Note: This requires a password to open it . Click on “Share Report” button to obtain a link that can be shared with others. - Note: The password set for the report needs to be entered after opening the link. ",
+    "url": "http://localhost:4000/docs/reports_actions_run.html#how-to-run-a-report",
+    "relUrl": "/docs/reports_actions_run.html#how-to-run-a-report"
+  },"76": {
+    "doc": "Run Report",
+    "title": "Run Report",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_actions_run.html",
+    "relUrl": "/docs/reports_actions_run.html"
+  },"77": {
+    "doc": "View or Share Report",
+    "title": "How to View or Share a Report",
+    "content": "Click on the View button under Actions for a Report. An example is shown below, the View button looks like an eye icon. | A dialog box opens, where you can specify the following: . | Select time range: Choose desired time window (Start and End time) for data in the report. | Set Report Password: Enter the password required for this report. | The other details (Name, Description and Full Name) are populated automatically. | Click on “View Report” button to view the generated report. | Click on “Share Report” button to share this report with others. | . | . For example, click on View Report for a Web Report, and the below page opens The password that was set for the Report must be entered to view the report. Click on Go, and the report will open. Please note, only share the report password with trusted people. ",
+    "url": "http://localhost:4000/docs/reports_actions_view_share.html#how-to-view-or-share-a-report",
+    "relUrl": "/docs/reports_actions_view_share.html#how-to-view-or-share-a-report"
+  },"78": {
+    "doc": "View or Share Report",
+    "title": "View or Share Report",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_actions_view_share.html",
+    "relUrl": "/docs/reports_actions_view_share.html"
+  },"79": {
+    "doc": "Report FAQs",
+    "title": "Frequently Asked Questions",
+    "content": ". Q1. How can I access the previously generated reports? . Please click on the View Report button (eye icon) under Actions for your desired report controller Check or update the details on the dialog box that opens and click Submit. Note: Please select the Time Range to access the reports within the desired time range only. ",
+    "url": "http://localhost:4000/docs/reports_faqs.html#frequently-asked-questions",
+    "relUrl": "/docs/reports_faqs.html#frequently-asked-questions"
+  },"80": {
+    "doc": "Report FAQs",
+    "title": "Report a Question to us",
+    "content": "If you have any question about this service that is not covered here, Please report it to us, and we will address it at the earliest. Note: Before reporting a question, please ensure you have read the pages for this service. Go back to main page for this service Reports . ",
+    "url": "http://localhost:4000/docs/reports_faqs.html#report-a-question-to-us",
+    "relUrl": "/docs/reports_faqs.html#report-a-question-to-us"
+  },"81": {
+    "doc": "Report FAQs",
+    "title": "Report FAQs",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_faqs.html",
+    "relUrl": "/docs/reports_faqs.html"
+  },"82": {
+    "doc": "Report Types",
+    "title": "What are the Report Types",
+    "content": "Depending on who are the intended users and the service which provides the data, this service can generate reports of various types. Our reporting service shows three types of reports: . | BI Embedded (Business Intelligence): These reports allow custom analytics and data to be presented using SmartClean’s proprietary BI services. | Web Report: These reports are snapshots of data and analytics at a certain time. Such reports can be shared with users not having Matrix logins. | Document Report (PDF): These reports are available as a PDF document that can be shared with users over various communication mediums. | . ",
+    "url": "http://localhost:4000/docs/reports_types.html#what-are-the-report-types",
+    "relUrl": "/docs/reports_types.html#what-are-the-report-types"
+  },"83": {
+    "doc": "Report Types",
+    "title": "How can you find out the type of Report",
+    "content": "The icon shown under the column: Report Type, corresponding to each report controller represents the type of report this controller represents . | For BI Reports the icon is a small box with “&gt;_” inside it. | For Web Reports, the icon is a small globe (representing the web). | For Document Reports, the icon is a small image of a document or file. | . ",
+    "url": "http://localhost:4000/docs/reports_types.html#how-can-you-find-out-the-type-of-report",
+    "relUrl": "/docs/reports_types.html#how-can-you-find-out-the-type-of-report"
+  },"84": {
+    "doc": "Report Types",
+    "title": "Report Types",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_types.html",
+    "relUrl": "/docs/reports_types.html"
+  },"85": {
+    "doc": "BI Reports",
+    "title": "What are SmartClean BI Reports",
+    "content": "These reports allow custom analytics and data to be presented using SmartClean’s proprietary BI services. Note: The two controllers in above image are for BI Reports (as you can see from the icon under column: Report Type) . ",
+    "url": "http://localhost:4000/docs/reports_types_bi.html#what-are-smartclean-bi-reports",
+    "relUrl": "/docs/reports_types_bi.html#what-are-smartclean-bi-reports"
+  },"86": {
+    "doc": "BI Reports",
+    "title": "Special Properties",
+    "content": "In additional to the common SmartClean Report Actions, BI Report controllers support the following: . | Run or Open in BI Context: . | Opens the report in the BI Context (Redirects to a SmartClean Matrix BI visualization page) | This additional action is visible as the fourth button under the column Actions for both the BI Report controllers | If the user account that is currently signed in is not authorized to view BI reports, new web page will ask for sign in. | . | . ",
+    "url": "http://localhost:4000/docs/reports_types_bi.html#special-properties",
+    "relUrl": "/docs/reports_types_bi.html#special-properties"
+  },"87": {
+    "doc": "BI Reports",
+    "title": "BI Reports",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_types_bi.html",
+    "relUrl": "/docs/reports_types_bi.html"
+  },"88": {
+    "doc": "Document Reports (PDF)",
+    "title": "What are SmartClean Document Reports",
+    "content": "These reports are available as a PDF document that can be shared with users over various communication mediums. ",
+    "url": "http://localhost:4000/docs/reports_types_doc.html#what-are-smartclean-document-reports",
+    "relUrl": "/docs/reports_types_doc.html#what-are-smartclean-document-reports"
+  },"89": {
+    "doc": "Document Reports (PDF)",
+    "title": "Document Reports (PDF)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_types_doc.html",
+    "relUrl": "/docs/reports_types_doc.html"
+  },"90": {
+    "doc": "Web Reports",
+    "title": "What are SmartClean Web Reports",
+    "content": "These reports are snapshots of data and analytics at a certain time. Such reports can be shared with users not having Matrix logins (i.e anybody), but require a password to open it. To open a shared Web Report, you need the password that was set for the report. Web Reports support all the standard actions: An example is available on each Report Action page below . | Report Action - Run | Report Action - View or Share | Report Action - Edit | . ",
+    "url": "http://localhost:4000/docs/reports_types_web.html#what-are-smartclean-web-reports",
+    "relUrl": "/docs/reports_types_web.html#what-are-smartclean-web-reports"
+  },"91": {
+    "doc": "Web Reports",
+    "title": "Web Reports",
+    "content": " ",
+    "url": "http://localhost:4000/docs/reports_types_web.html",
+    "relUrl": "/docs/reports_types_web.html"
+  },"92": {
+    "doc": "Creating Schedules",
+    "title": "Creating shifts",
+    "content": "Shifts can be created by going to the Schedules section of your dashboard. The steps involved in creating a shift are enumerated below: . ",
+    "url": "http://localhost:4000/api/schedules.html#creating-shifts",
+    "relUrl": "/api/schedules.html#creating-shifts"
+  },"93": {
+    "doc": "Creating Schedules",
+    "title": "Creating new shift for a person",
+    "content": "Click on the + icon in the dashboard. Note that the icon is only visible for future dates as nothing can be planned for past dates. ",
+    "url": "http://localhost:4000/api/schedules.html#creating-new-shift-for-a-person",
+    "relUrl": "/api/schedules.html#creating-new-shift-for-a-person"
+  },"94": {
+    "doc": "Creating Schedules",
+    "title": "Time range selection for a shift",
+    "content": "Start by selecting the start date time and subsequently the end date time. Note that a shift may span night hours, therefore the end time can be carried over to the next day as shown below. ",
+    "url": "http://localhost:4000/api/schedules.html#time-range-selection-for-a-shift",
+    "relUrl": "/api/schedules.html#time-range-selection-for-a-shift"
+  },"95": {
+    "doc": "Creating Schedules",
+    "title": "Zone selection for a shift",
+    "content": "The shift can be allocated to one or more zones in the facility by selecting the level followed by the zone. Note: The zone selection can be left empty to indicate availability of this shift as a recepient of incidents for all zones. ",
+    "url": "http://localhost:4000/api/schedules.html#zone-selection-for-a-shift",
+    "relUrl": "/api/schedules.html#zone-selection-for-a-shift"
+  },"96": {
+    "doc": "Creating Schedules",
+    "title": "Break selection for a shift",
+    "content": "Select breaks (optional). Breaks are of 2 types: . | Unplanned breaks: Specify the time allocated to this break. A person can start and end this break at any time during their shift. | Planned breaks: Specify the start and end time for this break. The mobile application will remind the person to start this type of break few minutes before its scheduled start time. | . Note: The system will not send any auto assigned incidents (IoT driven) during this duration. ",
+    "url": "http://localhost:4000/api/schedules.html#break-selection-for-a-shift",
+    "relUrl": "/api/schedules.html#break-selection-for-a-shift"
+  },"97": {
+    "doc": "Creating Schedules",
+    "title": "Describe the shift for future reference if required",
+    "content": "Add an optional description to the shift. ",
+    "url": "http://localhost:4000/api/schedules.html#describe-the-shift-for-future-reference-if-required",
+    "relUrl": "/api/schedules.html#describe-the-shift-for-future-reference-if-required"
+  },"98": {
+    "doc": "Creating Schedules",
+    "title": "Task scheduling in a planned shift",
+    "content": "If the selected zone/s have been associated with scheduled tasks, they will appear in the right side of the application. | Click on the checkbox to view the tasks inside the task group/s and select their times of occurrence. | Select the start and end time of the task based on how much time should one occurrence be allocated to. The system displays the minimum estimated time that should be allocated to the selected task group. | . Task repetitions in a planned shift . If the task group for that zone is to be repeated on certain intervals, use the repeat widget to generate the task repetition times. Note: The task start time is used to generate the occurrences based on the repetion duration selected. ",
+    "url": "http://localhost:4000/api/schedules.html#task-scheduling-in-a-planned-shift",
+    "relUrl": "/api/schedules.html#task-scheduling-in-a-planned-shift"
+  },"99": {
+    "doc": "Creating Schedules",
+    "title": "Repeat the shift for future dates",
+    "content": "Select if the shift is to be repeated for certain date times based on the modes as described below: . | Repeat for tomorrow: The shift will be replicated for tomorrow’s date. | Repeat for week: The shift will be replicated across the current ISO week. | Repeat for rest of the month: The shift will be replicated across the current month. | Repeat for the next month: The shift will be replicated across the next month. | Repeat for specific days: This options allows the shift to be repeated on specific days of week for the current month. For example, to repeat the shift definition for Mondays and Tuesdays, select as shown below. | . ",
+    "url": "http://localhost:4000/api/schedules.html#repeat-the-shift-for-future-dates",
+    "relUrl": "/api/schedules.html#repeat-the-shift-for-future-dates"
+  },"100": {
+    "doc": "Creating Schedules",
+    "title": "Publish planned shifts",
+    "content": "Once the planning of schedule is completed, press the publish button to notify the respective people about the availability of their schedule. ",
+    "url": "http://localhost:4000/api/schedules.html#publish-planned-shifts",
+    "relUrl": "/api/schedules.html#publish-planned-shifts"
+  },"101": {
+    "doc": "Creating Schedules",
+    "title": "Creating Schedules",
+    "content": " ",
+    "url": "http://localhost:4000/api/schedules.html",
+    "relUrl": "/api/schedules.html"
+  },"102": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Creating shifts",
+    "content": "This page outlines the steps involved in creation of schedules using the FM mobile application. Shifts can be created by going to the Schedules section of your dashboard. The steps involved in creating a shift are enumerated below: . ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#creating-shifts",
+    "relUrl": "/docs/schedulesMobile.html#creating-shifts"
+  },"103": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Creating new shift for a person",
+    "content": "Click on the + icon in the person’s profile in day view or week view mode as shown below. Note that the icon is only visible for future dates as nothing can be planned for past dates. ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#creating-new-shift-for-a-person",
+    "relUrl": "/docs/schedulesMobile.html#creating-new-shift-for-a-person"
+  },"104": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Time range selection for a shift",
+    "content": "Start by selecting the start date time and subsequently the end date time. Note that a shift may span night hours, therefore the end time can be carried over to the next day as shown below. ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#time-range-selection-for-a-shift",
+    "relUrl": "/docs/schedulesMobile.html#time-range-selection-for-a-shift"
+  },"105": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Zone selection for a shift",
+    "content": "The shift can be allocated to one or more zones in the facility by selecting the level followed by the zone. Note: The zone selection can be left empty to indicate availability of this shift as a recepient of incidents for all zones. ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#zone-selection-for-a-shift",
+    "relUrl": "/docs/schedulesMobile.html#zone-selection-for-a-shift"
+  },"106": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Break selection for a shift",
+    "content": "Select breaks (optional). Breaks are of 2 types: . | Unplanned breaks: Specify the time allocated to this break. A person can start and end this break at any time during their shift. | Planned breaks: Specify the start and end time for this break. The mobile application will remind the person to start this type of break few minutes before its scheduled start time. | . Note: The system will not send any auto assigned incidents (IoT driven) during this duration. ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#break-selection-for-a-shift",
+    "relUrl": "/docs/schedulesMobile.html#break-selection-for-a-shift"
+  },"107": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Describe the shift for future reference if required",
+    "content": "Add an optional description to the shift. ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#describe-the-shift-for-future-reference-if-required",
+    "relUrl": "/docs/schedulesMobile.html#describe-the-shift-for-future-reference-if-required"
+  },"108": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Task scheduling in a planned shift",
+    "content": "If the selected zone/s have been associated with scheduled tasks, they will appear in the application as highlighted below. | Click on the checkbox to view the tasks inside the task group/s and select their times of occurrence. | Select the start and end time of the task based on how much time should one occurrence be allocated to. The system displays the minimum estimated time that should be allocated to the selected task group. | . Task repetitions in a planned shift . If the task group for that zone is to be repeated on certain intervals, use the repeat widget to generate the task repetition times. Note: The task start time is used to generate the occurrences based on the repetion duration selected. ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#task-scheduling-in-a-planned-shift",
+    "relUrl": "/docs/schedulesMobile.html#task-scheduling-in-a-planned-shift"
+  },"109": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Repeat the shift for future dates",
+    "content": "Select if the shift is to be repeated for certain date times based on the modes as described below: . | Repeat for tomorrow: The shift will be replicated for tomorrow’s date. | Repeat for week: The shift will be replicated across the current ISO week. | Repeat for rest of the month: The shift will be replicated across the current month. | Repeat for the next month: The shift will be replicated across the next month. | Repeat for specific days: This options allows the shift to be repeated on specific days of week for the current month. For example, to repeat the shift definition for Mondays and Tuesdays, select as shown below. | . ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#repeat-the-shift-for-future-dates",
+    "relUrl": "/docs/schedulesMobile.html#repeat-the-shift-for-future-dates"
+  },"110": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Publish planned shifts",
+    "content": "Once the planning of schedule is completed, press the publish button to notify the respective people about the availability of their schedule. If you forget to publish the schedule, items will be automatically removed from the server after a certain time and users will not be able to act on these shifts. ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html#publish-planned-shifts",
+    "relUrl": "/docs/schedulesMobile.html#publish-planned-shifts"
+  },"111": {
+    "doc": "Creating Schedules (Mobile)",
+    "title": "Creating Schedules (Mobile)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/schedulesMobile.html",
+    "relUrl": "/docs/schedulesMobile.html"
+  },"112": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Creating shifts",
+    "content": "Shifts can be created by going to the Schedules section of your dashboard. The steps involved in creating a shift are enumerated below: . ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#creating-shifts",
+    "relUrl": "/docs/schedulesWeb.html#creating-shifts"
+  },"113": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Creating new shift for a person",
+    "content": "Click on the + icon in the dashboard. Note that the icon is only visible for future dates as nothing can be planned for past dates. ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#creating-new-shift-for-a-person",
+    "relUrl": "/docs/schedulesWeb.html#creating-new-shift-for-a-person"
+  },"114": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Time range selection for a shift",
+    "content": "Start by selecting the start date time and subsequently the end date time. Note that a shift may span night hours, therefore the end time can be carried over to the next day as shown below. ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#time-range-selection-for-a-shift",
+    "relUrl": "/docs/schedulesWeb.html#time-range-selection-for-a-shift"
+  },"115": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Zone selection for a shift",
+    "content": "The shift can be allocated to one or more zones in the facility by selecting the level followed by the zone. Note: The zone selection can be left empty to indicate availability of this shift as a recepient of incidents for all zones. ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#zone-selection-for-a-shift",
+    "relUrl": "/docs/schedulesWeb.html#zone-selection-for-a-shift"
+  },"116": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Break selection for a shift",
+    "content": "Select breaks (optional). Breaks are of 2 types: . | Unplanned breaks: Specify the time allocated to this break. A person can start and end this break at any time during their shift. | Planned breaks: Specify the start and end time for this break. The mobile application will remind the person to start this type of break few minutes before its scheduled start time. | . Note: The system will not send any auto assigned incidents (IoT driven) during this duration. ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#break-selection-for-a-shift",
+    "relUrl": "/docs/schedulesWeb.html#break-selection-for-a-shift"
+  },"117": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Describe the shift for future reference if required",
+    "content": "Add an optional description to the shift. ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#describe-the-shift-for-future-reference-if-required",
+    "relUrl": "/docs/schedulesWeb.html#describe-the-shift-for-future-reference-if-required"
+  },"118": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Task scheduling in a planned shift",
+    "content": "If the selected zone/s have been associated with scheduled tasks, they will appear in the right side of the application. | Click on the checkbox to view the tasks inside the task group/s and select their times of occurrence. | Select the start and end time of the task based on how much time should one occurrence be allocated to. The system displays the minimum estimated time that should be allocated to the selected task group. | . Task repetitions in a planned shift . If the task group for that zone is to be repeated on certain intervals, use the repeat widget to generate the task repetition times. Note: The task start time is used to generate the occurrences based on the repetion duration selected. ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#task-scheduling-in-a-planned-shift",
+    "relUrl": "/docs/schedulesWeb.html#task-scheduling-in-a-planned-shift"
+  },"119": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Repeat the shift for future dates",
+    "content": "Select if the shift is to be repeated for certain date times based on the modes as described below: . | Repeat for tomorrow: The shift will be replicated for tomorrow’s date. | Repeat for week: The shift will be replicated across the current ISO week. | Repeat for rest of the month: The shift will be replicated across the current month. | Repeat for the next month: The shift will be replicated across the next month. | Repeat for specific days: This options allows the shift to be repeated on specific days of week for the current month. For example, to repeat the shift definition for Mondays and Tuesdays, select as shown below. | . ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#repeat-the-shift-for-future-dates",
+    "relUrl": "/docs/schedulesWeb.html#repeat-the-shift-for-future-dates"
+  },"120": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Publish planned shifts",
+    "content": "Once the planning of schedule is completed, press the publish button to notify the respective people about the availability of their schedule. If you forget to publish the schedule, items will be automatically removed from the server after a certain time and users will not be able to act on these shifts. ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html#publish-planned-shifts",
+    "relUrl": "/docs/schedulesWeb.html#publish-planned-shifts"
+  },"121": {
+    "doc": "Creating Schedules (Web)",
+    "title": "Creating Schedules (Web)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/schedulesWeb.html",
+    "relUrl": "/docs/schedulesWeb.html"
+  },"122": {
+    "doc": "Sensors Raw Data Format (Data Push or Data Lake Access)",
+    "title": "General Data Format",
+    "content": "The raw data from sensors is accessible when third party push is enabled in RealSense for a property or through a dedicated provisioned data lake. The generic data format is: . { \"t\": &lt;string&gt;, // Timestamp in the local timezone region of the device (string format: yyyymmddhhmmss) \"v\": &lt;custom type&gt; // Realtime Data from Sensor depending on the type of the Sensor \"unixT\": &lt;number&gt; // Unix time in milliseconds \"DEVID\": &lt;string&gt;, // Slot ID for the Device \"Region\": &lt;string&gt;, // Timezone string in JODA format (See reference at bottom of page) \"time\": &lt;string&gt;, // Timestamp in string format: YYYY-MM-DDTHH:mm:ss+offset \"DevType\": &lt;string&gt;, // Type of the Device Slot (Example: PC for People Counter, FD for feedback etc). \"PID\": &lt;string&gt;, // ID of the Project. \"InsID\": &lt;string&gt;, // ID of the Location / Zone where the Device Slot is located. \"Display\": &lt;string&gt;, // Name of the Device Slot (for identification) \"dow\": &lt;string&gt;, // Day of Week - 0: Sun to 6: Sat \"month\": &lt;string&gt;, // Month of the year (1 - 12) \"hour\": &lt;string&gt;, // Hour of day (0 - 23) \"dom\": &lt;string&gt; // Day of month (0 - 31) \"minute\": &lt;string&gt; // Minute of the Hour (0 - 59) } . Note: for value of t, the timestamp string format represents the following: yyyy is year, mm is month, dd is day, hh is hour, mm is minutes to get the region timezone for the device see the attribute Region . ",
+    "url": "http://localhost:4000/docs/sensorPayloads.html#general-data-format",
+    "relUrl": "/docs/sensorPayloads.html#general-data-format"
+  },"123": {
+    "doc": "Sensors Raw Data Format (Data Push or Data Lake Access)",
+    "title": "Type of Device Slot (DevType)",
+    "content": "The type of a device slot follows a certain format. The generic format is Approved Device Provider#Predefined slot type. For example, usage monitoring sensors from provider SMARTCLEAN have Type as SMARTCLEAN#UM. The type of the device slot is useful for: . | Define and register standard query templates in the system for ease of access. | Define and compute standard metrics from raw data in downstream processing engines. For example, usage monitors and people counters emit a standard metric in system pertaning to sg.smartclean.pplctr.raw.count depicting the usage trend of a zone over time. | Standardise data processing ETL or batch analytics. | Register primary KPIs and attribute their meanings over a time series of data. | . ",
+    "url": "http://localhost:4000/docs/sensorPayloads.html#type-of-device-slot-devtype",
+    "relUrl": "/docs/sensorPayloads.html#type-of-device-slot-devtype"
+  },"124": {
+    "doc": "Sensors Raw Data Format (Data Push or Data Lake Access)",
+    "title": "Realtime Data from Devices",
+    "content": "This section describes the format of the custom real time data provided by the Sensor This data is provided inside the attribute: “v” in the above Schema. The type of this data depends on the type of the standard device slot. ",
+    "url": "http://localhost:4000/docs/sensorPayloads.html#realtime-data-from-devices",
+    "relUrl": "/docs/sensorPayloads.html#realtime-data-from-devices"
+  },"125": {
+    "doc": "Sensors Raw Data Format (Data Push or Data Lake Access)",
+    "title": "Examples of Realtime Data for standard sensors by SmartClean",
+    "content": "Usage Monitoring Device . Device slot types applicable: . | SMARTCLEAN#PPLCTR | SMARTCLEAN#UM | . Format of v in the general data format: . { \"count\": &lt;number&gt;, // Number of people counted in the field of view at a time. \"out_count\": &lt;number&gt; // See below, present for **SMARTCLEAN#PPLCTR** type only } . Note: SMARTCLEAN#PPLCTR considers the direction, therefore, it provides the number of people entering the sensor’s field of view in count and number of people leaving the field of view in out_count . SMARTCLEAN#UM is triggered by motion, therefore it provides the number of times people entering the sensor’s field of view in count. An example use case is to raise an alert when value of count reaches or crosses a maximum threshold. An example query that returns the total people count for a time range across all the zones in a building is as follows: . select insid as Zone, sum(cast(v-&gt;&gt;'count' as integer)) TotalPeople from &lt;db.table&gt; where pid = '&lt;pid&gt;' and month = '&lt;month&gt;' and dom = '&lt;dom&gt;' and devtype = 'SMARTCLEAN#PPLCTR' and time &gt;= &lt;Start Time&gt; and time &lt;= &lt;End Time&gt; group by insid; . Feedback Device . Device slot type applicable: . | SMARTCLEAN#FD | . Format of v in the general data format: . { \"rating\": &lt;number&gt;, // From 1 - 5 \"reasons\": { // optionally present &lt;reason id&gt;: { \"Name\": &lt;string&gt;, // Reason Name/Description \"selector\": &lt;number&gt; // A constant for aggregation purposes }, ... } } . Where key rating depicts the rating provided by the user. This results in a standard metric emission of sg.smartclean.fd.raw.rating. The value of rating is ordered in lesser the better ordering, i.e. value of 1 indicates excellent, 2 indicates good and in this manner the value of 5 indicates very bad. An example use case is to raise an alert when the value of rating is either 4 or 5 (which indicates bad feedback). The alert can also include the values of reasons that are given in the data. Note the name of reason is included inside the data for the corresponding reason id. An example query that returns the average user rating for a time range across all the zones in a building is as follows . select insid as Zone, avg(cast(v-&gt;&gt;'rating' as integer)) AverageRating from &lt;db.table&gt; where pid = '&lt;pid&gt;' and month = '&lt;month&gt;' and dom = '&lt;dom&gt;' and devtype = 'SMARTCLEAN#FD' and time &gt;= &lt;Start Time&gt; and time &lt;= &lt;End Time&gt; group by insid; . Consumable and Bin Level Monitoring Devices . Device slot types applicable: . | SMARTCLEAN#TR (Toilet Roll monitoring Device) | SMARTCLEAN#PT (Paper Towel monitoring Device) | SMARTCLEAN#SS (Soap Solution monitoring Device) | SMARTCLEAN#BIN (Bin container monitoring Device) | . The above types refer to: Tissue Roll, Paper Towel, Bin, Soap Solution types respectively. Format of v in the general data format: . { \"p\": &lt;number&gt; // Percentage from 0 to 100 } . Based on whether the device type is bin or some other consumable, the value of p represents a slightly different aspect. | For slot type BIN, . | p represents the empty space (remaining) inside the enclosing bin container | . | For the other slot Types (TR, PT and SS), . | p represents the level of consumable remaining in the container. | . | . An example use case is to raise an alert if the value of p reaches below a certain minimum threshold. If the type was bin, this indicates that the bin container is near to getting full. For other consumable types this indicates that the fill level of the consumable is near to getting empty. Spill detection device . Device slot type applicable: . | SMARTCLEAN#WD | . Format of v in the general data format: . { \"value\": &lt;number&gt; // value of 1 represents spill detected. \"AreaP\": &lt;number&gt; // value represents percentage of area that is wet } . An example use case is to raise an alert if the value is 1 and value of AreaP crosses a certain threshold . Air Quality Monitoring Device . Device slot types applicable: . | SMARTCLEAN#ODRDTR | SMARTCLEAN#ODRDTR_BATT_V1 | . Format of v in the general data format: . { \"amm\": &lt;number&gt; // concentration of the ammonia in the detection zone (unit depends on type of device) \"aqi\": &lt;number&gt; // Air Quality Index (number between 1 - 500), only present for ODRDTR_BATT_V1 } . Note: . | aqi is not present in data for the type: ODRDTR | amm the value is in parts per million for ODRDTR and in parts per billion for ODRDTR_BATT_V1 | . An example use case is to raise an alert if value of amm crosses a threshold. aqi can also be used to raise an alert depending on a simple threshold or which range of AQI values it belongs to. ",
+    "url": "http://localhost:4000/docs/sensorPayloads.html#examples-of-realtime-data-for-standard-sensors-by-smartclean",
+    "relUrl": "/docs/sensorPayloads.html#examples-of-realtime-data-for-standard-sensors-by-smartclean"
+  },"126": {
+    "doc": "Sensors Raw Data Format (Data Push or Data Lake Access)",
+    "title": "References",
+    "content": "JODA Timezone: https://www.joda.org/joda-time/timezones.html . ",
+    "url": "http://localhost:4000/docs/sensorPayloads.html#references",
+    "relUrl": "/docs/sensorPayloads.html#references"
+  },"127": {
+    "doc": "Sensors Raw Data Format (Data Push or Data Lake Access)",
+    "title": "Sensors Raw Data Format (Data Push or Data Lake Access)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/sensorPayloads.html",
+    "relUrl": "/docs/sensorPayloads.html"
+  },"128": {
+    "doc": "Sensor data examples",
+    "title": "Raw data format examples for each device type.",
+    "content": "Usage monitoring device . | SMARTCLEAN#PPLCTR | . { \"t\": \"20211210152132\", \"v\": { \"count\": \"2\", \"out_count\": \"1\" }, \"unixT\": 1639120892, \"DEVID\": \"DemoPPLCTR1\", \"Region\": \"Asia/Singapore\", \"time\": \"2021-12-10T15:21:32+0800\", \"DevType\": \"SMARTCLEAN#PPLCTR\", \"PID\": \"DemoProject\", \"InsID\": \"DemoLocation\", \"Display\": \"Demo People Counter 1\", \"dow\": \"5\", \"month\": \"12\", \"hour\": \"15\", \"dom\": \"10\", \"minute\": \"21\" } . For more details about our people counting device please visit our help center page . Feedback reporting device . | SMARTCLEAN#FD | . { \"t\": \"20211210152132\", \"v\": { \"rating\": 3, \"reasons\": { \"DemoReasonID1\": { \"Name\": \"Dirty Urinal\" }, \"DemoReasonID2\": { \"Name\": \"Faulty Tap / Door Lock\" } } }, \"unixT\": 1639120892, \"DEVID\": \"DemoFD1\", \"Region\": \"Asia/Singapore\", \"time\": \"2021-12-10T15:21:32+0800\", \"DevType\": \"SMARTCLEAN#FD\", \"PID\": \"DemoProject\", \"InsID\": \"DemoLocation\", \"Display\": \"Demo Feedback Tablet 1\", \"dow\": \"5\", \"month\": \"12\", \"hour\": \"15\", \"dom\": \"10\", \"minute\": \"21\" } . Consumable monitoring device . | SMARTCLEAN#TR (Toilet Roll monitoring Device) | SMARTCLEAN#PT (Paper Towel monitoring Device) | SMARTCLEAN#SS (Soap Solution monitoring Device) | . { \"t\": \"20211210152132\", \"v\": { \"p\": 15.5 }, \"unixT\": 1639120892, \"DEVID\": \"DemoPT1\", \"Region\": \"Asia/Singapore\", \"time\": \"2021-12-10T15:21:32+0800\", \"DevType\": \"SMARTCLEAN#PT\", \"PID\": \"DemoProject\", \"InsID\": \"DemoLocation\", \"Display\": \"Demo Paper Towel 1\", \"dow\": \"5\", \"month\": \"12\", \"hour\": \"15\", \"dom\": \"10\", \"minute\": \"21\" } . For more details about our consumable level sensing devices please visit our help center page . Bin monitoring device . | SMARTCLEAN#BIN | . { \"t\": \"20211210152132\", \"v\": { \"p\": 15.5 }, \"unixT\": 1639120892, \"DEVID\": \"DemoBin1\", \"Region\": \"Asia/Singapore\", \"time\": \"2021-12-10T15:21:32+0800\", \"DevType\": \"SMARTCLEAN#BIN\", \"PID\": \"DemoProject\", \"InsID\": \"DemoLocation\", \"Display\": \"Demo Bin 1\", \"dow\": \"5\", \"month\": \"12\", \"hour\": \"15\", \"dom\": \"10\", \"minute\": \"21\" } . For more details about our bin level sensing device please visit our help center page . Spill detection device . | SMARTCLEAN#WD | . { \"t\": \"20211210152132\", \"v\": { \"value\": 1, \"AreaP\": 5.5 }, \"unixT\": 1639120892, \"DEVID\": \"DemoWD1\", \"Region\": \"Asia/Singapore\", \"time\": \"2021-12-10T15:21:32+0800\", \"DevType\": \"SMARTCLEAN#WD\", \"PID\": \"DemoProject\", \"InsID\": \"DemoLocation\", \"Display\": \"Demo Spill Detector 1\", \"dow\": \"5\", \"month\": \"12\", \"hour\": \"15\", \"dom\": \"10\", \"minute\": \"21\" } . For more details about our spill detection device please visit our help center page . Air quality monitoring device . | SMARTCLEAN#ODRDTR_BATT_V1 | . { \"t\": \"20211210152132\", \"v\": { \"amm\": 270, \"aqi\": 180 }, \"unixT\": 1639120892, \"DEVID\": \"DemoAQ1\", \"Region\": \"Asia/Singapore\", \"time\": \"2021-12-10T15:21:32+0800\", \"DevType\": \"SMARTCLEAN#ODRDTR_BATT_V1\", \"PID\": \"DemoProject\", \"InsID\": \"DemoLocation\", \"Display\": \"Demo Air Quality Light 1\", \"dow\": \"5\", \"month\": \"12\", \"hour\": \"15\", \"dom\": \"10\", \"minute\": \"21\" } . For more details about our air quality monitoring device please visit our help center page . ",
+    "url": "http://localhost:4000/docs/sensorPayloads_examples.html#raw-data-format-examples-for-each-device-type",
+    "relUrl": "/docs/sensorPayloads_examples.html#raw-data-format-examples-for-each-device-type"
+  },"129": {
+    "doc": "Sensor data examples",
+    "title": "Sensor data examples",
+    "content": " ",
+    "url": "http://localhost:4000/docs/sensorPayloads_examples.html",
+    "relUrl": "/docs/sensorPayloads_examples.html"
+  },"130": {
+    "doc": "Shift Repeat Options",
+    "title": "Shift Repeat Options Available",
+    "content": "This section describes the meaning of various shift repetition options available in the mobile and web views and examples of various scenarios. . | Repeat for tomorrow: The shift will be replicated for tomorrow’s date. If tomorrow falls on next calendar month or year, the date will be appropriately crossed over with respect to the project’s timezone. | Repeat for week: The shift will be replicated across the current week. Note that the ISO week convention is followed here where the week starts from Sunday and ends on Saturday. | Repeat for rest of the month: The shift will be replicated across the current month in the project’s timezone. | Repeat for the next month: The shift will be replicated across the next month in the project’s timezone. If the next month falls on next calendar year, the year will be changed appropriately. | Repeat for specific days: This options allows the shift to be repeated on specific days of week for the current month. | . It is recommended the start the shift planning around the 20th of each month for your workforce. ",
+    "url": "http://localhost:4000/docs/shiftRepeatOptionsMeaning.html#shift-repeat-options-available",
+    "relUrl": "/docs/shiftRepeatOptionsMeaning.html#shift-repeat-options-available"
+  },"131": {
+    "doc": "Shift Repeat Options",
+    "title": "I do not want to plan shifts actively but want them to be defined automatically based on the availability defined for my workforce.",
+    "content": "Coming soon in version 53 . This section will be updated once the feature for auto creation of shift based on availability times for people is available. ",
+    "url": "http://localhost:4000/docs/shiftRepeatOptionsMeaning.html#i-do-not-want-to-plan-shifts-actively-but-want-them-to-be-defined-automatically-based-on-the-availability-defined-for-my-workforce",
+    "relUrl": "/docs/shiftRepeatOptionsMeaning.html#i-do-not-want-to-plan-shifts-actively-but-want-them-to-be-defined-automatically-based-on-the-availability-defined-for-my-workforce"
+  },"132": {
+    "doc": "Shift Repeat Options",
+    "title": "Shift Repeat Options",
+    "content": " ",
+    "url": "http://localhost:4000/docs/shiftRepeatOptionsMeaning.html",
+    "relUrl": "/docs/shiftRepeatOptionsMeaning.html"
+  },"133": {
+    "doc": "Standard Reports",
+    "title": "Standard Reports",
+    "content": " ",
+    "url": "http://localhost:4000/docs/standardReports.html",
+    "relUrl": "/docs/standardReports.html"
+  },"134": {
+    "doc": "Creating Inspection Templates",
+    "title": "Creating inspection templates",
+    "content": "Inspection templates can be defined by going to the Templates section of your dashboard. ",
+    "url": "http://localhost:4000/docs/templatesAudits.html#creating-inspection-templates",
+    "relUrl": "/docs/templatesAudits.html#creating-inspection-templates"
+  },"135": {
+    "doc": "Creating Inspection Templates",
+    "title": "What is the purpose of defining an inspection template ?",
+    "content": "Inspection templates are applied to one or more zones in your building to perform either a scheduled or unscheduled (adhoc) inspection. The main section of a template is then transformed to the following format during this process - {Zone Name} ({Building Name}). Additionally, a reference to the zone id and building id are also created internally for future analytics. A template should ideally have only one main section. You can create a different template if the questions are different for same zone category (for example ground floor vs others) and combine them during scheduling. The steps involved in creating an inspection template are enumerated below: . ",
+    "url": "http://localhost:4000/docs/templatesAudits.html#what-is-the-purpose-of-defining-an-inspection-template-",
+    "relUrl": "/docs/templatesAudits.html#what-is-the-purpose-of-defining-an-inspection-template-"
+  },"136": {
+    "doc": "Creating Inspection Templates",
+    "title": "Creating new inspection template",
+    "content": "Click on the Create Template button as shown above. Start by defining the template name, description, assign a zone category which it is applicable to and a target score between 0 and 100%. Add a main section to the template . ",
+    "url": "http://localhost:4000/docs/templatesAudits.html#creating-new-inspection-template",
+    "relUrl": "/docs/templatesAudits.html#creating-new-inspection-template"
+  },"137": {
+    "doc": "Creating Inspection Templates",
+    "title": "Creating Inspection Templates",
+    "content": " ",
+    "url": "http://localhost:4000/docs/templatesAudits.html",
+    "relUrl": "/docs/templatesAudits.html"
+  },"138": {
+    "doc": "Optimus",
+    "title": "SmartClean Optimus",
+    "content": "Latest Stable Version: v1 . ",
+    "url": "http://localhost:4000/docs/vcs.html#smartclean-optimus",
+    "relUrl": "/docs/vcs.html#smartclean-optimus"
+  },"139": {
+    "doc": "Optimus",
+    "title": "What is SmartClean optimus",
+    "content": "This is a system that creates incidents (alerts) for desired events in locations where SmartClean devices are installed. The incidents generated by optimus will show up in the work orders section of your application . Link to the web dashboard or mobile applications are available on the SmartClean matrix page . ",
+    "url": "http://localhost:4000/docs/vcs.html#what-is-smartclean-optimus",
+    "relUrl": "/docs/vcs.html#what-is-smartclean-optimus"
+  },"140": {
+    "doc": "Optimus",
+    "title": "Solutions",
+    "content": "We provide various solutions, many of which use Optimus for creating these incidents . Some of our solutions which generate incidents are: . | Air quality monitoring | Usage monitoring | Spill detection | Feedback reporting | Consumable monitoring | Bin fill level sensing | . ",
+    "url": "http://localhost:4000/docs/vcs.html#solutions",
+    "relUrl": "/docs/vcs.html#solutions"
+  },"141": {
+    "doc": "Optimus",
+    "title": "Settings for alerts",
+    "content": "Generation of incidents in a location are subject to various Settings for alerts . ",
+    "url": "http://localhost:4000/docs/vcs.html#settings-for-alerts",
+    "relUrl": "/docs/vcs.html#settings-for-alerts"
+  },"142": {
+    "doc": "Optimus",
+    "title": "Optimus",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs.html",
+    "relUrl": "/docs/vcs.html"
+  },"143": {
+    "doc": "Air quality monitoring solution",
+    "title": "Indoor air quality monitoring solution",
+    "content": "This solution generates an alert when any source of bad air quality is detected within range of the sensor . ",
+    "url": "http://localhost:4000/docs/vcs_aq.html#indoor-air-quality-monitoring-solution",
+    "relUrl": "/docs/vcs_aq.html#indoor-air-quality-monitoring-solution"
+  },"144": {
+    "doc": "Air quality monitoring solution",
+    "title": "How does this solution work",
+    "content": "To activate this solution, the following steps are required. | Install and activate SmartClean air quality sensor at desired enclosed locations in your facility. | Your location will raise an alert when our solution determines the air quality is unexpected for a certain period. | The incident indicates that the indoor air quality is temporarily not suitable. | . For more details about our air quality monitoring device please visit our help center page . Some of our other solutions which create incidents are: . | Usage monitoring | Spill detection | Feedback reporting | Consumable monitoring | Bin fill level monitoring | . ",
+    "url": "http://localhost:4000/docs/vcs_aq.html#how-does-this-solution-work",
+    "relUrl": "/docs/vcs_aq.html#how-does-this-solution-work"
+  },"145": {
+    "doc": "Air quality monitoring solution",
+    "title": "Air quality monitoring solution",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_aq.html",
+    "relUrl": "/docs/vcs_aq.html"
+  },"146": {
+    "doc": "Air quality monitoring solution (settings)",
+    "title": "Settings for indoor air quality monitoring solution",
+    "content": "Settings to configure this solution after it is active in your facility . ",
+    "url": "http://localhost:4000/docs/vcs_aq_settings.html#settings-for-indoor-air-quality-monitoring-solution",
+    "relUrl": "/docs/vcs_aq_settings.html#settings-for-indoor-air-quality-monitoring-solution"
+  },"147": {
+    "doc": "Air quality monitoring solution (settings)",
+    "title": "What settings are available?",
+    "content": "To configure this solution, the following settings are available: . Configure per device . | Air quality anomalies limit . | Type: maximum threshold | Description: This threshold represents the total number of air quality anomalies in a certain duration. | Outcome: Incident about unexpected air quality will be created for the location that the device is assigned to. | . | Duration to check air quality anomalies . | Type: time duration | Description: The duration to count the number of air quality anomalies reported by the sensor. | Outcome: Notify intended users about unexpected air quality detected recently in the zone. | . | . Go back to solution settings . ",
+    "url": "http://localhost:4000/docs/vcs_aq_settings.html#what-settings-are-available",
+    "relUrl": "/docs/vcs_aq_settings.html#what-settings-are-available"
+  },"148": {
+    "doc": "Air quality monitoring solution (settings)",
+    "title": "Air quality monitoring solution (settings)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_aq_settings.html",
+    "relUrl": "/docs/vcs_aq_settings.html"
+  },"149": {
+    "doc": "Bin monitoring solution",
+    "title": "Bin monitoring solution",
+    "content": "This solution generates an alert when the estimate fill level of (contents inside) the bin being monitored has reached a set level . ",
+    "url": "http://localhost:4000/docs/vcs_bin.html",
+    "relUrl": "/docs/vcs_bin.html"
+  },"150": {
+    "doc": "Bin monitoring solution",
+    "title": "How does this solution work",
+    "content": "To activate this solution, the following steps are required. | Install and activate SmartClean bin monitoring sensor inside the desired bin in your facility. | An incident gets created when the empty space remaining inside it reaches the minimum level. | This incident indicates that the bin is becoming full. | . For more details about our bin level sensing device please visit our help center page . Some of our other solutions which generate Alerts are: . | Indoor air quality monitoring | Usage monitoring | Spill detection | Feedback reporting | Consumable monitoring | . ",
+    "url": "http://localhost:4000/docs/vcs_bin.html#how-does-this-solution-work",
+    "relUrl": "/docs/vcs_bin.html#how-does-this-solution-work"
+  },"151": {
+    "doc": "Bin monitoring solution (Settings)",
+    "title": "Settings for bin monitoring solution",
+    "content": "Settings to configure the bin monitoring solutions active in your facility . ",
+    "url": "http://localhost:4000/docs/vcs_bin_settings.html#settings-for-bin-monitoring-solution",
+    "relUrl": "/docs/vcs_bin_settings.html#settings-for-bin-monitoring-solution"
+  },"152": {
+    "doc": "Bin monitoring solution (Settings)",
+    "title": "What settings are available?",
+    "content": "To configure this solution, the following settings are available: . Configure per device (internal setting) . | Area remaining (empty space left) . | Type: minimum threshold | Description: This threshold represents minimum area that is remaining in the bin (i.e. how much empty it is.) | Outcome: Notify intended users about the bin in a zone getting full. | . | . Go back to solution settings . ",
+    "url": "http://localhost:4000/docs/vcs_bin_settings.html#what-settings-are-available",
+    "relUrl": "/docs/vcs_bin_settings.html#what-settings-are-available"
+  },"153": {
+    "doc": "Bin monitoring solution (Settings)",
+    "title": "Bin monitoring solution (Settings)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_bin_settings.html",
+    "relUrl": "/docs/vcs_bin_settings.html"
+  },"154": {
+    "doc": "Consumable monitoring solution",
+    "title": "Consumable monitoring solution",
+    "content": "This solution generates an incident when fill level of the consumable being monitored has dropped below a set level . Examples of consumables that can be monitored with this solution: . | Toilet roll (standard toilet roll enclosure that fits our criteria for sensor installation) | Paper towel (container to stack paper napkins, that fits our criteria for sensor installation) | Soap solution (any soap solution container, that fits our criteria for sensor installation) | . ",
+    "url": "http://localhost:4000/docs/vcs_cmd.html",
+    "relUrl": "/docs/vcs_cmd.html"
+  },"155": {
+    "doc": "Consumable monitoring solution",
+    "title": "How does this solution work",
+    "content": "To activate this solution, the following steps are required. | Install and activate SmartClean consumable monitoring sensor (of a specific type) in the desired container. | An incident gets created when the level of consumable inside it reaches the minimum level. | The incident indicates that the consumable in the container is getting low. | . For more details about our consumable level sensing devices please visit our help center page . Some of our other solutions which generate Alerts are: . | Indoor air quality monitoring | Usage monitoring | Spill detection | Feedback reporting | Bin fill level monitoring | . ",
+    "url": "http://localhost:4000/docs/vcs_cmd.html#how-does-this-solution-work",
+    "relUrl": "/docs/vcs_cmd.html#how-does-this-solution-work"
+  },"156": {
+    "doc": "Consumable monitoring solution (settings)",
+    "title": "Settings for consumable monitoring solution",
+    "content": "Settings to configure these solutions active in your facility . ",
+    "url": "http://localhost:4000/docs/vcs_cmd_settings.html#settings-for-consumable-monitoring-solution",
+    "relUrl": "/docs/vcs_cmd_settings.html#settings-for-consumable-monitoring-solution"
+  },"157": {
+    "doc": "Consumable monitoring solution (settings)",
+    "title": "What settings are available?",
+    "content": "To configure this solution, the following settings are available: . | Minimum fill level (per device) . | Type: minimum threshold | Description: minimum fill level for the consumable being monitored. | Outcome: Notify intended users about the level consumable in certain container getting low. | . | . Go back to solution settings . ",
+    "url": "http://localhost:4000/docs/vcs_cmd_settings.html#what-settings-are-available",
+    "relUrl": "/docs/vcs_cmd_settings.html#what-settings-are-available"
+  },"158": {
+    "doc": "Consumable monitoring solution (settings)",
+    "title": "Consumable monitoring solution (settings)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_cmd_settings.html",
+    "relUrl": "/docs/vcs_cmd_settings.html"
+  },"159": {
+    "doc": "Feedback reporting solution",
+    "title": "Feedback reporting solution",
+    "content": "This solution is used to keep a record of all feedback given on the feedback reporting device Feedback can be good or bad depending on the rating. For feedback with a bad rating, a set of standard reasons are also obtained with the . This solution generates an incident when anyone gives bad feedback using the feedback reporting device installed in your zone.* . ",
+    "url": "http://localhost:4000/docs/vcs_fd.html",
+    "relUrl": "/docs/vcs_fd.html"
+  },"160": {
+    "doc": "Feedback reporting solution",
+    "title": "How does this Solution work",
+    "content": "To activate this solution, the following steps are required. | Install and activate SmartClean feedback tablet at a desired zone. | An incident is created when bad feedback is received on the feedback reporting device. | This incident indicates that someone reported bad feedback (with certain reasons) | . Some of our other solutions which create incidents are: . | Indoor air quality monitoring | Usage monitoring | Water spill detection | Consumable level monitoring | Bin fill level monitoring | . ",
+    "url": "http://localhost:4000/docs/vcs_fd.html#how-does-this-solution-work",
+    "relUrl": "/docs/vcs_fd.html#how-does-this-solution-work"
+  },"161": {
+    "doc": "Feedback reporting solution (settings)",
+    "title": "Settings for feedback reporting solution",
+    "content": "Settings to configure this solution after it is active in your facility . ",
+    "url": "http://localhost:4000/docs/vcs_fd_settings.html#settings-for-feedback-reporting-solution",
+    "relUrl": "/docs/vcs_fd_settings.html#settings-for-feedback-reporting-solution"
+  },"162": {
+    "doc": "Feedback reporting solution (settings)",
+    "title": "What settings are available?",
+    "content": "To configure this solution, the following settings are available: . | Maximum count limit for a specific bad feedback reason (per device) . | Type: maximum threshold | Description: This threshold represents the max number of times a bad feedback reason is reported to consider it for the bad feedback incident. | Outcome: Notify intended users about the bad feedback reported for a zone. | . | . Go back to solution settings . ",
+    "url": "http://localhost:4000/docs/vcs_fd_settings.html#what-settings-are-available",
+    "relUrl": "/docs/vcs_fd_settings.html#what-settings-are-available"
+  },"163": {
+    "doc": "Feedback reporting solution (settings)",
+    "title": "Feedback reporting solution (settings)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_fd_settings.html",
+    "relUrl": "/docs/vcs_fd_settings.html"
+  },"164": {
+    "doc": "Usage monitoring solution",
+    "title": "Usage monitoring solution",
+    "content": "Goal . Create an incident when the number of people entered the enclosed zone reaches a maximum limit . How does this solution work . | Our system receives the count reported by the device installed in a zone. | This count adds up over time (accumulates) in the system. | As soon as the count reaches the maximum limit set for the device, an incident is created by the system . | This also resets the accumulating counter, so that counting again starts from 0. | For more details about this setting visit settings for usage monitoring solution | . | The people counter also gets reset when maintenance events are received by the system for a zone. | Maintenance events include actions like acknowledge, start or end of a maintenance activity received by our system, such as by: . | Cleaner logs on the Feedback tablet. | Action on our Housekeeping or Attendants app. | . | . How to activate this solution . To activate this solution, install and activate SmartClean people counting sensor at a desired zone in your facility. For more details about our people counting device please visit our help center page . Some of our other solutions which generate incidents are: . | Indoor air quality monitoring | Spill detection | Feedback reporting | Consumable monitoring | Bin fill level monitoring | . ",
+    "url": "http://localhost:4000/docs/vcs_pc.html",
+    "relUrl": "/docs/vcs_pc.html"
+  },"165": {
+    "doc": "Usage monitoring solution (settings)",
+    "title": "Settings for usage monitoring solution",
+    "content": "Settings to configure this solution after it is active in your facility . ",
+    "url": "http://localhost:4000/docs/vcs_pc_settings.html#settings-for-usage-monitoring-solution",
+    "relUrl": "/docs/vcs_pc_settings.html#settings-for-usage-monitoring-solution"
+  },"166": {
+    "doc": "Usage monitoring solution (settings)",
+    "title": "What settings are available?",
+    "content": "To configure this solution, the following settings are available: . | People count threshold (per device) . | Type: maximum limit | Description: This threshold represents the people count value that indicates high usage. | Outcome: Notify intended users about high usage at the location being monitored. | . | . Go back to solution settings . ",
+    "url": "http://localhost:4000/docs/vcs_pc_settings.html#what-settings-are-available",
+    "relUrl": "/docs/vcs_pc_settings.html#what-settings-are-available"
+  },"167": {
+    "doc": "Usage monitoring solution (settings)",
+    "title": "Usage monitoring solution (settings)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_pc_settings.html",
+    "relUrl": "/docs/vcs_pc_settings.html"
+  },"168": {
+    "doc": "Solution settings",
+    "title": "Settings for solutions",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_settings.html#settings-for-solutions",
+    "relUrl": "/docs/vcs_settings.html#settings-for-solutions"
+  },"169": {
+    "doc": "Solution settings",
+    "title": "What are these settings",
+    "content": "Settings represent the configurable aspects for each solution type . Settings affecting incident creation for specific zone . These settings will allow you to control the criteria for creation of incidents in specific zones . | Block duration for a zone: . | This setting controls the rate at which incidents are created for a zone. | When an alert is created for a zone, all other incidents are blocked for this duration. | Purpose of this setting is to control the rate at which incidents are created for a zone. | By default, this is set to 15 minutes, and can be configured for every zone in your facility. | Examples of usage: . | increase this duration to reduce the frequency of incidents for a zone (thus reduces total number of incidents), or reduce this duration to increase the frequency of all alerts (thus increases total number of alerts) | . | The impact of this setting is shown with the example scenario below: . | . | . Settings affecting incident creation for all zones in a building . These settings will allow you to control the criteria for creation of incidents across all zones in your building . | Block duration between incidents of a specific type for all zones in a Facility (Optional) . | Controls the duration between two consecutive incidents of the same type . | This is an optional setting, and only works if it is set for a specific incident. | All incidents of this type in each zone of the building will only be blocked for this duration after an incident of the same type was created. | This setting replaces (i.e. ignores) the block duration applicable for incident types set for a zone. | The purpose of the setting is to independently control the duration between two consecutive incident of the same type in each zone. | Example use: increase the frequency (i.e. reduce the block duration) between two incidents of the same type (compared to the block duration that is for all incidents in each zone) | The impact of this setting is shown below (for a sample zone, with this setting being set for a specific incident type in the building) | . | . | . Settings affecting incidents of specific types in a zone . These settings will allow you to control the criteria for generation of alerts of a specific type in a specific zone . | Settings for air quality monitoring solution | Settings for usage monitoring solution | Settings for spill detection solution | Settings for feedback reporting solution | Settings for consumable monitoring solution | Settings for bin level monitoring solution | . ",
+    "url": "http://localhost:4000/docs/vcs_settings.html#what-are-these-settings",
+    "relUrl": "/docs/vcs_settings.html#what-are-these-settings"
+  },"170": {
+    "doc": "Solution settings",
+    "title": "Solution settings",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_settings.html",
+    "relUrl": "/docs/vcs_settings.html"
+  },"171": {
+    "doc": "Solutions",
+    "title": "Solutions",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_solutions.html",
+    "relUrl": "/docs/vcs_solutions.html"
+  },"172": {
+    "doc": "Solutions",
+    "title": "What are Solutions",
+    "content": "Solutions are applications running in a property which listen to events and sensor data of the property to result in some actionable outcomes or insights. For example most of our Solutions create incidents and notify intended recipients about desired events. ",
+    "url": "http://localhost:4000/docs/vcs_solutions.html#what-are-solutions",
+    "relUrl": "/docs/vcs_solutions.html#what-are-solutions"
+  },"173": {
+    "doc": "Solutions",
+    "title": "How do these work",
+    "content": ". | Data sources from the site collect and send data to the cloud in real time | Systems integrated to the platform listen for these data and events . | For example, the smart toilet system analyses these events for creating incidents | . | Just install, describe and activate the data sources, our platform handles the rest. | As Optimus detects desired events for this solution in this zone, incidents will be created based on default values of solution settings | You may view these incidents in your SmartClean matrix application | . ",
+    "url": "http://localhost:4000/docs/vcs_solutions.html#how-do-these-work",
+    "relUrl": "/docs/vcs_solutions.html#how-do-these-work"
+  },"174": {
+    "doc": "Spill detection solution",
+    "title": "Spill detection solution",
+    "content": "This solution reports certain types of water spills detected in an area . ",
+    "url": "http://localhost:4000/docs/vcs_wd.html",
+    "relUrl": "/docs/vcs_wd.html"
+  },"175": {
+    "doc": "Spill detection solution",
+    "title": "How does this solution work",
+    "content": "To activate this solution, the following steps are required. | Install and activate SmartClean spill detection sensor at a desired zone in your facility. | An incident will be created when water spill of reasonable size has been detected within detection area. | This incident indicates about the presence of water spillage in the area | . For more details about our spill detection device please visit our help center page . Some of our other solutions which create incidents are: . | Indoor air quality monitoring | Usage monitoring | Feedback reporting | Consumable level monitoring | Bin level monitoring | . ",
+    "url": "http://localhost:4000/docs/vcs_wd.html#how-does-this-solution-work",
+    "relUrl": "/docs/vcs_wd.html#how-does-this-solution-work"
+  },"176": {
+    "doc": "Spill detection solution (settings)",
+    "title": "Settings for spill detection solution",
+    "content": "Settings to configure this solution after it is active in your facility . ",
+    "url": "http://localhost:4000/docs/vcs_wd_settings.html#settings-for-spill-detection-solution",
+    "relUrl": "/docs/vcs_wd_settings.html#settings-for-spill-detection-solution"
+  },"177": {
+    "doc": "Spill detection solution (settings)",
+    "title": "What settings are available?",
+    "content": "To configure this solution, the following settings are available: . | Minimum area percentage (Optional setting, per device) . | Type: minimum limit | Description: This represents minimum area of water spillage (percent) in the detection zone of the device | Outcome: Notify intended users about a water spill in the detection zone of the device. | . | . Go back to solution settings . ",
+    "url": "http://localhost:4000/docs/vcs_wd_settings.html#what-settings-are-available",
+    "relUrl": "/docs/vcs_wd_settings.html#what-settings-are-available"
+  },"178": {
+    "doc": "Spill detection solution (settings)",
+    "title": "Spill detection solution (settings)",
+    "content": " ",
+    "url": "http://localhost:4000/docs/vcs_wd_settings.html",
+    "relUrl": "/docs/vcs_wd_settings.html"
+  },"179": {
+    "doc": "Workorders",
+    "title": "Workorders",
+    "content": "Latest Stable Version: v52 . ",
+    "url": "http://localhost:4000/api/workorders.html",
+    "relUrl": "/api/workorders.html"
+  },"180": {
+    "doc": "Workorders",
+    "title": "What is SmartClean Workorders",
+    "content": "Workorders allows you to perform the following actions: . | Create shifts for workforce (scheduling): Shifts are used to plan the working hours for a person for a day of month. A shift may also span the next day (night shifts). Various options can be used to indicate availability of the person to all the zones or a subset of zones. Additionally, pre-defined tasks can be added to the shifts for schedule driven tasks. The shifts can be repeated using multiple options as described further in this documentation. | View or report incidents: Incidents are any issues in the facility that need to be resolved as soon as possible. You can view and create incidents and assign them optionally to a certain member who is in shift for that area. | Create or use tasks and task groups for one or more zones: Tasks and task groups can be used to pre-define the commonly performed set of actions by people so that it can be easily added to the shifts being planned. | . ",
+    "url": "http://localhost:4000/api/workorders.html#what-is-smartclean-workorders",
+    "relUrl": "/api/workorders.html#what-is-smartclean-workorders"
+  },"181": {
+    "doc": "Workorders",
+    "title": "Creating shifts",
+    "content": "Shifts can be created by going to the Schedules section of your dashboard. ",
+    "url": "http://localhost:4000/api/workorders.html#creating-shifts",
+    "relUrl": "/api/workorders.html#creating-shifts"
+  },"182": {
+    "doc": "Workorders",
+    "title": "Workorders",
+    "content": "Latest Stable Version: v104 . ",
+    "url": "http://localhost:4000/docs/workorders.html",
+    "relUrl": "/docs/workorders.html"
+  },"183": {
+    "doc": "Workorders",
+    "title": "What is SmartClean Workorders",
+    "content": "Workorders allows you to perform the following actions: . | Create shifts for workforce (scheduling): Shifts are used to plan the working hours for a person for a day of month. A shift may also span the next day (night shifts). Various options can be used to indicate availability of the person to all the zones or a subset of zones. Additionally, pre-defined tasks can be added to the shifts for schedule driven tasks. The shifts can be repeated using multiple options as described further in this documentation. | View or report incidents: Incidents are any issues in the facility that need to be resolved as soon as possible. You can view and create incidents and assign them optionally to a certain member who is in shift for that area. | Create or use tasks and task groups for one or more zones: Tasks and task groups can be used to pre-define the commonly performed set of actions by people so that it can be easily added to the shifts being planned. | . ",
+    "url": "http://localhost:4000/docs/workorders.html#what-is-smartclean-workorders",
+    "relUrl": "/docs/workorders.html#what-is-smartclean-workorders"
+  },"184": {
+    "doc": "Workorders",
+    "title": "Creating shifts",
+    "content": "Shifts can be created by going to the Schedules section of your dashboard. ",
+    "url": "http://localhost:4000/docs/workorders.html#creating-shifts",
+    "relUrl": "/docs/workorders.html#creating-shifts"
+  }
+}
