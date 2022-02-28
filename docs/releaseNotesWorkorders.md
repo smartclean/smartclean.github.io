@@ -4,7 +4,7 @@ title: Release Notes
 parent: Workorders
 has_children: false
 has_toc: false
-nav_order: 1
+nav_order: 100
 ---
 
 # 2022-02-28
