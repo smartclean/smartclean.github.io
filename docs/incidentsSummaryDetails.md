@@ -29,6 +29,18 @@ It helps to track:<br />
 **Total Time Spent**: Total time taken to complete incidents as well as tasks.<br />
 **SLA Violation**: SLA is violated when workorder is not completed within the stipulated time.<br />
 
+## Important Notes
+
+**How do open incidents affect the KPIs?**<br />
+
+Open incidents are resolved directly by the FM app. 
+
+- Open incidents will be shown as "Open" in the incident tile if not *Resolved* by someone.
+- Open incidents do not contribute towards "Total Time Spent" and "Avg. Response Time" tiles.
+- Hypothetically, if a property was using only the FM app to mark the incident as *Resolved*. Then "Avg. Resolution Rate" would always be 100%.
+- Open incidents still contribute towards the count. For example: "Total No. Of Workorders", "No. Of Workorders - By Type and Zone", "Incidents by Priority", "Incidents by Status", "Incidents by Resolver", "Incidents by Type" and "Incidents by Zone" have open incidents included in them.
+- Open incidents do not contribute towards SLA violations as they were not allocated to anyone.
+
 ## FAQs
 
 1. **Do Workorders include both incidents and scheduled tasks?**<br />
