@@ -12,7 +12,7 @@ nav_order: 1
 Feature
 {: .label .label-blue }
 - Two new reporting services are now available in production, namely, *Incidents Tabular Report* and *Scheduled Tasks Tabular Report*. The reports feature PDF and Excel downloads with and without images.
-The reports allow property owners to get an immediate historical list of tasks performed or faults rectified along with images take during such events.
+The reports allow property owners to get an immediate historical list of tasks performed or faults rectified along with images taken during such events.
 
 Feature
 {: .label .label-blue }
@@ -34,7 +34,7 @@ Feature
 
 Pre-release
 {: .label .label-purple }
-- Ad hoc shift starting feature has now graduated to beta and is expected to be available in the next release along with options to define availabilities of team members.
+- Feature to start ad hoc shifts is now in beta and is expected to be available in the next release along with options to define availabilities of team members.
 
 Bugfix
 {: .label .label-red }
