@@ -3,7 +3,7 @@ layout: default
 title: Release Notes
 has_children: true
 has_toc: true
-nav_order: 10
+nav_order: 100
 ---
 
 # Release notes

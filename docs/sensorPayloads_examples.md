@@ -9,7 +9,7 @@ nav_order: 2
 ---
 ## Raw data format examples for each device type.
 
-### Usage monitoring device
+### People counting device
 - SMARTCLEAN#PPLCTR
 
 ```json
@@ -72,7 +72,7 @@ For **more details about our people counting device** please visit our [help cen
 }
 ```
 
-### Consumable monitoring device
+### Consumable level sensing devices
 - SMARTCLEAN#TR (Toilet Roll monitoring Device)
 - SMARTCLEAN#PT (Paper Towel monitoring Device)
 - SMARTCLEAN#SS (Soap Solution monitoring Device)
@@ -103,7 +103,7 @@ For **more details about our consumable level sensing devices** please visit our
 
 ---
 
-### Bin monitoring device
+### Bin level sensing device
 - SMARTCLEAN#BIN
 
 ```json
