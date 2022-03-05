@@ -11,4 +11,15 @@ This section will document all releases from company internal sprints and bug fi
 
 You can generally expect the table of contents to be updated on a 10 day basis on Saturdays SGT.
 
-- All enhancements are labelled as _Enhancement_ {: .label .label-green }
+- All enhancements are labelled as 
+
+Enhancement {: .label .label-green }
+- All bug fixes are labelled as 
+
+Bugfix {: .label .label-red }
+- New feature releases are labelled as 
+
+Feature {: .label .label-blue }
+- Pre-release features are labelled as 
+
+Feature {: .label .label-purple }
