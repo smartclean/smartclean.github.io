@@ -13,7 +13,7 @@ You can generally expect the table of contents to be updated on a 10 day basis o
 
 - All enhancements are labelled as 
 
-Enhancement
+Enhancements
 {: .label .label-green }
 - All bug fixes are labelled as 
 
@@ -25,5 +25,5 @@ Feature
 {: .label .label-blue }
 - Pre-release features are labelled as 
 
-Feature
+Pre-Release
 {: .label .label-purple }
