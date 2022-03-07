@@ -6,19 +6,17 @@ has_toc: true
 nav_order: 10
 ---
 
-# API
+# Matrix API
 Web requests for getting relevant information from some of our services have been put in a Postman collection
 
-To access the APIs, please the below link using [Postman](https://www.postman.com) (web or desktop client)
-Note: You need to create a Postman account to sign in (if you are not using one already)
-
-Please find link to the postman collection here:
+To access the APIs, the import the link below using [Postman](https://www.postman.com)
+Link to import the collection in Postman:
 [Postman collection](https://www.getpostman.com/collections/a41502dfa9b37c964177)
 
-Currently, this collection includes requests to the following services:
-1. Grids
-2. Device Management
-3. Metrics
+Note:
+There are two ways to use Postman:
+1. Web console - A Postman account is required to sign in and use the console.
+2. Desktop app - Can be used without signing in.
 
 ## Documentation
 
