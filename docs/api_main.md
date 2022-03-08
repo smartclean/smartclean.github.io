@@ -10,13 +10,13 @@ nav_order: 10
 Web requests for getting relevant information from some of our services have been put in a Postman collection
 
 To access the APIs, the import the link below using [Postman](https://www.postman.com)
-Link to import the collection in Postman:
-[Postman collection](https://www.getpostman.com/collections/a41502dfa9b37c964177)
+
+- Link to [Postman collection](https://www.getpostman.com/collections/a41502dfa9b37c964177)
 
 Note:
 There are two ways to use Postman:
-1. Web console - A Postman account is required to sign in and use the console.
-2. Desktop app - Can be used without signing in.
+1. Web console - a Postman account is required to sign in and use the console.
+2. Desktop app - can be used without signing in.
 
 ## Documentation
 
