@@ -11,7 +11,7 @@ nav_order: 2
 
 Feature
 {: .label .label-blue }
-- The reporting services pertaining to attendance metrics *Attendance Status*, *Attendance Summaries*, and *Lateness Report* were being generated at a building leve.
+- The reporting services pertaining to attendance metrics *Attendance Status*, *Attendance Summaries*, and *Lateness Report* were being generated at a building level.
 These services have now been internally set to generate property level metrics.
 
 Bugfix
@@ -38,7 +38,7 @@ Enhancements
 
 Feature
 {: .label .label-blue }
-- A downloadable postman collection is now available in public domain to test out certain common APIs.
+- A [downloadable postman collection](https://www.docs.smartclean.io/api_main.html) is now available in public domain to test out certain common APIs.
 You will require a basic auth key or HMAC credentials from your property to test it.
 
 Pre-release
@@ -47,6 +47,6 @@ Pre-release
 With this feature, users of Housekeeping application can report a defect and take pictures. They cannot explicitly allocate this incident to an assignee.
 
 Feature
-{: .label .label-purple }
+{: .label .label-blue }
 - You can now mark the attendance of your members through the *Workforce* module.
 This feature is enabled on a request basis per property. Get in touch with your account manager if this feature seems important to you.
