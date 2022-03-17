@@ -3,6 +3,7 @@ layout: default
 title: Air quality device data
 parent: Sensor Data
 grand_parent: RealSense
+has_toc: true
 nav_order: 6
 ---
 
