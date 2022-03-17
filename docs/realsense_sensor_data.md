@@ -44,8 +44,17 @@ yyyy is year, mm is month, dd is day, hh is hour, mm is minutes
 
 
 ## Custom Data Format
-Data for SmartClean devices are described in the General Data Format section above.
-Depending on the slot (device) type, the value of the attribute: *"v"* differs.
+The value of attribute: *"v"* in the general data format is based on the device slot type
 
-To see the custom data format for each type, visit the page corresponding to the desired category using the
-table of contents below.
+Device slot type is described in the [parent page](/realsense_main.html))
+
+To see the custom data format for each device slot type, visit the page corresponding to the desired category below.
+
+Custom data format for device types:
+1. [Usage monitoring](/realsense_sensor_data_pc.html)
+2. [Feedback reporting](/realsense_sensor_data_fd.html)
+3. [Spill detection](/realsense_sensor_data_wd.html)
+4. [Consumable monitoring](/realsense_sensor_data_cmd.html)
+5. [Bin fill level sensing](/realsense_sensor_data_bin.html)
+6. [Air quality monitoring](/realsense_sensor_data_aq.html)
+
