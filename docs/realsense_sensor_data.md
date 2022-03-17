@@ -46,7 +46,7 @@ yyyy is year, mm is month, dd is day, hh is hour, mm is minutes
 ## Custom Data Format
 The value of attribute: *"v"* in the general data format is based on the device slot type
 
-Device slot type is described in the [parent page](/realsense_sensors.html))
+Device slot type is described in the [parent page](/realsense_sensors.html)
 
 To see the custom data format for each device slot type, visit the page corresponding to the desired category below.
 
