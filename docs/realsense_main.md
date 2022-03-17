@@ -7,7 +7,7 @@ nav_order: 8
 ---
 
 # SmartClean RealSense
-Latest Stable Dashboard Version: v1.7
+Latest Stable Dashboard Version: v2.0
 {: .label .label-green }
 
 
@@ -16,7 +16,7 @@ Latest Stable Dashboard Version: v1.7
 
 
 ### Sensors and Devices
-Find out more about our [Sensors and Devices](/realsense_sensors.html)
+Find out more about our [Sensors and Devices](/realsense_sensor_data.html)
 
 
 ### Help Centre
