@@ -46,15 +46,8 @@ yyyy is year, mm is month, dd is day, hh is hour, mm is minutes
 ## Custom Data Format
 The value of attribute: *"v"* in the general data format is based on the device slot type
 
-Device slot type is described in the [parent page](/realsense_main.html))
+Device slot type is described in the [parent page](/realsense_sensors.html)
 
-To see the custom data format for each device slot type, visit the page corresponding to the desired category below.
-
-Custom data format for device types:
-1. [Usage monitoring](/realsense_sensor_data_pc.html)
-2. [Feedback reporting](/realsense_sensor_data_fd.html)
-3. [Spill detection](/realsense_sensor_data_wd.html)
-4. [Consumable monitoring](/realsense_sensor_data_cmd.html)
-5. [Bin fill level sensing](/realsense_sensor_data_bin.html)
-6. [Air quality monitoring](/realsense_sensor_data_aq.html)
+To see the custom data format for each device slot type, visit 
+the page corresponding of the desired category using the table of contents below.
 
