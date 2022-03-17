@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Sensor Data
-parent: SmartClean Sensors
-grand_parent: RealSense
+parent: RealSense
+grand_parent: SmartClean Matrix
 has_children: true
 has_toc: true
 nav_order: 2

@@ -15,14 +15,28 @@ Device slot types applicable:
 Format of attribute: *"v"* in the general data format:
 ```json
 {
-  "amm": <number>  // concentration of the ammonia in the detection zone (unit depends on type of device)
-  "aqi": <number>  // Air Quality Index (number between 1 - 500), only present for ODRDTR_BATT_V1
+  "amm": <number>, // Ammonia channel reading in parts per million (ppm).
+  "aqi": <number>, // Air Quality Index (number between 1 - 500), only present for ODRDTR_BATT_V1
+  "rssi": "<number>",  // Received signal strength indicator
+  "amm_expected": <number>, // Predicted value for the ammonia channel (used to generate "amm_zscore")
+  "amm_zscore": <number>, // Anomaly score attributed to ammonia channel
+  "alc_expected": <number>, //Predicted value for the VOC channel (used to generate "alc_zscore")
+  "alc_zscore": <number>, // Anomaly score attributed to VOC channel
+  "alc": <number>, // VOC channel reading in parts per million (ppm)
+  "no2_expected": <number>, // Predicted value for the NOx channel (used to generate "no2_zscore")
+  "no2_zscore": <number>, // Anomaly score attributed to NOx channel
+  "no2": <number>  // NOx channel reading in parts per million (ppm)
 }
 ```
 Notes:
-1. *aqi* is not present in data for the type: ODRDTR
-2. *amm* the value is in parts per million for ODRDTR and in parts per billion for ODRDTR_BATT_V1
-3. For **more details about our air quality monitoring device** 
+1. **aqi** is not present in data for the type: ODRDTR
+2. **amm** the value is in parts per million for ODRDTR and in parts per billion for ODRDTR_BATT_V1
+3. **Anomaly scores** characterise the relative deviation of the current ppm reading from the sensor with 
+respect to its past sampled data. 
+   - The sensor (ODRDTR) samples the readings every 10 seconds for this calculation and attribution. 
+   - An anomaly score >= 1.96 can be used when alerting on dynamic thresholding mechanism. 
+   - If dynamic thresholding mechanism is not required, the ppm values can be thresholded directly by the applications.
+4. For **more details about our air quality monitoring device** 
 please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/od-wf-1901-how-it-works)
 
 ---
@@ -35,7 +49,16 @@ For SMARTCLEAN#ODRDTR_BATT_V1
   "t": "20211210152132",
   "v": {
     "amm": 270,
-    "aqi": 180
+    "aqi": 180, 
+    "rssi": "-47", 
+    "amm_expected": 3.426926, 
+    "amm_zscore": -0.119488, 
+    "alc_expected": 0.168433, 
+    "alc_zscore": -0.021021, 
+    "alc": 0.168391, 
+    "no2_expected": 1.181777, 
+    "no2_zscore": 0.001301, 
+    "no2": 1.181781
   },
   "unixT": 1639120892,
   "DEVID": "DemoAQ1",
