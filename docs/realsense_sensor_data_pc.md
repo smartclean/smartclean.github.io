@@ -28,7 +28,8 @@ and number of people leaving the field of view in *out_count*
 2. **SMARTCLEAN#UM** is triggered by motion, therefore it provides the number of times
 people entering the sensor's field of view in *count*.
 
-3. For **more details about our people counting device** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works-2)
+3. For **more details about our people counting device** 
+please visit our [help center page](https://help.smartclean.io/support/solutions/articles/84000347354-pc-wf-1901-how-it-works)
 ---
 
 #### Example data:

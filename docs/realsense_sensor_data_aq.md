@@ -38,7 +38,7 @@ respect to its past sampled data.
    - An anomaly score >= 1.96 can be used when alerting on dynamic thresholding mechanism. 
    - If dynamic thresholding mechanism is not required, the ppm values can be thresholded directly by the applications.
 4. For **more details about our air quality monitoring device** 
-please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/od-wf-1901-how-it-works)
+please visit our [help center page](https://help.smartclean.io/support/solutions/articles/84000347358-od-wf-1901-how-it-works)
 
 ---
 
