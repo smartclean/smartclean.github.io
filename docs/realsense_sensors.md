@@ -54,7 +54,7 @@ in a certain zone inside a building of your SmartClean enabled property.
 
    
 ### Raw data format
-See details of the raw data format for these sensors at: [Sensors data format](/realsense_sensors_data.html)
+See details of the raw data format for these sensors at: [Sensors data format](/realsense_sensor_data.html)
 
 
 ### Firmware versions:
