@@ -2,7 +2,7 @@
 layout: default
 title: Bin monitoring device data
 parent: Sensor Data
-grand_parent: SmartClean Sensors
+grand_parent: RealSense
 nav_order: 4
 ---
 
