@@ -21,16 +21,21 @@ in a certain zone inside a building of your SmartClean enabled property.
 **1. Usage monitoring devices:**
    - SMARTCLEAN#PPLCTR 
    - SMARTCLEAN#UM
+
 **2. Feedback reporting device:**
    - SMARTCLEAN#FD 
+
 **3. Consumable level monitoring devices** 
    - SMARTCLEAN#TR (Toilet Roll monitoring Device)
    - SMARTCLEAN#PT (Paper Towel monitoring Device)
    - SMARTCLEAN#SS (Soap Solution monitoring Device)
+
 **4. Bin container level monitoring device:**
    - SMARTCLEAN#BIN
+
 **5. Spill detection device**
    - SMARTCLEAN#WD
+
 **6. Air quality monitoring devices** 
    - SMARTCLEAN#ODRDTR 
    - SMARTCLEAN#ODRDTR_BATT_V1
