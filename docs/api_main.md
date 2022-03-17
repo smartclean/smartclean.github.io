@@ -6,24 +6,36 @@ has_toc: true
 nav_order: 10
 ---
 
-# Matrix API
-Web requests for getting relevant information from some of our services have been put in a Postman collection
+# Matrix Web Services
+_Relevant requests from our web services are also accessible to authorised users._
 
-To access the APIs, the import the link below using [Postman](https://www.postman.com)
+URL of each request starts with the following (base-url):
 
-- Link to [Postman collection](https://www.getpostman.com/collections/a41502dfa9b37c964177)
+Base URL:
+{: .label .label-green }
+_https://console.smartclean.io/prod/v2_
+
+**Services included:**
+1. Grids
+2. Device management
+3. Work orders
+4. Metrics
+
+## Documentation
+For more details, view the [Documentation](https://documenter.getpostman.com/view/2593073/UVktqZWQ)
+
+## Postman collection
+These requests have been put in a [Postman](https://www.postman.com) collection.
+
+To access these, please import the below link using Postman.
+- [Matrix postman collection](https://www.getpostman.com/collections/a41502dfa9b37c964177)
 
 Note:
 There are two ways to use Postman:
 1. Web console - a Postman account is required to sign in and use the console.
 2. Desktop app - can be used without signing in.
 
-## Documentation
-
-View documentation for these APIs here: 
-[Documentation](https://documenter.getpostman.com/view/2593073/UVktqZWQ)
-
-## How to access these APIs
+## How to access these requests:
 
 You will need to open Postman (desktop client or web console) and sign in to your Postman account first.
 
