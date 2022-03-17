@@ -20,6 +20,7 @@ Find out more about our [Sensors and Devices](/realsense_sensors.html)
 
 
 ### Help Centre
-The help centre for RealSense related articles are maintained at - [RealSense Help Centre](https://helpcenter-smartclean.webflow.io/).
+The help centre for RealSense related articles are maintained at -
+[RealSense Help Centre](https://help.smartclean.io/).
 
 ---
