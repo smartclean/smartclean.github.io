@@ -16,15 +16,15 @@ _Relevant requests from our web services are also accessible to authorised users
 4. Work orders
 
 Note:
-Each request must start with the following URL:
-
-*https://console.smartclean.io/prod/v2*
+> Each request must start with the following URL:
+>
+> *https://console.smartclean.io/prod/v2*
 
 ## Postman collection
 These requests have been put in a Postman collection.
 
 1. Postman is a tool for using and sharing details about web requests. 
-   - Read more about it here: https://www.postman.com
+   - Read more about it here: [https://www.postman.com](https://www.postman.com).
 2. There are two ways to use Postman:
    1. Web console - a Postman account is required to sign in and use the console.
    2. Desktop app - can be used without signing in.
@@ -69,7 +69,7 @@ along with a reason for failure.
 Authentication is necessary for all requests, without which the request will fail.
 
 By default, this collection enforces the "Basic" authentication scheme. 
-- Learn more about authentication schemes here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication
+- Learn more about authentication schemes [here:](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
 
 For the default authentication, your Username and Password is sufficient
 - See the "Detailed Steps", under the "How to use these requests" section above. 
