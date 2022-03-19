@@ -17,16 +17,17 @@ Bugfix
 {: .label .label-red }
 - A bug from scheduled tasks report has now been fixed where empty task groups caused the reporting service to not generate reports successfully in such edge case scenarios.
 
-
 Enhancements
 {: .label .label-green }
 - The command center module is now available in *V2* to all properties using a system default dashboard configuration.
 Reach out to your account manager if you need to get more details about this feature or need a different set of widgets.
-- Relevant requests from our web services are accessible to authorised users via a Postman collection.
-  - More secure authentication based on SHA-256 HMAC signing added for all requests in this collection.
-    - Users may switch to this from the default (Basic) authentication using Username and Password.
-  - Read about it at the [API page](/api_main.html)
 
+Enhancements
+{: .label .label-green }
+- Relevant requests from our web services are accessible to authorised users via a downloadable Postman collection.
+More secure authentication based on SHA-256 HMAC signing added for all requests in this collection.
+Users may switch to this from the default (Basic) authentication using Username and Password.
+Read more details about it at the [API page](/api_main.html).
 
 Feature
 {: .label .label-blue }
