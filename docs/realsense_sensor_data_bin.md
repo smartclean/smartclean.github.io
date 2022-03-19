@@ -20,7 +20,7 @@ Format of attribute: *"v"* in the general data format:
 **Notes:**
 1. Where, *p* represents the empty space (remaining) inside the enclosing bin container
 2. For **more details about our bin level monitoring devices** 
-please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works)
+please visit our [help center page](https://help.smartclean.io/support/solutions/articles/84000347349-fl-bt-2101-how-it-works)
 
 ---
 

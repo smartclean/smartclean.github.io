@@ -28,8 +28,7 @@ Format of attribute: *"v"* in the general data format:
    - This results in a standard metric emission of *sg.smartclean.fd.raw.rating*. 
    - This value is ordered in lesser the better ordering, 
      - i.e. value of 1 indicates excellent, 2 indicates good and in this manner the value of 5 indicates very bad.
-
-3. For **more details about our people counting device** please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/how-it-works-2)
+     
 ---
 
 #### Example data:

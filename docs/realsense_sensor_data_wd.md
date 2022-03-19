@@ -22,7 +22,7 @@ Notes:
 2. The size of spill is given by the "AreaP" value 
    (Represents how much area (in percentage) of device field of view area is wet.)
 3. For **more details about our spill detection device**
-please visit our [help center page](https://helpcenter-smartclean.webflow.io/help-installation/wf-2101-01-how-it-works)
+please visit our [help center page](https://help.smartclean.io/support/solutions/articles/84000347150-wd-wf-2101-how-it-works)
 
 ---
 

@@ -9,17 +9,15 @@ nav_order: 10
 # Matrix Web Services
 _Relevant requests from our web services are also accessible to authorised users._
 
-URL of each request starts with the following (base-url):
-
-Base URL:
-{: .label .label-green }
-_https://console.smartclean.io/prod/v2_
-
 **Services included:**
 1. Grids
 2. Device management
 3. Work orders
 4. Metrics
+
+Note:
+URL of each request starts with the following (base-url):
+*https://console.smartclean.io/prod/v2*
 
 ## Documentation
 For more details, view the [Documentation](https://documenter.getpostman.com/view/2593073/UVktqZWQ)
