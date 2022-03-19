@@ -22,6 +22,8 @@ Enhancements
 {: .label .label-green }
 - The command center module is now available in *V2* to all properties using a system default dashboard configuration.
 Reach out to your account manager if you need to get more details about this feature or need a different set of widgets.
+- Relevant requests from our web services are accessible to authorised users via a Postman collection.
+Read about it at the [API page](/api_main.html)
 
 Feature
 {: .label .label-blue }
