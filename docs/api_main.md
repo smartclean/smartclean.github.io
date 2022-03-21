@@ -30,19 +30,23 @@ These requests have been put in a Postman collection.
    2. Desktop app - can be used without signing in.
 
 ### Documentation
-For details about these requests and examples, refer to the documentation at the link:
+For details about these requests and examples, refer to the documentation at:
 
-_https://documenter.getpostman.com/view/2593073/UVsPQ4vL_
+[https://documenter.getpostman.com/view/2593073/UVsPQ4vL](https://documenter.getpostman.com/view/2593073/UVsPQ4vL)
 
 ### How to use these requests
 
-Ensure you have received from us, a Username and Password, specifically for using this postman collection.
-   If you don't have it, please request these from our account manager.
+> Link to Postman collection:
 
-Import the below link using Postman.
+> _https://www.getpostman.com/collections/f3bbb37cf3dbec166bb1_
 
-_https://www.getpostman.com/collections/f3bbb37cf3dbec166bb1_
-
+**Important:**
+ - This link is meant to be used by the Postman application.
+   - So, there is no use of opening this link using your browser. 
+ - Ensure you have received from us, a Username and Password, specifically for using this postman collection. 
+   - If you don't have it, please request these from our account manager.
+ - Please copy or note down this link, as you need to use it in "_Step 4_" of "_Detailed Steps_" below.
+ 
 **Detailed Steps:**
 1. Open the Postman application
 2. Click on "Collections" on the left vertical navigation bar.
@@ -69,7 +73,7 @@ along with a reason for failure.
 Authentication is necessary for all requests, without which the request will fail.
 
 By default, this collection enforces the "Basic" authentication scheme. 
-- Learn more about authentication schemes [here:](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
+- Learn more about [authentication schemes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
 
 For the default authentication, your Username and Password is sufficient
 - See the "Detailed Steps", under the "How to use these requests" section above. 
