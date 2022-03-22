@@ -1,7 +1,7 @@
 # How to contribute to this documentation ?
 - Fork the repository into your Github account.
 - Make changes to the .md files inside the **docs/** directory.
-- Raise a PR to *main* of this repository.
+- Raise a PR to *master* of this repository.
 
 # Prerequisites before you raise a PR.
 - **Correctness** - Ensure that the grammar as well as the content is correct.
