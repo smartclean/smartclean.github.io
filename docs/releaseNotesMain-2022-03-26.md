@@ -13,6 +13,7 @@ Feature
 {: .label .label-blue }
 - The **Housekeeping** mobile application can now start an adhoc or unplanned task group defined within the property or provided by the system.
 Users can update their applications to take advantage of this feature. This feature removes the necessity to plan for the scheduled activities or perform them on an adhoc basis.
+The Android version for this feature is **v1.1.6.17** and iOS is **v1.1.6.4**
 
 Enhancements
 {: .label .label-green }
