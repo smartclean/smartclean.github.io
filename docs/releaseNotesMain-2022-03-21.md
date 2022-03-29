@@ -1,13 +1,13 @@
 ---
 layout: default
-title: 2022-03-21
+title: 2022-03-19
 parent: Release Notes
 has_children: false
 has_toc: false
-nav_order: 4
+nav_order: 3
 ---
 
-# Release notes for 2022-03-21
+# Release notes for 2022-03-19
 
 Feature
 {: .label .label-blue }
@@ -20,10 +20,10 @@ Video Link: [https://vimeo.com/693415733](https://vimeo.com/693415733)
 Video Link: [https://vimeo.com/693418798](https://vimeo.com/693415733)
 
     To start, the person with valid access should configure the shift hours and shift day mapping available under the settings tab of the workforce module.  
-    a. *Shift Day Mapping*: It defines the scope of a shift with its duration, starts and ends time, and the required workforce. This scoping may vary from day to day, and *Matrix* allows you to configure it individually.  
+    a. *Shift Day Mapping*: It defines the scope of a shift with its duration, start and end time, and the required workforce. This scoping may vary from day to day, and *Matrix* allows you to configure it individually.  
     b. *Shift hours*: The working duration of facility management services based on the property's working hours. 
 
-    The cleaner can clock in through their HK app. He then completes all work getting allocated to them during the availability hours.  
+    The cleaner can clock in through their HK app. They can subsequently complete all tasks allocated to them during these availability hours.  
 
 Feature
 {: .label .label-blue }
@@ -67,6 +67,35 @@ Feature
 
 API Documentation: For any type of integration, get the details from the API documentation. [https://www.docs.smartclean.io/api_main.html](https://www.docs.smartclean.io/api_main.html)
 
+Feature
+{: .label .label-blue }
+- You can now mark the attendance of your members through the *Workforce* module using the *Group Clockin*.
+This feature is an add-on that is enabled on a request basis per property. Get in touch with your account manager if this feature seems important to you.
 
+
+Bugfix
+{: .label .label-red }
+- A bug from scheduled tasks report has now been fixed where empty task groups caused the reporting service to not generate reports successfully in such edge case scenarios.
+
+Enhancements
+{: .label .label-green }
+- Relevant requests from our web services are accessible to authorised users via a downloadable Postman collection.
+
+More secure authentication based on SHA-256 HMAC signing added for all requests in this collection.
+Users may switch to this from the default (Basic) authentication using Username and Password.
+
+Read more details about it at the [API page](/api_main.html).
+
+Pre-release
+{: .label .label-purple }
+- The Identity and Access Management (IAM) is now in internal preview and will be released generally to all properties at the end of March 2022 SGT.
+
+Pre-release
+{: .label .label-purple }
+- The FM mobile application will be updated at the end of March 2022 SGT to allow admins to define availabilities of their members.
+
+Pre-release
+{: .label .label-purple }
+- The Housekeeping mobile application will be updated at the end of March 2022 SGT to allow users to perform unplanned *Tasks* in their property.
 
 
