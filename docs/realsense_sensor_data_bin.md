@@ -13,13 +13,15 @@ Device slot type applicable:
 Format of attribute: *"v"* in the general data format:
 ```json
 {
-  "p": <number> // Percentage from 0 to 100
+  "p": <number>, // Empty space remaining inside the bin container (Percentage from 0 to 100)
+  "d": <number> // Distance between sensor and contents in the bin (millimeter)  
 }
 ```
 
 **Notes:**
-1. Where, *p* represents the empty space (remaining) inside the enclosing bin container
-2. For **more details about our bin level monitoring devices** 
+1. *p* represents the empty space (remaining) inside the enclosing bin container as a percentage.
+2. *d* represents the distance between the sensor and upper limit of contents in the bin container in millimeters.
+3. For **more details about our bin level monitoring devices** 
 please visit our [help center page](https://help.smartclean.io/support/solutions/articles/84000347349-fl-bt-2101-how-it-works)
 
 ---
@@ -32,7 +34,8 @@ For bin container level monitoring device type:
 {
   "t": "20211210152132",
   "v": {
-    "p": 15.5
+    "p": 46,
+    "d": 159 
   },
   "unixT": 1639120892,
   "DEVID": "DemoBin1",
