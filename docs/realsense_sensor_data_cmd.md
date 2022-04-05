@@ -20,13 +20,13 @@ Format of attribute: *"v"* in the general data format:
 ```json
 {
   "p": <number>, // Consumable remaining in the container (percentage, from 0 to 100)
-  "d": <number>, // Distance between the sensor and consumable in the container 
+  "d": <number> // Distance between the sensor and consumable in the container (millimeter)
 }
 ```
 
 **Notes:**
-1. *p* represents the level of consumable remaining in the container in percentage.
-2. *d* represents the distance (empty area) between sensor and fill level of consumable in the container.
+1. *p* represents the level of consumable remaining in the container as a percentage.
+2. *d* represents the distance (empty area) between sensor and fill level of consumable in the container in millimeters
 3. For **more details about our consumable level monitoring devices** 
 please visit our [help center page](https://help.smartclean.io/support/solutions/articles/84000347349-fl-bt-2101-how-it-works)
 
