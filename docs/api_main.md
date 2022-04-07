@@ -15,13 +15,15 @@ _Relevant requests from our web services are also accessible to authorised users
 3. Metrics
 4. Work orders
 
-Note:
-> Each request must start with the following URL:
->
-> *https://console.smartclean.io/prod/v2*
+## Documentation
+For details about these requests and examples, refer to the documentation at:
+
+[https://documenter.getpostman.com/view/2593073/UVsPQ4vL](https://documenter.getpostman.com/view/2593073/UVsPQ4vL)
 
 ## Postman collection
 These requests have been put in a Postman collection.
+
+**Import link:** `https://www.getpostman.com/collections/f3bbb37cf3dbec166bb1`
 
 1. Postman is a tool for using and sharing details about web requests. 
    - Read more about it here: [https://www.postman.com](https://www.postman.com).
@@ -29,25 +31,16 @@ These requests have been put in a Postman collection.
    1. Web console - a Postman account is required to sign in and use the console.
    2. Desktop app - can be used without signing in.
 
-### Documentation
-For details about these requests and examples, refer to the documentation at:
-
-[https://documenter.getpostman.com/view/2593073/UVsPQ4vL](https://documenter.getpostman.com/view/2593073/UVsPQ4vL)
-
-### How to use these requests
-
-> Link to Postman collection:
-
-> _https://www.getpostman.com/collections/f3bbb37cf3dbec166bb1_
-
 **Important:**
- - This link is meant to be used by the Postman application.
+ - The import link is meant to be used by the Postman application.
    - So, there is no use of opening this link using your browser. 
- - Ensure you have received from us, a Username and Password, specifically for using this postman collection. 
+ - Ensure you have received from us, authentication credentials, specifically for using this postman collection. 
    - If you don't have it, please request these from our account manager.
- - Please copy or note down this link, as you need to use it in "_Step 4_" of "_Detailed Steps_" below.
- 
-**Detailed Steps:**
+   - Without this the requests will not work
+ - Please copy or note down this link, as you need to use it in "_Step 4_" of "_How to use these requests_" below.
+
+### How to use these requests in Postman
+
 1. Open the Postman application
 2. Click on "Collections" on the left vertical navigation bar.
    1. If you don't see this, you will have to open a "Workspace" first (or create one if none are there)
