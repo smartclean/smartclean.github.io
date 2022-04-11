@@ -11,7 +11,7 @@ nav_order: 7
 
 Feature
 {: .label .label-blue }
-- FM app now allows creation of availability for a seat.
+- FM app now allows you to define the availability for a seat.
 
 Feature
 {: .label .label-blue }
