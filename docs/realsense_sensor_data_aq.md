@@ -16,7 +16,7 @@ Device slot types applicable:
 Format of attribute: *"v"* in the general data format:
 ```json
 {
-  "amm": <number>, // Ammonia channel reading in parts per million (ppm).
+  "amm": <number>, // Ammonia channel reading.
   "aqi": <number>, // Air Quality Index (number between 1 - 500), only present for ODRDTR_BATT_V1
   "rssi": "<number>",  // Received signal strength indicator
   "amm_expected": <number>, // Predicted value for the ammonia channel (used to generate "amm_zscore")
