@@ -55,7 +55,7 @@ This scope can be further reduced through means of ABAC on contextual informatio
 # Trust Relationship
 A trust relationship is a specification of the following key processes evaluated prior to allowing a princial to assume the role successfully.
 
-Prior to performing the operation to validate a trust relationship, the following contextual information
+Prior to performing the operation to validate a trust relationship, the following contextual information is present -
 
 1. What is the access mechanism used by the principal.
 
