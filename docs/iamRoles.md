@@ -13,15 +13,13 @@ A role is a collection of do's and dont's stated explicitly to a principal perfo
 Each principal can assume one role while performing any operation in Matrix.
 The sections below describe some common terminologies found in the IAM dashboard and their implications alongwith associated example usecases.
 
-![Role Example](https://www.smartclean.io/matrix/images/roleExample1.png)
+<img alt="Role Example" src="https://www.smartclean.io/matrix/images/roleExample1.png" style="width: 30%" />
 
 # Terms used
 1. Entity - An entity is an umbrella term used to refer generally to a property or an organisation.
-
 The segregation allows for easy segregation of APIs and micro-services in general and hence their various usecases offered by SmartClean Matrix modules or technology partner solutions.
 
 2. Principal - A principal refers to any accessor of system and services within an entity such as dashboard users and API users.
-
 Each principal can access resources within an entity by using the following mechanisms.
 
 ## Authorization mechanisms
