@@ -11,17 +11,17 @@ nav_order: 9
 
 Enhancement
 {: .label .label-green }
-- A section for quick access has been added to the Optimus module (visible as a bar at top left of the page)
+- A section for quick access has been added to the Optimus module (visible at top left of the page)
 
 Enhancement
 {: .label .label-green }
 - Limits are now enforced for the number of tasks and task groups in the workorders module.
-  - Please check the limits at: https://www.docs.smartclean.io/limitsQuotasWorkorders.html.
+  - Please check the limits at: [https://www.docs.smartclean.io/limitsQuotasWorkorders.html]()
 
 Enhancement
 {: .label .label-green }
 - IAM module has now been updated to version 1.1 with important security upgrades and features. 
-  - Find out more here: https://www.docs.smartclean.io/iam.html.
+  - Find out more here: [https://www.docs.smartclean.io/iam.html]()
 
 Pre-release
 {: .label .label-purple }
