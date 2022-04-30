@@ -15,7 +15,7 @@ Bugfix
   
 Bugfix
 {: .label .label-red }
-- Adhoc shifts would not updated to started state due to a validation in the Workforce Management service.
+- Adhoc shifts would not be updated to started state due to a validation in the Workforce Management service.
 
 Feature
 {: .label .label-blue }
