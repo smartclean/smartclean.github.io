@@ -11,11 +11,11 @@ nav_order: 10
 
 Bugfix
 {: .label .label-red }
-- A bug in FM app for case when open tasks were assigned to users and the open task was not being moved to assigned state has now been fixed.
-
+- Open tasks assigned to users in FM app were not being moved to assigned state.
+  
 Bugfix
 {: .label .label-red }
-- A bug in workforcemanagement micro-service validation for starting adhoc shifts causing them not to be started has now been fixed.
+- Adhoc shifts would not updated to started state due to a validation in the Workforce Management service.
 
 Feature
 {: .label .label-blue }
@@ -23,7 +23,7 @@ Feature
 
 Feature
 {: .label .label-blue }
-- Sensor driven incidents raised in your building will now follow the due time according to the duration set for High priority incidents (default 15 minutes).
+- Incidents raised by sensors in your building will use the due time set for high priority incidents (default 15 minutes)
 
 Enhancement
 {: .label .label-green }
