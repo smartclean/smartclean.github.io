@@ -41,3 +41,7 @@ Enhancement
 {: .label .label-green }
 - Audits doer version 28_2 features major UI and UX improvements.
 
+Enhancement
+{: .label .label-green }
+- Accuracy of all battery based usage monitoring devices upgraded 
+(occupancy reported by the device is the people "in" count divided by two) 
