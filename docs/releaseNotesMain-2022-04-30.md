@@ -43,5 +43,4 @@ Enhancement
 
 Enhancement
 {: .label .label-green }
-- Accuracy of all battery based usage monitoring devices upgraded 
-(occupancy reported by the device is the people "in" count divided by two) 
+- A multiplication factor of 0.5 has been added to battery based usage monitors (SMARTCLEAN#UM)
