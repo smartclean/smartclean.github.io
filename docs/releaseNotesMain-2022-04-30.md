@@ -15,7 +15,7 @@ Bugfix
   
 Bugfix
 {: .label .label-red }
-- Adhoc shifts would not updated to started state due to a validation in the Workforce Management service.
+- Adhoc shifts would not be updated to started state due to a validation in the Workforce Management service.
 
 Feature
 {: .label .label-blue }
@@ -41,3 +41,6 @@ Enhancement
 {: .label .label-green }
 - Audits doer version 28_2 features major UI and UX improvements.
 
+Enhancement
+{: .label .label-green }
+- A multiplication factor of 0.5 has been added to battery based usage monitors (SMARTCLEAN#UM)
