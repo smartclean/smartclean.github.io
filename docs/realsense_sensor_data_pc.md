@@ -39,8 +39,8 @@ please visit our [help center page](https://help.smartclean.io/support/solutions
 {
    "t": "20211210152132",
    "v": {
-      "count": "2",
-      "out_count": "1"
+      "count": 2.0,
+      "out_count": 1.0
    },
    "unixT": 1639120892,
    "DEVID": "DemoPPLCTR1",
