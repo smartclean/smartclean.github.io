@@ -18,7 +18,7 @@ This report helps to breakdown the inspections formed over a time duration into 
     
     An example screenshot is shown below.
 
-    ![VR-1](https://www.smartclean.io/matrix/images/reports/auditsTallyReport/VR-1.png)
+    ![auditsTallyReportExample1](https://www.smartclean.io/matrix/images/auditsTallyReportExample1.png)
 
 ## Questions that can be answered by this report:
 
