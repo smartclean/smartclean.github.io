@@ -25,4 +25,4 @@ multiple table views to highlight their averages and trends.
 
 #### 1. Audit tally report
 
-<img alt="Audits tally report" src="https://www.smartclean.io/matrix/images/auditsTallyReportExample1.png" width="270"/>
+<img alt="Audits tally report" src="https://www.smartclean.io/matrix/images/auditsTallyReportExample1.png" width="480"/>
