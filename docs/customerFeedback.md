@@ -36,7 +36,8 @@ It is done to facilitate easy viewing and better data ranges depending on the ti
 - If the chosen date range is for a single day, then the data points shown are on an Hourly Basis.
 - If the chosen date range is less than a month, then the data points shown are on Daily Basis.
 - If the chosen date range is more than a month but less than 3 months, then the data points shown are on Weekly Basis.
-- If the chosen date range is more than 3 months, then the data points shown are on a Monthly Basis.The maximum date range is that of 190 Days for a report that can be provided.<br />
+- If the chosen date range is more than 3 months, then the data points shown are on a Monthly Basis.<br />
+The maximum date range is that of 190 Days for a report that can be provided.<br />
 
     *Example*: The Date Range below is 1 month. In this case, the time interval for the x-axis of the graph is on daily basis.
 
