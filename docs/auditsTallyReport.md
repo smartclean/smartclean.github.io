@@ -14,7 +14,7 @@ This report helps to breakdown the inspections formed over a time duration into 
 
 ## Notes:
 
-- These categories must be possible to be generated through a combination of certain key selectors in Title, Status, Average Scores obtained, Dates, Status.<br />
+- These categories must be possible to be generated through a combination of certain key selectors in Title, Status, Average Scores obtained, Dates and Status.<br />
     
     An example screenshot is shown below.
 
