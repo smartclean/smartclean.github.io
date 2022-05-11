@@ -62,14 +62,30 @@ These requests have been put in a Postman collection.
 along with a reason for failure.
 
 
-### Authentication:
-Authentication is necessary for all requests, without which the request will fail.
+## Authentication:
 
-By default, this collection enforces the "Basic" authentication scheme. 
-- Learn more about [authentication schemes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
+1. Authentication is necessary for all requests, without which the request will fail.
+2. If any request indicates Unauthorised or TOKEN_INVALID in the response it means the credentials are not specified, or expired.
+3. This postman collection enforces the "Basic" authentication scheme. 
+- Learn more about authentication schemes here: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
+4. You need to paste the credentials given to you in the "Variables" section of this collection.
+- This is to be done only once after the Collection is imported in Postman.
+5. Please obtain your credentials (Username and Password) from our representative, then follow up from the below 
+section: "Set your username and password in the Postman collection")
+6. If desired, you may switch to a more secure authentication (based on SHA-256 HMAC signing)
+   1. You will be provided the credentials: Access Key and Secret Key (Used instead of username and password)
+   2. See the section: "Switch to HMAC Signing for more secure Authorization" below.
 
-For the default authentication, your Username and Password is sufficient
-- See the "Detailed Steps", under the "How to use these requests" section above. 
+### Set your username and password in the Postman collection:
+1. Go to the tab "Variables" for this collection. 
+- Tip: In Postman, click on this Collection in your sidebar, then click on the "Variables"
+2. Paste the Username and Password provided to you as the CURRENT VALUE of the variables: "sc-username" and "sc-password" respectively.
+- Important: Paste these values under the column: "CURRENT VALUE" for the corresponding "VARIABLE" name (there is no need to change the values under the column: "INITIAL VALUE", as these are just dummy placeholders)
+3. Press CTRL + S or click the save icon on top right to save the changes.
 
-For more details, and how to configure this, please read the Authentication section of the 
-document whose link is given in the "Documentation" section above
+### Switch to HMAC Signing for more secure Authorization
+In case you want to switch from the simple (Basic) authentication to the more strict HMAC based authentication, please do the following.
+
+1. Request our representative to receive your HMAC credentials (i.e. Access Key and Secret Key).
+2. Go to the Variables section in the collection and Update the CURRENT VALUE of the variable: "*auth-type*" to **hmac** (from the default basic)
+3. Paste the Access Key and Secret Key given to you as the CURRENT VALUE of the variables: "*sc-hmac-access-key*" and "*sc-hmac-secret-key*" respectively.
