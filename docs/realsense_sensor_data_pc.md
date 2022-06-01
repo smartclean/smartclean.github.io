@@ -6,7 +6,7 @@ grand_parent: RealSense
 nav_order: 1
 ---
 
-## Data format for usage monitoring device
+## Data format
 
 Device slot types applicable:
 - SMARTCLEAN#PPLCTR 
@@ -100,12 +100,3 @@ please visit our [help center page](https://help.smartclean.io/support/solutions
 
 #### Example use case:
 Raise an incident when value of  *count* reaches or crosses a maximum threshold.
-
-#### Example SQL query to get raw data in time range:
-An example query that returns the total people count for a time range 
-across all the zones in a building is as follows:
-```
-select insid as Zone, sum(cast(v->>'count' as integer)) TotalPeople from <db.table>
-where pid = '<pid>' and month = '<month>' and dom = '<dom>' and devtype = 'SMARTCLEAN#PPLCTR'
-and time >= <Start Time> and time <= <End Time> group by insid;
-```
