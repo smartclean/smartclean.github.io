@@ -23,12 +23,13 @@ The general format of data by all our devices and sensors is:
   "t": <string>,  // Timestamp in the local timezone region of the device (string format: yyyymmddhhmmss)
   "v": <custom type>  // Realtime Data from Sensor depending on the type of the Sensor
   "unixT": <number>  // Unix time in milliseconds
-  "DEVID": <string>,  // Slot ID for the Device
+  "DEVID": <string>,  // Slot (Alias) ID for the Device
   "Region": <string>,  // Timezone string in JODA format (See reference at bottom of page)
   "time": <string>,  // Timestamp in string format: YYYY-MM-DDTHH:mm:ss+offset
-  "DevType": <string>,  // Type of the Device Slot (Example: PC for People Counter, FD for feedback etc).
-  "PID": <string>,  // ID of the Project.
-  "InsID": <string>,  // ID of the Location / Zone where the Device Slot is located.
+  "DevType": <string>,  // Type of the Device Slot (Example: SMARTCLEAN#UM for People Counter Lite)
+  "PID": <string>,  // ID of the Project (Building)
+  "PropId": <string>, // ID of the Property which this Project (Building) belongs to.
+  "InsID": <string>,  // ID of the Location (Zone) where the Device Slot is located.
   "Display": <string>,  // Name of the Device Slot (for identification)
   "dow": <string>,  // Day of Week - 0: Sun to 6: Sat
   "month": <string>,  // Month of the year (1 - 12)
