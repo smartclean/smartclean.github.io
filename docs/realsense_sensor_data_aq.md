@@ -11,13 +11,15 @@ nav_order: 6
 
 Device slot types applicable: 
 - SMARTCLEAN#ODRDTR
-- SMARTCLEAN#ODRDTR_BATT_V1
+- SMARTCLEAN#ODRDTR_BATT_V1 (AQ Lite)
 
 Format of attribute: *"v"* in the general data format:
 ```json
 {
   "amm": <number>, // Ammonia channel reading.
   "aqi": <number>, // Air Quality Index (number between 1 - 500), only present for ODRDTR_BATT_V1
+  "rh": <number>, // Relative humidity (percent, after divided by 10), only present for ODRDTR_BATT_V1
+  "temp": <number>, // Temperature (degree celcius, after divided by 10), only present for ODRDTR_BATT_V1 
   "rssi": "<number>",  // Received signal strength indicator
   "amm_expected": <number>, // Predicted value for the ammonia channel (used to generate "amm_zscore")
   "amm_zscore": <number>, // Anomaly score attributed to ammonia channel
@@ -47,33 +49,35 @@ For SMARTCLEAN#ODRDTR_BATT_V1
 
 ```json
 {
-  "t": "20211210152132",
-  "v": {
-    "amm": 270,
-    "aqi": 180, 
-    "rssi": "-47", 
-    "amm_expected": 3.426926, 
-    "amm_zscore": -0.119488, 
-    "alc_expected": 0.168433, 
-    "alc_zscore": -0.021021, 
-    "alc": 0.168391, 
-    "no2_expected": 1.181777, 
-    "no2_zscore": 0.001301, 
-    "no2": 1.181781
-  },
-  "unixT": 1639120892,
-  "DEVID": "DemoAQ1",
-  "Region": "Asia/Singapore",
-  "time": "2021-12-10T15:21:32+0800",
+  "AGG": "20220601135945",
+  "DASSOC": "4EB721A16F",
+  "DEVID": "43b3d04a75f3485ebc330d792b037ca7",
+  "DevSubType": "1",
   "DevType": "SMARTCLEAN#ODRDTR_BATT_V1",
-  "PID": "DemoProject",
-  "InsID": "DemoLocation",
-  "Display": "Demo Air Quality Light 1",
-  "dow": "5",
-  "month": "12",
-  "hour": "15",
-  "dom": "10",
-  "minute": "21"
+  "Display": "Indoor Air Quality",
+  "dom": "01",
+  "dow": "3",
+  "expire_at": 1669615185,
+  "hour": "13",
+  "ID": "43b3d04a75f3485ebc330d792b037ca7",
+  "InsID": "845c7c480e7345ff8e00e302776c7062",
+  "minute": "59",
+  "month": "06",
+  "PID": "45ea1d38775046dbbdc955362b8834b1",
+  "PropId": "d2ff1cc0ee104abba3a8ba030c72cd06",
+  "Region": "Asia/Singapore",
+  "t": "20220601135945",
+  "time": "2022-06-01T13:59:45+0800",
+  "Type": null,
+  "unix": 1654063185,
+  "unixT": 1654063185904,
+  "utc": 1654063185,
+  "v": {
+    "amm": 0,
+    "aqi": 103,
+    "rh": 730,
+    "temp": 304
+  }
 }
 ```
 
