@@ -19,10 +19,14 @@ sent in batches to this service.
 
 3. We recommend securing your web service with some form of authentication.
    1. So that only your authorised clients (such as our data push service) can make requests to it.
-   2. We will need to be notified what authentication the web service requires in order to make the request accordingly.
+   2. Authentication schemes that our data push service can currently work with:
+      1. Basic (based on username, password)
+      2. OAuth (with grant type: client credentials)
+      3. OAuth (with grant type: refresh token)
+      4. Authentication for _Azure Event Hub_ or _AWS IoT_ 
    
-4. Please ensure the protocol used for the web service is HTTP secure
-   1. HTTPS instead of HTTP
+4. Please ensure the protocol used for the web service is HTTP secure 
+   - i.e HTTPS instead of HTTP
 
 
 ## Requirements to enable data push
@@ -42,15 +46,15 @@ information about correct installation and configuration of our sensors.
 [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#general-data-format)
 3. The custom attributes for each type of sensor are described in respective child page of our 
 [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#custom-data-format).
-   1. You can navigate to the child page for desired device slot type using the left navigation bar or 
+   - You can navigate to the child page for desired device slot type using the left navigation bar or 
 table of contents at the bottom of this page.
 4. The authentication scheme required by the web service should be notified to us in order to make the requests
-with the respective authentication.
+with the respective authentication correctly.
 
 ## How to understand or use this data
 Following are the steps to properly extract and process the data for appropriate use.
 1. Get data from body of the request
-   1. This is a bytes string encoded using the scheme: utf-8
+   - This is a bytes string encoded using the scheme: utf-8
 2. Decode this bytes string using the same encoding scheme (utf-8)
    1. This gives you a usable text
    2. This is the desired data batch.
@@ -93,5 +97,5 @@ b'["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\
          crosses a certain maximum value, raise an alert that there is high usage. 
          2. If value of *amm* inside "v" of data from AQ Lite device crosses a certain maximum value, 
          raise an alert that there is bad smell or high ammonia concentration.
-4. Some example use cases for each sensor type is mentioned at bottom each respective child page in our 
-      [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#custom-data-format))
+4. Some example use cases for each sensor type is mentioned at bottom each respective child page in
+our [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#custom-data-format))
