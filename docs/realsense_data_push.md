@@ -15,14 +15,14 @@ This page describes how sensor data can be sent to your web service.
 1. Given a valid URL to an available web service, we can allow data from our sensors to be 
 sent in batches to this service.
 
-2. Here, batch of data means a list of data objects, where each object represents a data point.
+2. Here, batch of data means a collection of data objects, where each object represents a data point.
 
 3. We recommend securing your web service with some form of authentication.
    1. So that only your authorised clients (such as our data push service) can make requests to it.
    2. We will need to be notified what authentication the web service requires in order to make the request accordingly.
    
 4. Please ensure the protocol used for the web service is HTTP secure
-   1. HTTPS, instead of HTTP
+   1. HTTPS instead of HTTP
 
 
 ## Requirements to enable data push
@@ -33,10 +33,10 @@ information about correct installation and configuration of our sensors.
 
 
 ## Request data and sensor data format
-1. The web service will receive a _utf-8 encoded batch of JSON serialized data objects_ in the **body of the request**.
+1. The web service will receive in the **body of the request** a _utf-8 encoded batch of JSON serialized data objects_.
    1. Data from any sensor is sent as soon as it is received.
-   2. This request body is encoded into a bytes string using the scheme: utf-8 
-   3. Batch means the data is inside a list / array structure (i.e. within square brackets: [])
+   2. Batch means the data is inside a list / array structure (i.e. within square brackets: [])
+   3. This batch is encoded into a bytes string using the scheme: utf-8 
    4. JSON serialized data object means the data object is converted to a string (text) using JSON
 2. All data objects in the batch follow the general data format described at our 
 [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#general-data-format)
@@ -72,20 +72,21 @@ b'["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\
 ["{"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}","{"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}"]
 ```
 
-3. De-serialize each string in this list / array using JSON
-   (If there is more than 1 string in this list, you may iterate over each)
+3. De-serialize each string in this batch using JSON
+   (If there is more than 1 string in this batch, you may iterate over each)
    1. De-serialize the first string in the batch, you get:
        ```
           {"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}
        ```
    2. De-serialize the second string in the batch, you get:
        ```
-       {"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}
+       {"t":"20220602120302","DevType":"SMARTCLEAN#UM"}
        ```
-   3. Each object contains various attributes, which you can use. 
-   For example, value of "DevType" indicates what is the slot type of the sensor / device. 
-   Value of "t" is the timestamp string in YYYYMMDDHHMMSS format, that is local to the timezone
-   (which is indicated in attribute: "Region")
+   3. Each object contains various attributes, which you can use (described in our sensor data page). 
+   For example:
+      1. Value of "DevType" indicates what is the slot type of the sensor / device. 
+      2. Value of "t" is the timestamp in the string format: YYYYMMDDHHMMSS, that is local to the timezone
+      (which is indicated in attribute: "Region")
    4. Put these steps in your program and process each data to fulfil desired use cases. 
       - Examples: 
          1. If "count" inside "v" of data from PC Lite device (DevType: SMARTCLEAN#UM),
