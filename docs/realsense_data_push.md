@@ -64,32 +64,31 @@ Following are the steps to properly extract and process the data for appropriate
 ## Example of using data:
 A small subset of the actual data is described in this example.
 
-1. You receive below data in body of request to your web service:
+1. You receive below data in body of request to your web service, which is an array of stringified sensor data payloads:
 
 ```
-b'["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}"]'
+["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}"]
 ```
 
-2. Decode this using utf-8, you get:
+2. If using *python*, decode this using utf-8, you get:
 
 ```
 ["{"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}","{"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}"]
 ```
 
-3. De-serialize each string in this batch using JSON
-   (If there is more than 1 string in this batch, you may iterate over each)
-   1. De-serialize the first string in the batch, you get:
+3. De-serialize/Unmarshal each string in this batch using JSON
+   1. Unmarshalling the first string in the batch we get:
        ```
           {"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}
        ```
-   2. De-serialize the second string in the batch, you get:
+   2. Unmarshalling the second string in the batch to get:
        ```
        {"t":"20220602120302","DevType":"SMARTCLEAN#UM"}
        ```
-   3. Each object contains various attributes, which you can use (described in our sensor data page). 
+   3. Each object contains various attributes, which can be used as described in our sensor data pages. 
    For example:
       1. Value of "DevType" indicates what is the slot type of the sensor / device. 
-      2. Value of "t" is the timestamp in the string format: YYYYMMDDHHMMSS, that is local to the timezone
+      2. Value of "t" is the timestamp in the string format: *YYYYMMDDHHmmss* that is local to the timezone
       (which is indicated in attribute: "Region")
    4. Put these steps in your program and process each data to fulfil desired use cases. 
       - Examples: 
@@ -97,5 +96,5 @@ b'["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\
          crosses a certain maximum value, raise an alert that there is high usage. 
          2. If value of *amm* inside "v" of data from AQ Lite device crosses a certain maximum value, 
          raise an alert that there is bad smell or high ammonia concentration.
-4. Some example use cases for each sensor type is mentioned at bottom each respective child page in
+4. Some example use cases for each sensor type are mentioned at bottom each respective child page in
 our [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#custom-data-format))
