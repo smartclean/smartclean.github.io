@@ -68,7 +68,7 @@ A small subset of the actual data is described in this example.
 1. You receive below data in body of request to your web service, which is an array of stringified sensor data payloads:
 
 ```
-b'["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}"]'
+["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}"]
 ```
 
 2. If using *python*, decode this using utf-8, you get:
