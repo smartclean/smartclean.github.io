@@ -12,8 +12,10 @@ nav_order: 2
 This page describes the format of raw data provided by our Sensors and Devices.
 
 Note:
-Raw data from sensors is accessible when third party push is enabled 
+- Raw data from sensors is accessible when third party push is enabled 
 in RealSense for a property or through a dedicated provisioned data lake.
+- For more refer to page: [Data Push](/realsense_data_push.html)
+
 
 
 ## General Data Format
@@ -47,8 +49,8 @@ yyyy is year, mm is month, dd is day, hh is hour, mm is minutes
 ## Custom Data Format
 The value of attribute: *"v"* in the general data format is based on the device slot type
 
-Device slot type is described in the [parent page](/realsense_sensors.html)
+Device slot type is described in the page: [SmartClean Sensors](/realsense_sensors.html)
 
 To see the custom data format for each device slot type, visit 
-the page corresponding of the desired category using the table of contents below.
+the page corresponding to the desired category using the table of contents below.
 
