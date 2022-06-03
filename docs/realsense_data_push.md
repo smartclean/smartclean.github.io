@@ -65,35 +65,34 @@ Following are the steps to properly extract and process the data for appropriate
 ## Example of using data:
 A small subset of the actual data is described in this example.
 
-1. You receive below data in body of request to your web service:
+1. You receive below data in body of request to your web service, which is an array of stringified sensor data payloads:
 
 ```
 b'["{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}","{\"t\":\"20220602120301\",\"DevType\":\"SMARTCLEAN#ODRDTR_BATT_V1\"}"]'
 ```
 
-2. Decode this using utf-8, you get:
+2. If using *python*, decode this using utf-8, you get:
 
 ```
 ["{"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}","{"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}"]
 ```
 
-3. De-serialize each string in this batch using JSON
-   (If there is more than 1 string in this batch, you may iterate over each)
-   1. De-serialize the first string in the batch, you get:
+3. De-serialize/Unmarshal each string in this batch using JSON
+    1. Unmarshalling the first string in the batch we get:
        ```
           {"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}
        ```
-   2. De-serialize the second string in the batch, you get:
+   2. Unmarshalling the second string in the batch to get::
        ```
        {"t":"20220602120302","DevType":"SMARTCLEAN#UM"}
        ```
-   3. Each object contains various attributes for use.
+   3. Each object contains various attributes, which can be used as described in our sensor data pages.
       1. These attributes are described in the main and child pages for 
       [sensor data](https://www.docs.smartclean.io/realsense_sensor_data.html).
       2. In this example:
          1. Value of "DevType" indicates what is the slot type of the sensor / device.
-         2. Value of "t" is the timestamp in the string format: YYYYMMDDHHMMSS, that is local to the timezone
-         (timezone is indicated in the attribute: "Region")
+         2. Value of "t" is the timestamp in the string format: *YYYYMMDDHHmmss* that is local to the timezone
+       (which is indicated in attribute: "Region")
    4. Put these steps in your program to process each data and fulfil desired use cases. 
       - Examples:
       1. If "count" inside "v" of data from PC Lite device (DevType: SMARTCLEAN#UM), 
