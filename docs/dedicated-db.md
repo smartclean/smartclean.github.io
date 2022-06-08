@@ -6,14 +6,16 @@ grand_parent: SmartClean Matrix
 nav_order: 1
 ---
 
+In cases where it is not possible to host a dedicated HTTPs endpoint or develop the mechanisms to read sensor and event data, write to a database of your choice and query it, Matrix offers a curated solution where we deploy our connector to do this for you.
+
+The advantage of this method is that without any servers to provision or code to manage data flow, you will get access to query your project data using standard SQL.
+
 ### What is the dedicated database service
-1. A database that allows you to query desired data.
-2. Any standard [PostgreSQL](https://www.postgresql.org) database will work.
-3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
-extension to PostgreSQL.
-4. The database will allow the following kind of interaction:
-   1. You can query data from it. 
-   2. Our system can write data to it. 
+1. A dedicated database instance provisioned for your projects that allows you to query desired data and time series events from sensors.
+2. Any standard [PostgreSQL](https://www.postgresql.org) database with the TimeScale extension will work.
+3. The database will allow the following kinds of interaction:
+   1. You can query data from it.
+   2. Our system can write data to it by receiving it from the internal event bus.
    
 
 ### Means of data integration
@@ -23,7 +25,7 @@ Allow you to query desired data pushed to a database by our platform, such as se
 2. You may alternatively, provision your own Timescale DB (PostgreSQL database instance with the TimeScale extension)
  and give us access to write to it.
 
-The diagram below shows how SmartClean Matrix and subscribers of this service can access this database.
+The diagram below shows how Matrix and subscribers of this service can access this database.
 
 <img alt="Using the dedicated database" src="https://www.smartclean.io/matrix/images/Multi-Tenant-DB.png" title="Using the dedicated database" width="800"/>
 
@@ -33,9 +35,9 @@ may belong to different tenants (owners).
 ### Example use case:
 Using data queried from the database, you may fulfil or enhance your own use cases.
 - Such as, but not limited to:
-1. Create or enrich your own digital user interface, or 
-2. Create or enhance your own data processing and visualisation application.
-
+1. Create or enrich your own digital user interfaces
+2. Create or enhance your own data processing and visualisation applications.
+3. Design APIs for users of your application to query.
 
 ### Use your own SQL database instead
 1. You may want to create or use your own SQL database server instead of using the one provided by us.
