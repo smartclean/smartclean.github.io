@@ -27,6 +27,8 @@ The diagram below shows how SmartClean Matrix and subscribers of this service ca
 
 <img alt="Using the dedicated database" src="https://www.smartclean.io/matrix/images/Multi-Tenant-DB.png" title="Using the dedicated database" width="800"/>
 
+Note: The term multi-tenanted data access in the diagram means the database may store data for multiple projects, which
+may belong to different tenants (owners).
 
 ### Example use case:
 Using data queried from the database, you may fulfil or enhance your own use cases.
