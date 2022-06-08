@@ -11,22 +11,21 @@ nav_order: 1
 2. Any standard [PostgreSQL](https://www.postgresql.org) database will work.
 3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
 extension to PostgreSQL.
-4. The database allowing the following two types of commits:
+4. The database will allow the following kind of interaction:
    1. You can query data from it. 
    2. Our system can write data to it. 
-
-
+   
 
 ### Means of data integration
 Allow you to query desired data pushed to a database by our platform, such as sensor data and Matrix events. 
 
-1. You may reach out to your account executive to setup the solution for you.
+1. You may reach out to your account executive to set up the solution for you.
 2. You may alternatively, provision your own Timescale DB (PostgreSQL database instance with the TimeScale extension)
  and give us access to write to it.
 
 The diagram below shows how SmartClean Matrix and subscribers of this service can access this database.
 
-<img alt="Using the multi-tenant database" src="https://www.smartclean.io/matrix/images/Multi-Tenant-DB.png" title="Using the multi-tenant database" width="800"/>
+<img alt="Using the dedicated database" src="https://www.smartclean.io/matrix/images/Multi-Tenant-DB.png" title="Using the dedicated database" width="800"/>
 
 
 ### Example use case:
