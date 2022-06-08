@@ -1,34 +1,34 @@
 ---
 layout: default
-title: Multi-tenant database service
+title: Dedicated database service
 parent: Matrix Event Bus (MEB)
 grand_parent: SmartClean Matrix
 nav_order: 1
 ---
 
-### What is a shared database model
-
-1. This means the same database instance is shared, allowing the following two types of commits:
+### What is the dedicated database service
+1. A database that allows you to query desired data.
+2. Any standard [PostgreSQL](https://www.postgresql.org) database will work.
+3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
+extension to PostgreSQL.
+4. The database will allow the following kind of interaction:
    1. You can query data from it. 
    2. Our system can write data to it. 
-2. Any standard [PostgreSQL](https://www.postgresql.org) database will work. 
-3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
-extension to PostgreSQL. 
-4. A multi-tenant component means the data from projects owned by you is 
-shared on the same database with some logical separation and query patterns.
-
+   
 
 ### Means of data integration
 Allow you to query desired data pushed to a database by our platform, such as sensor data and Matrix events. 
 
-1. You may reach out to your account executive to setup the solution for you.
+1. You may reach out to your account executive to set up the solution for you.
 2. You may alternatively, provision your own Timescale DB (PostgreSQL database instance with the TimeScale extension)
  and give us access to write to it.
 
 The diagram below shows how SmartClean Matrix and subscribers of this service can access this database.
 
-<img alt="Using the multi-tenant database" src="https://www.smartclean.io/matrix/images/Multi-Tenant-DB.png" title="Using the multi-tenant database" width="800"/>
+<img alt="Using the dedicated database" src="https://www.smartclean.io/matrix/images/Multi-Tenant-DB.png" title="Using the dedicated database" width="800"/>
 
+Note: The term multi-tenanted data access in the diagram means the database may store data for multiple projects, which
+may belong to different tenants (owners).
 
 ### Example use case:
 Using data queried from the database, you may fulfil or enhance your own use cases.
