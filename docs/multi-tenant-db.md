@@ -14,16 +14,18 @@ nav_order: 1
 2. Any standard [PostgreSQL](https://www.postgresql.org) database will work. 
 3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
 extension to PostgreSQL. 
-4. A multi-tenant component means the component is shared (physically the same, with logical separation)
+4. A multi-tenant component means the data from projects owned by you is 
+shared on the same database with some logical separation and query patterns.
 
 
 ### Means of data integration
 Allow you to query desired data pushed to a database by our platform, such as sensor data and Matrix events. 
 
-1. You may subscribe for this service in order to connect to this database.
-2. You may alternatively, create your own SQL database and give us access to write to it.
+1. You may reach out to your account executive to setup the solution for you.
+2. You may alternatively, provision your own Timescale DB (PostgreSQL database instance with the TimeScale extension)
+ and give us access to write to it.
 
-Below diagram shows how SmartClean Matrix and subscribers of this service can access this database.
+The diagram below shows how SmartClean Matrix and subscribers of this service can access this database.
 
 <img alt="Using the multi-tenant database" src="https://www.smartclean.io/matrix/images/Multi-Tenant-DB.png" title="Using the multi-tenant database" width="800"/>
 
@@ -53,13 +55,12 @@ Using data queried from the database, you may fulfil or enhance your own use cas
    1. **host** - A web URL identifying the database server.
    2. **database** - Name given to the desired database on the server.
    3. **user** - Name of user having access to the database.
-   4. **password** - Password for this user. 
-Note: These details are required whether the database is provided by us or provided by you.
+   4. **password** - Password for this user.
 4. Below are some options for connecting to the database:
-   1. Use the PostgreSQL command line interface. 
+   1. Use the PostgreSQL command line interface (psql). 
    2. Use a library available in the programming language of your choice. 
    3. Connect to it from a cloud platform or service of your choice. 
-   4. Majority of BI (business intelligence) service providers also allow you to connect to any PostgreSQL databases.
+   4. Majority of BI (business intelligence) service providers allow connection to PostgreSQL databases.
 
 
 ### Example of querying the database
