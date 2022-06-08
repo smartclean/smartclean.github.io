@@ -6,17 +6,22 @@ grand_parent: SmartClean Matrix
 nav_order: 1
 ---
 
-### What is a multi-tenant database
-Multi-tenant means shared, referring to the same database instance which can be queried by authorized clients.
+### What is a shared database model
 
-Any standard [PostgreSQL](https://www.postgresql.org) database will work.
-
-The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an
- extension to PostgreSQL.
+1. This means the same database instance is shared, allowing the following two types of commits:
+   1. You can query data from it. 
+   2. Our system can write data to it. 
+2. Any standard [PostgreSQL](https://www.postgresql.org) database will work. 
+3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
+extension to PostgreSQL. 
+4. A multi-tenant component means the component is shared (physically the same, with logical separation)
 
 
 ### Means of data integration
-Clients who subscribe for this service can connect to this database and query it for desired data.
+Allow you to query desired data pushed to a database by our platform, such as sensor data and Matrix events. 
+
+1. You may subscribe for this service in order to connect to this database.
+2. You may alternatively, create your own SQL database and give us access to write to it.
 
 Below diagram shows how SmartClean Matrix and subscribers of this service can access this database.
 
@@ -24,43 +29,38 @@ Below diagram shows how SmartClean Matrix and subscribers of this service can ac
 
 
 ### Example use case:
-Using various data and events from our platform, you can fulfil or enhance your own use cases:
-- Make or enrich your own digital user interface, or
-- Make or enrich your own data processing and visualisation application. 
-
-- Subscribe for this service
-  - To be able to create a dedicated connection to the database instance
-- Run your queries on the database using this connection
-  - To get desired data and use it accordingly.
+Using data queried from the database, you may fulfil or enhance your own use cases.
+- Such as, but not limited to:
+1. Create or enrich your own digital user interface, or 
+2. Create or enhance your own data processing and visualisation application.
 
 
 ### Use your own SQL database instead
-You may want to create or use your own SQL database instead of using the one provisioned by us.
-
-- In this case, you take care of creating the SQL database in the environment of your choice.
-
-- When signing up for this service, provide us details of a database connection
+1. You may want to create or use your own SQL database server instead of using the one provided by us.
+2. In this case, you control the database server in the environment of your choice.
+3. Create a database in the PostgreSQL server for this interaction.
+   1. Ensure the database name, username, password you provide us has access to write to it.
+   2. Only if the privilege was altered on this database, you need to verify this 
+   (default privilege already has this access)
+4. When signing up for this service, provide us details for the database connection
   - So that onboarded sensors and events from our Matrix Event Bus can be written to it.
   
 
 ### Connecting to the database
-An authorised connection to this PostgreSQL database is all that is required to start using it.
+1. An authorised connection to this PostgreSQL database is all that is required to start using it.
+2. Authorised means that a username and password will be required, since the instance must be secure.
+3. For connecting to a PostgreSQL database the following details are required:
+   1. **host** - A web URL identifying the database server.
+   2. **database** - Name given to the desired database on the server.
+   3. **user** - Name of user having access to the database.
+   4. **password** - Password for this user. 
+Note: These details are required whether the database is provided by us or provided by you.
+4. Below are some options for connecting to the database:
+   1. Use the PostgreSQL command line interface. 
+   2. Use a library available in the programming language of your choice. 
+   3. Connect to it from a cloud platform or service of your choice. 
+   4. Majority of BI (business intelligence) service providers also allow you to connect to any PostgreSQL databases.
 
-Authorised means that a username and password will be required, since the instance must be secure.
-
-For connecting to a PostgreSQL database the following details are required:
-1. **host** - A web URL identifying the database server.
-2. **database** - Name given to the desired database on the server.
-3. **user** - Name of user having access to the database.
-4. **password** - Password for this user.
-
-Note: These details are required whether the database is provided by us or provided by you. 
-
-Below are some options for connecting to the database:
-- Use the PostgreSQL command line interface.
-- Use a library available in the programming language of your choice.
-- Connect to it from a cloud platform or service of your choice. 
-- Majority of BI (business intelligence) service providers also allow you to connect to any PostgreSQL databases.
 
 ### Example of querying the database
 Here is an example query that returns the total people count for a time range 
