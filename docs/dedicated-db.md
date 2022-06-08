@@ -1,21 +1,20 @@
 ---
 layout: default
-title: Multi-tenant database service
+title: Dedicated database service
 parent: Matrix Event Bus (MEB)
 grand_parent: SmartClean Matrix
 nav_order: 1
 ---
 
-### What is a shared database model
-
-1. This means the same database instance is shared, allowing the following two types of commits:
+### What is the dedicated database service
+1. A database that allows you to query desired data.
+2. Any standard [PostgreSQL](https://www.postgresql.org) database will work.
+3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
+extension to PostgreSQL.
+4. The database allowing the following two types of commits:
    1. You can query data from it. 
    2. Our system can write data to it. 
-2. Any standard [PostgreSQL](https://www.postgresql.org) database will work. 
-3. The database we use for this is called [TimeScale DB](https://docs.timescale.com) which is provided as an 
-extension to PostgreSQL. 
-4. A multi-tenant component means the data from projects owned by you is 
-shared on the same database with some logical separation and query patterns.
+
 
 
 ### Means of data integration
