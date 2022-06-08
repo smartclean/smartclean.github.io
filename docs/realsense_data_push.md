@@ -12,9 +12,9 @@ nav_order: 3
 This page describes how sensor data can be sent to your web service.
 
 ## How it works
-1. Given a valid URL to an available web service, we can allow data from our sensors to be 
-sent in batches to this service.
-
+1. Given a valid URL to an available web service, we can enable data from any devices onboarded on our platform 
+to be sent in batches to this service.
+   
 2. Here, batch of data means a collection of data objects, where each object represents a data point.
 
 3. We recommend securing your web service with some form of authentication.
@@ -31,8 +31,9 @@ sent in batches to this service.
 
 ## Requirements to enable data push
 1. Valid data sources (sensors in this case) correctly installed and activated in your desired locations.
-   1. Our [help centre page for RealSense](https://help.smartclean.io/support/solutions/84000146848) has
-information about correct installation and configuration of our sensors.
+   1. Any sensors from any provider or manufacturer that comply with, and are onboarded on our platform will work.
+   2. For information about correct installation and configuration of our existing suite of sensors, please visit 
+   [our help centre page for RealSense.](https://help.smartclean.io/support/solutions/84000146848)
 2. Valid HTTPS URL to your available web service.
 
 
@@ -42,12 +43,11 @@ information about correct installation and configuration of our sensors.
    2. Batch means the data is inside a list / array structure (i.e. within square brackets: [])
    3. This batch is encoded into a bytes string using the scheme: utf-8 
    4. JSON serialized data object means the data object is converted to a string (text) using JSON
-2. All data objects in the batch follow the general data format described at our 
+2. All data objects in the batch follow the general data format described in our 
 [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#general-data-format)
-3. The custom attributes for each type of sensor are described in respective child page of our 
-[sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#custom-data-format).
-   - You can navigate to the child page for desired device slot type using the left navigation bar or 
-table of contents at the bottom of this page.
+3. The custom attributes for each type of sensor are described in respective child page of this sensor data page.
+   - You can navigate to the child page for desired sensor slot type using the left navigation bar or 
+table of contents at the bottom of that page.
 4. The authentication scheme required by the web service should be notified to us in order to make the requests
 with the respective authentication correctly.
 
@@ -77,24 +77,26 @@ A small subset of the actual data is described in this example.
 ```
 
 3. De-serialize/Unmarshal each string in this batch using JSON
-   1. Unmarshalling the first string in the batch we get:
+    1. Unmarshalling the first string in the batch we get:
        ```
           {"t":"20220602120301","DevType":"SMARTCLEAN#ODRDTR_BATT_V1"}
        ```
-   2. Unmarshalling the second string in the batch to get:
+   2. Unmarshalling the second string in the batch to get::
        ```
        {"t":"20220602120302","DevType":"SMARTCLEAN#UM"}
        ```
-   3. Each object contains various attributes, which can be used as described in our sensor data pages. 
-   For example:
-      1. Value of "DevType" indicates what is the slot type of the sensor / device. 
-      2. Value of "t" is the timestamp in the string format: *YYYYMMDDHHmmss* that is local to the timezone
-      (which is indicated in attribute: "Region")
-   4. Put these steps in your program and process each data to fulfil desired use cases. 
-      - Examples: 
-         1. If "count" inside "v" of data from PC Lite device (DevType: SMARTCLEAN#UM),
-         crosses a certain maximum value, raise an alert that there is high usage. 
-         2. If value of *amm* inside "v" of data from AQ Lite device crosses a certain maximum value, 
-         raise an alert that there is bad smell or high ammonia concentration.
+   3. Each object contains various attributes, which can be used as described in our sensor data pages.
+      1. These attributes are described in the main and child pages for 
+      [sensor data](https://www.docs.smartclean.io/realsense_sensor_data.html).
+      2. In this example:
+         1. Value of "DevType" indicates what is the slot type of the sensor / device.
+         2. Value of "t" is the timestamp in the string format: *YYYYMMDDHHmmss* that is local to the timezone
+       (which is indicated in attribute: "Region")
+   4. Put these steps in your program to process each data and fulfil desired use cases. 
+      - Examples:
+      1. If "count" inside "v" of data from PC Lite device (DevType: SMARTCLEAN#UM), 
+      crosses a certain maximum value, raise an alert that there is high usage.
+      2. If value of *amm* inside "v" of data from AQ Lite device crosses a certain maximum value, 
+      raise an alert that there is bad smell or high ammonia concentration.
 4. Some example use cases for each sensor type are mentioned at bottom each respective child page in
 our [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#custom-data-format))
