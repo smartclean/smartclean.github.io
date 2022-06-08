@@ -5,7 +5,7 @@ parent: Matrix Event Bus (MEB)
 grand_parent: SmartClean Matrix
 nav_order: 1
 ---
-
+## Matrix PostgreSQL connector for MEB and sensor data
 In cases where it is not possible to host a dedicated HTTPs endpoint or develop the mechanisms to read sensor and event data, write to a database of your choice and query it, Matrix offers a curated solution where we deploy our connector to do this for you.
 
 The advantage of this method is that without any servers to provision or code to manage data flow, you will get access to query your project data using standard SQL.
