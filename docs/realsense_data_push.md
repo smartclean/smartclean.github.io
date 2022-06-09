@@ -43,12 +43,11 @@ to be sent in batches to this service.
    2. Batch means the data is inside a list / array structure (i.e. within square brackets: [])
    3. This batch is encoded into a bytes string using the scheme: utf-8 
    4. JSON serialized data object means the data object is converted to a string (text) using JSON
-2. All data objects in the batch follow the general data format described at our 
+2. All data objects in the batch follow the general data format described in our 
 [sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#general-data-format)
-3. The custom attributes for each type of sensor are described in respective child page of our 
-[sensor data page](https://www.docs.smartclean.io/realsense_sensor_data.html#custom-data-format).
-   - You can navigate to the child page for desired device slot type using the left navigation bar or 
-table of contents at the bottom of this page.
+3. The custom attributes for each type of sensor are described in respective child page of this sensor data page.
+   - You can navigate to the child page for desired sensor slot type using the left navigation bar or 
+table of contents at the bottom of that page.
 4. The authentication scheme required by the web service should be notified to us in order to make the requests
 with the respective authentication correctly.
 
