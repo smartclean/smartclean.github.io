@@ -7,23 +7,16 @@ has_toc: false
 nav_order: 14
 ---
 
-# Release notes for 2022-05-28
+# Release notes for 2022-06-11
 
-Enhancement
-{: .label .label-green }
-
-PythonSDK - Sync client returns the original response object of the HTTP request instead of the JSON data extracted
-from the response body.
-Note: The Sync client makes all requests sequentially (instead of asynchronously, which the Async client does)
-
-This allows clients to extract any desired attributes from the response instead of being restricted to the response 
-body. This is also helpful in case the response body is empty.
-
+## Features:
 
 Feature
 {: .label .label-blue }
 
-Java SDK version 1.1 has been released in beta here: https://github.com/smartclean/smartclean-sdk-java-builds
+Java SDK version 1.1 has been released in beta here: 
+
+https://github.com/smartclean/smartclean-sdk-java-builds
 
 The above allows interactions with Matrix functions and returns a JSON output result.
 Breaking changes should be expected for types returned once the SDK is released generally.
@@ -75,8 +68,21 @@ Feature
 Operating hours in Grids web dashboard for building and zones has been enhanced to allow better user interaction and usability.
 
 
+## Enhancements:
+
 Enhancement
 {: .label .label-green }
 
 Reports module now performs a pre-condition check prior to report generation job submission: 
 It checks whether the project has any valid data points that will show in the report or not.
+
+
+Enhancement
+{: .label .label-green }
+
+PythonSDK - Sync client returns the original response object of the HTTP request instead of the JSON data extracted
+from the response body.
+Note: The Sync client makes all requests sequentially (instead of asynchronously, which the Async client does)
+
+This allows clients to extract any desired attributes from the response instead of being restricted to the response 
+body. This is also helpful in case the response body is empty.
