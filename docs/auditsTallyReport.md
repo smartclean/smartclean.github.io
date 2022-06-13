@@ -20,13 +20,9 @@ This report helps to breakdown the inspections formed over a time duration into 
 
     ![auditsTallyReportExample1](https://www.smartclean.io/matrix/images/auditsTallyReportExample1.png)
 
-- Inspections apart from Tabulated scores have the overall zonal averages for the duration and not the average of daily achieved averages. Below is the value represented in the table.<br />
+- All KPIs have the average of daily achieved averages as the value for the place in the table circled below.<br />
 
-    ![auditsTallyReportExample2](https://www.smartclean.io/matrix/images/auditsTallyReportExample2.png) 
-    
-- Tabulated scores has the average of daily achieved averages and not zonal averages for the duration. Below is the value represented in the table.<br />
-
-    ![auditsTallyReportExample3](https://www.smartclean.io/matrix/images/auditsTallyReportExample3.png) 
+    ![auditsTallyReportExample2](https://www.smartclean.io/matrix/images/auditsTallyReportExample2.png)
 
 ## Questions that can be answered by this report:
 
