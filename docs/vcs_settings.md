@@ -13,6 +13,23 @@ nav_order: 3
 ## What are these settings
 *Settings represent the configurable aspects for each solution type*
 
+- A summary of these settings, with a brief description and default value is given in the table below.
+Note the default values take effect as soon as these solutions are activated for a Project (Building)
+
+|S.No| Setting | Default value | Comments |
+|---| --- | --- | --- |
+|1. |Incidents block duration per Device | 15 minutes | This applies if it is greater than that set for Zone|
+|2. |Incidents block duration per Zone | 15 minutes | This applies if it is greater than that set for Device|
+|3. |People Counter: Maximum threshold | 30 people | Raise incident & reset count to 0 when limit reached|
+|4. |Air quality: Maximum count of anomalies | 1 anomaly | Raise incident when 1 AQ anomaly in past 10 minutes|
+|5. |Air quality: Duration to count anomalies | 10 minutes | See comment above for S.No: 4|
+|6. |Consumable monitor: Minimum fill level | 5 percent | Raise incident when consumable level falls below this value|
+|7. |Feedback: Maximum count for each reason| 1 count | Raise incident when any bad feedback reason is given once|
+
+Note: 
+- Consumable monitors include: Toilet Roll, Paper Towel and Soap Solution monitoring solutions.
+- These settings are described below in respective sections with more detail.  
+
 ### Settings affecting incident creation for specific zone
 *These settings will allow you to control the criteria for creation of incidents in specific zones*
 
