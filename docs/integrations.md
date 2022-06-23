@@ -17,7 +17,7 @@ _Integrations allow you to set up access to data and events from our platform in
 
 [comment]: <> (Should create a sub page for each of these options ? )
 
-### 1. For receiving data and events from our systems on a web service.
+### 1. For receiving data and events from our platform on a web service.
 
 Pre-requisite (what you need to have): 
 - A running and secured web service (HTTPS URL) that can receive data and events from our systems.
@@ -60,7 +60,6 @@ Our Solutions (what we provide):
 
 #### Difference between Matrix Event Push and Sensor Data Push:
 - For the user of these two services, both behave the same, i.e. both send data to a web service (HTTPS endpoint)
-- 
 ---
 
 ### 2. For getting information from our platform by making web requests.
