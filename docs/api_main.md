@@ -64,6 +64,17 @@ along with a reason for failure.
 
 ## Authentication:
 
+Matrix requests are for authorised users only. Every request must be provided with authentication credentials to succeed.
+
+You can use the following type of credentials to authenticate your requests:
+1. Basic keys (A pair of username and password)
+2. Custom HMAC keys (A pair of access Key and secret key)
+3. Custom identity provider
+4. The diagram below illustrates this.
+
+<img alt="Ways to authenticate requests to Matrix" src="https://www.smartclean.io/matrix/images/IAM-App-Federation.jpeg" width="800"/>
+
+**More information:**
 1. Authentication is necessary for all requests, without which the request will fail.
 2. If any request indicates Unauthorised or TOKEN_INVALID in the response it means the credentials are not specified, or expired.
 3. This postman collection enforces the "Basic" authentication scheme. 
