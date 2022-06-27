@@ -10,12 +10,10 @@ nav_order: 9
 _Integrations allow you to set up access to data and events from our platform in a standard way._
 
 ## Integration mechanisms supported
-1. Receive data and events from our platform on your web service.
+1. Push Based - Receive data and events from our platform on your service host over https.
 2. Query certain information from our platform by making web requests.
-3. Query data and events from an SQL database.
+3. Query data and events from an SQL database hosted in a dedicated manner for your projects.
 4. Query data from our platform by using our SDK for certain programming languages.
-
-[comment]: <> (Should create a sub page for each of these options ? )
 
 ### 1. For receiving data and events from our platform on a web service.
 
@@ -26,8 +24,8 @@ Outcome (use case)
 - Process (and / or store) these data and events to fulfil your use cases.
 
 Our Solutions (what we provide):
-1. Sensor data push
-2. Matrix events push
+1. [Sensor data push](https://www.docs.smartclean.io/realsense_data_push.html)
+2. [Matrix events push](https://www.docs.smartclean.io/eventBusCore.html)
 
 #### Sensor data push
 1. **Use it for:** receiving batches of raw sensor data in near real time on your web service (HTTPS endpoint)
@@ -59,7 +57,8 @@ Our Solutions (what we provide):
    - This section is called: 'What events are available in the event bus'
 
 #### Difference between Matrix Event Push and Sensor Data Push:
-- For the user of these two services, both behave the same, i.e. both send data to a web service (HTTPS endpoint)
+1. For the user of these two services, both behave the same, i.e. both send data to a web service (HTTPS endpoint)
+2. Since sensor data can be quite voluminous as compared to Matrix events, sensor data push is activated separately from other events.
 ---
 
 ### 2. For getting information from our platform by making web requests.
@@ -127,12 +126,8 @@ Outcome (use case):
 - Optimised for use in the respective programming language
 - Process (and / or store) the responses of these requests to fulfil your use case.
 
-We currently have an SDK for following languages:
-- Python
-- Java
-- Go
-
-For example, our Python SDK is available as a release in Github:
-https://github.com/hello-error/PythonSDK
-
-
+We currently have an SDK for following languages available as a release in Github:
+1. Python 
+   - Github URL: https://github.com/hello-error/PythonSDK
+2. Java 
+   - Github URL: https://github.com/smartclean/smartclean-sdk-java-builds
