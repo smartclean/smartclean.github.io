@@ -30,5 +30,14 @@ Some of our solutions which generate incidents are:
 5. [Consumable monitoring](/vcs_cmd.html)
 6. [Bin fill level sensing](/vcs_bin.html)
 
-## Settings for alerts
+## Settings for incidents
 *Generation of incidents in a location are subject to various [Settings for alerts](/vcs_settings.html)*
+
+
+## Smart decisions to reduce unnecessary incidents.
+This system makes various analytical checks for deciding whether to raise the incident or not.
+
+- These help in reducing unnecessary or false positive incidents.
+- A generalised overview of this process is presented in the diagram below.
+
+<img alt="Intelligent decisions to reduce unnecessary incidents" src="https://www.smartclean.io/matrix/images/VCS-Anomaly-Detection-Process.png" width="1000"/>
