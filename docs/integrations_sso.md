@@ -17,7 +17,7 @@ Note: Following OAuth 2.0 grant types are supported:
 **Pre-requisite:**
 - You must have registered your application in your identity provider with optional application secret.
 - You have an application ID (client_id) from above step and URL to [JWK (JSON Web Key) set](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets).
-- Any interface that allows you to login to this identity provider through any of the 
+- Any interface that allows you to login to this identity provider through any of the supported
 OAuth grants and returns you an access token or identity token.
 
 **Outcome:**
