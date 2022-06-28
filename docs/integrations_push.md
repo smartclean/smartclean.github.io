@@ -59,5 +59,3 @@ An overview of these are given in the below sections.
 ## Difference between Matrix events push and Sensor data push:
 1. For the user of these two services, both behave the same, i.e. both send data to a web service (HTTPS endpoint)
 2. Since sensor data can be quite voluminous as compared to Matrix events, sensor data push is activated separately from other events.
-
----
