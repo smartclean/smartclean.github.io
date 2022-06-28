@@ -18,7 +18,7 @@ _Integrations allow you to set up access to data and events from our platform in
    - For getting data from our platform by making queries to an SQL database.
 4. [Integration based on using an SDK](/integrations_sdk.html)
    - For getting information by calling functions of an SDK installed in your programming environment.
-5. [Integration based on single_sign_on](/integrations_sso.html)
-   - For accessing our services by logging in with a supported identity provider. 
+5. [Integration based on identity federation](/integrations_sso.html)
+   - For accessing our services by using a registered [OAuth](https://oauth.net/2) application
 
-These mechanisms are described in the respective subpages.
+These mechanisms are described further in the respective subpages.
