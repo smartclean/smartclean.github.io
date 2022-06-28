@@ -10,10 +10,6 @@ nav_order: 5
 # Integration based on identity federation
 Use this option for accessing our services by using a registered [OAuth](https://oauth.net/2) application
 
-Note: Following OAuth 2.0 grant types are supported:
-1. [Client credentials](https://oauth.net/2/grant-types/client-credentials)
-2. [Authorization code](https://oauth.net/2/grant-types/authorization-code)
-
 **Pre-requisite:**
 - You must have registered your application in your identity provider with optional application secret.
 - You have an application ID (client_id) from above step and URL to [JWK (JSON Web Key) set](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets).
@@ -51,3 +47,9 @@ Matrix federated login
    - Please use the identity token obtained as value of the header "Authorization" in all web https requests to Matrix 
 4. [Firebase Auth](https://firebase.google.com/docs/auth)
    - Please use the identity token obtained as value of the header "Authorization" in all web https requests to Matrix
+
+**Note:**
+Identity providers should use an RS256 cryptographic algorithm (asymmetric algorithm). 
+This creates an RSA signature with SHA-256. 
+
+For more information on RSA, see [RSA cryptography](https://datatracker.ietf.org/doc/html/rfc3447)
