@@ -4,7 +4,6 @@ title: Integration based on single sign on
 parent: Integrations
 has_children: false
 has_toc: false
-grand_parent: SmartClean Matrix
 nav_order: 5
 ---
 
