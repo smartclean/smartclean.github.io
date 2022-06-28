@@ -11,25 +11,25 @@ nav_order: 3
 # Integration based on database queries
 Use this option for getting data from our platform by making queries to an SQL database.
 
-Pre-requisite: 
+**Pre-requisite:** 
 - Any means of querying a PostgreSQL database.
 
-Outcome:
+**Outcome:**
 - Process (and / or store) the responses of these SQL queries to fulfil your use case.
 - Useful for querying any data made available from our platform, process and use it however possible using SQL.
 
-Our Solution:
+**Our Solution:**
 [Dedicated database service](https://www.docs.smartclean.io/dedicated-db.html) 
 - A database hosted in a dedicated manner for your Projects, that your programs can query.
 - An overview is given in the section below.
 
 #### Dedicated database service
 1. **Use it for:** Querying specific data from our platform using standard SQL
-2. **Described in our docs:** https://www.docs.smartclean.io/dedicated-db.html
-3. Example of use (after setting up this service with us)
-   1. Query total people count for a time range across all zones 
+2. **Described in our documentation at:** [Dedicated database service](https://www.docs.smartclean.io/dedicated-db.html)
+3. **Example of use:** (after setting up this service with us)
+   - Query _total people count for a time range across all zones_ 
    (where the device is installed) in your building.
-4. Contact us when setting this up to receive:
+4. **Contact us** when setting this up **to receive:**
    1. The table schema
    2. Example use cases and corresponding SQL queries
       (Based on what we use for our platform)
