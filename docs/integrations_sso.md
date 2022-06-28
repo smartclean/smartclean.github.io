@@ -47,3 +47,9 @@ Matrix federated login
    - Please use the identity token obtained as value of the header "Authorization" in all web https requests to Matrix 
 4. [Firebase Auth](https://firebase.google.com/docs/auth)
    - Please use the identity token obtained as value of the header "Authorization" in all web https requests to Matrix
+
+**Note:**
+Identity providers should use an RS256 cryptographic algorithm (asymmetric algorithm). 
+This creates an RSA signature with SHA-256. 
+
+For more information on RSA, see [RSA cryptography](https://datatracker.ietf.org/doc/html/rfc3447)
