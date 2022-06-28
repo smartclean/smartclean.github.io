@@ -34,5 +34,3 @@ Our Solution:
     4. Create an incident for a location.
    
 Note: These examples are described in the API documentation (point 3, above)
-
----

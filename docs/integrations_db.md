@@ -35,5 +35,3 @@ Our Solution:
       (Based on what we use for our platform)
    3. Database connection details.
    4. Follow up, in case you want us to write data to a PostgreSQL database that hosted by you, instead of us.
-
----

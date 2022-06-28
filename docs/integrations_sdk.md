@@ -22,6 +22,8 @@ We currently have an SDK for following languages available as a release in Githu
 1. For _Python_, [visit the Github page here](https://github.com/hello-error/PythonSDK)
 2. For _Java_, [visit the Github page here](https://github.com/smartclean/smartclean-sdk-java-builds)
 
+An SDK for Golang is under development. For early access, please contact us.
+
 Steps for use:
 Generally the SDK will have the below steps for usage:
 - Download and install the SDK into your application (or just add the SDK folder in your program folder).
@@ -38,4 +40,3 @@ Outcome:
 - Useful for making repeated web requests to our services within your programming environment conveniently.
 - Each SDK is optimised for use in its respective programming environment
 - Build or enhance your programs by using SDK.
----

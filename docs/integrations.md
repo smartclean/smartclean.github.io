@@ -2,7 +2,7 @@
 layout: default
 title: Integrations
 has_children: true
-has_toc: true
+has_toc: false
 nav_order: 9
 ---
 
