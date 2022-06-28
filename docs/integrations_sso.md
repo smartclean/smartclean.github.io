@@ -13,11 +13,10 @@ Use this option for accessing our services by logging in with a supported identi
 
 **Pre-requisite:**
 - You should have an account with a federated identity provider
-- Any interface that allows you to login to this identity provider and make requests our services.
+- Any interface that allows you to login to this identity provider and make requests to our services.
 
 **Outcome:**
-- You should be able to access our services via any of the integration mechanisms without the need for
-obtaining credentials from us.
+- You should be able to make web https requests to our services without the need for obtaining credentials from us.
 
 **Our Solution:**
 Matrix federated login
