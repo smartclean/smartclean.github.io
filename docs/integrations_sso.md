@@ -22,8 +22,7 @@ Use this option for accessing our services by logging in with a supported identi
 Matrix federated login
 
 #### Matrix federated login
-**Use it for:** Making web (https) requests to our platform without the need for SmartClean login. 
-[comment]: <> (2. **Introduced in our documentation at:** [Matrix federated login]&#40;&#41;)
+**Use it for:** Making web (https) requests to our platform without the need for SmartClean login.
 
 **Steps to access our services by federated login:**
 1. Register your application with us (you will be provided an _Application ID_)
