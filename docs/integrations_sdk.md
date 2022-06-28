@@ -38,4 +38,3 @@ Outcome:
 - Useful for making repeated web requests to our services within your programming environment conveniently.
 - Each SDK is optimised for use in its respective programming environment
 - Build or enhance your programs by using SDK.
----
