@@ -20,7 +20,7 @@ _Integrations allow you to set up access to data and events from our platform in
    - For getting information by calling functions of an SDK installed in your programming environment.
 5. [Integration based on identity federation](/integrations_sso.html)
    - For accessing our services by using a registered [OAuth](https://oauth.net/2) application
-6. [Integration based on our command centre](/integrations_cc.html)
+6. [Integration based on using a customisable web dashboard](/integrations_cc.html)
    - For viewing data and information from our platform in a customisable web dashboard.
 
 These mechanisms are described further in the respective subpages.

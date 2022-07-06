@@ -1,14 +1,17 @@
 ---
 layout: default
-title: Integration based on SmartClean Command Centre
+title: Integration based on using a customisable web dashboard
 parent: Integrations
 has_children: false
 has_toc: false
 nav_order: 5
 ---
 
-# Integration based on SmartClean Command Centre
+# Integration based on using a customisable web dashboard
 Use this option for viewing data and information from our platform in a customisable web dashboard.
+
+**Our Solution:**
+SmartClean Matrix Command Centre
 
 **Pre-requisite:**
 To set up and configure SmartClean Command Centre, 
