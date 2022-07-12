@@ -20,12 +20,10 @@ FM app v2.0 has been released with major performance enhancements, bug fixes and
 3. Shift selection while creating shifts. 
 4. Support for night shifts.
 
-
 Feature
 {: .label .label-blue }
 
 Workorders dashboard has improvements to edit shift along with suggestions during shift creation.
-
 
 Feature
 {: .label .label-blue }
@@ -33,10 +31,10 @@ Feature
 Housekeeping app now allows you to input comments and attachments per task.
 
 
-
 ## Pre-Releases:
 
 Pre-release
 {: .label .label-purple }
 
-FM app will allow you to perform inspections. You can still continue to use the PWA web based application to do this.
+FM app will allow you to perform inspections. 
+You can still continue to use the PWA web based application to do this.
