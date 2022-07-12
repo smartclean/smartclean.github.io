@@ -15,12 +15,13 @@ SmartClean Matrix Command Centre
 
 **Pre-requisite:**
 To set up and configure SmartClean Command Centre, 
-Please contact us, or the account manager we have assigned you.
+Please contact us, or your account manager.
 
 **Outcome:**
-- Once Command Centre is activated for your SmartClean enabled for your Property, you can view 
-consolidated information from all data sources in one web dashboard.
-- To customise widgets or to whitelabel this dashboard, please contact the account manager.
+- Once Command Centre is activated for your Property you will have a custom dashboard that you can use to
+ view consolidated information from all your data sources.
+- You can open Command Centre from the SmartClean Matrix homepage.
+- To customise widgets or to whitelabel this dashboard, please contact your account manager.
 
 ### Screenshots
 
