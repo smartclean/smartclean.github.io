@@ -8,13 +8,13 @@ nav_order: 12
 
 # Data Policies
 
-Data Management
+Data Governance
 {: .label .label-green }
 
-1. All data on our system are subject to our master data policy. 
+1. All data on our system are subject to our **master data policy**. 
 2. This policy describes and provides values of various attributes that govern storage and access of such data. 
 3. For example the following are attributes of data storage:
-   1. Lifecycle
+   1. Storage system
    2. Time to live (or Expiry)
 4. Depending on the category and source (or application) of data, some of these attributes may have different values. 
 

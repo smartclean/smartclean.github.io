@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Privacy Policies
+title: Privacy policies
 has_children: false
 has_toc: false
 nav_order: 11
 ---
 
-# Privacy Policies
+# Privacy policies
 
 Privacy and Security
 {: .label .label-green }
