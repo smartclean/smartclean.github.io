@@ -12,6 +12,8 @@ nav_order: 17
 
 ## Pre-Releases:
 
+---
+
 Pre-release
 {: .label .label-purple }
 
@@ -34,6 +36,8 @@ Pre-release
 
 ## New features:
 
+---
+
 Feature
 {: .label .label-blue }
 
@@ -46,6 +50,8 @@ Matrix panel application for display tablets:
 
 
 ## Enhancements:
+
+---
 
 Enhancement
 {: .label .label-green }
