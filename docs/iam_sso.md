@@ -3,7 +3,7 @@ layout: default
 title: Single Sign On
 parent: Identity and Access Management (IAM)
 has_children: true
-has_toc: false
+has_toc: true
 nav_order: 3
 ---
 
@@ -41,7 +41,7 @@ After the integration process is completed:
 ## Process flow:
 The diagram below shows the typical process flow from a user's perspective.
 
-<img alt="IAM SSO" src="https://www.smartclean.io/matrix/assets/common/images/IAM/SSO-OIDC-Matrix.png" width="800"/>
+<img alt="IAM SSO" src="https://www.smartclean.io/matrix/assets/common/images/IAM/SSO-OIDC-Matrix.png"/>
 
 
 Note:
