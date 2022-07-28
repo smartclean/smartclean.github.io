@@ -2,6 +2,7 @@
 layout: default
 title: SSO with Microsoft account
 parent: Single Sign On
+grand_parent: Identity and Access Management (IAM)
 has_children: false
 has_toc: false
 nav_order: 1
@@ -39,27 +40,35 @@ For further details on this process visit the page for
 
 6. Your HR team or your IT admin can now allocate appropriate users in your directory to access the application through their registered email addresses in your domain.
 
+**Note:** 
+1. "Screenshots" section below has some screenshots from this process.
+2. In these screenshots, the _enterprise application_ is called: **Matrix SmartClean CSM Team** created by the
+ _organization_ **SMARTCLEAN TECHNOLOGIES PTE LTD**
+
 ## Notes
-Known issue with Azure AD version 1 and version 2 in application manifest:
+**Known issue** with Azure AD version 1 and version 2 in Manifest of your enterprise application:
+1. The Manifest file may show null or "1" as the value for the key "accessTokenAcceptedVersion"
+2. Refer to corresponding screenshot in the Screenshots section below. 
 
-`By default, your app registration manifest may show the value for key accessTokenAcceptedVersion shows null which defaults to 1.`
-
-This requires the OIDC discovery URL to be  https://sts.windows.net/<tenant id> or https://sts.windows.net/<tenant id>/v2.0
+This requires the OIDC discovery URL to be `https://sts.windows.net/<tenant id>` or `https://sts.windows.net/<tenant id>/v2.0`
 since the issuer (iss) is different.
 
-Resolution:
-- To allow the issuer to be properly set based on the endpoints shown in your application, you can update the manifest to highlight version as 2.
-- In this case, Matrix will use the OIDC discovery URL as https://login.microsoftonline.com/<tenant id>/v2.0 for successful SSO federation.
-
-<img alt="Resolution update manifest" src="https://www.smartclean.io/matrix/assets/common/images/IAM/OIDC-365-manifest.png" width=800/>
+**Resolution:**
+- To allow the issuer to be properly set based on the endpoints shown in your application, please update the Manifest
+  (to highlight the version as 2).
+- In this case, Matrix will use the OIDC discovery URL as `https://login.microsoftonline.com/<tenant id>/v2.0` for IAM federation.
 
 
 ## Screenshots
 
+### Microsoft Azure AD - Homepage
 <img alt="Microsoft Azure AD Home" src="https://www.smartclean.io/matrix/assets/common/images/IAM/OIDC-365-home.png" width="800"/>
 
-
+### Microsoft Azure AD - Enterprise Application: Overview
 <img alt="Microsoft Azure AD Application Details" src="https://www.smartclean.io/matrix/assets/common/images/IAM/OIDC-365-appdetails.png" width="800"/>
 
-
+### Microsoft Azure AD - Enterprise Application: Endpoints
 <img alt="Microsoft Azure AD Application Endpoints" src="https://www.smartclean.io/matrix/assets/common/images/IAM/OIDC-365-details.png" width="800"/>
+
+### Microsoft Azure AD - Enterprise Application: Manifest
+<img alt="Resolution - App Manifest" src="https://www.smartclean.io/matrix/assets/common/images/IAM/OIDC-365-manifest.png" width=800/>
