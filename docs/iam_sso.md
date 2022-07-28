@@ -23,11 +23,13 @@ nav_order: 3
 
 ## Steps involved:
 1. Contact your SmartClean account representative to initiate the SSO integration setup.
-2. You will need to provide your OIDC application details, such as:
+2. Create an OIDC application with your IAM provider and give us the following details:
    1. Application ID and corresponding Secret Key
    2. Discovery URL
-3. These details are obtained from your IAM provider.
-4. We will whitelist the Discovery URL (domain of this IAM provider) to allow sign-in to our platform.
+3. We will whitelist the Discovery URL (domain of this IAM provider) to allow sign-in to our platform.
+4. Matrix will integrate with your IAM and request the following scopes for authentication:
+   1. Open ID 
+   2. Email ID
 
 ## Outcome:
 After the integration process is completed: 
@@ -45,7 +47,7 @@ The diagram below shows the typical process flow from a user's perspective.
 
 
 Note:
-This process is also one of the 
+This process is also involved in one of the 
 [standard options we provide for integration with external systems](https://www.docs.smartclean.io/integrations.html):
 
 Introduced in the page: [Integration based on identity federation](https://www.docs.smartclean.io/integrations_sso.html)
