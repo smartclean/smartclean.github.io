@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SSO with Microsoft account
+title: SSO using Microsoft Azure Active Directory
 parent: Single Sign On
 grand_parent: Identity and Access Management (IAM)
 has_children: false
@@ -15,11 +15,11 @@ IAM Provider: [Microsoft Azure (Active Directory)](https://azure.microsoft.com/e
 1. Use case - You want to use your Microsoft organization email to access our platform. 
 2. **Pre-requisites:**
    1. Register your enterprise application to use a web application for authentication.
-      1. See point 3 in the "Steps involved" section below.
-      2. Required to allow Azure AD to request our authorization endpoint for giving access to our platform.
-   2. Register an application as a Microsoft account in our platform.
-      1. See point 5 in the "Steps involved" section below.
-      2. For identifying your Microsoft Azure enterprise application.
+      1. Required to allow Azure AD to request our authorization endpoint for giving access to our platform.
+      2. See point 3 in the "Steps involved" section below.
+   2. Register your application in our platform.
+      1. For identifying your Microsoft Azure enterprise application.
+      2. See point 5 in the "Steps involved" section below.
       
 For further details on this process visit the page for
 [OIDC Protocol in Microsoft Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc)
@@ -29,15 +29,19 @@ For further details on this process visit the page for
 1. Create an enterprise application in Microsoft Azure AD.
    1. [Step by step guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)
    2. [Example of this process](https://docs.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory)
+   3. Find this listed in Enterprise Applications (under the "Manage" section) and click on it.
+   4. Click on Authentication (under "Manage") to view relevant details and do the below steps.
 
 2. Create a Secret Key for this application and copy it somewhere safe.
+   1. Do this by clicking the link next to Client credentials.
 
-3. Go to the Authentication section and register a web application.
-   1. For redirect URIs, add the below endpoint (our authorization endpoint):
-      1. `https://matrixsso.smartclean.io/oauth2/idpresponse`
-   2. This fulfils the first pre-requisite (1/2)
+3. Allow your enterprise application to redirect to our web application for authentication.
+   1. Do this by clicking the link next to "Redirect URIs
+   2. Then add our authorization endpoint here:
+   3. `https://matrixsso.smartclean.io/oauth2/idpresponse`
+   4. This fulfils the first pre-requisite (1/2)
 
-4. Click the Endpoints button and copy the URL of "the OpenID Connect (OIDC) metadata document" somewhere safe.
+4. Click the Endpoints tab and copy the URL of "the OpenID Connect (OIDC) metadata document" somewhere safe.
 
 5. Provide your SmartClean account representative this Application Secret and OIDC URL
    1. This allows us to register your Microsoft Azure enterprise application.
@@ -50,8 +54,8 @@ application through their registered email addresses in your domain.
    1. _Open ID_ 
    2. _user.read_
 
-8. "Screenshots" section below has some screenshots from this process. 
-   1. In these screenshots, the _enterprise application_ is called: **Matrix SmartClean CSM Team** 
+8. Refer to example screenshots from this process in the "Screenshots" section below. 
+   1. The _enterprise application_ is called: **Matrix SmartClean CSM Team** 
    2. The application is created by the _organization_ **SMARTCLEAN TECHNOLOGIES PTE LTD**
 
 ## Notes
