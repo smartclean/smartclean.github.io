@@ -13,7 +13,7 @@ nav_order: 3
 ## Overview
 1. This is applicable only if you are using services by any of the standard enterprise IAM providers listed below.
 2. Identity providers currently supported for SSO access to our platform:
-   1. [SSO with Microsoft account (Azure Active Directory)](/iam_sso_ms.html)
+   1. [SSO using Microsoft Azure Active Directory](/iam_sso_ms.html)
 3. This integration allows access to our platform with the same credentials used to access your enterprise software. 
 4. **Pre-requisite:** You need to register your identity (as an application) and the corresponding identity provider in our platform.
 
