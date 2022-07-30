@@ -8,7 +8,7 @@ nav_order: 2
 
 # IAM
 Latest Stable Version:
-v1.1
+v1.3b
 {: .label .label-green }
 
 Identity and Access Management (IAM) is one of the primary building blocks of Matrix.
