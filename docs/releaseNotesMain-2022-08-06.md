@@ -40,6 +40,27 @@ Feature
  
 Reach out to your account executive to enable these APIs and obtain an API key.
 
+Enhancement
+{: .label .label-green }
+
+**Emit (Device) Slot Events**
+
+1. Automatically perform pre-defined actions when any certain condition becomes true with any Device Slot.
+2. Desired conditions are captured and generated as events by the application running for the Device Slot.
+3. Example pre-defined _logical action_: send request to a service or notification to a workforce member.
+4. Example pre-defined _physical action_: Turn on / Turn off your device. 
+    This requires you to connect your device using our IoT Switch. 
+    Example use case: Bad air quality event from the slot: Air Quality monitoring is configured to turn on a fan.
+
+
+Enhancement
+{: .label .label-green }
+
+**Email notification for completed web reports.**
+
+An email notification with relevant details is sent to pre-configured recipients when any requested web report 
+becomes ready for viewing.
+
 Pre-release
 {: .label .label-purple }
 
