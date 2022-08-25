@@ -9,21 +9,64 @@ nav_order: 18
 
 # Release notes for 2022-08-06
 
-## Enhancements
+## New features:
 
 ---
+
+Feature
+{: .label .label-blue }
+- FM mobile application now allows you to add comments and add pictures to each comment for any incident or task.
+
+Feature
+{: .label .label-blue }
+- Minor bug fixes and improvements to existing features in the FM application.
+
+Feature
+{: .label .label-blue }
+- Housekeeping mobile application allows you to add comments and add pictures to each comment for any incident or task.
+
+Feature
+{: .label .label-blue }
+- Housekeeping mobile app now allows you to require your staff to necessarily take pictures prior to closing an incident. This allows you to necessiate the business logic of pictures as proof of work.
+
+Feature
+{: .label .label-blue }
+- Matrix Kiosk application has now been released in Android and iOS play stores. This application runs on all supported consumer tablet interfaces. Reach out to your account executive to learn more about this.
+
+Feature
+{: .label .label-blue }
+- Matrix now allows you to seamlessly connect to a websocket endpoint for your application in a property to deliver real-time experiences to end users.
+
+Feature
+{: .label .label-blue }
+- You can now develop applications in Matrix using a multitude of event sources such as - event bus, data push, application events and deliver your application within Matrix. Reach out to your account executive or enquiry@smartclean.io to know more about this feature.
+
+Feature
+{: .label .label-blue }
+- VCS incorporates a new setting wherein a new alert will not be created if an existing alert exists in last N minutes.
+
+Feature
+{: .label .label-blue }
+- IAM module has published new roles which allow you to achieve better control of your user accesses. For example - PropertyViewer, GridsViewer, WorkforceAdministrator. Reach out to your account executive to understand more about how to use these roles.
+
+Feature
+{: .label .label-blue }
+- Matrix has certain new helper APIs now available that can be activated per property alongwith relevant quotas. For example -
+ 1. dynamic language translation offered by **apis.smartclean.translate**
+ 2. real-time TSDB queries through a rich query language offered by **apis.smartclean.tsdbmemory**
+ 3. real-time websocket based publish/subscribe APIs by **apis.smartclean.rtdatagateway**
+ 
+Reach out to your account executive to enable these APIs and obtain an API key.
 
 Enhancement
 {: .label .label-green }
 
 **Emit (Device) Slot Events**
 
-1. Automatically perform pre-defined actions when any certain condition becomes true with any Device Slot.
-2. Desired conditions are captured and generated as events by the application running for the Device Slot.
-3. Example pre-defined _logical action_: send request to a service or notification to a workforce member.
-4. Example pre-defined _physical action_: Turn on / Turn off your device. 
-    This requires you to connect your device using our IoT Switch. 
-    Example use case: Bad air quality event from the slot: Air Quality monitoring is configured to turn on a fan.
+1. Allows you to onboard controller type devices such as IoT switches, robots, etc and control them through a common interface.
+2. No knowledge of the data schema is required as long as the sender sends the relevant inputs needed by RealSense for that slot.
+3. RealSense performs the heavy lifting to ensure the event is emitted and delivered to relevant destinations.
+    Example use case: Bad air quality event from an air quality metric: Turn on a fan and turn off when the air quality becomes good.
 
 
 Enhancement
@@ -34,13 +77,9 @@ Enhancement
 An email notification with relevant details is sent to pre-configured recipients when any requested web report 
 becomes ready for viewing.
 
+Pre-release
+{: .label .label-purple }
 
-Enhancement
-{: .label .label-green }
+- Matrix IAM will now allow you to define boundary permissions for your application. This is especially helpful in cases where you want your users to be limited by an upper bound while still giving them the flexibility to choose/edit their roles.
 
-**New Role: Property Viewer**
-1. A new system defined role has been created in Matrix.
-2. Property Viewers can sign in and interact with their Properties in the Matrix web UI.
-3. The platform does not allow Property Viewers to make any changes to the Property.
-4. Property Viewers don't have visibility to the Workforce Management module.
-   1. Since this module is not found relevant for this role.
+- Matrix IAM will allow you to configure your Single Sign On providers as a means to allow your existing users to access Matrix.

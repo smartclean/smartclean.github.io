@@ -45,6 +45,11 @@ The diagram below shows the typical process flow from a user's perspective.
 
 <img alt="IAM SSO" src="https://www.smartclean.io/matrix/assets/common/images/IAM/SSO-OIDC-Matrix.png"/>
 
+## Can I configure the token validity durations for my configuration ?
+If your organisation security policies require your users to have a certain duration of tokens received for any application, this can be configured
+while onboarding your SSO in Matrix.
+
+By default, the refresh as well as the access tokens will be valid for *3600s*.
 
 Note:
 This process is also involved in one of the 
