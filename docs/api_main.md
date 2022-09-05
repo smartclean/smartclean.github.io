@@ -23,7 +23,7 @@ For details about these requests and examples, refer to the documentation at:
 ## Postman collection
 These requests have been put in a Postman collection.
 
-**Import link:** `https://www.getpostman.com/collections/f3bbb37cf3dbec166bb1`
+**Import link:** `https://www.getpostman.com/collections/53dff3af449ea3b1d7c6`
 
 1. Postman is a tool for using and sharing details about web requests. 
    - Read more about it here: [https://www.postman.com](https://www.postman.com).

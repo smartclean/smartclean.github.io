@@ -31,7 +31,7 @@ SmartClean's HMAC based implementation details are described here.
 
 c. OAUTH2.0 authorization: [OAUTH](https://datatracker.ietf.org/doc/html/rfc6749) is the primary means of authorization for user facing applications using the **Authorization Code Grant** accessed usually over a web or a mobile user interface or third party solutions offered by technology partners using the **Client Credentials Grant**.
 
-d. SSO authorization: Single Sign On authorization covers the use of other methods through federation such as SAML, Active Directory or custom SSO implementations by third party providers.
+d. SSO authorization: Single Sign On authorization covers the use of other methods through federation such as Security Assertion Markup Language ([SAML](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)) and OpenID Connect ([OIDC](https://openid.net/connect/)).
 
 # How does a principal get a role in my entity (property/organisation) ?
 Matrix requires each principal to have a valid role while performing any operation.
