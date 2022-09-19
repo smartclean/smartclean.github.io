@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 2022-08-20
+title: 2022-09-17
 parent: Release Notes
 has_children: false
 has_toc: false
@@ -28,11 +28,13 @@ Enhancement
 
 **Auto-assign Matrix incidents to workforce based on Availability**
 1. Matrix will automatically assign incidents to members of your workforce with the following criteria:
-   1. Only applicable for system generated _"Incidents"_ 
-      1. _"Tasks"_ are manually assigned to users, as usual.
-   2. Incident gets assigned to one of the users who are within the _"Availability"_ period
+   1. Incident gets assigned to one of the users who are within the _"Availability"_ period
       1. Please define _"Availability"_ for members of your workforce who are intended recipients for these incidents.
+   2. Only applicable for system generated _"Incidents"_ 
+      1. _"Tasks"_ are manually assigned to users, as usual.
 
+[comment]: <> (How can mode be changed from availability based to shift based and vice versa ?
+)
 [comment]: <> (TODO:      2. Is there any other criteria for assigning incidents ?)
 
 [comment]: <> (TODO: If more than 1 user has availability defined and is available, how is selection done to assign the incident ?)
@@ -73,23 +75,26 @@ enable this setting for the slot type: Feedback for your Project.
 Pre-release
 {: .label .label-purple }
 
-**Workflows**
-_Goal:_ Connect events from our platform in order to execute custom logic
+### Workflows
 
-Examples: 
-- When parameters from air quality sensor goes beyond a certain level, turns on a fan in the area for air circulation.
-- When temperature in an area crosses a certain level, turn on a fan or any cooling unit.
-- When bad smell is reported by user, turn on a fan and / or spray an electronic room freshener.
-- When water spill detected in a location, turn on a fan for drying the area.
- 
+Connect events from our platform in order to execute custom logic.
+
+#### Example use cases: 
+1. When parameters from air quality sensor goes beyond a certain level, turns on a fan in the area for air circulation.
+2. When temperature in an area crosses a certain level, turn on a fan or any cooling unit.
+3. When bad smell is reported by user, turn on a fan and / or spray an electronic room freshener.
+4. When water spill detected in a location, turn on a fan for drying the area.
+
+#### Notes
 1. For use cases to turn-on or turn-off your appliance based on such events:
    1. The appliance must be connected to power using our IoT Smart Switch.
-2. In upcoming releases, we will be launching some examples on how to use such _Workflows_.
-3. Currently, the custom logic will be defined in serverless functions (using AWS Lambda)
-   1. You are free to use your own serverless function and give us the endpoint to invoke.
-   2. Or, request us to create the serverless function based on your requirements.
-4. In the future, serverless functions by other popular providers will be supported by Workflows to give you more choice.
+   2. In upcoming releases, we will be launching some examples on how to use such _Workflows_.
+   3. Currently, the custom logic will be defined in serverless functions (using AWS Lambda)
+      1. You are free to use your own serverless function and give us the endpoint to invoke.
+      2. Or, request us to create the serverless function based on your requirements.
+   4. In the future, serverless functions by other popular providers will be supported by Workflows to give you more choice.
 
+#### More information
 For more information about this pre-release module, and for more complex use cases:
    1. Please open a support ticket with us, or
    2. Contact your SmartClean account manager.
