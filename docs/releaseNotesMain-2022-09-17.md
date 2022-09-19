@@ -28,11 +28,13 @@ Enhancement
 
 **Auto-assign Matrix incidents to workforce based on Availability**
 1. Matrix will automatically assign incidents to members of your workforce with the following criteria:
-   1. Only applicable for system generated _"Incidents"_ 
-      1. _"Tasks"_ are manually assigned to users, as usual.
-   2. Incident gets assigned to one of the users who are within the _"Availability"_ period
+   1. Incident gets assigned to one of the users who are within the _"Availability"_ period
       1. Please define _"Availability"_ for members of your workforce who are intended recipients for these incidents.
+   2. Only applicable for system generated _"Incidents"_ 
+      1. _"Tasks"_ are manually assigned to users, as usual.
 
+[comment]: <> (How can mode be changed from availability based to shift based and vice versa ?
+)
 [comment]: <> (TODO:      2. Is there any other criteria for assigning incidents ?)
 
 [comment]: <> (TODO: If more than 1 user has availability defined and is available, how is selection done to assign the incident ?)
