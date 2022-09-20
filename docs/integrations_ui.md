@@ -16,10 +16,10 @@ SmartClean embeddable BI dashboards.
 ## Outcome:
 1. BI Dashboard links can be opened from anywhere there is internet access 
    1. You can embed such links in your own user interfaces
-   2. Cross-origin request issues will not happen, since we will allow all hosts
+   2. Cross-origin request issues will not happen, since we allow any host to connect to this URL.
 2. Supplement your own reporting and BI requirements with these dashboards 
 3. Each dashboard has a limited lifetime 
-4. Refer to the pre-requisites below for how to setup and access this feature.
+4. Refer to the pre-requisites below for how to set-up and access this feature.
 
 ## Pre-requisites:
 
@@ -27,13 +27,13 @@ To set up and use such Embeddable BI dashboards in your own application:
 1. Please open a support ticket with us, or
 2. Contact your SmartClean account manager.
 
-Steps for integration:
+### Steps for integration:
 1. On-boarding - Creation of your Property.
 2. Authorization - Receive credentials and steps for access.
 3. Integration - Set up an environment to make requests to our BI service.
 4. Validation - Open and use these dashboards.
 
-Steps for access:
+### Steps for access:
 1. You can access this feature after first two steps for integration (above) are complete.
 2. To get the links, make an HTTP request to our endpoint
 
@@ -47,10 +47,19 @@ Steps for access:
 4. This link is valid for at most 10 minutes. 
    1. After this duration, you need to make a request to our BI service again to generate a link.
 
-### Screenshots
+## Screenshots
 
-[comment]: <> (TODO - Please add screenshots)
+### Example dashboard 1, part 1
+<img alt="Example dashboard 1, part 1" src="https://www.smartclean.io/matrix/images/BI/biEmbeddedExample1.png" width="800"/>
 
-<img alt="Screenshot 1" src="https://www.smartclean.io/matrix/images/commandCentre/commCentre1.png" width="800"/>
+---
+
+### Example dashboard 1, part 2
+<img alt="Example dashboard 1, part 2" src="https://www.smartclean.io/matrix/images/BI/biEmbeddedExample2.png" width="800"/>
+
+---
+
+### Example dashboard 2 (with dark theme)
+<img alt="Example dashboard 2 with dark theme" src="https://www.smartclean.io/matrix/images/BI/biEmbeddedExample3.png" width="800"/>
 
 ---
