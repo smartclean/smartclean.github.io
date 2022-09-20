@@ -30,12 +30,13 @@ To set up and use such Embeddable BI dashboards in your own application:
 ### Steps for integration:
 1. On-boarding - Creation of your Property.
 2. Authorization - Receive credentials and steps for access.
-3. Integration - Set up an environment to make requests to our BI service.
-4. Validation - Open and use these dashboards.
+3. Environment - Set up an environment to make request to our BI service and use the link received in response.
+4. Validation - Access the dashboard via the link received.
 
 ### Steps for access:
 1. You can access this feature after first two steps for integration (above) are complete.
-2. To get the links, make an HTTP request to our endpoint
+2. To receive a link to desired BI dashboard, request our BI web service.
+   1. Details of request will be shared during Authorization phase.
 
 [comment]: <> (   1. Alternatively, use our SDK for Java or Python to make this request)
 
