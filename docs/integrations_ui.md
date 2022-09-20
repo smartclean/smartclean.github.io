@@ -30,7 +30,7 @@ To set up and use such Embeddable BI dashboards in your own application:
 ### Steps for integration:
 1. On-boarding - Creation of your Property.
 2. Authorization - Receive credentials and steps for access.
-3. Environment - Set up an environment to make request to our BI service and use the link received in response.
+3. Setup - Set up an environment to make request to our BI service and use the link received in response.
 4. Validation - Access the dashboard via the link received.
 
 ### Steps for access:
