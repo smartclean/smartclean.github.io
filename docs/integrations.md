@@ -20,7 +20,7 @@ _Integrations allow you to set up access to data and events from our platform in
    - For getting information by calling functions of an SDK installed in your programming environment.
 5. [Integration based on identity federation](/integrations_sso.html)
    - For accessing our services by using a registered [OAuth](https://oauth.net/2) application
-6. [Integration based on using embeddable BI dashboards](/integrations_ui.html)
-   - For viewing insights from our platform in a user interface accessible by a link (web URL).
+6. [Integration based on using embeddable BI dashboards (provided by Matrix)](/integrations_ui.html)
+   - For viewing insights from Matrix in a user interface accessible by a link (web URL).
 
 These mechanisms are described further in the respective subpages.

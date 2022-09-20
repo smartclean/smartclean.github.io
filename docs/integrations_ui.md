@@ -16,9 +16,9 @@ SmartClean embeddable BI dashboards.
 ## Outcome:
 1. BI Dashboard links can be opened from anywhere there is internet access 
    1. You can embed such links in your own user interfaces
-   2. Cross-origin request issues will not happen, since we allow any host to connect to this URL.
+   2. Cross-origin request issues will not happen, since we allow any host to embed the signed URLs.
 2. Supplement your own reporting and BI requirements with these dashboards 
-3. Each dashboard has a limited lifetime 
+3. Each link (to these dashboards) has a limited lifetime 
 4. Refer to the pre-requisites below for how to set-up and access this feature.
 
 ## Pre-requisites:
