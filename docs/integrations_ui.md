@@ -14,11 +14,12 @@ Use this option to generate web links that open analytical dashboards for your P
 SmartClean embeddable BI dashboards.
 
 ## Outcome:
-- BI Dashboard links can be opened from anywhere there is internet access
-  - You can embed such links in your own user interfaces
-  - Supplement your own reporting and BI requirements with these dashboards
-- Each dashboard has a limited lifetime
-- Refer to the pre-requisites below for how to setup and access this feature.
+1. BI Dashboard links can be opened from anywhere there is internet access 
+   1. You can embed such links in your own user interfaces
+   2. Cross-origin request issues will not happen, since we will allow all hosts
+2. Supplement your own reporting and BI requirements with these dashboards 
+3. Each dashboard has a limited lifetime 
+4. Refer to the pre-requisites below for how to setup and access this feature.
 
 ## Pre-requisites:
 
@@ -35,7 +36,13 @@ Steps for integration:
 Steps for access:
 1. You can access this feature after first two steps for integration (above) are complete.
 2. To get the links, make an HTTP request to our endpoint
-   1. Alternatively, use our SDK for Java or Python to make this request
+
+[comment]: <> (   1. Alternatively, use our SDK for Java or Python to make this request)
+
+[comment]: <> (This request needs to be updated and refined before being added to SDK)
+
+[comment]: <> (For users this will rather go in API docs - i.e., Activate this API and fulfil the quota for access)
+
 3. The link received in response lets you open this dashboard
 4. This link is valid for at most 10 minutes. 
    1. After this duration, you need to make a request to our BI service again to generate a link.
