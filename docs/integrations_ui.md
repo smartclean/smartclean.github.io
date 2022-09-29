@@ -48,6 +48,23 @@ To set up and use such Embeddable BI dashboards in your own application:
 4. This link is valid for at most 10 minutes. 
    1. After this duration, you need to make a request to our BI service again to generate a link.
 
+## Examples _Widgets_ in a _Dashboard_
+1. Project location (Map view)
+2. Number of Zones in the Building (Count)
+3. Usage across all Zones in past 24 hours (Bar chart)
+   1. Trend of cumulative people count
+4. Relative usage across all Zones in past 24 hours
+   1. Trend of hourly people count
+5. Last environment health across all Zones
+   1. Last reported value for following parameters:
+      1. Air Quality Index (if applicable)
+      2. Ammonia (if applicable)
+      3. Temperature
+      4. Humidity
+6. Air quality trend in past 8 hours for each Zone
+   1. Trend for Air Quality Index
+   2. Trend for Ammonia
+
 ## Screenshots
 
 ### Example dashboard 1, part 1
