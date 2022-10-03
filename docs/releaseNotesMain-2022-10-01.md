@@ -42,3 +42,21 @@ Enhancement
 4. For more information and to understand this API, please contact us:
    1. Preferably, open a support ticket with us.
    2. Or, contact your SmartClean account manager / drop us an email.
+
+#### Examples:
+
+Using the following request to Metrics API:
+
+**Request:** Get the last _n_ tasks for a Zone in _given time range_
+(Default limit and time range: 10 tasks in past 24 hours)
+
+View the [API document](https://documenter.getpostman.com/view/2593073/UVsPQ4vL#eb1636b0-6035-4eec-be7a-7a47906059af)
+
+### Get last task completed for a Zone by any member of workforce.
+
+- Make this request: Get last _n_ tasks for a Zone in _given time range_ 
+- Look for those task objects in which "Status" is "COMPLETED"
+
+### Get the last incident created for a Zone and assigned to any member of workforce
+- Make this request: Get last _n_ tasks for a Zone in _given time range_
+- Look for those task objects in which "Status" is "PENDING"
