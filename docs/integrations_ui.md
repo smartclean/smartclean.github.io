@@ -36,7 +36,7 @@ To set up and use such Embeddable BI dashboards in your own application:
 ### Steps for access:
 1. You can access this feature after first two steps for integration (above) are complete.
 2. To receive a link to desired BI dashboard, request our BI web service.
-   1. Details of request will be shared during Authorization phase.
+   1. Refer to [documentation for this request here](https://www.apidocs.smartclean.io/matrixAPIs/matrix_api_bi_embed.html)
 
 [comment]: <> (   1. Alternatively, use our SDK for Java or Python to make this request)
 
