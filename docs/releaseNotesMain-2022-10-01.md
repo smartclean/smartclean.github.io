@@ -52,11 +52,22 @@ Using the following request to Metrics API:
 
 View the [API document](https://documenter.getpostman.com/view/2593073/UVsPQ4vL#eb1636b0-6035-4eec-be7a-7a47906059af)
 
-### Get last task completed for a Zone by any member of workforce.
+##### Get last task completed for a Zone by any member of workforce.
 
 - Make this request: Get last _n_ tasks for a Zone in _given time range_ 
 - Look for those task objects in which "Status" is "COMPLETED"
 
-### Get the last incident created for a Zone and assigned to any member of workforce
+##### Get the last incident created for a Zone and assigned to any member of workforce
 - Make this request: Get last _n_ tasks for a Zone in _given time range_
 - Look for those task objects in which "Status" is "PENDING"
+
+
+### Check availability of Matrix and core services
+Enhancement
+{: .label .label-green }
+
+1. You can check availability of certain core services in our platform as well as certain cloud dependencies.
+2. [Visit this page here](https://sc-matrix.statuspage.io)
+4. You can also subscribe to email updates for any disruptions or downtime by clicking the button: "_Subscribe to updates_"
+3. This is powered by Atlassian Statuspage
+
