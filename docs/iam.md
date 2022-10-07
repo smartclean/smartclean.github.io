@@ -8,7 +8,7 @@ nav_order: 2
 
 # IAM
 Latest Stable Version:
-v1.3b
+v1.3g
 {: .label .label-green }
 
 Identity and Access Management (IAM) is one of the primary building blocks of Matrix.
@@ -39,6 +39,9 @@ HMAC authorization keys are assigned a role directly by adminstrators from the I
 
 - **JWT authorization**: This mechanism is used primarily by the mobile and web applications to perform operations within a property.
 
+- **OAuth federated access**: This mechanism is used primarily by third party services (client credentials grant flow). This approach is preferred means when a third party application requires access to more than one projects within Matrix. Matrix SDKs allow this through a config update.
+You can reach out to us if you need an application identifier and secret from us or use your own from commonly available IAM solutions.
+
 Dashboard or mobile users assume the role specified in the user group which they belong to as a part of the property.
 
 # Request Authorization Steps
@@ -58,3 +61,5 @@ If the role assumption fails due to any error conditon (see [Errors](/iamErrors.
 If this decision is found, the final result is returned to the caller, else the PEP makes a request to the PDP (policy decision point) to evaluate the policy set allocated to the role.
 
 4. Post policy set evaluations, the PEP generates a final result of **Allow** or **Deny** depending on the outcomes.
+
+5. In cases of SSO access, a boundary role may have been set optionally by the system administrator whose decision will take precedence with respect to explicit denials to any operation.
