@@ -36,7 +36,7 @@ To set up and use such Embeddable BI dashboards in your own application:
 ### Steps for access:
 1. You can access this feature after first two steps for integration (above) are complete.
 2. To receive a link to desired BI dashboard, request our BI web service.
-   1. Details of request will be shared during Authorization phase.
+   1. Refer to [documentation for this request here](https://www.apidocs.smartclean.io/matrixAPIs/matrix_api_bi_embed.html)
 
 [comment]: <> (   1. Alternatively, use our SDK for Java or Python to make this request)
 
@@ -47,6 +47,23 @@ To set up and use such Embeddable BI dashboards in your own application:
 3. The link received in response lets you open this dashboard
 4. This link is valid for at most 10 minutes. 
    1. After this duration, you need to make a request to our BI service again to generate a link.
+
+## Examples _Widgets_ in a _Dashboard_
+1. Project location (Map view)
+2. Number of Zones in the Building (Count)
+3. Usage across all Zones in past 24 hours (Bar chart)
+   1. Trend of cumulative people count
+4. Relative usage across all Zones in past 24 hours
+   1. Trend of hourly people count
+5. Last environment health across all Zones
+   1. Last reported value for following parameters:
+      1. Air Quality Index (if applicable)
+      2. Ammonia (if applicable)
+      3. Temperature
+      4. Humidity
+6. Air quality trend in past 8 hours for each Zone
+   1. Trend for Air Quality Index
+   2. Trend for Ammonia
 
 ## Screenshots
 
