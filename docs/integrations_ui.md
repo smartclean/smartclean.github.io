@@ -48,7 +48,7 @@ To set up and use such Embeddable BI dashboards in your own application:
 4. This link is valid for at most 10 minutes. 
    1. After this duration, you need to make a request to our BI service again to generate a link.
 
-## Examples _Widgets_ in a _Dashboard_
+## Example _Widgets_ in a _Dashboard_
 1. Project location (Map view)
 2. Number of Zones in the Building (Count)
 3. Usage across all Zones in past 24 hours (Bar chart)
@@ -65,6 +65,16 @@ To set up and use such Embeddable BI dashboards in your own application:
    1. Trend for Air Quality Index
    2. Trend for Ammonia
 
+## More examples (ESG widgets)
+1. Ammonia and air quality health in last 8 hours
+2. Zones with moderate or bad air quality in the last hour.
+3. Tissue roll usage trends for building in last 3 days.
+4. Tissue roll usage in last 24 hours across zones
+5. Average tissue roll refill trends in last 4 days.
+6. Heatmap of Tissue roll usage across zones.
+
+---
+
 ## Screenshots
 
 ### Example dashboard 1, part 1
@@ -79,5 +89,18 @@ To set up and use such Embeddable BI dashboards in your own application:
 
 ### Example dashboard 2 (with dark theme)
 <img alt="Example dashboard 2 with dark theme" src="https://www.smartclean.io/matrix/images/BI/biEmbeddedExample3.png" width="800"/>
+
+---
+
+### ESG widgets in dashboard, Part 1
+<img alt="ESG widgets in dashboard, Part 1" src="https://www.smartclean.io/matrix/images/BI/esg1.png" width="800"/>
+
+---
+### ESG widgets in dashboard, Part 2
+<img alt="ESG widgets in dashboard, Part 2" src="https://www.smartclean.io/matrix/images/BI/esg2.png" width="800"/>
+
+---
+### ESG widgets in dashboard, Part 3
+<img alt="ESG widgets in dashboard, Part 3" src="https://www.smartclean.io/matrix/images/BI/esg3.png" width="800"/>
 
 ---
