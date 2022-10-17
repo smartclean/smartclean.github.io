@@ -4,7 +4,7 @@ title: 2022-10-15
 parent: Release Notes
 has_children: false
 has_toc: false
-nav_order: 20
+nav_order: 21
 ---
 
 # Release notes for 2022-10-15
@@ -16,7 +16,7 @@ Enhancement
 {: .label .label-green }
 
 You can now generate a heatmap of the number of incidents in this report.
-Additional helpful options such as filter the incidents (group) by Zone.
+- Additional helpful options available, such as filter the incidents (group) by Zone.
 
 ### Activate alerts from the wired air quality device based on configurable threshold for Ammonia gas.
 Enhancement
@@ -32,6 +32,28 @@ Enhancement
       1. If the change is urgent, do contact us to activate the change earlier.
 4. The ammonia threshold value is defined in parts per million (ppm). "0.5 ppm" is considered an optimal threshold.
 
+### Additional ESG widgets for embeddable BI dashboards 
+Enhancement
+{: .label .label-green }
+
+New widgets catering to ESG requirements can now be added to your embeddable BI dashboards.
+
+1. Your project must have relevant data sources available that can support these widgets. 
+2. Refer to examples of widgets in relevant online documentation, link below. 
+3. More information, examples and screenshots: [introducing embeddable BI dashboards](https://www.docs.smartclean.io/integrations_ui.html)
+4. To learn more about or to enable this integration for your project, contact us: 
+   1. Preferably, open a support ticket with us. 
+   2. Or, contact your SmartClean account manager / drop us an email.
+
+### Service desk
+For internal teams and interested stakeholders to report problems easily and directly into our ticketing tool, check their status and track progress.
+
+1.This requires signing up for a help centre account 
+2. Powered by Atlassian Jira service desk. 
+3. This is an additional channel, other than [SmartClean help centre](help.smartclean.io), that is already available for general use. 
+4. SmartClean help centre does not require sign up, but project specific details are required for opening support tickets.
+
+[Link to Service desk portals](https://smartclean.atlassian.net/servicedesk/customer/portals) 
 
 ## Pre-releases
 
