@@ -88,3 +88,27 @@ Pre-release
 {: .label .label-purple }
 
 FM app now allows you to report and assign incidents directly to your workforce members.
+
+## Releases / Features
+Feature
+{: .label .label-blue }
+
+### Matrix Kiosk app for mobiles and tablets
+
+This Matrix application can run on mobile devices in Kiosk mode.
+
+**Kiosk mode:**
+1. Kiosk mode allows the app to run as a standalone application in the device.
+2. Users cannot exit this mode until the admin disables the Kiosk mode. 
+3. In this mode, users cannot view major UI features such as Home button, app switcher, notification tray and global actions. 
+4. This mode is used to prevent the end users not tamper with the device and exit the app.
+
+**Notes:**
+This app can be installed on supported Android / Apple phones and tablets.
+1. [Matrix Kiosk App in Google Play Store](https://play.google.com/store/apps/details?id=com.app.matrix_tablet_app)
+2. [Matrix Kiosk App in Apple app store](https://apps.apple.com/sg/app/matrix-kiosk/id1631088978)
+3. By default, this application does not require root credentials. 
+4. Additional resources for installation on Android Devices:
+   1. [External link to latest android apk](https://feedback-apks.s3.ap-southeast-1.amazonaws.com/mKioskv1.0.14%2B9-release.apk)
+   2. [The companion Android DPC app can be downloaded here](https://feedback-apks.s3.ap-southeast-1.amazonaws.com/kiosk/utils/dpcV1.apk)
+   3. [Instructions for running application in kiosk mode](https://feedback-apks.s3.ap-southeast-1.amazonaws.com/kiosk/docs/IN-Matrix-Kiosk-kiosk-mode_-181022-034210.pdf)
