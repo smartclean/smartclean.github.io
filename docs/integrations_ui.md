@@ -17,21 +17,19 @@ SmartClean embeddable BI dashboards.
 1. BI Dashboard links can be opened from anywhere there is internet access 
    1. You can embed such links in your own user interfaces
    2. Cross-origin request issues will not happen, since we allow any host to embed the signed URLs.
-2. Supplement your own reporting and BI requirements with these dashboards 
-3. Each link (to these dashboards) has a limited lifetime 
-4. Refer to the pre-requisites below for how to set-up and access this feature.
+2. Supplement your own reporting and BI requirements with these dashboards
 
-## Pre-requisites:
+## Setup and activation:
 
-To set up and use such Embeddable BI dashboards in your own application:
+To set up and use Embeddable BI dashboards from your SmartClean enabled Property:
 1. Please open a support ticket with us, or
 2. Contact your SmartClean account manager.
 
 ### Steps for integration:
-1. On-boarding - Creation of your Property.
-2. Authorization - Receive credentials and steps for access.
-3. Setup - Set up an environment to make request to our BI service and use the link received in response.
-4. Validation - Access the dashboard via the link received.
+1. **On-boarding** - Creation of your Property.
+2. **Authorization** - Receive credentials and steps for access.
+3. **Setup** - Set up an environment to make request to our BI service and use the link received in response.
+4. **Validation** - Access the dashboard via the link received.
 
 ### Steps for access:
 1. You can access this feature after first two steps for integration (above) are complete.
@@ -45,8 +43,9 @@ To set up and use such Embeddable BI dashboards in your own application:
 [comment]: <> (For users this will rather go in API docs - i.e., Activate this API and fulfil the quota for access)
 
 3. The link received in response lets you open this dashboard
-4. This link is valid for at most 10 minutes. 
-   1. After this duration, you need to make a request to our BI service again to generate a link.
+   1. This link is valid for at most 10 minutes. 
+   2. After this duration, you need to make a request to our BI service again to generate a link. 
+4. Each link is associated with a user session in our platform (subject quota of active sessions in your Project)
 
 ## Example _Widgets_ in a _Dashboard_
 1. Project location (Map view)
