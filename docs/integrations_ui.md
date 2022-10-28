@@ -2,7 +2,7 @@
 layout: default
 title: Links to analytical dashboards
 parent: Integrations
-has_children: false
+has_children: true
 has_toc: false
 nav_order: 6
 ---
@@ -71,6 +71,9 @@ To set up and use Embeddable BI dashboards from your SmartClean enabled Property
 4. Tissue roll usage in last 24 hours across zones
 5. Average tissue roll refill trends in last 4 days.
 6. Heatmap of Tissue roll usage across zones.
+
+## Frequently asked questions (FAQs)
+[Visit the FAQ for Embeddable BI Dashboards here](/integrations_ui_faq.html)
 
 ---
 
