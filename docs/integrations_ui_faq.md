@@ -10,9 +10,9 @@ nav_order: 1
 
 ## Frequently asked questions
 
-### How is this concept different from Matrix Command Centre ?
+### 1. How is this concept different from Matrix Command Centre ?
 
-#### Command Centre
+#### 1.1. Command Centre
 [Matrix Command Centre](/integrations_cc.html) provides a single long-lived dashboard within Matrix web platform.
 
 1. You can access this module using the Command Centre icon in the SmartClean Matrix web platform.
@@ -30,7 +30,7 @@ nav_order: 1
 
 4. This web page needs to be refreshed to load it with new data.
 
-#### Embeddable BI Dashboards
+#### 1.2. Embeddable BI Dashboards
 
 [Embeddable BI](/integrations_ui.html) provides links to short-lived, customisable dashboards on request.
 
