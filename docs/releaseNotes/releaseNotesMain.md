@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Release Notes
+parent: SmartClean Matrix
 has_children: true
 has_toc: true
-nav_order: 100
+nav_order: 88
 ---
 
 # Release notes
