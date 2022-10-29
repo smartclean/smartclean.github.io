@@ -1,10 +1,11 @@
 ---
 layout: default
 title: 2022-05-07
-parent: Release Notes
+parent: Releases in 2022
+grand_parent: Release Notes
 has_children: false
 has_toc: false
-nav_order: 11
+nav_order: 17
 ---
 
 # Release notes for 2022-05-07
