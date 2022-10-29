@@ -2,7 +2,6 @@
 layout: default
 title: Releases in 2022
 parent: Release Notes
-grand_parent: SmartClean Matrix
 has_children: true
 has_toc: true
 nav_order: 1
