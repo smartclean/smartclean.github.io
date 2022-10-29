@@ -4,7 +4,7 @@ title: 2022-06-25
 parent: Release Notes
 has_children: false
 has_toc: false
-nav_order: 15
+nav_order: 87
 ---
 
 # Release notes for 2022-06-25
