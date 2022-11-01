@@ -67,21 +67,15 @@ Latest non app store version for Matrix kiosk app (v1.0.15) can be downloaded fr
 
 ## 2. Pre-releases
 
-### 2.1. Perform periodic tasks directly using the HouseKeeping (HK) mobile app
-Pre-release
-{: .label .label-purple }
 
-Housekeeping mobile app will now allow users to perform periodic tasks without the requirement to start a shift.
-
-
-### 2.2. Specify time range for Embeddable BI dashboards
+### 2.1. Specify time range for Embeddable BI dashboards
 Pre-release
 {: .label .label-purple }
 
 BI API (apis.smartclean.bi) getSignedURL will add utility body parameter to specify various types of time ranges for the dashboard links generated.
 
 
-### 2.3. Improved zone selection in Matrix Kiosk App.
+### 2.2. Improved zone selection in Matrix Kiosk App.
 Pre-release
 {: .label .label-purple }
 
