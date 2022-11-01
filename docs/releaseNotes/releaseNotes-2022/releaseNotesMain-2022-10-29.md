@@ -53,6 +53,11 @@ Latest non app store version for Matrix kiosk app (v1.0.15) can be downloaded fr
 
 `https://feedback-apks.s3.ap-southeast-1.amazonaws.com/kiosk/mKiosk-v1.0.15.apk`
 
+
+### 1.6. Start Tasks on HouseKeeping (HK) mobile app without starting shift.
+
+Users of the HK mobile app can now start tasks and incidents on it without the need to start their shift (if any) 
+
 ---
 
 ## 2. Pre-releases
