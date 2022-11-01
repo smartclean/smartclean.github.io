@@ -57,7 +57,7 @@ Latest non app store version for Matrix kiosk app (v1.0.15) can be downloaded fr
 ### 1.6. Shift related actions and tasks/incidents have now been de-coupled on the HouseKeeping (HK) app. 
 
 1. HK app users can start open tasks without requiring to start shifts.
-2. HK app users can also perform an ad-hoc task without requiring to start shifts.
+2. HK app users can also perform periodic or ad-hoc tasks without requiring to start shifts.
 3. HK app users can start or report incidents without the need to start shifts.
 4. This enhancement is effective since the latest release of the HK mobile app:
    1. HK mobile app version for iOS: 2.0.14.7
