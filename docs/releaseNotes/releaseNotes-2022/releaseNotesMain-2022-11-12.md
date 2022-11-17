@@ -34,4 +34,6 @@ Enhancement
 
 This new event can be pushed to any system via the [Matrix events push](https://www.docs.smartclean.io/eventBusCore.html)
 - Note: ID of this event for the event bus is: `NEW_INCIDENT_CREATED_OPEN`
-- 
+- This requires you to subscribe your system to receive the desired event via the Matrix bus
+
+[comment]: <> (How to subscribe to this event ? Any documentation available?)
