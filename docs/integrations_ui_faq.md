@@ -55,12 +55,6 @@ Links to open **these dashboards always open on to an encrypted website**.
    1. Each link starts with `https://realsense.metabaseapp.com/embed/dashboard`
       1. "_realsense_" comes from the SmartClean RealSense vertical
       2. "_metabaseapp_" comes from our BI service partner: [Metabase](https://www.metabase.com)
-2. The website uses a signed digital certificate for encryption.
-   1. Issued by a legitimate, standard Certificate Authority: [Lets Encrypt](https://letsencrypt.org)
-3. Automatic renewal of certificate happens during expiry time. 
-   1. This is set-up via the [CertBot Tool](https://certbot.eff.org).
-4. To see more details about the digital certificate and check the validity:
-   1. Click on the lock icon next to the website on your browser.
 
 #### 2.2. Protected from manipulation
 Any manipulation at any level will lead to a failure to load the dashboard.
