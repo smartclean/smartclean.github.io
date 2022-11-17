@@ -30,5 +30,3 @@ This new event can be pushed to any system via the [Matrix events push](https://
   - Preferably, [open a support ticket with us](https://help.smartclean.io/support/tickets/new)
   - Or, contact your SmartClean account manager.
 
-[comment]: <> (How to subscribe to this event ? 
-Will be helpful to link it here, in case viewer is insterested to know how to activate it.)
