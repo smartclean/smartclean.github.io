@@ -61,6 +61,7 @@ The following events are available on the bus currently:
 19. Zone Deleted - *matrix.mybuildingid.scgrids.ZONE_REMOVED.HIGH*
 20. Level Created - *matrix.mybuildingid.scgrids.LEVEL_CREATED.NORMAL*
 21. Level Name Modified - *matrix.mybuildingid.scgrids.LEVEL_NAME_MODIFIED.MEDIUM*
+22. Open (Unassigned) Incident Created - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED_OPEN.HIGH*
 
 ## Generic Data Format for Matrix Events
 Each event in the MEB follows the following schema:
