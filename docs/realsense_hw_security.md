@@ -4,7 +4,7 @@ title: Hardware Security
 parent: RealSense
 grand_parent: SmartClean Matrix
 has_children: true
-has_toc: false
+has_toc: true
 nav_order: 4
 ---
 
@@ -23,7 +23,6 @@ This page describes measures in place for securing our Sensors
 
 **Benefit:** Encrypted contents on the flash memory cannot be physically read out.
 
-**More info:** Refer to this [sub-page on flash encryption].
 
 ## 2. Secure boot-loader
 
@@ -31,7 +30,6 @@ This page describes measures in place for securing our Sensors
 
 **Benefit:** Only authorised code can run on the device's chip.
 
-**More info:** Refer to this [sub-page on secure boot-loader]
 
 ## 3. Secure interface
 
@@ -39,7 +37,6 @@ This page describes measures in place for securing our Sensors
 
 **Benefit:** Access port blocks read and write access to all CPU registers and memory-mapped addresses.
 
-**More info:** Refer to this [sub-page on secure boot-loader]
 
 ## 4. Secure casing
 
@@ -47,4 +44,5 @@ This page describes measures in place for securing our Sensors
 
 **Benefit:** Block/prevent access to sensitive parts of the device and allow manual detection of any tampering done.  
 
-**More info:** Refer to this [sub-page on secure boot-loader]
+## More info
+Please navigate to respective sub-page using table of contents below 
