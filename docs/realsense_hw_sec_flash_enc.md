@@ -28,6 +28,6 @@ With flash encryption enabled, the following types of data are encrypted by defa
       1. Secure Boot is a separate feature which can be used together with flash encryption to create an even more secure environment.
 
 
-For proof of implementation, contact us"
+For proof of implementation, contact us
 
 **Derived from:** [Documentation by Hardware provider: Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/flash-encryption.html#introduction)
