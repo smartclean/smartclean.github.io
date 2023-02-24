@@ -22,11 +22,8 @@ With flash encryption enabled, the following types of data are encrypted by defa
 2. Partition Table
 3. All “app” type partitions 
 4. Other types of data can be encrypted conditionally:
-   1. Any partition marked with the encrypted flag in the partition table. 
-      1. For details, see Encrypted Partition Flag.
-   2. Secure Boot bootloader digest if Secure Boot is enabled. 
-      1. Secure Boot is a separate feature which can be used together with flash encryption to create an even more secure environment.
-
+   1. Any partition marked with the encrypted flag in the partition table.
+   2. Secure Boot bootloader digest if Secure Boot is enabled.
 
 For proof of implementation, contact us
 
