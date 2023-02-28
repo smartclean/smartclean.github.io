@@ -4,7 +4,7 @@ title: Data push
 parent: RealSense
 grand_parent: SmartClean Matrix
 has_children: true
-has_toc: true
+has_toc: false
 nav_order: 3
 ---
 
