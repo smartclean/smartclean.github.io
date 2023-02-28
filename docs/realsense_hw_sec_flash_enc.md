@@ -27,4 +27,4 @@ With flash encryption enabled, the following types of data are encrypted by defa
 
 For proof of implementation, contact us
 
-**Derived from:** [Documentation by Hardware provider: Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/flash-encryption.html#introduction)
+[comment]: <> (**Derived from:** [Documentation by Hardware provider: Espressif]&#40;https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/flash-encryption.html#introduction&#41;)

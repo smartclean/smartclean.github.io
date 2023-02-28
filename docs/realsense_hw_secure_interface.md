@@ -21,4 +21,4 @@ Set the system variable: UICR.APPROTECT to Enabled in the firmware and perform a
 
 For proof of implementation, contact us
 
-**Derived from:** [Documentation by Hardware provider: Nordic Semiconductor](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/app_dev/ap_protect/index.html)
+[comment]: <> (**Derived from:** [Documentation by Hardware provider: Nordic Semiconductor]&#40;https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/app_dev/ap_protect/index.html&#41;)

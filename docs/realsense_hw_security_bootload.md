@@ -24,4 +24,4 @@ For more details on eFuses, see ESP32 Technical Reference Manual > eFuse Control
 
 For proof of implementation, contact us
 
-**Derived from:** [Documentation by Hardware provider: Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/secure-boot-v1.html)
+[comment]: <> (**Derived from:** [Documentation by Hardware provider: Espressif]&#40;https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/secure-boot-v1.html&#41;)
