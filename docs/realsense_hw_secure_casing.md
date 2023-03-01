@@ -21,19 +21,27 @@ Part of our device production process.
 
 ## Examples:
 
-![1. Air quality monitor (wired, front side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/EbLul-QXv-tBkRc5XXlAKLkB4ya6wWnDktuq0FtTx-AanA?e=tqVys2)
+### Example 1 - Air quality sensor (wired) - front side:
+
+<img alt="Example 1: Air quality sensor (wired) - front side" src="https://www.realsense.io/images/SC-Device-AirQuality-Wired-Front-2022_10_18.jpg" width="530"/>
 
 ---
 
-![2. Air quality monitor (wired, back side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/EWfacWCQtQFBpZtc4MSop1UBkScSn3CKDhSNIz84HXkXXg?e=2Zf3SY)
+### Example 2 - Air quality sensor (wired) - back side:
+
+<img alt="Example 1: Air quality sensor (wired) - back side" src="https://www.realsense.io/images/SC-Device-AirQuality_Wired-Back-2022_10_18.jpg" width="530"/>
 
 ---
 
-![3. People counter (wireless, back side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/ERnKTYVV-0ZCmVBGiQdmSuUB4pGvH8gHeIooS3Utz_LDvg)
+### Example 3 - People count sensor (wireless) - front side:
+
+<img alt="Example 3: People count sensor (wireless) - front side" src="https://www.realsense.io/images/SC-Device-PeopleCounter_Battery-Front-2022_10_18.jpg" width="530"/>
 
 ---
 
-![4. People counter (wireless, front side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/ETDeZfjHjIlJoD9Rsce4seQBu8sBhPzVSk9DdX4m99WHIA?e=hCKKup)
+### Example 4 - People count sensor (wireless) - back side:
+
+<img alt="Example 4: People count sensor (wireless) - back side" src="https://www.realsense.io/images/SC-Device-PeopleCounter_Battery-Back-2022_10_18.jpg" width="530"/>
 
 ---
 
