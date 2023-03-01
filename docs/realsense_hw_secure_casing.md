@@ -21,19 +21,19 @@ Part of our device production process.
 
 ## Examples:
 
-![1. Air quality monitor (wired, front side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/EbLul-QXv-tBkRc5XXlAKLkB4ya6wWnDktuq0FtTx-AanA?e=tqVys2)
+![1. Air quality monitor (wired, front side)](https://www.realsense.io/images/SC-Device-AirQuality-Wired-Front-2022_10_18.jpg)
 
 ---
 
-![2. Air quality monitor (wired, back side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/EWfacWCQtQFBpZtc4MSop1UBkScSn3CKDhSNIz84HXkXXg?e=2Zf3SY)
+![2. Air quality monitor (wired, back side)](https://www.realsense.io/images/SC-Device-AirQuality_Wired-Back-2022_10_18.jpg)
 
 ---
 
-![3. People counter (wireless, back side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/ERnKTYVV-0ZCmVBGiQdmSuUB4pGvH8gHeIooS3Utz_LDvg)
+![3. People counter (wireless, front side)](https://www.realsense.io/images/SC-Device-PeopleCounter_Battery-Front-2022_10_18.jpg)
 
 ---
 
-![4. People counter (wireless, front side)](https://smartcleantech-my.sharepoint.com/:i:/g/personal/neel_smartclean_io/ETDeZfjHjIlJoD9Rsce4seQBu8sBhPzVSk9DdX4m99WHIA?e=hCKKup)
+![4. People counter (wireless, back side))](https://www.realsense.io/images/SC-Device-PeopleCounter_Battery-Back-2022_10_18.jpg)
 
 ---
 
