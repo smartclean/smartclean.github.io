@@ -39,6 +39,7 @@ in a certain zone inside a building of your SmartClean enabled property.
 **6. Air quality monitoring devices** 
    - SMARTCLEAN#ODRDTR 
    - SMARTCLEAN#ODRDTR_BATT_V1
+   - SMARTCLEAN#ODRDTR_10_IN_1
 
 **Please note:** 
 1. Device slots are available only in zones of SmartClean enabled properties. 
