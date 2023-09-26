@@ -7,7 +7,7 @@ has_toc: true
 nav_order: 6
 ---
 
-## Data format for air quality detection devices
+## Data of Air Quality detection devices
 
 ### Device types applicable: 
 - SMARTCLEAN#ODRDTR (AQ Wired)
@@ -16,83 +16,101 @@ nav_order: 6
 
 ---
 
-### Data format for each device type
-
-#### Data format for AQ 10-in-1 (ODRDTR_10_IN_1)
+### Data for AQ 10-in-1 (ODRDTR_10_IN_1)
 Format of attribute: *"v"* in the general data formats:
 ```json
 {
-  "co2": "<number>", // Level of Carbon di-oxide in surrounding air, Unit: parts per million (PPM)
+  "co2": "<number>", // Level of Carbon in surrounding air, Unit: parts per million (PPM)
   "hcho": "<number>",  // Level of Formaldehyde in surrounding air, Unit: milligrams per meter cube (mg/m3)
   "humidity": "<number>", // Level of humidity in surrounding air, Unit: Percentage (%)
   "light_level": "<number>", // Level of lighting (0-3) in surrounding environment
-  "pir_trigger": "<number>", // State (1 or 0) of any motion detected in the environment
-  "pm_10": "<number>", // Value of particulate matter (10 micrometer), Unit: ug/m3 (microgram per meter cube)
-  "pm_2.5": "<number>", // Value of particulate matter <2.5 micrometer measured in ug/m3 (Microgram per meter cube)
+  "tvoc": "<number>",  // Level of volatile organic compounds in surrounding air, Unit: mg/m3 (milligrams per meter cube)
+  "pm_10": "<number>", // Level of particulate matter (10 micrometer), Unit: ug/m3 (microgram per meter cube)
+  "pm_2.5": "<number>", // Level of particulate matter <2.5 micrometer measured in ug/m3 (Microgram per meter cube)
   "pressure": "<number>", // Barometric pressure in surrounding air, Unit: In millibars or 100.4 Kilo Pascal
   "temperature": "<number>", // Temperature in surrounding air, Unit: Degree Celcius
-  "tvoc": "<number>"  // Total volatile organic compounds in surrounding air, Unit: mg/m3 (milligrams per meter cube)
+  "pir_trigger": "<number>" // State (1 or 0) of any motion detected in the environment
 }
 ```
+
 Notes:
+1. **pir_trigger** (state of motion detected): value becomes 1 when motion is detected in the field of view, else it stays 0
+2. **light_level** (lighting level in surrounding area) has the following representation:
 
-1. **light_level**: where each value represents the following:
-   - 0 (0-5 LUX), 
-   - 1 (6 - 50 LUX), 
-   - 2 (51 - 100 LUX), 
-   - 3 (101 - 500 LUX)
-2. **pir_trigger**: This value becomes 1 when any motion is detected in the field of view, otherwise it stays 0
+| S.No | light_level | Range of light | 
+|------|-------------|----------------|
+|  1.  |      0      |  0 to 0 Lux    |
+|  2.  |      1      |  06 to 50 Lux  | 
+|  3.  |      2      |  51 to 100 Lux | 
+|  4.  |      3      |  101 to 500 Lux|
 
-
-#### Format for AQ Lite (ODRDTR_BATT_V1)
+---
+### Data for AQ Lite (ODRDTR_BATT_V1)
+Format of attribute: *"v"* in the general data formats:
 ```json
 {
-  "amm": <number>, // Ammonia channel reading.
+  "amm": <number>, // Level of Ammonia in surrounding air, Unit: PPM (parts per billion)
   "aqi": <number>, // Air Quality Index (number between 1 - 500)
   "rh": <number>, // Relative humidity (percent, after divided by 10)
   "temp": <number>, // Temperature (degree celcius, after divided by 10)
 }
 ```
 
-Notes:
-1. **amm** the value is in parts per billion for ODRDTR_BATT_V1
+**Example use cases:**
 
+1. *Threshold on level of Ammonia:*
+   1. Consider the level of ammonia has undesired level when the value of **amm** crosses a maximum limit 
+   2. The maximum limit can be changed by users by analysing the historical data (initial value is a suitable default)
 
-#### Format for AQ Wired (ODRDTR)
+2. *Thresholds to categorize Air Quality Index (AQI)* 
+   1. Value of **aqi** can be used to categorize air quality based on a single threshold (good vs bad) 
+   or a range of thresholds to classify air quality into a set of categories (Excellent to Very bad)
+   2. A standard reference used by us, is given below.
+
+| S.No | AQI range   |     Air Quality     | Impact (long term exposure)           | Suggested action                    |
+|------|-------------|---------------------|---------------------------------------|------------------------------------ |
+|  1.  |  0 - 50     | Excellent           | Pure air; best for well-being         | No measures needed                  |
+|  2.  |  51 - 100   | Good                | No irritation or impact on well being | No measures needed                  |
+|  3.  |  101 - 150  | Lightly polluted    | Reduction of well-being possible      | Ventilation suggested               |
+|  4.  |  151 - 200  | Moderately polluted | More significant irritation possible  | Increase the ventilation |
+|  5.  |  200 - 250  | Heavily polluted    | Exposition might lead to effects like headache depending on type of VOCs | Maximise ventilation |
+|  6.  |  251 - 350  | Severely polluted   | More severe health issue possible if harmful VOCs present | Source should be identified. Maximise ventilation and reduce people in the region.
+|  7.  |  Above 351  | Extremely polluted  | Headaches and other neurotoxic effects possible | Source must be identified, avoid people in the area and open all ventilation. | 
+---
+### Data for AQ Wired (ODRDTR)
 
 Format of attribute: *"v"* in the general data format:
 ```json
 {
-  "amm": <number>, // Ammonia channel reading in parts per million (ppm)
-  "rssi": "<number>",  // Received signal strength indicator
-  "amm_expected": <number>, // Predicted value for the ammonia channel (used to generate "amm_zscore")
-  "amm_zscore": <number>, // Anomaly score attributed to ammonia channel
-  "alc_expected": <number>, //Predicted value for the VOC channel (used to generate "alc_zscore")
-  "alc_zscore": <number>, // Anomaly score attributed to VOC channel
-  "alc": <number>, // VOC channel reading in parts per million (ppm)
-  "no2_expected": <number>, // Predicted value for the NOx channel (used to generate "no2_zscore")
-  "no2_zscore": <number>, // Anomaly score attributed to NOx channel
-  "no2": <number>  // NOx channel reading in parts per million (ppm)
+  "amm": <number>, // Level of Ammonia in surrounding air, Unit: PPM (parts per million)
+  "alc": <number>, // Level of Volatile organic compounds (VOC) in surrounding air, Unit: PPM (parts per million)
+  "no2": <number>,  // Level of Nitrogen in surrounding air, Unit: PPM (in parts per million)
+  "amm_zscore": <number>, // Anomaly score for level of Ammonia (amm)
+  "no2_zscore": <number>, // Anomaly score for level of Nitrogen (no2)
+  "alc_zscore": <number>, // Anomaly score for level of VOC (alc)
+  "amm_expected": <number>, // Predicted level for Ammonia (used to generate "amm_zscore")
+  "alc_expected": <number>, // Predicted level for VOC (used to generate "alc_zscore")
+  "no2_expected": <number>, // Predicted value for Nitrogen (used to generate "no2_zscore")
+  "rssi": "<number>"  // Received signal strength indicator
 }
 ```
 
 Notes:
 1. The unit of **amm** from this device is parts per million (ppm)
-2. **Anomaly scores** characterise the relative deviation of the current ppm reading from the sensor with 
-respect to its past sampled data. 
-   - The sensor (ODRDTR) samples the readings every 10 seconds for this calculation and attribution. 
-   - An anomaly score >= 1.96 can be used when alerting on dynamic thresholding mechanism. 
-   - If dynamic thresholding mechanism is not required, the ppm values can be thresholded directly by the applications.
+2. *Anomaly scores* in the fields **amm_zscore**, **alc_zscore** and **no2_zscore** represent relative deviation of current ppm reading from the sensor with respect to its last sampled data. 
+   1. The sensor (ODRDTR) samples the readings every 10 seconds for this calculation and attribution.
 
+**Example use cases:**
+
+1. **Threshold on anomaly scores of each component:**
+   1. Consider the component as an anomaly (possibly, undesired) when anomaly score of the respective component  crosses the value _"1.96"_
+   
+2. **Threshold on level of each component:**
+   1. Consider the component has an undesired level, when level of respective component crosses a maximum limit.
+   2. The maximum limit can be changed by users, preferably after analysing historical data.
+      1. Note: Initial value is set to a suitable default.
+   
 ---
-
-### Sample use case for AQ Wired and AQ Lite:
-Raise an incident if value of *amm* crosses a threshold.
-- *aqi* can also be used to raise an incident depending on single threshold or 
-a range of AQI thresholds categorized into bands of AQI values (good to bad)
-
----
-
 ### Example data:
 
 #### Example data for AQ 10-in-1 (ODRDTR_10_IN_1)
