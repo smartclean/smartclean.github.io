@@ -58,25 +58,16 @@ Format of attribute: *"v"* in the general data formats:
 
 **Example use cases:**
 
-1. *Threshold on level of Ammonia:*
+1. **Threshold on level of Ammonia:**
    1. Consider the level of ammonia has undesired level when the value of **amm** crosses a maximum limit 
    2. The maximum limit can be changed by users by analysing the historical data (initial value is a suitable default)
 
-2. *Thresholds to categorize Air Quality Index (AQI)* 
+2. **Thresholds to categorize Air Quality Index (AQI)** 
    1. Value of **aqi** can be used to categorize air quality based on a single threshold (good vs bad) 
    or a range of thresholds to classify air quality into a set of categories (Excellent to Very bad)
-   2. A standard reference used by us, is given below.
-
-| S.No | AQI range   |     Air Quality     | Impact (long term exposure)           | Suggested action                    |
-|------|-------------|---------------------|---------------------------------------|------------------------------------ |
-|  1.  |  0 - 50     | Excellent           | Pure air; best for well-being         | No measures needed                  |
-|  2.  |  51 - 100   | Good                | No irritation or impact on well being | No measures needed                  |
-|  3.  |  101 - 150  | Lightly polluted    | Reduction of well-being possible      | Ventilation suggested               |
-|  4.  |  151 - 200  | Moderately polluted | More significant irritation possible  | Increase the ventilation |
-|  5.  |  200 - 250  | Heavily polluted    | Exposition might lead to effects like headache depending on type of VOCs | Maximise ventilation |
-|  6.  |  251 - 350  | Severely polluted   | More severe health issue possible if harmful VOCs present | Source should be identified. Maximise ventilation and reduce people in the region.
-|  7.  |  Above 351  | Extremely polluted  | Headaches and other neurotoxic effects possible | Source must be identified, avoid people in the area and open all ventilation. | 
----
+   2. For a standard reference [refer to this image](https://smartclean-public.s3.ap-southeast-1.amazonaws.com/docs/IAQ+Bands+Bosch+V2.png)
+      1. Source: Page 9 of [sensor Datasheet at this link](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf) 
+      
 ### Data for AQ Wired (ODRDTR)
 
 Format of attribute: *"v"* in the general data format:
