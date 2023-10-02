@@ -27,7 +27,7 @@ Format of attribute: *"v"* in the general data formats:
   "tvoc": "<number>",  // Level of volatile organic compounds in surrounding air, Unit: mg/m3 (milligrams per meter cube)
   "pm_10": "<number>", // Level of particulate matter (10 micrometer), Unit: ug/m3 (microgram per meter cube)
   "pm_2.5": "<number>", // Level of particulate matter <2.5 micrometer measured in ug/m3 (Microgram per meter cube)
-  "pressure": "<number>", // Barometric pressure in surrounding air, Unit: In millibars or 100.4 Kilo Pascal
+  "pressure": "<number>", // Barometric pressure in surrounding air, Unit: In millibars
   "temperature": "<number>", // Temperature in surrounding air, Unit: Degree Celcius
   "pir_trigger": "<number>" // State (1 or 0) of any motion detected in the environment
 }
