@@ -49,12 +49,15 @@ Notes:
 Format of attribute: *"v"* in the general data formats:
 ```json
 {
-  "amm": <number>, // Level of Ammonia in surrounding air, Unit: PPM (parts per billion)
+  "amm": <number>, // Level of Ammonia in surrounding air, Unit: ppb (parts per billion)
   "aqi": <number>, // Air Quality Index (number between 1 - 500)
   "rh": <number>, // Relative humidity (percent, after divided by 10)
   "temp": <number>, // Temperature (degree celcius, after divided by 10)
 }
 ```
+
+Note:
+1. The unit of **amm** from this device is parts per billion (ppb)
 
 **Example use cases:**
 
@@ -170,7 +173,7 @@ Notes:
   "unixT": 1654063185904,
   "utc": 1654063185,
   "v": {
-    "amm": 0,
+    "amm": 88,
     "aqi": 103,
     "rh": 730,
     "temp": 304
