@@ -143,3 +143,33 @@ Format of attribute: *"v"* in the general data format:
     "unix": 1700196505
   }
 ```
+
+#### Example entity names for sample installations:
+
+**Organization Name:** *Jurong Technology Corporation*
+
+- `Mapped to Organization ID in our platform`
+
+**Property (Site) Name:** *The Launchpad*
+
+- `Mapped to Property ID ("PropId") in the data`
+
+**Project (Region): Name** *Bash*
+
+- `Mapped to Project ID ("PID") in the data`
+
+**Installation (Location) Name:** 
+
+- `Mapped to Installation ID ("InsID") in the data`
+
+- For **OCCMINEW / OCCSCM:** *Male Washroom, Level 1*
+
+- For **OCCDESK:** *Meeting room A, Level 2*
+
+**Device Name:**
+
+- `Mapped to Device ID ("DEVID") in the data`
+
+- For **OCCMINEW / OCCSCM:** *Cubicle 1*
+
+- For **OCCDESK:** *Seat 1*

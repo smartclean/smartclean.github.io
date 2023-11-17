@@ -80,18 +80,21 @@ Raise alarm (to take action) when magnitude of tilt with respect to the recorded
 
 **Organization Name:** *Singapore Zoological Gardens*
 
-- This corresponds to Organization ID in our platform
+- `Mapped to Organization ID in our platform`
 
 **Property (Site) Name:** *Mandai Bird Paradise*
 
-- Corresponds to Property ID ("PropId") in the data
+- `Mapped to Property ID ("PropId") in the data`
 
 **Project (Region): Name** *Kuok Group of Wings Asia*
 
-- Corresponds to Project ID ("PID") in the data
+- `Mapped to Project ID ("PID") in the data`
 
 **Installation (Location) Name:** *Bali village entrance*
 
-- Corresponds to Installation ID ("InsID") in the data
+- `Mapped to Installation ID ("InsID") in the data`
 
 **Device (Tree) Name:** *Rambutan 4*
+
+- `Mapped to Device ID ("DEVID"); and`
+- `Represented by Display name ("Display") in the data`
