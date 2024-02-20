@@ -7,14 +7,14 @@ nav_order: 2
 ---
 
 ## Receive Workforce incidents (work orders)
-This page describes how incidents generated for your Matrix Property can be pushed to your own application over the web.
+This page describes how incidents generated in your Matrix Properties can be pushed to your own application over the web.
 
 
 ## Pre-requisites to enable data push
 1. Valid data sources for Matrix incidents installed and activated in desired Buildings of your Matrix Property (for example: IoT Sensors)
-2. Valid URL to desired endpoint in your pre-available web service to receive the incidents.
+2. Valid URL to desired endpoint in your pre-available web service (to receive the incidents).
 
-       The desired endpoint in the respective web service to receive incidents must be available before requesting us to activate Incidents push.
+       The desired endpoint in respective web service must be available before requesting us to activate Incidents push.
 
 
 ## How it works
@@ -23,7 +23,7 @@ This page describes how incidents generated for your Matrix Property can be push
 2. We recommend securing your web service with some form of authentication. 
 
         In this case, provide us the authentication credentials by suitable means, along with the URL of your web service
-        (for example, Username and Password if your web endpoint requires Basic access authentication)
+        (for example, Username and Password if the desired endpoint requires Basic access authentication)
    
 
 ### Example use case:
@@ -38,7 +38,7 @@ Using Matrix incidents pushed to your application, you may fulfil or enhance you
 ### Example of incident pushed via Matrix Event Bus
 
 Notes: 
-1. Any incidents pushed using Matrix Event Bus will follow the "General Data Format" for Matrix events as described in the parent page.
+1. Any incidents pushed using Matrix Event Bus will follow the [General Data Format for Matrix Events](/eventBusCore.html)
 2. Data in this format will be available in body of web requests made to the URL provided.
 3. This example contains a single incident (JSON object) in the batch (JSON array).
 4. The batch may contain more than one object, in case more than one incident was generated for your Property or Buildings at the same time.

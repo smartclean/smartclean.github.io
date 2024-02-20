@@ -38,9 +38,9 @@ matrix.<principal>.<module>.<eventid>.<priority>
 Yes, third party applications can generate their own events within the event bus, subject to certain restrictions and quotas.
 
 ### Example of event pushed using MEB
-- Open (Unassigned) Incident Created - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED_OPEN.HIGH*
+- New Incident Created - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED.HIGH*
 
-## Generic Data Format for Matrix Events
+## General Data Format for Matrix Events
 Each event in the MEB follows the following schema:
 ```json
 "Principal": "<string> The principal - property, building or organisation",
