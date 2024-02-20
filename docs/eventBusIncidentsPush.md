@@ -6,8 +6,12 @@ grand_parent: SmartClean Matrix
 nav_order: 2
 ---
 
-## Receive Workforce incidents (work orders)
+## Receive Workforce incidents
 This page describes how incidents generated in your Matrix Properties can be pushed to your own application over the web.
+
+Note: Workforce incidents created in your Properties 
+- may get generated from a variety of sources, such as alerts from devices corresponding to [Solutions](/vcs_solutions.html).
+- show up as [Work Orders](/workorders.html) in the Matrix platform.
 
 
 ## Pre-requisites to enable data push
