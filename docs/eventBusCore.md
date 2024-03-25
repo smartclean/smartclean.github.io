@@ -37,33 +37,10 @@ matrix.<principal>.<module>.<eventid>.<priority>
 ### Can I generate events from my application and send it to MEB ?
 Yes, third party applications can generate their own events within the event bus, subject to certain restrictions and quotas.
 
-## What events are available in the event bus ?
-The following events are available on the bus currently:
+### Example of event pushed using MEB
+- New Incident Created - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED.HIGH*
 
-1. Incident Created - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED.HIGH*
-2. Incident Escalated - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_ESCALATED.HIGH*
-3. Incident Started - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_STARTED.NORMAL*
-4. Incident Completed - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_COMPLETED.NORMAL*
-5. Incident Not Resolved - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_INCOMPLETE.HIGH*
-6. Shift Started - *matrix.mybuildingid.scworkforcemanagement.SHIFT_STARTED.NORMAL*
-7. Shifts Published - *matrix.mybuildingid.scworkforcemanagement.SHIFTS_PUBLISHED.MEDIUM*
-8. Shift Delayed - *matrix.mybuildingid.scworkforcemanagement.SHIFT_DELAYED.MEDIUM*
-9. Shift Absent - *matrix.mybuildingid.scworkforcemanagement.SHIFT_ABSENT.HIGH*
-10. Shift Completed - *matrix.mybuildingid.scworkforcemanagement.SHIFT_COMPLETED.NORMAL*
-11. Audit Started - *matrix.mybuildingid.scaudits.AUDIT_STARTED.NORMAL*
-12. Audit Completed - *matrix.mybuildingid.scaudits.AUDIT_COMPLETED.HIGH*
-13. Task Started - *matrix.mybuildingid.scworkforcemanagement.TASK_STARTED.NORMAL*
-14. Task Completed - *matrix.mybuildingid.scworkforcemanagement.TASK_COMPLETED.NORMAL*
-15. Task Not Resolved - *matrix.mybuildingid.scworkforcemanagement.TASK_INCOMPLETE.HIGH*
-16. Zone Created - *matrix.mybuildingid.scgrids.ZONE_CREATED.NORMAL*
-17. Zone Name Modified - *matrix.mybuildingid.scgrids.ZONE_NAME_MODIFIED.MEDIUM*
-18. Zone Status Modified - *matrix.mybuildingid.scgrids.ZONE_STATUS_MODIFIED.MEDIUM*
-19. Zone Deleted - *matrix.mybuildingid.scgrids.ZONE_REMOVED.HIGH*
-20. Level Created - *matrix.mybuildingid.scgrids.LEVEL_CREATED.NORMAL*
-21. Level Name Modified - *matrix.mybuildingid.scgrids.LEVEL_NAME_MODIFIED.MEDIUM*
-22. Open (Unassigned) Incident Created - *matrix.mybuildingid.scworkforcemanagement.INCIDENT_CREATED_OPEN.HIGH*
-
-## Generic Data Format for Matrix Events
+## General Data Format for Matrix Events
 Each event in the MEB follows the following schema:
 ```json
 "Principal": "<string> The principal - property, building or organisation",
